@@ -33,3 +33,11 @@ Thumbs.db
 # Editor settings
 .vscode/
 .idea/
+
+# Task 2 local datasets, caches, and generated tensors
+task2_sentiment/data/raw/
+task2_sentiment/data/hf_cache/
+task2_sentiment/data/processed/
+
+# Temporary checkpoint writes
+task2_sentiment/*/checkpoints/*.tmp
