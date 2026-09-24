@@ -1,0 +1,653 @@
+================================================================================
+Sample ID: sample_001
+Prompt: Once upon a time
+Mode: greedy
+Temperature: None
+Sample index: 1
+
+Generated continuation:
+, there was a little girl named Lily. She loved to play outside in the sunshine. One day, she went to the park with her mommy and daddy. They saw a big box of colorful colors and shapes. Lily wanted to play with it, but her mommy said no. She said they were going to the park to play with it. She said they were going to the park to play with it. She said they were going to the park to play with it. She said they were going to the park to play with it. She said they were going to the park to play
+
+Complete text:
+Once upon a time, there was a little girl named Lily. She loved to play outside in the sunshine. One day, she went to the park with her mommy and daddy. They saw a big box of colorful colors and shapes. Lily wanted to play with it, but her mommy said no. She said they were going to the park to play with it. She said they were going to the park to play with it. She said they were going to the park to play with it. She said they were going to the park to play with it. She said they were going to the park to play
+
+================================================================================
+Sample ID: sample_002
+Prompt: Once upon a time
+Mode: sampled
+Temperature: 0.7
+Sample index: 1
+
+Generated continuation:
+, there was a little girl named Lily. She loved to play outside and cut. One day, she found a big bee with flowers and a big boat. She loved to play with her toys, but she decided to play with her toys. She put on her toys and gasped in the bee with her friends. Lily and her mom went to bed, but they had to play together. They had so much fun and listened to each other. They had never seen a bad bee able before all alone. They were very happy and grateful for their friends.
+
+Once upon a time, th
+
+Complete text:
+Once upon a time, there was a little girl named Lily. She loved to play outside and cut. One day, she found a big bee with flowers and a big boat. She loved to play with her toys, but she decided to play with her toys. She put on her toys and gasped in the bee with her friends. Lily and her mom went to bed, but they had to play together. They had so much fun and listened to each other. They had never seen a bad bee able before all alone. They were very happy and grateful for their friends.
+
+Once upon a time, th
+
+================================================================================
+Sample ID: sample_003
+Prompt: Once upon a time
+Mode: sampled
+Temperature: 0.7
+Sample index: 2
+
+Generated continuation:
+, there was a little girl named Susie. She had a lot of fun to play with. One day, Susie found a big box in the air. It was perfect for the box and the box was just as big as the box. Susie was so old and she asked the box, "Who are you so delighter?"
+
+Susie thought for a moment, but then she said, "I lost my box. I am not a box. You have to put her toys on the shelf. I have to put them back in the box. It is a special statue. It is a cool and orange."
+
+The statue was a big, strong statue. I
+
+Complete text:
+Once upon a time, there was a little girl named Susie. She had a lot of fun to play with. One day, Susie found a big box in the air. It was perfect for the box and the box was just as big as the box. Susie was so old and she asked the box, "Who are you so delighter?"
+
+Susie thought for a moment, but then she said, "I lost my box. I am not a box. You have to put her toys on the shelf. I have to put them back in the box. It is a special statue. It is a cool and orange."
+
+The statue was a big, strong statue. I
+
+================================================================================
+Sample ID: sample_004
+Prompt: Once upon a time
+Mode: sampled
+Temperature: 0.7
+Sample index: 3
+
+Generated continuation:
+, there was a little girl named Lily. She loved to crawl around the forest and pick some around her window. One day, Lily's mom took her to the beach and said, "Lily, I want to crawl inside here?"
+
+Her mom smiled and said, "No, Lily. I want to come outside and play with you."
+
+Lily and her mom put the beach on the floor and pulled out a big bowl. They put the floor on the top and made it faster. They tried to pull out the window, but the floor was too scared and the bowl of the bush. They both
+
+Complete text:
+Once upon a time, there was a little girl named Lily. She loved to crawl around the forest and pick some around her window. One day, Lily's mom took her to the beach and said, "Lily, I want to crawl inside here?"
+
+Her mom smiled and said, "No, Lily. I want to come outside and play with you."
+
+Lily and her mom put the beach on the floor and pulled out a big bowl. They put the floor on the top and made it faster. They tried to pull out the window, but the floor was too scared and the bowl of the bush. They both
+
+================================================================================
+Sample ID: sample_005
+Prompt: Once upon a time
+Mode: sampled
+Temperature: 1.0
+Sample index: 1
+
+Generated continuation:
+, there was a girl named Lily. She loved to play outside in the sunshine. One day, while she was walking in the woods, she found a box of blue blue blue blue blue balls.
+
+She brought it to the blue blue blue blue blue blue blanket! The blue blue blue blue blue blue, near a tree and carrots. As the blue blue blue, she could see who was smiling. The lue bird was very happy and content.
+
+The blue blue blue blue blue blue blue sky and blue. The blue blue blue blue dad had a long tail that fit. They
+
+Complete text:
+Once upon a time, there was a girl named Lily. She loved to play outside in the sunshine. One day, while she was walking in the woods, she found a box of blue blue blue blue blue balls.
+
+She brought it to the blue blue blue blue blue blue blanket! The blue blue blue blue blue blue, near a tree and carrots. As the blue blue blue, she could see who was smiling. The lue bird was very happy and content.
+
+The blue blue blue blue blue blue blue sky and blue. The blue blue blue blue dad had a long tail that fit. They
+
+================================================================================
+Sample ID: sample_006
+Prompt: Once upon a time
+Mode: sampled
+Temperature: 1.0
+Sample index: 2
+
+Generated continuation:
+, there lived a lively little girl named Lily who loved to travel. One day, Lily's mom took her to the living room and asked if she could have a home to go and have fun. Lily felt happy because she couldn't play with her to make her little bit.
+
+Mom was very angry and she knew she wanted a bad idea. She said it was making a big spray words with her doll, she hugged her mom's mom.
+
+Her mom looked at her doll. She smiled and said, "That way, Mom. I'm glad you like the pretty ball at you. Let's go
+
+Complete text:
+Once upon a time, there lived a lively little girl named Lily who loved to travel. One day, Lily's mom took her to the living room and asked if she could have a home to go and have fun. Lily felt happy because she couldn't play with her to make her little bit.
+
+Mom was very angry and she knew she wanted a bad idea. She said it was making a big spray words with her doll, she hugged her mom's mom.
+
+Her mom looked at her doll. She smiled and said, "That way, Mom. I'm glad you like the pretty ball at you. Let's go
+
+================================================================================
+Sample ID: sample_007
+Prompt: Once upon a time
+Mode: sampled
+Temperature: 1.0
+Sample index: 3
+
+Generated continuation:
+, there was a little girl named Lily. She loved to eat creatures in a lovely desk and pick flowers for her. One day, she found a big spot and the bollo wanted to get the spot. But, when she got to the man had a spot because it made her feel get very strong.
+
+The spot spotted the spot on the floor and went over to a big suit. But as she got closer, she put out on her bed and looked up, she saw that it was hard. She looked even more - it was so big to fly! She was happy and proud to of her clean w
+
+Complete text:
+Once upon a time, there was a little girl named Lily. She loved to eat creatures in a lovely desk and pick flowers for her. One day, she found a big spot and the bollo wanted to get the spot. But, when she got to the man had a spot because it made her feel get very strong.
+
+The spot spotted the spot on the floor and went over to a big suit. But as she got closer, she put out on her bed and looked up, she saw that it was hard. She looked even more - it was so big to fly! She was happy and proud to of her clean w
+
+================================================================================
+Sample ID: sample_008
+Prompt: Once upon a time
+Mode: sampled
+Temperature: 1.3
+Sample index: 1
+
+Generated continuation:
+ there was a big, heavy!
+
+The nlight was nothing happened, hugged and ran off for bed.
+
+Moral.
+
+Joey was so happy to have opened a bowl very year of.
+Before exhauster his 3 years old and he finished, knowing she was excited. When the great was smiling, she'd take the Haurbley journal and wished someone had buy of it. She couldn't. It about him and watched it when someone relax 3.
+
+She put on the journal in every day, but it was too big. It was a rake. "Oh no," she excited.
+
+It was confused, r
+
+Complete text:
+Once upon a time there was a big, heavy!
+
+The nlight was nothing happened, hugged and ran off for bed.
+
+Moral.
+
+Joey was so happy to have opened a bowl very year of.
+Before exhauster his 3 years old and he finished, knowing she was excited. When the great was smiling, she'd take the Haurbley journal and wished someone had buy of it. She couldn't. It about him and watched it when someone relax 3.
+
+She put on the journal in every day, but it was too big. It was a rake. "Oh no," she excited.
+
+It was confused, r
+
+================================================================================
+Sample ID: sample_009
+Prompt: Once upon a time
+Mode: sampled
+Temperature: 1.3
+Sample index: 2
+
+Generated continuation:
+, there was a family. They loved to roar of tracks and shampoo in pile. However, play, he found this tracks on the other, so it made him feel cozy.
+
+Ben wanted Ben to play, so he kept only told. He put their books and touched the owl to buy some water. Ben might get good of tleaves and buy it more. He is never playing outside without lots of ringing. But he has takes his best filled with joyger's own flags on his leg.
+
+One day, Lily's friends disagrees. She yawnes, sanding for more, but Tom puts
+
+Complete text:
+Once upon a time, there was a family. They loved to roar of tracks and shampoo in pile. However, play, he found this tracks on the other, so it made him feel cozy.
+
+Ben wanted Ben to play, so he kept only told. He put their books and touched the owl to buy some water. Ben might get good of tleaves and buy it more. He is never playing outside without lots of ringing. But he has takes his best filled with joyger's own flags on his leg.
+
+One day, Lily's friends disagrees. She yawnes, sanding for more, but Tom puts
+
+================================================================================
+Sample ID: sample_010
+Prompt: Once upon a time
+Mode: sampled
+Temperature: 1.3
+Sample index: 3
+
+Generated continuation:
+ there was a noise. Molly was a clittle girl called Emma. She was afraid at, to play a big, red hat. At first, every time she looked all around. She even had so much fun, but none of the sunshine and woke up.
+
+
+One day, one of there was an orange sun while seemed to cut never tag. The little girl getting dry and ignory. She looked up and saw it in nearby, but she slowly stepped away and wlistened it agreement. The little girl noticed something quickly wstill in tag. its sailor, "That's all that'
+
+Complete text:
+Once upon a time there was a noise. Molly was a clittle girl called Emma. She was afraid at, to play a big, red hat. At first, every time she looked all around. She even had so much fun, but none of the sunshine and woke up.
+
+
+One day, one of there was an orange sun while seemed to cut never tag. The little girl getting dry and ignory. She looked up and saw it in nearby, but she slowly stepped away and wlistened it agreement. The little girl noticed something quickly wstill in tag. its sailor, "That's all that'
+
+================================================================================
+Sample ID: sample_011
+Prompt: Lily found a little
+Mode: greedy
+Temperature: None
+Sample index: 1
+
+Generated continuation:
+ bird in the sky. She was so happy that she had a big box of cards and she was so happy to have a new friend. From that day on, Lily always looked for food and was always so happy to have a new friend.
+
+Once upon a time, there was a little girl named Lily. She loved to play outside in the sunshine. One day, she went to the park with her mommy and daddy. She saw a big box of colorful box and wanted to play with it. She wanted to play with it, but it was too high for her. She tried to pull it ou
+
+Complete text:
+Lily found a little bird in the sky. She was so happy that she had a big box of cards and she was so happy to have a new friend. From that day on, Lily always looked for food and was always so happy to have a new friend.
+
+Once upon a time, there was a little girl named Lily. She loved to play outside in the sunshine. One day, she went to the park with her mommy and daddy. She saw a big box of colorful box and wanted to play with it. She wanted to play with it, but it was too high for her. She tried to pull it ou
+
+================================================================================
+Sample ID: sample_012
+Prompt: Lily found a little
+Mode: sampled
+Temperature: 0.7
+Sample index: 1
+
+Generated continuation:
+ boy in the garden. She was so happy that she didn't have enough to eat her day. She thanked her mommy and said, "Thank you! That was a knight and the show is better."
+
+Once upon a time, there was a little girl named Lily. She loved to play outside in her backyard with her friends. One day, Lily went to the park with her mommy and daddy. they saw a big boat with a smile on her face. Her mommy said, "Lily, Lily, I have a snack with my leaves and a picture. It's not a lot of ball to catch the ball
+
+Complete text:
+Lily found a little boy in the garden. She was so happy that she didn't have enough to eat her day. She thanked her mommy and said, "Thank you! That was a knight and the show is better."
+
+Once upon a time, there was a little girl named Lily. She loved to play outside in her backyard with her friends. One day, Lily went to the park with her mommy and daddy. they saw a big boat with a smile on her face. Her mommy said, "Lily, Lily, I have a snack with my leaves and a picture. It's not a lot of ball to catch the ball
+
+================================================================================
+Sample ID: sample_013
+Prompt: Lily found a little
+Mode: sampled
+Temperature: 0.7
+Sample index: 2
+
+Generated continuation:
+ bird with mean friends and be friends. They wanted to play together with their friends.
+
+One day, a little girl named Lily went to visit her friends. She wanted to play outside with her friends, but her mom said no. Lily tried to pull and climb down, but she was covered in the street when she saw a new purple tree. She wanted to play with it, but it was not gentle to take care of it.
+
+Finally, Lily found the purple purple blue purple tree and it flew away. She was so happy to see the blue purp
+
+Complete text:
+Lily found a little bird with mean friends and be friends. They wanted to play together with their friends.
+
+One day, a little girl named Lily went to visit her friends. She wanted to play outside with her friends, but her mom said no. Lily tried to pull and climb down, but she was covered in the street when she saw a new purple tree. She wanted to play with it, but it was not gentle to take care of it.
+
+Finally, Lily found the purple purple blue purple tree and it flew away. She was so happy to see the blue purp
+
+================================================================================
+Sample ID: sample_014
+Prompt: Lily found a little
+Mode: sampled
+Temperature: 0.7
+Sample index: 3
+
+Generated continuation:
+ bag of water and her toys were very happy.
+
+John loved to go to the living room. He would run around the water. He running around and playing, especially his toys with his mom.
+
+One day, he was playing with his toy boat in his car. He wanted to go on a trip, so he saw a big tree in the tree were trees.
+
+The tree was so big trees, but he had to make it strong. He screamed and screamed. He couldn't wait to see his eyes. He had to stay in the tree all day long. He felt sad for making him a new
+
+Complete text:
+Lily found a little bag of water and her toys were very happy.
+
+John loved to go to the living room. He would run around the water. He running around and playing, especially his toys with his mom.
+
+One day, he was playing with his toy boat in his car. He wanted to go on a trip, so he saw a big tree in the tree were trees.
+
+The tree was so big trees, but he had to make it strong. He screamed and screamed. He couldn't wait to see his eyes. He had to stay in the tree all day long. He felt sad for making him a new
+
+================================================================================
+Sample ID: sample_015
+Prompt: Lily found a little
+Mode: sampled
+Temperature: 1.0
+Sample index: 1
+
+Generated continuation:
+ bit brilliant and it was very different. Sam was so happy and grateful to Lily and her mom waved goodbye.
+
+While they were both exploring, Lily saw a small dead carried it over the brilliant bird and asked, "Can we cut the dead and the two mouse?" Lily asked her mom, "OK, I can do it."
+
+Lily picked up the bird so Tom and smiled back. "We have some tea every night," she said.
+
+"Yes, I am. We need the dead to help you," Lily said.
+
+They added a surprise. The bird felt happy and very proud of th
+
+Complete text:
+Lily found a little bit brilliant and it was very different. Sam was so happy and grateful to Lily and her mom waved goodbye.
+
+While they were both exploring, Lily saw a small dead carried it over the brilliant bird and asked, "Can we cut the dead and the two mouse?" Lily asked her mom, "OK, I can do it."
+
+Lily picked up the bird so Tom and smiled back. "We have some tea every night," she said.
+
+"Yes, I am. We need the dead to help you," Lily said.
+
+They added a surprise. The bird felt happy and very proud of th
+
+================================================================================
+Sample ID: sample_016
+Prompt: Lily found a little
+Mode: sampled
+Temperature: 1.0
+Sample index: 2
+
+Generated continuation:
+ bird in the park. It took it out and two played with its party.
+
+Her mom came into the river out of the park. She saw the cake and river in the house. She was never hungry anymore alone. She loved it before. She would show it to her mom and dad, and her Mom would play in the park. She started to cry and said, "Well, that way, mom. You can eat it for the gus."
+
+Her mom smiled and said, "It's okay, sweetie. I will play with your rod."
+
+Once upon a time there was a little girl named Lily who loved
+
+Complete text:
+Lily found a little bird in the park. It took it out and two played with its party.
+
+Her mom came into the river out of the park. She saw the cake and river in the house. She was never hungry anymore alone. She loved it before. She would show it to her mom and dad, and her Mom would play in the park. She started to cry and said, "Well, that way, mom. You can eat it for the gus."
+
+Her mom smiled and said, "It's okay, sweetie. I will play with your rod."
+
+Once upon a time there was a little girl named Lily who loved
+
+================================================================================
+Sample ID: sample_017
+Prompt: Lily found a little
+Mode: sampled
+Temperature: 1.0
+Sample index: 3
+
+Generated continuation:
+ bird with many things to buy a toy cars. They took turns to use stars and look at each other. They bounced around, but then they grew bigger and modest, faster. The bird was very happy and started to rot in the cars. It watched as it broke the bird and rolled it back into the sky.
+
+When the bird flew down, the bird flew to the ground and knew that it was enough to leave. But it was around and it was sweet a big flashlight! The bird flew down and flew away and cute. The bird was so happy as its
+
+Complete text:
+Lily found a little bird with many things to buy a toy cars. They took turns to use stars and look at each other. They bounced around, but then they grew bigger and modest, faster. The bird was very happy and started to rot in the cars. It watched as it broke the bird and rolled it back into the sky.
+
+When the bird flew down, the bird flew to the ground and knew that it was enough to leave. But it was around and it was sweet a big flashlight! The bird flew down and flew away and cute. The bird was so happy as its
+
+================================================================================
+Sample ID: sample_018
+Prompt: Lily found a little
+Mode: sampled
+Temperature: 1.3
+Sample index: 1
+
+Generated continuation:
+ book hand and it held Molly's thing up in her daughter, to see if she could help her mommy turn the fairy. Suddenly, she heard the strong gouncy, and came up. She was wild. Molly told her daughter about her things, and her mother was getting foolish. They all shrugged each other and didn't have enough money to come out of the room.
+
+After some rooms worked on the daughter's terrible. The room scissors were talking about the quarrel and making spinning up to nold.
+
+The terr is empty yeield. Ever
+
+Complete text:
+Lily found a little book hand and it held Molly's thing up in her daughter, to see if she could help her mommy turn the fairy. Suddenly, she heard the strong gouncy, and came up. She was wild. Molly told her daughter about her things, and her mother was getting foolish. They all shrugged each other and didn't have enough money to come out of the room.
+
+After some rooms worked on the daughter's terrible. The room scissors were talking about the quarrel and making spinning up to nold.
+
+The terr is empty yeield. Ever
+
+================================================================================
+Sample ID: sample_019
+Prompt: Lily found a little
+Mode: sampled
+Temperature: 1.3
+Sample index: 2
+
+Generated continuation:
+ bumbrow. She wasn't about Jane, it was big' noisy and red and honest. They wanted to go to the hill and caare about it.
+
+"Fid!" Bear said. "Holds about us, after you pick," it said.
+
+Big Fidnesd and found something scary. He bout eagerly couldn't make anymore.
+
+Then he heard a screen and said, "No, it's mine. I can't fix it. Let's allow sort new house and eat it."
+
+Once upon a time, there was a long figure who loved to choose it. One day, he went to the figure and cut strange his choose all J
+
+Complete text:
+Lily found a little bumbrow. She wasn't about Jane, it was big' noisy and red and honest. They wanted to go to the hill and caare about it.
+
+"Fid!" Bear said. "Holds about us, after you pick," it said.
+
+Big Fidnesd and found something scary. He bout eagerly couldn't make anymore.
+
+Then he heard a screen and said, "No, it's mine. I can't fix it. Let's allow sort new house and eat it."
+
+Once upon a time, there was a long figure who loved to choose it. One day, he went to the figure and cut strange his choose all J
+
+================================================================================
+Sample ID: sample_020
+Prompt: Lily found a little
+Mode: sampled
+Temperature: 1.3
+Sample index: 3
+
+Generated continuation:
+ which found an incredible room. Finally, her mom best free in the kitchen and pinked it would take nice home with her. Lily's mom explaced the foolish together as they walked in sunny video. They smiled as they started roaring through sky.
+
+Once upon a time there was a young, the foolish inside. It had placed in the world. The turkey was very heavy attracting a well. The mysterfly was virious after they could have hands, and very quiet, they jumped inside and wuddle until the wind ran around th
+
+Complete text:
+Lily found a little which found an incredible room. Finally, her mom best free in the kitchen and pinked it would take nice home with her. Lily's mom explaced the foolish together as they walked in sunny video. They smiled as they started roaring through sky.
+
+Once upon a time there was a young, the foolish inside. It had placed in the world. The turkey was very heavy attracting a well. The mysterfly was virious after they could have hands, and very quiet, they jumped inside and wuddle until the wind ran around th
+
+================================================================================
+Sample ID: sample_021
+Prompt: One day, a small dog
+Mode: greedy
+Temperature: None
+Sample index: 1
+
+Generated continuation:
+ named Max went to the park. Max was very excited and said, "Let's go to the park!" Max said, "OK, let's go to the park." Max said, "OK, let's go to the park." Max said, "OK, let's go to the park." Max said, "OK, let's go to the park." Max said, "OK, let's go to the park."
+
+They went to the park and saw a big box of parks and said, "We can go to the park to play with the park." Max smiled and said, "Yes, let's go to the park." Max smiled and said, "Okay, let's go to the park."
+
+They went to th
+
+Complete text:
+One day, a small dog named Max went to the park. Max was very excited and said, "Let's go to the park!" Max said, "OK, let's go to the park." Max said, "OK, let's go to the park." Max said, "OK, let's go to the park." Max said, "OK, let's go to the park." Max said, "OK, let's go to the park."
+
+They went to the park and saw a big box of parks and said, "We can go to the park to play with the park." Max smiled and said, "Yes, let's go to the park." Max smiled and said, "Okay, let's go to the park."
+
+They went to th
+
+================================================================================
+Sample ID: sample_022
+Prompt: One day, a small dog
+Mode: sampled
+Temperature: 0.7
+Sample index: 1
+
+Generated continuation:
+ came to the dog. The dog was feeling comfortable. He was scared and started to comfort him.
+
+The bad dog was scared. He did not want to leave. He stopped and took a swing. He was scared and screamed. He did not like the dog. He said, "I don't know what this dog was doing. They can go and play with it. But it belongs to say sorry. They are different. They look at each other. They smile and want to say sorry. They love their dog.
+
+Once upon a time, there was a little girl named Lily. She loved to
+
+Complete text:
+One day, a small dog came to the dog. The dog was feeling comfortable. He was scared and started to comfort him.
+
+The bad dog was scared. He did not want to leave. He stopped and took a swing. He was scared and screamed. He did not like the dog. He said, "I don't know what this dog was doing. They can go and play with it. But it belongs to say sorry. They are different. They look at each other. They smile and want to say sorry. They love their dog.
+
+Once upon a time, there was a little girl named Lily. She loved to
+
+================================================================================
+Sample ID: sample_023
+Prompt: One day, a small dog
+Mode: sampled
+Temperature: 0.7
+Sample index: 2
+
+Generated continuation:
+ named Max was outside to play with his toy car. She saw a big dog said, "Hello, little bird. Doggy is so fast." Max said, "Hello, Max. What are you doing?"
+
+Sam looked at Tim and said, "I am Sam. My sail is big and medicine. I like to buy it for dinner. Can I keep it?"
+
+They smiled and laughed. They said, "Yes, let's take a care of the sail. We will come back home." Tim and Sam said, "OK, mom. We will be nice."
+
+Mom said, "That was okay. We can take the sail to the sailor. And we can play with
+
+Complete text:
+One day, a small dog named Max was outside to play with his toy car. She saw a big dog said, "Hello, little bird. Doggy is so fast." Max said, "Hello, Max. What are you doing?"
+
+Sam looked at Tim and said, "I am Sam. My sail is big and medicine. I like to buy it for dinner. Can I keep it?"
+
+They smiled and laughed. They said, "Yes, let's take a care of the sail. We will come back home." Tim and Sam said, "OK, mom. We will be nice."
+
+Mom said, "That was okay. We can take the sail to the sailor. And we can play with
+
+================================================================================
+Sample ID: sample_024
+Prompt: One day, a small dog
+Mode: sampled
+Temperature: 0.7
+Sample index: 3
+
+Generated continuation:
+ came to the park. The dog saw Lily and Tom and Sam. They wanted to see the big barn. The dog was fast and the dog kept singing. It was a great day.
+
+One day, Tom and Sam were playing with their toy barn. Tom had a big bag with a picture of a big bag of water in the water. They saw a big slide and dog near the slide. The bag was strong and had a fun better than any of slide. Tom and Sam were sad and angry. They ran to the bag and saw the bag with many bags. They did not know the bags were making
+
+Complete text:
+One day, a small dog came to the park. The dog saw Lily and Tom and Sam. They wanted to see the big barn. The dog was fast and the dog kept singing. It was a great day.
+
+One day, Tom and Sam were playing with their toy barn. Tom had a big bag with a picture of a big bag of water in the water. They saw a big slide and dog near the slide. The bag was strong and had a fun better than any of slide. Tom and Sam were sad and angry. They ran to the bag and saw the bag with many bags. They did not know the bags were making
+
+================================================================================
+Sample ID: sample_025
+Prompt: One day, a small dog
+Mode: sampled
+Temperature: 1.0
+Sample index: 1
+
+Generated continuation:
+ comes to write for them. He pets on the scale and writes on it. He sees a boat on his feet.
+
+"Hello, dog!" Anna says. "A truck!"
+
+"Hello! Hello, little dog!" mom says. "Who are you?"
+
+Anna has a big boat. "I want to write in the original garden," Ben says.
+
+"I am a little girl. I am sorry, I did a genkle, but I was going to be my friend. Thank you for helping me very long. You can tell me write and my legp on it."
+
+They walk over to the ground and see the field. It is not gripy anymore. It is m
+
+Complete text:
+One day, a small dog comes to write for them. He pets on the scale and writes on it. He sees a boat on his feet.
+
+"Hello, dog!" Anna says. "A truck!"
+
+"Hello! Hello, little dog!" mom says. "Who are you?"
+
+Anna has a big boat. "I want to write in the original garden," Ben says.
+
+"I am a little girl. I am sorry, I did a genkle, but I was going to be my friend. Thank you for helping me very long. You can tell me write and my legp on it."
+
+They walk over to the ground and see the field. It is not gripy anymore. It is m
+
+================================================================================
+Sample ID: sample_026
+Prompt: One day, a small dog
+Mode: sampled
+Temperature: 1.0
+Sample index: 2
+
+Generated continuation:
+ came to the park one. The owl said, "I want to see the car, Tom!"
+
+Tom nodded. He said, "Yes, I love you!"
+
+The dog flew at Sam and hugged Sam. Tom loved the car and said, "Max, you can't play with our owl. But I can't drive with me anymore. Thank you, dog. We don't want you. You can have been hurt anyone else."
+
+Sam took Sam some basketballs and got his new basketball. He put them away and pretended to be a good surprise. He was so happy to be released it.
+
+Sam loved and shared his basketball.
+
+Complete text:
+One day, a small dog came to the park one. The owl said, "I want to see the car, Tom!"
+
+Tom nodded. He said, "Yes, I love you!"
+
+The dog flew at Sam and hugged Sam. Tom loved the car and said, "Max, you can't play with our owl. But I can't drive with me anymore. Thank you, dog. We don't want you. You can have been hurt anyone else."
+
+Sam took Sam some basketballs and got his new basketball. He put them away and pretended to be a good surprise. He was so happy to be released it.
+
+Sam loved and shared his basketball.
+
+================================================================================
+Sample ID: sample_027
+Prompt: One day, a small dog
+Mode: sampled
+Temperature: 1.0
+Sample index: 3
+
+Generated continuation:
+ named Max. Max wanted to see how to find a square instead. Max said, "Hi Lily? His Lily, I am sorry. Can I see it?" Max asked, "Sure, please fly." Max started to get yucky. But the dog kept going. He went to see the dog, and leaned something fast appeared into the park. He wanted to see it, but he was excited to see the dog.
+
+Max started to move. He asked Max to help his mom, "What happened?".
+
+Max thought for a moment and then said, "I don't know, let's go inside anything with you very speci
+
+Complete text:
+One day, a small dog named Max. Max wanted to see how to find a square instead. Max said, "Hi Lily? His Lily, I am sorry. Can I see it?" Max asked, "Sure, please fly." Max started to get yucky. But the dog kept going. He went to see the dog, and leaned something fast appeared into the park. He wanted to see it, but he was excited to see the dog.
+
+Max started to move. He asked Max to help his mom, "What happened?".
+
+Max thought for a moment and then said, "I don't know, let's go inside anything with you very speci
+
+================================================================================
+Sample ID: sample_028
+Prompt: One day, a small dog
+Mode: sampled
+Temperature: 1.3
+Sample index: 1
+
+Generated continuation:
+ came closer and asked the dog, "Who do you want to watch meâ€”you thank you!" The dog felt so surprised!
+
+But the dog was too strong nervous, and the doctor tlried to wash her. After it went, they were more and over. They were grateful for their such all of them, and the comet moved into such such a huge scissors because Lucy hold it. He climblyt as she ate so more fun after the rose, and it was always would never be taken.
+
+Once upon a time there was a funny girl who would wobbly it. She had
+
+Complete text:
+One day, a small dog came closer and asked the dog, "Who do you want to watch meâ€”you thank you!" The dog felt so surprised!
+
+But the dog was too strong nervous, and the doctor tlried to wash her. After it went, they were more and over. They were grateful for their such all of them, and the comet moved into such such a huge scissors because Lucy hold it. He climblyt as she ate so more fun after the rose, and it was always would never be taken.
+
+Once upon a time there was a funny girl who would wobbly it. She had
+
+================================================================================
+Sample ID: sample_029
+Prompt: One day, a small dog
+Mode: sampled
+Temperature: 1.3
+Sample index: 2
+
+Generated continuation:
+ swam towards him! Finally, the dog came up to the oven. Inside the doggy fenced, Timmy's pinny bellWoke had achieved. Inside, "all is Leo, Mia, that world were mixing on our dieges. Let's never see when we ate!" His mom smiled back, kind struck friends, by pannic found something stitchy.
+
+Lily and her friends went outside. They went to build the structure the fan. It smelled them lying. They thought they could sit down and swung on the road against such after the full, dark, enthusiastic before
+
+Complete text:
+One day, a small dog swam towards him! Finally, the dog came up to the oven. Inside the doggy fenced, Timmy's pinny bellWoke had achieved. Inside, "all is Leo, Mia, that world were mixing on our dieges. Let's never see when we ate!" His mom smiled back, kind struck friends, by pannic found something stitchy.
+
+Lily and her friends went outside. They went to build the structure the fan. It smelled them lying. They thought they could sit down and swung on the road against such after the full, dark, enthusiastic before
+
+================================================================================
+Sample ID: sample_030
+Prompt: One day, a small dog
+Mode: sampled
+Temperature: 1.3
+Sample index: 3
+
+Generated continuation:
+ decided to reward. He wanted an our friend, but he kept using. He though
+
+He shouted, "Look," the ownerâ€™s no old own! It was Sam! It had.
+
+Joe's friends were very sad and Timmy held on tight. He knew something undependent and pushed it across the fridge until he reached a mechanic". And after the little horrses, they sahowed his snakes and watered from Sam.
+
+journey squealed: "Oh no!" Jill smiled because he held the little stuff in his push and excited and said: "Jake is interesting and impo
+
+Complete text:
+One day, a small dog decided to reward. He wanted an our friend, but he kept using. He though
+
+He shouted, "Look," the ownerâ€™s no old own! It was Sam! It had.
+
+Joe's friends were very sad and Timmy held on tight. He knew something undependent and pushed it across the fridge until he reached a mechanic". And after the little horrses, they sahowed his snakes and watered from Sam.
+
+journey squealed: "Oh no!" Jill smiled because he held the little stuff in his push and excited and said: "Jake is interesting and impo

@@ -1,0 +1,220 @@
+{
+  "created_utc": "2026-09-24T21:51:53.551683+00:00",
+  "experiment": "anshika_char_gpt_v1",
+  "member_name": "Anshika Goel",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "checkpoint": {
+    "path": "task1_llm/Anshika_Goel/checkpoints/best_model.pt",
+    "sha256": "64ad99efc0bf2e49959d3ef54bf5373a4c3a974f0fa333ae4a37e62fac9d2ba3",
+    "epoch": 10,
+    "validation_loss_at_save": 0.6937300154685974
+  },
+  "configuration": {
+    "path": "task1_llm/Anshika_Goel/configs/gpt_char.yaml",
+    "sha256": "31162ce40fadfea446f83570eebfb6a674a5c9ed27f6d41b136b37e6c89d287b",
+    "generation_seed": 20260925,
+    "prompts": [
+      "Once upon a time",
+      "Lily found a little",
+      "One day, a small dog"
+    ],
+    "temperatures": [
+      0.7,
+      1.0,
+      1.3
+    ],
+    "samples_per_temperature": 3,
+    "include_greedy_sample": true,
+    "max_new_characters": 500
+  },
+  "model": {
+    "parameter_count": 3557861,
+    "vocabulary_size": 101
+  },
+  "training": {
+    "final_training_loss": 0.7292673282814026,
+    "training_tokens_per_second": 80067.67031501204,
+    "total_training_seconds": 3305.320511900005,
+    "peak_gpu_allocated_mb": 1586.033203125,
+    "peak_gpu_reserved_mb": 1754.0,
+    "gradient_norm_mean": 0.7671757246292508,
+    "gradient_norm_max": 11.639734268188477,
+    "loss_spike_count": 0,
+    "nonfinite_loss_count": 0,
+    "nonfinite_gradient_count": 10
+  },
+  "validation": {
+    "cross_entropy_loss": 0.6937300154685974,
+    "perplexity": 2.00116600957984,
+    "bits_per_character": 1.0008408530323694,
+    "generalization_gap": -0.035537312812805255,
+    "top1_accuracy": 0.78033671875,
+    "tokens": 2560000,
+    "seconds": 9.946746799978428,
+    "tokens_per_second": 257370.58070137587
+  },
+  "generation": {
+    "sample_count": 30,
+    "sampled_sample_count": 27,
+    "total_generated_tokens": 15000,
+    "total_generation_seconds": 28.953088699723594,
+    "tokens_per_second": 518.0794406968815,
+    "peak_gpu_allocated_mb": 41.47998046875,
+    "peak_gpu_reserved_mb": 270.0,
+    "timing_records": [
+      {
+        "prompt_number": 1,
+        "mode": "greedy",
+        "temperature": null,
+        "sample_count": 1,
+        "generated_tokens": 500,
+        "seconds": 2.34033899998758,
+        "tokens_per_second": 213.64426264855368
+      },
+      {
+        "prompt_number": 1,
+        "mode": "sampled",
+        "temperature": 0.7,
+        "sample_count": 3,
+        "generated_tokens": 1500,
+        "seconds": 2.5277345000067726,
+        "tokens_per_second": 593.4167532215037
+      },
+      {
+        "prompt_number": 1,
+        "mode": "sampled",
+        "temperature": 1.0,
+        "sample_count": 3,
+        "generated_tokens": 1500,
+        "seconds": 2.4662549999775365,
+        "tokens_per_second": 608.2096133666886
+      },
+      {
+        "prompt_number": 1,
+        "mode": "sampled",
+        "temperature": 1.3,
+        "sample_count": 3,
+        "generated_tokens": 1500,
+        "seconds": 2.446269699954428,
+        "tokens_per_second": 613.1785060445068
+      },
+      {
+        "prompt_number": 2,
+        "mode": "greedy",
+        "temperature": null,
+        "sample_count": 1,
+        "generated_tokens": 500,
+        "seconds": 2.1790924998931587,
+        "tokens_per_second": 229.45331601320967
+      },
+      {
+        "prompt_number": 2,
+        "mode": "sampled",
+        "temperature": 0.7,
+        "sample_count": 3,
+        "generated_tokens": 1500,
+        "seconds": 2.4295923999743536,
+        "tokens_per_second": 617.3875091212146
+      },
+      {
+        "prompt_number": 2,
+        "mode": "sampled",
+        "temperature": 1.0,
+        "sample_count": 3,
+        "generated_tokens": 1500,
+        "seconds": 2.462169999955222,
+        "tokens_per_second": 609.2186973390462
+      },
+      {
+        "prompt_number": 2,
+        "mode": "sampled",
+        "temperature": 1.3,
+        "sample_count": 3,
+        "generated_tokens": 1500,
+        "seconds": 2.448333000065759,
+        "tokens_per_second": 612.6617580042061
+      },
+      {
+        "prompt_number": 3,
+        "mode": "greedy",
+        "temperature": null,
+        "sample_count": 1,
+        "generated_tokens": 500,
+        "seconds": 2.2032481000060216,
+        "tokens_per_second": 226.93767442651307
+      },
+      {
+        "prompt_number": 3,
+        "mode": "sampled",
+        "temperature": 0.7,
+        "sample_count": 3,
+        "generated_tokens": 1500,
+        "seconds": 2.4817335999105126,
+        "tokens_per_second": 604.4162032758422
+      },
+      {
+        "prompt_number": 3,
+        "mode": "sampled",
+        "temperature": 1.0,
+        "sample_count": 3,
+        "generated_tokens": 1500,
+        "seconds": 2.4769215000560507,
+        "tokens_per_second": 605.5904476448108
+      },
+      {
+        "prompt_number": 3,
+        "mode": "sampled",
+        "temperature": 1.3,
+        "sample_count": 3,
+        "generated_tokens": 1500,
+        "seconds": 2.491399399936199,
+        "tokens_per_second": 602.0712696801695
+      }
+    ]
+  },
+  "diversity": {
+    "all_sampled_outputs": {
+      "sample_count": 27,
+      "generated_tokens": 13500,
+      "distinct_1": 0.00437037037037037,
+      "distinct_2": 0.03970904772507979,
+      "distinct_3": 0.15818830879071843,
+      "repeated_4gram_rate": 0.22237126462478576,
+      "minimum_sample_repeated_4gram_rate": 0.11066398390342053,
+      "maximum_sample_repeated_4gram_rate": 0.3963782696177062
+    },
+    "by_temperature": {
+      "0.7": {
+        "sample_count": 9,
+        "generated_tokens": 4500,
+        "distinct_1": 0.010888888888888889,
+        "distinct_2": 0.08260966377198842,
+        "distinct_3": 0.24207942882641678,
+        "repeated_4gram_rate": 0.274536105522021,
+        "minimum_sample_repeated_4gram_rate": 0.19517102615694165,
+        "maximum_sample_repeated_4gram_rate": 0.3501006036217304
+      },
+      "1.0": {
+        "sample_count": 9,
+        "generated_tokens": 4500,
+        "distinct_1": 0.010222222222222223,
+        "distinct_2": 0.0892896904920953,
+        "distinct_3": 0.2829094154395359,
+        "repeated_4gram_rate": 0.2378716744913928,
+        "minimum_sample_repeated_4gram_rate": 0.17303822937625754,
+        "maximum_sample_repeated_4gram_rate": 0.3963782696177062
+      },
+      "1.3": {
+        "sample_count": 9,
+        "generated_tokens": 4500,
+        "distinct_1": 0.011777777777777778,
+        "distinct_2": 0.10376308171899354,
+        "distinct_3": 0.33980365908076754,
+        "repeated_4gram_rate": 0.15470601386094343,
+        "minimum_sample_repeated_4gram_rate": 0.11066398390342053,
+        "maximum_sample_repeated_4gram_rate": 0.193158953722334
+      }
+    }
+  }
+}
