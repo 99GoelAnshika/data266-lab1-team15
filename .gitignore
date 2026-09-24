@@ -19,6 +19,7 @@ dist/
 # Shared raw datasets and Hugging Face cache
 task1_llm/data/raw/
 task1_llm/data/hf_cache/
+task1_llm/data/processed/
 
 # Temporary download and training files
 *.tmp

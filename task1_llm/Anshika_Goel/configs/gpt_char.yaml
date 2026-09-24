@@ -7,6 +7,7 @@ experiment:
 data:
   dataset_id: roneneldan/TinyStories
   source_split: train
+  dataset_revision: f54c09fd23315a6f9c86f9dc80f725de7d8f9c64
   text_field: text
   train_sequences: 100000
   validation_sequences: 10000
@@ -15,6 +16,7 @@ data:
   separator: "\n\n"
   cache_dir: task1_llm/data/hf_cache
   raw_dir: task1_llm/data/raw
+  processed_dir: task1_llm/data/processed/Anshika_Goel
   vocabulary_file: task1_llm/Anshika_Goel/outputs/metrics/vocabulary.json
   split_manifest_file: task1_llm/Anshika_Goel/outputs/metrics/split_manifest.json
 
