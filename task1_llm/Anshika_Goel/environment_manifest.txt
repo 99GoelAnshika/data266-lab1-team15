@@ -1,0 +1,27 @@
+DATA 266 Lab 1 - Task 1 Environment Manifest
+Member: Anshika Goel
+Team: 15
+Experiment: anshika_char_gpt_v1
+
+Manifest created: 2026-09-24T12:59:56-07:00
+Git commit at environment setup: 348894ccc6fba7a411b86fda11364f2b13d724a3
+
+Operating system: Microsoft Windows 11 Home
+OS version: 10.0.26200
+CPU: 12th Gen Intel(R) Core(TM) i7-12650H
+Logical processors: 16
+System RAM (GB): 15.63
+GPU, driver, VRAM: NVIDIA GeForce RTX 3060 Laptop GPU, 566.07, 6144 MiB
+
+Python: 3.11.9
+PyTorch: 2.13.0+cu126
+PyTorch CUDA runtime: 12.6
+CUDA available to PyTorch: True
+
+Configuration: configs/gpt_char.yaml
+Configuration SHA256: C2FB3A43D3DA0446953D93872F3E434E2A6C5C1BC47CAB313682A49ABBB2C616
+Locked packages: requirements.txt
+Requirements SHA256: A641520C5685342C0A699F2BB873D09B129BE0550EA9F6CAFC5769213F444F1D
+
+Checkpoint mapping: Pending training
+Final results mapping: Pending training

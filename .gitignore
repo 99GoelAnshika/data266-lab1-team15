@@ -1,12 +1,29 @@
 # Python virtual environment
 .venv/
 
-# Python cache files
+# Python cache and compiled files
 __pycache__/
 *.py[cod]
 
+# Python build and test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
 # Jupyter temporary files
 .ipynb_checkpoints/
+
+# Shared raw datasets and Hugging Face cache
+task1_llm/data/raw/
+task1_llm/data/hf_cache/
+
+# Temporary download and training files
+*.tmp
+*.temp
+*.part
 
 # Operating-system files
 .DS_Store
