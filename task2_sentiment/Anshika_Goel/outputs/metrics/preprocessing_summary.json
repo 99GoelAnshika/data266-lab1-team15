@@ -1,0 +1,97 @@
+{
+  "created_utc": "2026-09-25T00:06:34.467640+00:00",
+  "lowercase": true,
+  "normalize_html": true,
+  "normalize_whitespace": true,
+  "expand_negation_contractions": true,
+  "remove_punctuation": true,
+  "remove_special_characters": true,
+  "remove_stopwords": true,
+  "stopword_source": "sklearn.feature_extraction.text.ENGLISH_STOP_WORDS",
+  "preserved_negations": [
+    "never",
+    "no",
+    "nor",
+    "not"
+  ],
+  "stemming": "PorterStemmer",
+  "tokenization": "regex lowercase alphanumeric tokens",
+  "empty_review_policy": "If preprocessing produces zero tokens, encode one UNK token followed by PAD.",
+  "vocabulary_source": "training subset only",
+  "vocabulary_size": 50000,
+  "minimum_token_frequency": 2,
+  "sequence_length": 256,
+  "training_processed_length": {
+    "count": 504000,
+    "minimum": 0,
+    "mean": 66.15219047619047,
+    "median": 48.0,
+    "p90": 140.0,
+    "p95": 185.0,
+    "p99": 302.0,
+    "maximum": 760
+  },
+  "training_reviews_longer_than_sequence": 8983,
+  "training_truncation_fraction": 0.0178234126984127,
+  "training_empty_after_preprocessing": 37,
+  "processed_splits": {
+    "train": {
+      "split": "train",
+      "examples": 504000,
+      "input_ids_file": "train_input_ids.npy",
+      "labels_file": "train_labels.npy",
+      "source_indices_file": "train_source_indices.npy",
+      "shape": [
+        504000,
+        256
+      ],
+      "dtype": "int32",
+      "negative_examples": 252000,
+      "positive_examples": 252000,
+      "empty_after_preprocessing": 37,
+      "truncated_reviews": 8983,
+      "processed_tokens_before_truncation": 33340704,
+      "oov_tokens_before_truncation": 152984,
+      "oov_fraction_before_truncation": 0.004588505389688232
+    },
+    "validation": {
+      "split": "validation",
+      "examples": 56000,
+      "input_ids_file": "validation_input_ids.npy",
+      "labels_file": "validation_labels.npy",
+      "source_indices_file": "validation_source_indices.npy",
+      "shape": [
+        56000,
+        256
+      ],
+      "dtype": "int32",
+      "negative_examples": 28000,
+      "positive_examples": 28000,
+      "empty_after_preprocessing": 3,
+      "truncated_reviews": 949,
+      "processed_tokens_before_truncation": 3675745,
+      "oov_tokens_before_truncation": 20816,
+      "oov_fraction_before_truncation": 0.005663069663428774
+    },
+    "test": {
+      "split": "test",
+      "examples": 38000,
+      "input_ids_file": "test_input_ids.npy",
+      "labels_file": "test_labels.npy",
+      "source_indices_file": "test_source_indices.npy",
+      "shape": [
+        38000,
+        256
+      ],
+      "dtype": "int32",
+      "negative_examples": 19000,
+      "positive_examples": 19000,
+      "empty_after_preprocessing": 1,
+      "truncated_reviews": 651,
+      "processed_tokens_before_truncation": 2500269,
+      "oov_tokens_before_truncation": 13588,
+      "oov_fraction_before_truncation": 0.005434615235400671
+    }
+  },
+  "vocabulary_file_sha256": "0d06c4dc3a6df1ae90b86ec6726a0cafb81fe9eab32da75fa74b395258729124"
+}

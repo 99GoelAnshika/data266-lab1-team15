@@ -1,0 +1,180 @@
+{
+  "created_utc": "2026-09-25T00:02:58.036136+00:00",
+  "dataset": "fancyzhx/yelp_polarity",
+  "dataset_configuration": "plain_text",
+  "dataset_revision": "bbf1c97a1f0cf005e5aded43839fd814654a1557",
+  "label_interpretation": {
+    "0": "negative sentiment",
+    "1": "positive sentiment"
+  },
+  "splits": {
+    "train": {
+      "split": "train",
+      "examples": 560000,
+      "class_counts": {
+        "negative_label_0": 280000,
+        "positive_label_1": 280000
+      },
+      "positive_fraction": 0.5,
+      "null_text_count": 0,
+      "non_string_text_count": 0,
+      "blank_text_count": 0,
+      "invalid_label_count": 0,
+      "html_review_count": 0,
+      "replacement_character_review_count": 0,
+      "unique_text_digest_count": 560000,
+      "duplicate_row_count": 0,
+      "character_length": {
+        "count": 560000,
+        "minimum": 1,
+        "mean": 726.4979232142857,
+        "median": 528.0,
+        "p90": 1537.0,
+        "p95": 2032.0,
+        "p99": 3333.0,
+        "maximum": 5273
+      },
+      "raw_word_length": {
+        "count": 560000,
+        "minimum": 0,
+        "mean": 136.2131767857143,
+        "median": 99.0,
+        "p90": 289.0,
+        "p95": 382.0,
+        "p99": 625.0,
+        "maximum": 1046
+      },
+      "length_by_label": {
+        "negative": {
+          "character_length": {
+            "count": 280000,
+            "minimum": 1,
+            "mean": 820.8623142857143,
+            "median": 604.0,
+            "p90": 1728.0,
+            "p95": 2272.0,
+            "p99": 3690.0,
+            "maximum": 5162
+          },
+          "raw_word_length": {
+            "count": 280000,
+            "minimum": 0,
+            "mean": 154.91950357142858,
+            "median": 114.0,
+            "p90": 327.0,
+            "p95": 430.0,
+            "p99": 699.0,
+            "maximum": 1046
+          }
+        },
+        "positive": {
+          "character_length": {
+            "count": 280000,
+            "minimum": 1,
+            "mean": 632.1335321428571,
+            "median": 461.0,
+            "p90": 1334.0,
+            "p95": 1752.0,
+            "p99": 2849.0,
+            "maximum": 5273
+          },
+          "raw_word_length": {
+            "count": 280000,
+            "minimum": 0,
+            "mean": 117.50685,
+            "median": 86.0,
+            "p90": 249.0,
+            "p95": 326.0,
+            "p99": 528.0,
+            "maximum": 1023
+          }
+        }
+      }
+    },
+    "test": {
+      "split": "test",
+      "examples": 38000,
+      "class_counts": {
+        "negative_label_0": 19000,
+        "positive_label_1": 19000
+      },
+      "positive_fraction": 0.5,
+      "null_text_count": 0,
+      "non_string_text_count": 0,
+      "blank_text_count": 0,
+      "invalid_label_count": 0,
+      "html_review_count": 0,
+      "replacement_character_review_count": 0,
+      "unique_text_digest_count": 38000,
+      "duplicate_row_count": 0,
+      "character_length": {
+        "count": 38000,
+        "minimum": 4,
+        "mean": 723.8446578947369,
+        "median": 528.0,
+        "p90": 1532.0999999999985,
+        "p95": 2021.0499999999956,
+        "p99": 3295.020000000004,
+        "maximum": 5107
+      },
+      "raw_word_length": {
+        "count": 38000,
+        "minimum": 1,
+        "mean": 135.75226315789473,
+        "median": 99.0,
+        "p90": 288.0,
+        "p95": 377.0,
+        "p99": 617.0,
+        "maximum": 1005
+      },
+      "length_by_label": {
+        "negative": {
+          "character_length": {
+            "count": 19000,
+            "minimum": 4,
+            "mean": 819.8437368421053,
+            "median": 605.0,
+            "p90": 1720.0,
+            "p95": 2281.0,
+            "p99": 3652.0,
+            "maximum": 5107
+          },
+          "raw_word_length": {
+            "count": 19000,
+            "minimum": 1,
+            "mean": 154.7701052631579,
+            "median": 114.0,
+            "p90": 324.0,
+            "p95": 432.0499999999993,
+            "p99": 690.0,
+            "maximum": 1005
+          }
+        },
+        "positive": {
+          "character_length": {
+            "count": 19000,
+            "minimum": 7,
+            "mean": 627.8455789473684,
+            "median": 459.0,
+            "p90": 1325.0,
+            "p95": 1727.0499999999993,
+            "p99": 2764.079999999987,
+            "maximum": 5104
+          },
+          "raw_word_length": {
+            "count": 19000,
+            "minimum": 1,
+            "mean": 116.73442105263157,
+            "median": 85.0,
+            "p90": 247.0,
+            "p95": 324.0,
+            "p99": 508.0,
+            "maximum": 1002
+          }
+        }
+      }
+    }
+  },
+  "cross_split_unique_text_digest_overlap": 0,
+  "duplicate_audit_method": "Exact stripped-text comparison through 64-bit BLAKE2 digests. Digests are used only for data-integrity auditing."
+}
