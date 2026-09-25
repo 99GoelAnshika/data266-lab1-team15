@@ -1,0 +1,122 @@
+{
+  "model": "textcnn",
+  "selection_metric": "validation_macro_f1",
+  "decision_threshold": 0.5,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.24942702612422762,
+      "train_examples_per_second": 6977.247370753382,
+      "train_seconds": 72.23479020001832,
+      "learning_rate_end": 0.0008436619266545493,
+      "validation": {
+        "accuracy": 0.9348214285714286,
+        "macro_precision": 0.93482813956695,
+        "macro_recall": 0.9348214285714286,
+        "macro_f1": 0.934821177084261,
+        "mcc": 0.8696495681124844,
+        "roc_auc": 0.9831641020408164,
+        "pr_auc": 0.9832014333689907,
+        "brier": 0.048337482085485155,
+        "ece_15_bins": 0.004124423774225394,
+        "threshold": 0.5,
+        "loss": 0.16539305009160724,
+        "examples_per_second": 28065.991565293854,
+        "evaluation_seconds": 1.9952974000480026
+      },
+      "checkpoint_improved": true
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.1415634933852014,
+      "train_examples_per_second": 8282.805984527857,
+      "train_seconds": 60.84894429997075,
+      "learning_rate_end": 0.0006352464449909121,
+      "validation": {
+        "accuracy": 0.9372142857142857,
+        "macro_precision": 0.9372151779901592,
+        "macro_recall": 0.9372142857142858,
+        "macro_f1": 0.9372142536807417,
+        "mcc": 0.8744294637039897,
+        "roc_auc": 0.9843128278061224,
+        "pr_auc": 0.984244148217567,
+        "brier": 0.04631831758682821,
+        "ece_15_bins": 0.0048526326960751116,
+        "threshold": 0.5,
+        "loss": 0.15968842322485788,
+        "examples_per_second": 23120.807830954156,
+        "evaluation_seconds": 2.4220607000170276
+      },
+      "checkpoint_improved": true
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.10409118774769797,
+      "train_examples_per_second": 7202.348294804135,
+      "train_seconds": 69.97717679990456,
+      "learning_rate_end": 0.0004268309633272748,
+      "validation": {
+        "accuracy": 0.9371785714285714,
+        "macro_precision": 0.9373754104468373,
+        "macro_recall": 0.9371785714285714,
+        "macro_f1": 0.9371715025013573,
+        "mcc": 0.8745539597237747,
+        "roc_auc": 0.9838580899234695,
+        "pr_auc": 0.983674025707453,
+        "brier": 0.04744767492614189,
+        "ece_15_bins": 0.012766679252897012,
+        "threshold": 0.5,
+        "loss": 0.16797444891929628,
+        "examples_per_second": 23330.02241377822,
+        "evaluation_seconds": 2.4003406000556424
+      },
+      "checkpoint_improved": false
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.0769328312296716,
+      "train_examples_per_second": 7097.177991361012,
+      "train_seconds": 71.0141411999939,
+      "learning_rate_end": 0.00021841548166363735,
+      "validation": {
+        "accuracy": 0.9375,
+        "macro_precision": 0.9375122235557969,
+        "macro_recall": 0.9375,
+        "macro_f1": 0.9374995634535835,
+        "mcc": 0.875012223470418,
+        "roc_auc": 0.9833086383928572,
+        "pr_auc": 0.9825923568516636,
+        "brier": 0.04793731160181107,
+        "ece_15_bins": 0.019948630006185644,
+        "threshold": 0.5,
+        "loss": 0.1769510798880032,
+        "examples_per_second": 23354.312317256936,
+        "evaluation_seconds": 2.397844100021757
+      },
+      "checkpoint_improved": true
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.05890095488324998,
+      "train_examples_per_second": 6993.149860053802,
+      "train_seconds": 72.07052760000806,
+      "learning_rate_end": 1.000000000000001e-05,
+      "validation": {
+        "accuracy": 0.9371071428571428,
+        "macro_precision": 0.9371081263504272,
+        "macro_recall": 0.9371071428571429,
+        "macro_f1": 0.9371071074798909,
+        "mcc": 0.8742152692070169,
+        "roc_auc": 0.9830227946428571,
+        "pr_auc": 0.982121368976106,
+        "brier": 0.04867731575432368,
+        "ece_15_bins": 0.02304623528357063,
+        "threshold": 0.5,
+        "loss": 0.18400635203293392,
+        "examples_per_second": 23152.056588560543,
+        "evaluation_seconds": 2.418791600037366
+      },
+      "checkpoint_improved": false
+    }
+  ]
+}

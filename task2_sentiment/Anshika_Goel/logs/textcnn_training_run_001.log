@@ -1,0 +1,43 @@
+TEXTCNN TRAINING RAW LOG
+training_start_utc=2026-09-25T20:26:48.436305+00:00
+model=textcnn
+architecture=learned_embedding_multikernel_textcnn
+training_seed=20260924
+device=cuda
+gpu=NVIDIA GeForce RTX 3060 Laptop GPU
+mixed_precision=True
+training_examples=504000
+validation_examples=56000
+batch_size=256
+maximum_epochs=5
+learning_rate=0.001
+minimum_learning_rate=1e-05
+weight_decay=0.0001
+warmup_ratio=0.05
+gradient_clip_norm=1.0
+early_stopping_patience=2
+model_selection_metric=validation_macro_f1
+decision_threshold=0.5
+official_test_used=False
+
+Epoch 1/5 | train_loss=0.249427 | val_loss=0.165393 | val_accuracy=0.934821 | val_macro_f1=0.934821 | train_examples_per_second=6977.25 | checkpoint_improved=True
+Epoch 2/5 | train_loss=0.141563 | val_loss=0.159688 | val_accuracy=0.937214 | val_macro_f1=0.937214 | train_examples_per_second=8282.81 | checkpoint_improved=True
+Epoch 3/5 | train_loss=0.104091 | val_loss=0.167974 | val_accuracy=0.937179 | val_macro_f1=0.937172 | train_examples_per_second=7202.35 | checkpoint_improved=False
+Epoch 4/5 | train_loss=0.076933 | val_loss=0.176951 | val_accuracy=0.937500 | val_macro_f1=0.937500 | train_examples_per_second=7097.18 | checkpoint_improved=True
+Epoch 5/5 | train_loss=0.058901 | val_loss=0.184006 | val_accuracy=0.937107 | val_macro_f1=0.937107 | train_examples_per_second=6993.15 | checkpoint_improved=False
+
+TRAINING COMPLETED
+epochs_executed=5
+best_epoch=4
+best_validation_macro_f1=0.9374995634535835
+total_training_wall_seconds=358.8450522000203
+training_end_utc=2026-09-25T20:32:47.282080+00:00
+
+BEST CHECKPOINT VALIDATION RECHECK COMPLETED
+best_checkpoint=task2_sentiment\Anshika_Goel\checkpoints\textcnn_best.pt
+best_checkpoint_sha256=6f65361355ab9219177dec3b6cb482d7f7e3103ecf0f9110c3eefda42b7e2c1a
+best_validation_macro_f1_recheck=0.9374995634535835
+peak_gpu_allocated_mb=308.88232421875
+peak_gpu_reserved_mb=402.0
+TEXTCNN TRAINING ARTIFACTS WRITTEN
+OFFICIAL TEST SET REMAINS UNTOUCHED
