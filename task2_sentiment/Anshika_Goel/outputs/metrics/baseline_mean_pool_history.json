@@ -1,0 +1,122 @@
+{
+  "model": "baseline_mean_pool",
+  "selection_metric": "validation_macro_f1",
+  "decision_threshold": 0.5,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.34553965436844597,
+      "train_examples_per_second": 32723.376733005305,
+      "train_seconds": 15.401833500014618,
+      "learning_rate_end": 0.0008436396665954263,
+      "validation": {
+        "accuracy": 0.9195178571428572,
+        "macro_precision": 0.9195178833627249,
+        "macro_recall": 0.919517857142857,
+        "macro_f1": 0.9195178558853236,
+        "mcc": 0.8390357405055816,
+        "roc_auc": 0.9724836530612244,
+        "pr_auc": 0.972047009340986,
+        "brier": 0.061358463309725296,
+        "ece_15_bins": 0.023261858779404863,
+        "threshold": 0.5,
+        "loss": 0.21736347159317562,
+        "examples_per_second": 90376.00452545995,
+        "evaluation_seconds": 0.6196334999985993
+      },
+      "checkpoint_improved": true
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.19792795030465202,
+      "train_examples_per_second": 40071.283314832086,
+      "train_seconds": 12.57758569996804,
+      "learning_rate_end": 0.0006352297499465698,
+      "validation": {
+        "accuracy": 0.9253571428571429,
+        "macro_precision": 0.9253593651428056,
+        "macro_recall": 0.9253571428571429,
+        "macro_f1": 0.9253570453643042,
+        "mcc": 0.8507165079970459,
+        "roc_auc": 0.9749666811224489,
+        "pr_auc": 0.974307871312132,
+        "brier": 0.05716241623598741,
+        "ece_15_bins": 0.012124568799776714,
+        "threshold": 0.5,
+        "loss": 0.20512090877124242,
+        "examples_per_second": 174481.35418888647,
+        "evaluation_seconds": 0.3209511999739334
+      },
+      "checkpoint_improved": true
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.18592065136205582,
+      "train_examples_per_second": 39030.53842247098,
+      "train_seconds": 12.912965600029565,
+      "learning_rate_end": 0.0004268198332977132,
+      "validation": {
+        "accuracy": 0.9256964285714285,
+        "macro_precision": 0.9257115722832135,
+        "macro_recall": 0.9256964285714286,
+        "macro_f1": 0.9256957677708123,
+        "mcc": 0.8514080007199639,
+        "roc_auc": 0.9753991734693879,
+        "pr_auc": 0.9746699147516051,
+        "brier": 0.056412927979541366,
+        "ece_15_bins": 0.00991588313345398,
+        "threshold": 0.5,
+        "loss": 0.2034748876605715,
+        "examples_per_second": 98121.49895169075,
+        "evaluation_seconds": 0.5707209999673069
+      },
+      "checkpoint_improved": true
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.18036856465491038,
+      "train_examples_per_second": 35417.46964997789,
+      "train_seconds": 14.230265600024723,
+      "learning_rate_end": 0.00021840991664885657,
+      "validation": {
+        "accuracy": 0.9260892857142857,
+        "macro_precision": 0.9260959820517791,
+        "macro_recall": 0.9260892857142857,
+        "macro_f1": 0.9260889953260559,
+        "mcc": 0.8521852677397556,
+        "roc_auc": 0.9755202978316326,
+        "pr_auc": 0.974735857818014,
+        "brier": 0.05616881129824455,
+        "ece_15_bins": 0.009316954136959198,
+        "threshold": 0.5,
+        "loss": 0.20330326511178698,
+        "examples_per_second": 107351.50794038134,
+        "evaluation_seconds": 0.5216508000157773
+      },
+      "checkpoint_improved": true
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.17722832359586443,
+      "train_examples_per_second": 35939.98433384795,
+      "train_seconds": 14.02337839989923,
+      "learning_rate_end": 1.000000000000001e-05,
+      "validation": {
+        "accuracy": 0.9259821428571429,
+        "macro_precision": 0.9260049781367425,
+        "macro_recall": 0.9259821428571429,
+        "macro_f1": 0.9259811509431979,
+        "mcc": 0.8519871206878656,
+        "roc_auc": 0.975534725127551,
+        "pr_auc": 0.9747612103263826,
+        "brier": 0.05615115694113851,
+        "ece_15_bins": 0.008856935679912574,
+        "threshold": 0.5,
+        "loss": 0.2035084923335484,
+        "examples_per_second": 104479.38574865997,
+        "evaluation_seconds": 0.5359909000108019
+      },
+      "checkpoint_improved": false
+    }
+  ]
+}
