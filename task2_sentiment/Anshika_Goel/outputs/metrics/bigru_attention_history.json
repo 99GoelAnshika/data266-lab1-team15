@@ -1,0 +1,99 @@
+{
+  "model": "bigru_attention",
+  "selection_metric": "validation_macro_f1",
+  "decision_threshold": 0.5,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.2091652477307925,
+      "train_examples_per_second": 1764.3933159995618,
+      "train_seconds": 285.6505947000114,
+      "learning_rate_end": 0.0004226205495562921,
+      "validation": {
+        "accuracy": 0.9391428571428572,
+        "macro_precision": 0.9394350388453947,
+        "macro_recall": 0.9391428571428572,
+        "macro_f1": 0.9391327394358877,
+        "mcc": 0.8785778474039715,
+        "roc_auc": 0.9855758966836736,
+        "pr_auc": 0.9854620371437234,
+        "brier": 0.04530331327907493,
+        "ece_15_bins": 0.005795207156666702,
+        "threshold": 0.5,
+        "loss": 0.15535012377159937,
+        "examples_per_second": 8817.283866594946,
+        "evaluation_seconds": 6.351162199978717
+      },
+      "checkpoint_improved": true
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.1270887238425868,
+      "train_examples_per_second": 1519.0903299615238,
+      "train_seconds": 331.77750530000776,
+      "learning_rate_end": 0.0003194654121672191,
+      "validation": {
+        "accuracy": 0.9435178571428572,
+        "macro_precision": 0.9436509665798645,
+        "macro_recall": 0.9435178571428571,
+        "macro_f1": 0.9435136202140673,
+        "mcc": 0.8871688137369547,
+        "roc_auc": 0.9868881983418367,
+        "pr_auc": 0.9868074128918994,
+        "brier": 0.04276073566878657,
+        "ece_15_bins": 0.008421914794615314,
+        "threshold": 0.5,
+        "loss": 0.14746265209572657,
+        "examples_per_second": 3066.425119978544,
+        "evaluation_seconds": 18.26230800000485
+      },
+      "checkpoint_improved": true
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.10053525878701891,
+      "train_examples_per_second": 975.8303472131479,
+      "train_seconds": 516.4832201000536,
+      "learning_rate_end": 0.00021631027477814609,
+      "validation": {
+        "accuracy": 0.9422142857142857,
+        "macro_precision": 0.9422713319466476,
+        "macro_recall": 0.9422142857142857,
+        "macro_f1": 0.9422124222860304,
+        "mcc": 0.884485615821292,
+        "roc_auc": 0.9867208303571429,
+        "pr_auc": 0.9864996643046039,
+        "brier": 0.04346367690424279,
+        "ece_15_bins": 0.016654747332845343,
+        "threshold": 0.5,
+        "loss": 0.15281383807318552,
+        "examples_per_second": 10076.572957460612,
+        "evaluation_seconds": 5.5574450000422075
+      },
+      "checkpoint_improved": false
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.07807923562351674,
+      "train_examples_per_second": 1345.1829251669055,
+      "train_seconds": 374.67023300006986,
+      "learning_rate_end": 0.00011315513738907307,
+      "validation": {
+        "accuracy": 0.9398392857142858,
+        "macro_precision": 0.9399637780669517,
+        "macro_recall": 0.9398392857142857,
+        "macro_f1": 0.9398350296373755,
+        "mcc": 0.879803054973388,
+        "roc_auc": 0.98568403125,
+        "pr_auc": 0.98540238646373,
+        "brier": 0.045629147763201594,
+        "ece_15_bins": 0.020791215137711608,
+        "threshold": 0.5,
+        "loss": 0.16300328413077764,
+        "examples_per_second": 8162.154253702305,
+        "evaluation_seconds": 6.860933799995109
+      },
+      "checkpoint_improved": false
+    }
+  ]
+}

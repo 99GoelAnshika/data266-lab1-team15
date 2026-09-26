@@ -1,0 +1,105 @@
+{
+  "model": "bigru_attention",
+  "architecture": "learned_embedding_bidirectional_gru_attention",
+  "evaluation_scope": "training_and_validation_only",
+  "official_test_used": false,
+  "official_test_policy": "Reserved for common final evaluation after all three models are trained.",
+  "model_selection": {
+    "primary_metric": "validation_macro_f1",
+    "tie_breaker": "lower_validation_loss",
+    "decision_threshold": 0.5,
+    "early_stopping_patience": 2
+  },
+  "data": {
+    "training_examples": 504000,
+    "validation_examples": 56000,
+    "sequence_length": 256,
+    "vocabulary_size": 50000,
+    "pad_index": 0,
+    "unknown_index": 1
+  },
+  "model_hyperparameters": {
+    "embedding_dimension": 128,
+    "hidden_dimension": 128,
+    "recurrent_layers": 1,
+    "bidirectional": true,
+    "attention_dimension": 128,
+    "dropout": 0.3,
+    "batch_size": 128,
+    "maximum_epochs": 5,
+    "learning_rate": 0.0005,
+    "minimum_learning_rate": 1e-05,
+    "weight_decay": 0.0001,
+    "warmup_ratio": 0.05,
+    "gradient_clip_norm": 1.0
+  },
+  "parameter_count": {
+    "total": 6631425,
+    "trainable": 6631425
+  },
+  "training": {
+    "training_seed": 20260924,
+    "mixed_precision": true,
+    "epochs_executed": 4,
+    "best_epoch": 2,
+    "training_start_utc": "2026-09-25T23:56:02.826727+00:00",
+    "training_end_utc": "2026-09-26T00:21:48.741580+00:00",
+    "total_training_wall_seconds": 1545.914335199981,
+    "mean_epoch_train_examples_per_second": 1401.1242295852849
+  },
+  "best_validation_metrics": {
+    "accuracy": 0.9435178571428572,
+    "macro_precision": 0.9436509665798645,
+    "macro_recall": 0.9435178571428571,
+    "macro_f1": 0.9435136202140673,
+    "mcc": 0.8871688137369547,
+    "roc_auc": 0.9868881983418367,
+    "pr_auc": 0.9868074128918994,
+    "brier": 0.04276073566878657,
+    "ece_15_bins": 0.008421914794615314,
+    "threshold": 0.5,
+    "loss": 0.14746265209572657,
+    "examples_per_second": 3066.425119978544,
+    "evaluation_seconds": 18.26230800000485
+  },
+  "best_checkpoint_validation_recheck": {
+    "accuracy": 0.9435178571428572,
+    "macro_precision": 0.9436509665798645,
+    "macro_recall": 0.9435178571428571,
+    "macro_f1": 0.9435136202140673,
+    "mcc": 0.8871688137369547,
+    "roc_auc": 0.9868881983418367,
+    "pr_auc": 0.9868074128918994,
+    "brier": 0.04276073566878657,
+    "ece_15_bins": 0.008421914794615314,
+    "threshold": 0.5,
+    "loss": 0.14746265209572657,
+    "examples_per_second": 8227.315678166748,
+    "evaluation_seconds": 6.806594300083816
+  },
+  "memory": {
+    "peak_gpu_allocated_mb": 223.447265625,
+    "peak_gpu_reserved_mb": 486.0,
+    "process_rss_mb_after_training": 2314.57421875
+  },
+  "hardware": {
+    "operating_system": "Windows-10-10.0.26200-SP0",
+    "cpu": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "logical_processors": 16,
+    "physical_processors": 10,
+    "system_ram_gb": 15.629627227783203,
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_total_memory_mb": 6143.5
+  },
+  "software": {
+    "python": "3.11.9",
+    "torch": "2.13.0+cu126",
+    "torch_cuda_runtime": "12.6"
+  },
+  "integrity": {
+    "config_sha256": "07f59eeb49af2fbdcce4f301e76625ac2c4ae8150eb1b89ef55862b6b5c9758b",
+    "vocabulary_sha256": "0d06c4dc3a6df1ae90b86ec6726a0cafb81fe9eab32da75fa74b395258729124",
+    "split_manifest_sha256": "c782f45fb20eec7e3d12b1197baa346daeb5cb4b6adabf81d4cf5bf09584c28c",
+    "checkpoint_sha256": "da6841121a69416601fbc9fde5e2e9c32fb4cc5da4cd4a9efb758e35ab66657a"
+  }
+}

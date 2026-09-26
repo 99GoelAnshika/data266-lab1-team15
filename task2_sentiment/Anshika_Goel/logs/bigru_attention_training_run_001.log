@@ -1,0 +1,43 @@
+BIGRU-ATTENTION TRAINING RAW LOG
+training_start_utc=2026-09-25T23:56:02.826727+00:00
+model=bigru_attention
+architecture=learned_embedding_bidirectional_gru_attention
+training_seed=20260924
+device=cuda
+gpu=NVIDIA GeForce RTX 3060 Laptop GPU
+mixed_precision=True
+training_examples=504000
+validation_examples=56000
+batch_size=128
+maximum_epochs=5
+learning_rate=0.0005
+minimum_learning_rate=1e-05
+weight_decay=0.0001
+warmup_ratio=0.05
+gradient_clip_norm=1.0
+early_stopping_patience=2
+model_selection_metric=validation_macro_f1
+decision_threshold=0.5
+official_test_used=False
+
+Epoch 1/5 | train_loss=0.209165 | val_loss=0.155350 | val_accuracy=0.939143 | val_macro_f1=0.939133 | train_examples_per_second=1764.39 | checkpoint_improved=True
+Epoch 2/5 | train_loss=0.127089 | val_loss=0.147463 | val_accuracy=0.943518 | val_macro_f1=0.943514 | train_examples_per_second=1519.09 | checkpoint_improved=True
+Epoch 3/5 | train_loss=0.100535 | val_loss=0.152814 | val_accuracy=0.942214 | val_macro_f1=0.942212 | train_examples_per_second=975.83 | checkpoint_improved=False
+Epoch 4/5 | train_loss=0.078079 | val_loss=0.163003 | val_accuracy=0.939839 | val_macro_f1=0.939835 | train_examples_per_second=1345.18 | checkpoint_improved=False
+Early stopping triggered after 2 consecutive non-improving epochs.
+
+TRAINING COMPLETED
+epochs_executed=4
+best_epoch=2
+best_validation_macro_f1=0.9435136202140673
+total_training_wall_seconds=1545.914335199981
+training_end_utc=2026-09-26T00:21:48.741580+00:00
+
+BEST CHECKPOINT VALIDATION RECHECK COMPLETED
+best_checkpoint=task2_sentiment\Anshika_Goel\checkpoints\bigru_attention_best.pt
+best_checkpoint_sha256=da6841121a69416601fbc9fde5e2e9c32fb4cc5da4cd4a9efb758e35ab66657a
+best_validation_macro_f1_recheck=0.9435136202140673
+peak_gpu_allocated_mb=223.447265625
+peak_gpu_reserved_mb=486.0
+BIGRU-ATTENTION TRAINING ARTIFACTS WRITTEN
+OFFICIAL TEST SET REMAINS UNTOUCHED
