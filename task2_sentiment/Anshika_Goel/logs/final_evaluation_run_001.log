@@ -1,0 +1,295 @@
+[NbConvertApp] Converting notebook C:\Users\aradh\Desktop\DATA 266 Generative AI and LLM\Lab1\task2_sentiment\Anshika_Goel\notebooks\05_evaluate_compare_models.ipynb to notebook
+C:\Users\aradh\Desktop\DATA 266 Generative AI and LLM\Lab1\.venv\Lib\site-packages\nbformat\validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+  _validate(nbdict, ref, version, version_minor, relax_add_props)
+C:\Users\aradh\Desktop\DATA 266 Generative AI and LLM\Lab1\.venv\Lib\site-packages\zmq\_future.py:718: RuntimeWarning: Proactor event loop does not implement add_reader family of methods required for zmq. Registering an additional selector thread for add_reader support via tornado. Use `asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())` to avoid this warning.
+  self._get_loop()
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\aradh\Desktop\DATA 266 Generative AI and LLM\Lab1\.venv\Scripts\jupyter-nbconvert.EXE\__main__.py", line 5, in <module>
+  File "C:\Users\aradh\Desktop\DATA 266 Generative AI and LLM\Lab1\.venv\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "C:\Users\aradh\Desktop\DATA 266 Generative AI and LLM\Lab1\.venv\Lib\site-packages\traitlets\config\application.py", line 1080, in launch_instance
+    app.start()
+  File "C:\Users\aradh\Desktop\DATA 266 Generative AI and LLM\Lab1\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "C:\Users\aradh\Desktop\DATA 266 Generative AI and LLM\Lab1\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "C:\Users\aradh\Desktop\DATA 266 Generative AI and LLM\Lab1\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aradh\Desktop\DATA 266 Generative AI and LLM\Lab1\.venv\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aradh\Desktop\DATA 266 Generative AI and LLM\Lab1\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aradh\Desktop\DATA 266 Generative AI and LLM\Lab1\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aradh\Desktop\DATA 266 Generative AI and LLM\Lab1\.venv\Lib\site-packages\nbconvert\exporters\notebook.py", line 36, in from_notebook_node
+    nb_copy, resources = super().from_notebook_node(nb, resources, **kw)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aradh\Desktop\DATA 266 Generative AI and LLM\Lab1\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 154, in from_notebook_node
+    nb_copy, resources = self._preprocess(nb_copy, resources)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aradh\Desktop\DATA 266 Generative AI and LLM\Lab1\.venv\Lib\site-packages\nbconvert\exporters\exporter.py", line 353, in _preprocess
+    nbc, resc = preprocessor(nbc, resc)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aradh\Desktop\DATA 266 Generative AI and LLM\Lab1\.venv\Lib\site-packages\nbconvert\preprocessors\base.py", line 48, in __call__
+    return self.preprocess(nb, resources)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aradh\Desktop\DATA 266 Generative AI and LLM\Lab1\.venv\Lib\site-packages\nbconvert\preprocessors\execute.py", line 103, in preprocess
+    self.preprocess_cell(cell, resources, index)
+  File "C:\Users\aradh\Desktop\DATA 266 Generative AI and LLM\Lab1\.venv\Lib\site-packages\nbconvert\preprocessors\execute.py", line 124, in preprocess_cell
+    cell = self.execute_cell(cell, index, store_history=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aradh\Desktop\DATA 266 Generative AI and LLM\Lab1\.venv\Lib\site-packages\jupyter_core\utils\__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aradh\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\aradh\Desktop\DATA 266 Generative AI and LLM\Lab1\.venv\Lib\site-packages\nbclient\client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "C:\Users\aradh\Desktop\DATA 266 Generative AI and LLM\Lab1\.venv\Lib\site-packages\nbclient\client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+decision_threshold = float(
+    evaluation_protocol[
+        "classification"
+    ][
+        "decision_threshold"
+    ]
+)
+
+
+test_probabilities = {}
+
+test_predictions = {}
+
+final_test_metrics = {}
+
+inference_contract = {}
+
+
+for model_name in MODEL_ORDER:
+    print(
+        "\nEvaluating:",
+        model_name,
+    )
+
+
+    (
+        checkpoint,
+        model,
+    ) = (
+        construct_model_from_checkpoint(
+            model_name
+        )
+    )
+
+
+    batch_size = int(
+        training_configuration[
+            "models"
+        ][
+            model_name
+        ][
+            "batch_size"
+        ]
+    )
+
+
+    inference_result = (
+        run_official_test_inference(
+            model=model,
+            input_ids=test_inputs,
+            labels=test_labels,
+            batch_size=batch_size,
+        )
+    )
+
+
+    probabilities = (
+        inference_result[
+            "probabilities"
+        ]
+    )
+
+
+    predictions = (
+        probabilities
+        >= decision_threshold
+    ).astype(
+        np.int64
+    )
+
+
+    raw_metrics = (
+        classification_metrics(
+            np.asarray(
+                test_labels
+            ),
+            probabilities,
+            threshold=(
+                decision_threshold
+            ),
+        )
+    )
+
+
+    metrics = canonical_metrics(
+        raw_metrics
+    )
+
+
+    metrics[
+        "loss"
+    ] = float(
+        inference_result[
+            "loss"
+        ]
+    )
+
+    metrics[
+        "evaluation_seconds"
+    ] = float(
+        inference_result[
+            "evaluation_seconds"
+        ]
+    )
+
+    metrics[
+        "examples_per_second"
+    ] = float(
+        inference_result[
+            "examples_per_second"
+        ]
+    )
+
+    metrics[
+        "parameter_count"
+    ] = int(
+        EXPECTED_PARAMETER_COUNTS[
+            model_name
+        ]
+    )
+
+
+    test_probabilities[
+        model_name
+    ] = probabilities
+
+    test_predictions[
+        model_name
+    ] = predictions
+
+    final_test_metrics[
+        model_name
+    ] = metrics
+
+
+    inference_contract[
+        model_name
+    ] = {
+        "batch_size": (
+            batch_size
+        ),
+        "amp_enabled": bool(
+            amp_enabled
+        ),
+        "probability_dtype": str(
+            probabilities.dtype
+        ),
+        "checkpoint_sha256": (
+            EXPECTED_CHECKPOINT_SHA256[
+                model_name
+            ]
+        ),
+    }
+
+
+    print(
+        json.dumps(
+            metrics,
+            indent=2,
+        )
+    )
+
+
+    del model
+    del checkpoint
+
+
+    if device.type == "cuda":
+        torch.cuda.empty_cache()
+
+
+comparison_table = pd.DataFrame(
+    final_test_metrics
+).T
+
+
+display(
+    comparison_table[
+        [
+            "accuracy",
+            "precision_macro",
+            "recall_macro",
+            "f1_macro",
+            "mcc",
+            "roc_auc",
+            "pr_auc",
+            "brier_score",
+            "ece_15_bins",
+            "loss",
+            "examples_per_second",
+            "parameter_count",
+        ]
+    ]
+)
+
+------------------
+
+----- stdout -----
+
+Evaluating: baseline_mean_pool
+------------------
+
+[31m---------------------------------------------------------------------------[39m
+[31mKeyError[39m                                  Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[9][39m[32m, line 85[39m
+[32m     81[39m         )
+[32m     82[39m     )
+[32m     83[39m 
+[32m     84[39m 
+[32m---> [39m[32m85[39m     metrics = canonical_metrics(
+[32m     86[39m         raw_metrics
+[32m     87[39m     )
+[32m     88[39m 
+
+[36mCell[39m[36m [39m[32mIn[5][39m[32m, line 37[39m, in [36mcanonical_metrics[39m[34m(raw_metrics)[39m
+[32m     33[39m                 [33m"macro_precision"[39m,
+[32m     34[39m             )
+[32m     35[39m         ),
+[32m     36[39m         "precision_micro": float(
+[32m---> [39m[32m37[39m             metric_value(
+[32m     38[39m                 raw_metrics,
+[32m     39[39m                 [33m"precision_micro"[39m,
+[32m     40[39m                 [33m"micro_precision"[39m,
+
+[36mCell[39m[36m [39m[32mIn[5][39m[32m, line 11[39m, in [36mmetric_value[39m[34m(metrics, *candidate_keys)[39m
+[32m      7[39m             return metrics[
+[32m      8[39m                 key
+[32m      9[39m             ]
+[32m     10[39m 
+[32m---> [39m[32m11[39m     raise KeyError(
+[32m     12[39m         [33m"None of the metric aliases exist: "[39m
+[32m     13[39m         + repr(
+[32m     14[39m             candidate_keys
+
+[31mKeyError[39m: "None of the metric aliases exist: ('precision_micro', 'micro_precision')"
+
