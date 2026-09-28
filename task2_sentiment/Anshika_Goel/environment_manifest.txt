@@ -32,3 +32,16 @@ Implementation format: executed Jupyter notebooks
 Pretrained embeddings used: No
 Pretrained language models used: No
 Training status: Not started
+
+Hardware identity clarification:
+Exact CPU model (Windows Win32_Processor): 12th Gen Intel(R) Core(TM) i7-12650H
+CPU physical cores: 10
+CPU logical processors: 16
+Exact discrete GPU: NVIDIA GeForce RTX 3060 Laptop GPU
+NVIDIA driver: 566.07
+NVIDIA GPU memory reported by nvidia-smi (MiB): 6144
+NVIDIA-SMI reported CUDA compatibility: 12.7
+Installed NVCC CUDA toolkit: 12.6
+PyTorch CUDA runtime used by torch 2.13.0+cu126: 12.6
+CUDA version note: NVIDIA-SMI CUDA 12.7 is the maximum CUDA compatibility reported by the installed NVIDIA driver; NVCC and the PyTorch runtime are CUDA 12.6. These values describe different software layers and are not contradictory.
+Provenance note: This clarification records exact hardware and toolchain identity for assignment reporting after experiment completion. It does not modify or rerun preprocessing, training, inference, model selection, evaluation, statistical testing, or manual error analysis.
