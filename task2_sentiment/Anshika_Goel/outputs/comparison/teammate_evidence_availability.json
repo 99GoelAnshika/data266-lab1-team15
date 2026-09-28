@@ -1,0 +1,52 @@
+{
+  "artifact_type": "task2_teammate_comparison_evidence_availability",
+  "current_task2_members": [
+    "Anshika_Goel"
+  ],
+  "historical_task2_members": [
+    "Anshika_Goel"
+  ],
+  "members_by_local_ref": {
+    "main": [
+      "Anshika_Goel"
+    ],
+    "origin": [
+      "Anshika_Goel"
+    ],
+    "origin/main": [
+      "Anshika_Goel"
+    ]
+  },
+  "no_dataset_access": true,
+  "no_inference": true,
+  "no_model_execution": true,
+  "no_training": true,
+  "no_tuning": true,
+  "origin_main": "c00a754fbc031bcf482555d1a7d236403e1c9fd3",
+  "other_current_task2_members": [],
+  "other_historical_task2_members": [],
+  "other_task2_members_in_local_refs": [],
+  "remote_heads": [
+    {
+      "ref": "refs/heads/main",
+      "sha": "c00a754fbc031bcf482555d1a7d236403e1c9fd3"
+    }
+  ],
+  "remote_pull_head_refs": [],
+  "remote_pull_merge_refs": [],
+  "remote_tags": [],
+  "reporting_rule": "Report teammate comparison as unavailable from the current repository evidence. Do not infer, fabricate, rank, or estimate teammate model results.",
+  "repository_head": "c00a754fbc031bcf482555d1a7d236403e1c9fd3",
+  "scientific_interpretation": "No committed or advertised Git evidence for another Task 2 team member was available at this repository checkpoint. Therefore no teammate metric comparison can be made from repository evidence without introducing unsupported or externally supplied results.",
+  "scope_checked": [
+    "current HEAD task2_sentiment tree",
+    "all locally available branch and remote-tracking refs",
+    "all locally available Git history via --all",
+    "advertised remote branch heads",
+    "advertised remote tags",
+    "advertised GitHub pull-request head refs",
+    "advertised GitHub pull-request merge refs"
+  ],
+  "self_member_directory": "Anshika_Goel",
+  "teammate_result_evidence_available": false
+}
