@@ -1,0 +1,171 @@
+{
+  "definitions": {
+    "derivation_split": "training_only",
+    "derivation_examples": 504000,
+    "encoded_sequence_length": 256,
+    "pad_index": 0,
+    "unknown_index": 1,
+    "length_definition": "Effective encoded length equals the number of non-PAD positions in the fixed-length encoded sequence.\n",
+    "short_reviews": {
+      "rule": "effective_length <= 26",
+      "threshold": 26,
+      "threshold_source": "training_effective_length_q25",
+      "quantile": 0.25,
+      "quantile_method": "higher",
+      "training_count": 132112,
+      "training_fraction": 0.26212698412698415
+    },
+    "medium_reviews": {
+      "rule": "26 < effective_length <= 86",
+      "lower_exclusive": 26,
+      "upper_inclusive": 86,
+      "threshold_source": "training_effective_length_q25_to_q75",
+      "quantile_method": "higher",
+      "training_count": 246783,
+      "training_fraction": 0.4896488095238095
+    },
+    "long_reviews": {
+      "rule": "effective_length > 86",
+      "threshold": 86,
+      "threshold_source": "training_effective_length_q75",
+      "quantile": 0.75,
+      "quantile_method": "higher",
+      "training_count": 125105,
+      "training_fraction": 0.24822420634920636
+    },
+    "contains_negation": {
+      "rule": "At least one encoded position equals the vocabulary index of no, nor, not, or never.\n",
+      "token_ids": {
+        "no": 15,
+        "nor": 966,
+        "not": 2,
+        "never": 33
+      },
+      "training_count": 372945,
+      "training_fraction": 0.7399702380952381
+    },
+    "high_oov_rate": {
+      "rule": "oov_rate >= 0.02666666666666667",
+      "threshold": 0.02666666666666667,
+      "threshold_source": "training_per_review_oov_rate_q95",
+      "quantile": 0.95,
+      "quantile_method": "higher",
+      "oov_rate_definition": "Number of UNK positions divided by effective encoded length.\n",
+      "training_count": 25315,
+      "training_fraction": 0.0502281746031746
+    }
+  },
+  "models": {
+    "baseline_mean_pool": {
+      "short_reviews": {
+        "count": 9996,
+        "fraction": 0.26305263157894737,
+        "accuracy": 0.924969987995198,
+        "error_rate": 0.07503001200480197,
+        "macro_f1": 0.9223563084230718
+      },
+      "medium_reviews": {
+        "count": 18591,
+        "fraction": 0.48923684210526314,
+        "accuracy": 0.9315797966758109,
+        "error_rate": 0.06842020332418908,
+        "macro_f1": 0.9315771785461096
+      },
+      "long_reviews": {
+        "count": 9413,
+        "fraction": 0.24771052631578946,
+        "accuracy": 0.930096674811431,
+        "error_rate": 0.06990332518856901,
+        "macro_f1": 0.9276791603368824
+      },
+      "contains_negation": {
+        "count": 27951,
+        "fraction": 0.7355526315789473,
+        "accuracy": 0.924510750957032,
+        "error_rate": 0.07548924904296805,
+        "macro_f1": 0.9218717941484231
+      },
+      "high_oov_rate": {
+        "count": 2336,
+        "fraction": 0.06147368421052631,
+        "accuracy": 0.9178082191780822,
+        "error_rate": 0.0821917808219178,
+        "macro_f1": 0.9138287595592762
+      }
+    },
+    "textcnn": {
+      "short_reviews": {
+        "count": 9996,
+        "fraction": 0.26305263157894737,
+        "accuracy": 0.9364745898359343,
+        "error_rate": 0.06352541016406565,
+        "macro_f1": 0.9342290786561659
+      },
+      "medium_reviews": {
+        "count": 18591,
+        "fraction": 0.48923684210526314,
+        "accuracy": 0.945296111021462,
+        "error_rate": 0.05470388897853795,
+        "macro_f1": 0.945295541225031
+      },
+      "long_reviews": {
+        "count": 9413,
+        "fraction": 0.24771052631578946,
+        "accuracy": 0.9402953362371189,
+        "error_rate": 0.05970466376288108,
+        "macro_f1": 0.9383622011500521
+      },
+      "contains_negation": {
+        "count": 27951,
+        "fraction": 0.7355526315789473,
+        "accuracy": 0.9403241386712461,
+        "error_rate": 0.05967586132875391,
+        "macro_f1": 0.9383603606433628
+      },
+      "high_oov_rate": {
+        "count": 2336,
+        "fraction": 0.06147368421052631,
+        "accuracy": 0.928082191780822,
+        "error_rate": 0.07191780821917804,
+        "macro_f1": 0.9244231324744352
+      }
+    },
+    "bigru_attention": {
+      "short_reviews": {
+        "count": 9996,
+        "fraction": 0.26305263157894737,
+        "accuracy": 0.9406762705082032,
+        "error_rate": 0.05932372949179676,
+        "macro_f1": 0.9384937027887106
+      },
+      "medium_reviews": {
+        "count": 18591,
+        "fraction": 0.48923684210526314,
+        "accuracy": 0.9473939002743262,
+        "error_rate": 0.05260609972567376,
+        "macro_f1": 0.9473936444154856
+      },
+      "long_reviews": {
+        "count": 9413,
+        "fraction": 0.24771052631578946,
+        "accuracy": 0.944332306384787,
+        "error_rate": 0.055667693615212954,
+        "macro_f1": 0.9426824688080158
+      },
+      "contains_negation": {
+        "count": 27951,
+        "fraction": 0.7355526315789473,
+        "accuracy": 0.9436871668276627,
+        "error_rate": 0.05631283317233726,
+        "macro_f1": 0.9419693686027624
+      },
+      "high_oov_rate": {
+        "count": 2336,
+        "fraction": 0.06147368421052631,
+        "accuracy": 0.9289383561643836,
+        "error_rate": 0.07106164383561642,
+        "macro_f1": 0.9252634443542462
+      }
+    }
+  }
+}

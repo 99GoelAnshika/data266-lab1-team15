@@ -1,0 +1,61 @@
+{
+  "method": "nonparametric_percentile",
+  "sampling": "with_replacement",
+  "replicate_sample_size": 38000,
+  "replicates": 2000,
+  "confidence_level": 0.95,
+  "seed": 2662502,
+  "intervals": {
+    "baseline_mean_pool": {
+      "accuracy": {
+        "lower": 0.9269730263157895,
+        "upper": 0.9319736842105263,
+        "point_estimate": 0.9294736842105263
+      },
+      "macro_f1": {
+        "lower": 0.9269699196501038,
+        "upper": 0.9319701264648411,
+        "point_estimate": 0.9294736840151625
+      },
+      "mcc": {
+        "lower": 0.8539446225551273,
+        "upper": 0.8639412680345181,
+        "point_estimate": 0.8589473731797639
+      }
+    },
+    "textcnn": {
+      "accuracy": {
+        "lower": 0.9393151315789474,
+        "upper": 0.9440526315789474,
+        "point_estimate": 0.9417368421052632
+      },
+      "macro_f1": {
+        "lower": 0.9393102254955834,
+        "upper": 0.9440521896996616,
+        "point_estimate": 0.9417362610818281
+      },
+      "mcc": {
+        "lower": 0.8786393025643553,
+        "upper": 0.8881258994357549,
+        "point_estimate": 0.883491305265469
+      }
+    },
+    "bigru_attention": {
+      "accuracy": {
+        "lower": 0.9425,
+        "upper": 0.947078947368421,
+        "point_estimate": 0.9448684210526316
+      },
+      "macro_f1": {
+        "lower": 0.9424986682861791,
+        "upper": 0.9470731167508879,
+        "point_estimate": 0.9448643382263312
+      },
+      "mcc": {
+        "lower": 0.8851473731035683,
+        "upper": 0.8942835168323436,
+        "point_estimate": 0.8898686423978138
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "test": "mcnemar",
+  "continuity_correction": true,
+  "multiple_testing": {
+    "method": "holm",
+    "family_size": 2,
+    "alpha": 0.05
+  },
+  "comparisons": {
+    "baseline_mean_pool_vs_textcnn": {
+      "a_correct_b_wrong": 805,
+      "a_wrong_b_correct": 1271,
+      "discordant_pairs": 2076,
+      "chi_square_statistic": 104.15462427745665,
+      "raw_p_value": 1.871274172580442e-24,
+      "continuity_correction": true,
+      "model_a": "baseline_mean_pool",
+      "model_b": "textcnn",
+      "holm_adjusted_p_value": 1.871274172580442e-24,
+      "reject_after_holm_at_0_05": true
+    },
+    "baseline_mean_pool_vs_bigru_attention": {
+      "a_correct_b_wrong": 648,
+      "a_wrong_b_correct": 1233,
+      "discordant_pairs": 1881,
+      "chi_square_statistic": 181.3163211057948,
+      "raw_p_value": 2.5004586339640436e-41,
+      "continuity_correction": true,
+      "model_a": "baseline_mean_pool",
+      "model_b": "bigru_attention",
+      "holm_adjusted_p_value": 5.000917267928087e-41,
+      "reject_after_holm_at_0_05": true
+    }
+  }
+}
