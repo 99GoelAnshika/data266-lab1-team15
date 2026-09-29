@@ -31,7 +31,8 @@ Requirements SHA256: 9DCC7A4F16B42CF873D64370BF987668ACB9EC9FB3B3D8B4A872EA8E26B
 Implementation format: executed Jupyter notebooks
 Pretrained embeddings used: No
 Pretrained language models used: No
-Training status: Not started
+Training status at initial environment capture: Not started
+Current experiment status: Completed
 
 Hardware identity clarification:
 Exact CPU model (Windows Win32_Processor): 12th Gen Intel(R) Core(TM) i7-12650H
