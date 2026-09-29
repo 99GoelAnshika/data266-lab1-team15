@@ -1,0 +1,100 @@
+{
+  "artifact_purpose": "Task 3 CycleGAN reproducibility and hardware disclosure",
+  "captured_at_local": "2026-09-29T16:35:07-07:00",
+  "cuda": {
+    "bf16_supported": true,
+    "cuda_available": true,
+    "cudnn_version": 91002,
+    "torch_cuda_runtime": "12.6"
+  },
+  "data": {
+    "download_performed_during_environment_setup": false,
+    "monet_path": "task3_gan/data/monet_jpg/",
+    "photo_path": "task3_gan/data/photo_jpg/",
+    "training_pairing": "unpaired"
+  },
+  "evaluation_package_boundary": {
+    "fid_kid_api_available": true,
+    "lpips_model_instantiated_during_setup": false,
+    "lpips_package_available": true,
+    "pretrained_metric_weights_requested_during_setup": false,
+    "torch_fidelity_available": true
+  },
+  "execution_status": {
+    "environment_setup_complete": true,
+    "kaggle_authenticated": false,
+    "kaggle_competition_accessed": false,
+    "kaggle_submission_created": false,
+    "model_implemented": false,
+    "official_evaluation_started": false,
+    "training_started": false
+  },
+  "git": {
+    "branch": "main",
+    "commit": "d3142bdb51013854253b2ed085d72a56914462f9",
+    "repository": "99GoelAnshika/data266-lab1-team15"
+  },
+  "hardware": {
+    "cpu": "12th Gen Intel(R) Core(TM) i7-12650H",
+    "gpu": {
+      "compute_capability": "8.6",
+      "device_count": 1,
+      "driver_version": "566.07",
+      "name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+      "vram_mib_nvidia_smi": 6144.0,
+      "vram_mib_pytorch": 6143.5
+    },
+    "ram_gib": 15.63
+  },
+  "kaggle": {
+    "authentication_attempted": false,
+    "cli_version": "2.2.4",
+    "competition_access_attempted": false
+  },
+  "machine_role": {
+    "current_machine": "local development and smoke-test environment",
+    "serious_training_target": "lab RTX 4090",
+    "serious_training_target_status": "planned; not yet recorded as executed"
+  },
+  "member": "Anshika_Goel",
+  "operating_system": {
+    "architecture": "AMD64",
+    "release": "10",
+    "system": "Windows",
+    "version": "10.0.26200"
+  },
+  "packages": {
+    "kaggle": "2.2.4",
+    "lightning-utilities": "0.15.3",
+    "lpips": "0.1.4",
+    "matplotlib": "3.11.2",
+    "numpy": "2.4.6",
+    "pillow": "12.3.0",
+    "pyyaml": "6.0.3",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.17.1",
+    "tensorboard": "2.21.0",
+    "torch": "2.13.0+cu126",
+    "torch-fidelity": "0.4.0",
+    "torchmetrics": "1.9.0",
+    "torchvision": "0.28.0+cu126",
+    "tqdm": "4.70.1"
+  },
+  "python": {
+    "absolute_interpreter_path_recorded": false,
+    "implementation": "CPython",
+    "version": "3.11.9"
+  },
+  "reproducibility_files": {
+    "curated_requirements": "task3_gan/Anshika_Goel/configs/requirements_task3.txt",
+    "full_pip_freeze": "task3_gan/Anshika_Goel/configs/pip_freeze_task3.txt"
+  },
+  "task": 3,
+  "team": 15,
+  "tensorboard": {
+    "reduced_feature_notice_expected": true,
+    "summarywriter_smoke_test_passed": true,
+    "tensorflow_installed": false,
+    "version": "2.21.0"
+  }
+}
