@@ -356,7 +356,7 @@ Raw logs are retained rather than rewritten. In particular, `final_evaluation_ru
 
 ## Task 3 - CycleGAN image style transfer
 
-**Status: pending.** `task3_gan/` is not yet present on the current `main` branch.
+**Status: scaffold and reproducibility environment complete; implementation and training pending.** The Task 3 workspace is present under [`task3_gan/Anshika_Goel/`](task3_gan/Anshika_Goel/), including the assignment/integrity contract and verified environment records. No Task 3 model training or official evaluation has been performed yet.
 
 The Lab 1 brief requires each member to train their own CycleGAN using two unpaired image domains, two generators, two discriminators, adversarial loss, cycle-consistency loss, image translation in both directions, and training-stability analysis.
 
