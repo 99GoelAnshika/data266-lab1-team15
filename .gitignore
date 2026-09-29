@@ -41,3 +41,14 @@ task2_sentiment/data/processed/
 
 # Temporary checkpoint writes
 task2_sentiment/*/checkpoints/*.tmp
+# Task 3 local datasets and bulk generated artifacts
+task3_gan/data/monet_jpg/
+task3_gan/data/photo_jpg/
+task3_gan/data/*.zip
+task3_gan/data/.cache/
+task3_gan/*/outputs/generated_images/
+
+# Task 3 temporary checkpoint writes
+task3_gan/*/checkpoints/*.tmp
+task3_gan/*/checkpoints/*.temp
+task3_gan/*/checkpoints/*.part
