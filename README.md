@@ -77,6 +77,14 @@ task3_gan/                                # PENDING
 report/                                   # PENDING
 ```
 
+## Clone the repository
+
+From PowerShell, clone the shared Team 15 repository and enter the repository root:
+
+```powershell
+git clone https://github.com/99GoelAnshika/data266-lab1-team15.git
+Set-Location data266-lab1-team15
+```
 ## Environment setup
 
 The verified Anshika runs used Python 3.11 on Windows with CUDA-enabled PyTorch.
