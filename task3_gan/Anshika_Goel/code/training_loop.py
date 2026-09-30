@@ -199,30 +199,61 @@ def next_epoch_after_checkpoint(
 def _extract_domain_pair(
     batch: Any,
 ) -> tuple[torch.Tensor, torch.Tensor]:
-    """Extract domain A/B tensors from a supported batch structure."""
+    """Extract domain A/B tensors from a supported batch structure.
+
+    Mapping batches may use the canonical Task 3 dataset keys ``A`` and
+    ``B`` together with provenance metadata, or the internal synthetic-test
+    aliases ``real_a`` and ``real_b``. Supplying both schemas at once is
+    rejected as ambiguous.
+    """
 
     if isinstance(
         batch,
         Mapping,
     ):
 
-        if set(
-            batch
-        ) != {
-            "real_a",
-            "real_b",
-        }:
+        has_real_pair = (
+            "real_a" in batch
+            and "real_b" in batch
+        )
+
+        has_ab_pair = (
+            "A" in batch
+            and "B" in batch
+        )
+
+        if (
+            has_real_pair
+            and has_ab_pair
+        ):
             raise ValueError(
-                "Mapping batches must contain exactly real_a and real_b"
+                "Mapping batch contains both supported domain-pair schemas"
             )
 
-        real_a = batch[
-            "real_a"
-        ]
+        if has_real_pair:
 
-        real_b = batch[
-            "real_b"
-        ]
+            real_a = batch[
+                "real_a"
+            ]
+
+            real_b = batch[
+                "real_b"
+            ]
+
+        elif has_ab_pair:
+
+            real_a = batch[
+                "A"
+            ]
+
+            real_b = batch[
+                "B"
+            ]
+
+        else:
+            raise ValueError(
+                "Mapping batch must contain either A/B or real_a/real_b"
+            )
 
     elif isinstance(
         batch,
