@@ -327,6 +327,15 @@ def run_training_epoch(
     base_lr: float,
     constant_lr_epochs: int,
     linear_decay_epochs: int,
+    on_step_complete: (
+        Callable[
+            [
+                dict[str, Any],
+            ],
+            None,
+        ]
+        | None
+    ) = None,
 ) -> dict[str, Any]:
     """Execute one already-seeded epoch and aggregate trainer metrics."""
 
@@ -352,6 +361,16 @@ def run_training_epoch(
     ) or global_step < 0:
         raise ValueError(
             "global_step must be a non-negative integer"
+        )
+
+    if (
+        on_step_complete is not None
+        and not callable(
+            on_step_complete
+        )
+    ):
+        raise TypeError(
+            "on_step_complete must be callable or None"
         )
 
     torch_device = torch.device(
@@ -549,6 +568,35 @@ def run_training_epoch(
                 + value
             )
 
+        if on_step_complete is not None:
+
+            step_result = {
+                "epoch": epoch,
+                "epoch_seed": epoch_seed,
+                "batch_index": batch_count,
+                "global_step": global_step,
+                "learning_rate": float(
+                    learning_rate
+                ),
+                "batch_image_count": int(
+                    real_a.shape[
+                        0
+                    ]
+                )
+                + int(
+                    real_b.shape[
+                        0
+                    ]
+                ),
+                "metrics": dict(
+                    metrics
+                ),
+            }
+
+            on_step_complete(
+                step_result
+            )
+
     if batch_count <= 0:
         raise ValueError(
             "Epoch received zero batches"
@@ -644,6 +692,15 @@ def run_epoch_range(
     base_lr: float,
     constant_lr_epochs: int,
     linear_decay_epochs: int,
+    on_step_complete: (
+        Callable[
+            [
+                dict[str, Any],
+            ],
+            None,
+        ]
+        | None
+    ) = None,
     on_epoch_complete: (
         Callable[
             [
@@ -662,6 +719,16 @@ def run_epoch_range(
     ):
         raise TypeError(
             "loader_factory must be callable"
+        )
+
+    if (
+        on_step_complete is not None
+        and not callable(
+            on_step_complete
+        )
+    ):
+        raise TypeError(
+            "on_step_complete must be callable or None"
         )
 
     if not isinstance(
@@ -736,6 +803,7 @@ def run_epoch_range(
             base_lr=base_lr,
             constant_lr_epochs=constant_lr_epochs,
             linear_decay_epochs=linear_decay_epochs,
+            on_step_complete=on_step_complete,
         )
 
         current_global_step = int(
