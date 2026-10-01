@@ -1,0 +1,6 @@
+# Preserve the bytes bound by the shared Task 1 evidence manifest.
+/.gitattributes -text
+/compare_task1.py -text
+/evaluate_common.py -text
+/comparison/** -text
+/Anshika_Goel/metrics_report.csv -text

@@ -1,0 +1,8 @@
+# Rebuild these from the frozen configuration; commit the split/vocabulary manifests.
+data_processed/
+hf_cache/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+*.tmp
+*.part

@@ -1,0 +1,7 @@
+checkpoints/** -text
+logs/** -text
+outputs/** -text
+configs/** -text
+metrics_report.csv -text
+requirements.lock.txt -text
+code/task1_colab.ipynb -text
