@@ -1,0 +1,43 @@
+{
+  "team": 15,
+  "task": 1,
+  "checkpoints": [
+    {
+      "member": "Anshika_Goel",
+      "common_validation_ce": 0.6944072780609131,
+      "common_next_character_accuracy": 0.781023046875,
+      "unknown_character_count": 5,
+      "checkpoint_epoch": 10,
+      "checkpoint_sha256": "64ad99efc0bf2e49959d3ef54bf5373a4c3a974f0fa333ae4a37e62fac9d2ba3",
+      "checkpoint_vocabulary_sha256": "8ac5c75e1ebdc21f991c368d2ac71c279ce5c747956fc9cd29a09aa9e74c22b1",
+      "vocabulary_file_sha256": "bd733a5f53a0eee3d638bb496cafda474f6a69b3d4f71c2f776a151ee2584b01",
+      "hash_match_representation": "crlf_line_endings"
+    },
+    {
+      "member": "Viraat_Chaudhary",
+      "common_validation_ce": 0.8609892454147339,
+      "common_next_character_accuracy": 0.729764453125,
+      "unknown_character_count": 8,
+      "checkpoint_epoch": 10,
+      "checkpoint_sha256": "52e2bddd0dadea877d0230f95e5e267cdd87c2f9c4401ff5817a5bc92d0093f1",
+      "checkpoint_vocabulary_sha256": "f470ced134d2fcc6ac7582cfbde25ac75a851f5fd2e682676dbc720d6bb30964",
+      "vocabulary_file_sha256": "f470ced134d2fcc6ac7582cfbde25ac75a851f5fd2e682676dbc720d6bb30964",
+      "hash_match_representation": "exact_bytes"
+    }
+  ],
+  "files": {
+    "task1_llm/.gitattributes": "b071ae46578ff5022829ad6db88f41c0b06ba9c6c0a6d76daf52033d237041d3",
+    "task1_llm/Anshika_Goel/metrics_report.csv": "d467535912fd7cd7d53dd96c9c7519ad0c19a1fb5fa95c3493a58b32bebd1428",
+    "task1_llm/compare_task1.py": "925b50afdd91f26ccdf9225249c789d375ea8e3322d6c91b39adc0476479602a",
+    "task1_llm/comparison/anshika_metrics_report.csv": "d467535912fd7cd7d53dd96c9c7519ad0c19a1fb5fa95c3493a58b32bebd1428",
+    "task1_llm/comparison/best_model_selection.md": "d00454214956a428a65eccdbe87283471d0e20c02c852b111021de9dbc8825c0",
+    "task1_llm/comparison/common_evaluation_manifest.json": "fd425bfe97b66f0a81d4d34d502f94299ed677ace1e93a93d7d71171e3dfd9e0",
+    "task1_llm/comparison/common_validation_comparison.csv": "bdfeaa225d845d9280e3ecace8e351e785b5ba90c60442a2b4e68fc9d9e07fa3",
+    "task1_llm/comparison/task1_comparison.csv": "231badcc22c9842df815b1c38fde0be80ad827c60b8024c4d24856c04d2b5429",
+    "task1_llm/comparison/task1_comparison.md": "8d63826f17da2fb4d34fee8359c63ae6121dc36a031b319761857ddc83d8d52d",
+    "task1_llm/comparison/task1_team_report.md": "d274a80d604eca29846fbc1607c3f4f1b8f5485e21be475dd1935ae9816f7adc",
+    "task1_llm/comparison/team_failure_examples.json": "61025f714c4b1c22a587d1e598a4729a26675dcf92da916bd42de55775095fb6",
+    "task1_llm/evaluate_common.py": "2ea63d33a211a32a4b57dcc79eee21e56ec881f545481e16ebd923980a97a935"
+  },
+  "scope": "Recorded-run reporting and common-holdout evidence; no unrecorded approval or new training claimed."
+}

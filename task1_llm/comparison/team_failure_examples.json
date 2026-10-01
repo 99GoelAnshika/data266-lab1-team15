@@ -1,0 +1,65 @@
+{
+  "cases": [
+    {
+      "member": "Anshika_Goel",
+      "sample_id": "sample_001",
+      "failure_type": "Sentence repetition",
+      "excerpt": "She said they were going to the park to play with it. She said they were going to the park to play with it.",
+      "observation": "The same sentence repeats instead of advancing the story.",
+      "mode": "greedy",
+      "temperature": null,
+      "evidence": "../Anshika_Goel/outputs/samples/generated_samples.json"
+    },
+    {
+      "member": "Anshika_Goel",
+      "sample_id": "sample_005",
+      "failure_type": "Word repetition",
+      "excerpt": "she found a box of blue blue blue blue blue balls.",
+      "observation": "Repeated use of blue interrupts narrative progression despite temperature sampling.",
+      "mode": "sampled",
+      "temperature": 1.0,
+      "evidence": "../Anshika_Goel/outputs/samples/generated_samples.json"
+    },
+    {
+      "member": "Anshika_Goel",
+      "sample_id": "sample_008",
+      "failure_type": "Malformed words and coherence",
+      "excerpt": "The nlight was nothing happened, hugged and ran off for bed.",
+      "observation": "The malformed word and broken sentence make the event hard to interpret.",
+      "mode": "sampled",
+      "temperature": 1.3,
+      "evidence": "../Anshika_Goel/outputs/samples/generated_samples.json"
+    },
+    {
+      "member": "Viraat_Chaudhary",
+      "sample_id": "sample_001",
+      "failure_type": "Greedy repetition",
+      "excerpt": "You are very sad. You are a good friend. You are very sad. You are a good friend.",
+      "observation": "A sentence pair repeats without developing the story.",
+      "mode": "greedy",
+      "temperature": null,
+      "evidence": "../Viraat_Chaudhary/outputs/samples/generated_samples.json"
+    },
+    {
+      "member": "Viraat_Chaudhary",
+      "sample_id": "sample_006",
+      "failure_type": "Ambiguous character identity",
+      "excerpt": ", there was a little girl called Jelie, \"Zoomp! I love you. Thank you, Grandma!\" Lily said.",
+      "observation": "The text introduces Jelie but attributes the speech to Lily without explaining who Lily is.",
+      "mode": "sampled",
+      "temperature": 1.0,
+      "evidence": "../Viraat_Chaudhary/outputs/samples/generated_samples.json"
+    },
+    {
+      "member": "Viraat_Chaudhary",
+      "sample_id": "sample_018",
+      "failure_type": "Malformed words and grammar",
+      "excerpt": "Lily noticed down the tib legs. She splashed the stame. She's notice and kicked some chone flowersh.",
+      "observation": "Nonstandard words and broken grammar reduce readability.",
+      "mode": "sampled",
+      "temperature": 1.3,
+      "evidence": "../Viraat_Chaudhary/outputs/samples/generated_samples.json"
+    }
+  ],
+  "scope": "Exact excerpts from recorded continuations; observations do not prove overall story quality or causation."
+}

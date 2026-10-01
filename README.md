@@ -9,15 +9,15 @@ This top-level README documents the current repository state, setup, reproducibi
 - Anshika Goel
 - Viraat Chaudhary
 
-Each team member is required to independently design, train, evaluate, and defend their own models for all three tasks. At the current `main` commit, the tracked Task 1 and Task 2 implementation folders contain `Anshika_Goel`; the remaining teammate/task deliverables must be added before final submission.
+Each team member is required to independently design, train, evaluate, and defend their own models for all three tasks. Task 1 includes both `Anshika_Goel` and `Viraat_Chaudhary` with independent configurations and evidence. Other remaining individual/task deliverables must still be added before the combined lab submission.
 
 ## Current submission status
 
 | Deliverable | Current status |
 |---|---|
-| Task 1 - GPT-style LLM from scratch | Anshika implementation, evidence, `results.md`, and `failure_analysis.md` complete |
+| Task 1 - GPT-style LLM from scratch | Both recorded runs and common comparison present; Task 1 report section prepared; member understanding and final team PDF remain |
 | Task 2 - Yelp Polarity sentiment classification | Anshika three-model evaluation, evidence, `results.md`, and `failure_analysis.md` complete |
-| Task 3 - CycleGAN | **Pending** - `task3_gan/` does not yet exist on `main` |
+| Task 3 - CycleGAN | Scaffold and environment present; implementation and training pending |
 | Kaggle Task 3 submission / rank | **Pending** |
 | Combined team PDF report | **Pending** - `report/` does not yet exist on `main` |
 | Teammate Task 2 numerical comparison | **Unavailable from current repository evidence; not inferred or fabricated** |
@@ -55,6 +55,18 @@ task1_llm/
     failure_analysis.md
     requirements.txt
     results.md
+  Viraat_Chaudhary/
+    code/task1_colab.ipynb                # exact executed Colab notebook
+    configs/
+    checkpoints/
+    logs/
+    outputs/
+    metrics_report.csv
+    failure_analysis.md
+    results.md
+  compare_task1.py
+  evaluate_common.py
+  comparison/                            # both frozen models and selection
 task2_sentiment/
   data/                                  # local/ignored dataset/cache material
   Anshika_Goel/
@@ -73,7 +85,7 @@ task2_sentiment/
     failure_analysis.md
     requirements.txt
     results.md
-task3_gan/                                # PENDING
+task3_gan/                                # scaffold present; implementation/training pending
 report/                                   # PENDING
 ```
 
@@ -440,3 +452,63 @@ Raw datasets, processed local tensors, caches, and virtual environments remain l
 - [ ] Team comparison tables are complete for all three tasks.
 - [ ] Combined PDF report is committed under `report/`.
 - [ ] Every member is prepared for the individual Demo/Viva.
+
+## Viraat - Task 1 Colab workflow
+
+Both members' Task 1 training/evaluation artifacts are present. Viraat completed
+ten full epochs on an NVIDIA A100-SXM4-40GB using a separate post-norm/ReLU
+decoder with an untied output head. His
+[member README](task1_llm/Viraat_Chaudhary/README.md),
+[results](task1_llm/Viraat_Chaudhary/results.md),
+[all metrics](task1_llm/Viraat_Chaudhary/metrics_report.csv),
+[failure analysis](task1_llm/Viraat_Chaudhary/failure_analysis.md) and
+[executed notebook](task1_llm/Viraat_Chaudhary/code/task1_colab.ipynb)
+provide the individual evidence.
+
+Install the member requirements in an appropriate PyTorch environment:
+
+```bash
+python -m pip install -r task1_llm/Viraat_Chaudhary/requirements.txt
+```
+
+The grader's one-command synthetic smoke check is:
+
+```bash
+python task1_llm/Viraat_Chaudhary/code/smoke_test.py
+```
+
+The smoke test needs no TinyStories download. To restore the omitted processed
+arrays from the frozen dataset and verify their recorded hashes:
+
+```bash
+python task1_llm/Viraat_Chaudhary/code/data.py
+```
+
+After restoration, `python task1_llm/Viraat_Chaudhary/code/train.py --resume`
+verifies the completed checkpoint and reports `ALREADY_COMPLETE`. For a new
+training experiment, use a separate clean run directory as explained in the
+member README; retain the original logs and weights.
+
+The [recorded-results table](task1_llm/comparison/task1_comparison.md) and
+[common held-out selection](task1_llm/comparison/best_model_selection.md)
+retain both members. The [Task 1 report section](task1_llm/comparison/task1_team_report.md)
+contains the complete comparison, evidence links, both members' real failure
+examples and proposed next experiments. It does not attest to another member's approval.
+On the common official validation text, Anshika has CE
+0.69440728 and accuracy
+78.1023%; Viraat has CE
+0.86098925 and accuracy
+72.9764%. Use the documented common quality
+criteria when choosing the model; different-GPU training speeds cannot isolate
+architecture effects.
+
+Regenerate the shared evaluations from the complete team repository:
+
+```bash
+python task1_llm/compare_task1.py
+python task1_llm/evaluate_common.py
+```
+
+The [run/commit guide](task1_llm/Viraat_Chaudhary/RUN_GUIDE.md) gives eight
+logical commits from the repository root. Task 1 completion does not complete
+the remaining individual tasks, the combined Tasks 1-3 PDF, or the viva.
