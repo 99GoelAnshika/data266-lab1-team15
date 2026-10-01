@@ -1,0 +1,29 @@
+{
+  "metric": "Content-preservation cosine similarity",
+  "protocol": {
+    "feature_extractor": "torchvision Inception-v3 IMAGENET1K_V1; final FC replaced by Identity",
+    "feature_dimension": 2048,
+    "preprocessing": "Resize(299), CenterCrop(299), ToTensor, ImageNet normalization",
+    "pairing": "source image matched to direct translated image by identical filename",
+    "A2B": "Monet source vs generated Photo",
+    "B2A": "Photo source vs generated Monet",
+    "n_eval_per_direction": 300
+  },
+  "A2B_monet_to_photo": {
+    "count": 300,
+    "mean": 0.8356126397700125,
+    "std": 0.08448652071263081,
+    "median": 0.8421677508716284,
+    "min": 0.5449323506677816,
+    "max": 0.978945810186023
+  },
+  "B2A_photo_to_monet": {
+    "count": 300,
+    "mean": 0.7780926832545257,
+    "std": 0.09616542635560034,
+    "median": 0.798498821136751,
+    "min": 0.3222193880184738,
+    "max": 0.9320012975000819
+  },
+  "two_direction_mean": 0.8068526615122691
+}

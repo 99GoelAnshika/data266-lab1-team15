@@ -1,0 +1,64 @@
+{
+  "audit_type": "evaluator-approved simulated two-rater audit",
+  "external_human_raters_used": false,
+  "sample_count": 30,
+  "samples_per_direction": 15,
+  "rating_scale": "1-5; higher is better",
+  "overall_scores": {
+    "count": 30,
+    "style_quality_mean": 3.5166666666666666,
+    "content_preservation_mean": 3.783333333333333,
+    "artifact_free_quality_mean": 3.4,
+    "overall_audit_score_mean": 3.5666666666666673,
+    "overall_audit_score_std": 0.38556322935598725
+  },
+  "directional_scores": {
+    "A2B_monet_to_photo": {
+      "count": 15,
+      "style_quality_mean": 3.533333333333333,
+      "content_preservation_mean": 4.1,
+      "artifact_free_quality_mean": 3.3,
+      "overall_audit_score_mean": 3.6444444444444444,
+      "overall_audit_score_std": 0.44484109284507195
+    },
+    "B2A_photo_to_monet": {
+      "count": 15,
+      "style_quality_mean": 3.5,
+      "content_preservation_mean": 3.466666666666667,
+      "artifact_free_quality_mean": 3.5,
+      "overall_audit_score_mean": 3.4888888888888894,
+      "overall_audit_score_std": 0.3115925979383129
+    }
+  },
+  "rater_specific_overall_means": {
+    "simulated_rater_1": 3.588888888888889,
+    "simulated_rater_2": 3.5444444444444447
+  },
+  "agreement_by_dimension": {
+    "style_quality": {
+      "exact_agreement": 0.5,
+      "exact_agreement_percent": 50.0,
+      "cohens_kappa": 0.2173913043478261,
+      "mean_absolute_rating_difference": 0.5666666666666667
+    },
+    "content_preservation": {
+      "exact_agreement": 0.5,
+      "exact_agreement_percent": 50.0,
+      "cohens_kappa": 0.24242424242424246,
+      "mean_absolute_rating_difference": 0.5666666666666667
+    },
+    "artifact_free_quality": {
+      "exact_agreement": 0.3333333333333333,
+      "exact_agreement_percent": 33.33333333333333,
+      "cohens_kappa": -0.10905730129390023,
+      "mean_absolute_rating_difference": 0.6666666666666666
+    }
+  },
+  "pooled_inter_rater_agreement": {
+    "paired_judgments": 90,
+    "exact_agreement": 0.4444444444444444,
+    "exact_agreement_percent": 44.44444444444444,
+    "cohens_kappa": 0.1336157104351175
+  },
+  "reporting_note": "These ratings are evaluator-approved simulated/AI-assisted audit ratings and must not be described as ratings from two external human participants."
+}

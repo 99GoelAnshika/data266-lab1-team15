@@ -1,0 +1,3042 @@
+{
+  "a2b": {
+    "aggregate_sha256": "63fda174b2a3be104ecdf0633540d7da71ba65c3a9f129a65c654d1df60fd603",
+    "count": 300,
+    "directory": "task3_gan/Anshika_Goel/outputs/cyclegan_baseline_rtx4090_run001/official_epoch50_predictions/pred_A2B",
+    "mapping": "monet_to_photo",
+    "records": [
+      {
+        "index": 0,
+        "output_file": "000c1e3bff.jpg",
+        "source_file": "000c1e3bff.jpg"
+      },
+      {
+        "index": 1,
+        "output_file": "011835cfbf.jpg",
+        "source_file": "011835cfbf.jpg"
+      },
+      {
+        "index": 2,
+        "output_file": "0260d15306.jpg",
+        "source_file": "0260d15306.jpg"
+      },
+      {
+        "index": 3,
+        "output_file": "049e293b93.jpg",
+        "source_file": "049e293b93.jpg"
+      },
+      {
+        "index": 4,
+        "output_file": "05144e306f.jpg",
+        "source_file": "05144e306f.jpg"
+      },
+      {
+        "index": 5,
+        "output_file": "052a77c020.jpg",
+        "source_file": "052a77c020.jpg"
+      },
+      {
+        "index": 6,
+        "output_file": "058f878b7c.jpg",
+        "source_file": "058f878b7c.jpg"
+      },
+      {
+        "index": 7,
+        "output_file": "05b493ff42.jpg",
+        "source_file": "05b493ff42.jpg"
+      },
+      {
+        "index": 8,
+        "output_file": "064487d630.jpg",
+        "source_file": "064487d630.jpg"
+      },
+      {
+        "index": 9,
+        "output_file": "066fe4cbaa.jpg",
+        "source_file": "066fe4cbaa.jpg"
+      },
+      {
+        "index": 10,
+        "output_file": "07fcaee35f.jpg",
+        "source_file": "07fcaee35f.jpg"
+      },
+      {
+        "index": 11,
+        "output_file": "09b76b6471.jpg",
+        "source_file": "09b76b6471.jpg"
+      },
+      {
+        "index": 12,
+        "output_file": "0a5075d42a.jpg",
+        "source_file": "0a5075d42a.jpg"
+      },
+      {
+        "index": 13,
+        "output_file": "0bd913dbc7.jpg",
+        "source_file": "0bd913dbc7.jpg"
+      },
+      {
+        "index": 14,
+        "output_file": "0e3b3292da.jpg",
+        "source_file": "0e3b3292da.jpg"
+      },
+      {
+        "index": 15,
+        "output_file": "106757e5d8.jpg",
+        "source_file": "106757e5d8.jpg"
+      },
+      {
+        "index": 16,
+        "output_file": "1078363ff0.jpg",
+        "source_file": "1078363ff0.jpg"
+      },
+      {
+        "index": 17,
+        "output_file": "10c555c1b1.jpg",
+        "source_file": "10c555c1b1.jpg"
+      },
+      {
+        "index": 18,
+        "output_file": "118da0690c.jpg",
+        "source_file": "118da0690c.jpg"
+      },
+      {
+        "index": 19,
+        "output_file": "11ab570c5e.jpg",
+        "source_file": "11ab570c5e.jpg"
+      },
+      {
+        "index": 20,
+        "output_file": "11be65b3e9.jpg",
+        "source_file": "11be65b3e9.jpg"
+      },
+      {
+        "index": 21,
+        "output_file": "133b42e498.jpg",
+        "source_file": "133b42e498.jpg"
+      },
+      {
+        "index": 22,
+        "output_file": "14162de938.jpg",
+        "source_file": "14162de938.jpg"
+      },
+      {
+        "index": 23,
+        "output_file": "14ff6e6a99.jpg",
+        "source_file": "14ff6e6a99.jpg"
+      },
+      {
+        "index": 24,
+        "output_file": "158740962c.jpg",
+        "source_file": "158740962c.jpg"
+      },
+      {
+        "index": 25,
+        "output_file": "16dabe418c.jpg",
+        "source_file": "16dabe418c.jpg"
+      },
+      {
+        "index": 26,
+        "output_file": "17557a29cb.jpg",
+        "source_file": "17557a29cb.jpg"
+      },
+      {
+        "index": 27,
+        "output_file": "1814cc6632.jpg",
+        "source_file": "1814cc6632.jpg"
+      },
+      {
+        "index": 28,
+        "output_file": "184d6c66cd.jpg",
+        "source_file": "184d6c66cd.jpg"
+      },
+      {
+        "index": 29,
+        "output_file": "1994b8d4a2.jpg",
+        "source_file": "1994b8d4a2.jpg"
+      },
+      {
+        "index": 30,
+        "output_file": "19dc36ccb2.jpg",
+        "source_file": "19dc36ccb2.jpg"
+      },
+      {
+        "index": 31,
+        "output_file": "1a127acf4d.jpg",
+        "source_file": "1a127acf4d.jpg"
+      },
+      {
+        "index": 32,
+        "output_file": "1e4e4e63c5.jpg",
+        "source_file": "1e4e4e63c5.jpg"
+      },
+      {
+        "index": 33,
+        "output_file": "1f22663e72.jpg",
+        "source_file": "1f22663e72.jpg"
+      },
+      {
+        "index": 34,
+        "output_file": "1f9667f2a7.jpg",
+        "source_file": "1f9667f2a7.jpg"
+      },
+      {
+        "index": 35,
+        "output_file": "22b1ac6b44.jpg",
+        "source_file": "22b1ac6b44.jpg"
+      },
+      {
+        "index": 36,
+        "output_file": "23832dead5.jpg",
+        "source_file": "23832dead5.jpg"
+      },
+      {
+        "index": 37,
+        "output_file": "23b07c3769.jpg",
+        "source_file": "23b07c3769.jpg"
+      },
+      {
+        "index": 38,
+        "output_file": "23d6aeb485.jpg",
+        "source_file": "23d6aeb485.jpg"
+      },
+      {
+        "index": 39,
+        "output_file": "23f0fbd77e.jpg",
+        "source_file": "23f0fbd77e.jpg"
+      },
+      {
+        "index": 40,
+        "output_file": "24af733334.jpg",
+        "source_file": "24af733334.jpg"
+      },
+      {
+        "index": 41,
+        "output_file": "252d9a4abc.jpg",
+        "source_file": "252d9a4abc.jpg"
+      },
+      {
+        "index": 42,
+        "output_file": "2581464ddc.jpg",
+        "source_file": "2581464ddc.jpg"
+      },
+      {
+        "index": 43,
+        "output_file": "25c9904782.jpg",
+        "source_file": "25c9904782.jpg"
+      },
+      {
+        "index": 44,
+        "output_file": "26b66eb819.jpg",
+        "source_file": "26b66eb819.jpg"
+      },
+      {
+        "index": 45,
+        "output_file": "2759c1ed37.jpg",
+        "source_file": "2759c1ed37.jpg"
+      },
+      {
+        "index": 46,
+        "output_file": "281b73fb5e.jpg",
+        "source_file": "281b73fb5e.jpg"
+      },
+      {
+        "index": 47,
+        "output_file": "28deb43a71.jpg",
+        "source_file": "28deb43a71.jpg"
+      },
+      {
+        "index": 48,
+        "output_file": "295eb5c521.jpg",
+        "source_file": "295eb5c521.jpg"
+      },
+      {
+        "index": 49,
+        "output_file": "29696b4455.jpg",
+        "source_file": "29696b4455.jpg"
+      },
+      {
+        "index": 50,
+        "output_file": "2acfbab228.jpg",
+        "source_file": "2acfbab228.jpg"
+      },
+      {
+        "index": 51,
+        "output_file": "2c00f5147f.jpg",
+        "source_file": "2c00f5147f.jpg"
+      },
+      {
+        "index": 52,
+        "output_file": "2cca56415e.jpg",
+        "source_file": "2cca56415e.jpg"
+      },
+      {
+        "index": 53,
+        "output_file": "2e0d0e6e19.jpg",
+        "source_file": "2e0d0e6e19.jpg"
+      },
+      {
+        "index": 54,
+        "output_file": "2f20944b6a.jpg",
+        "source_file": "2f20944b6a.jpg"
+      },
+      {
+        "index": 55,
+        "output_file": "2f90c99e10.jpg",
+        "source_file": "2f90c99e10.jpg"
+      },
+      {
+        "index": 56,
+        "output_file": "3283442e33.jpg",
+        "source_file": "3283442e33.jpg"
+      },
+      {
+        "index": 57,
+        "output_file": "32cc820303.jpg",
+        "source_file": "32cc820303.jpg"
+      },
+      {
+        "index": 58,
+        "output_file": "32e33792cc.jpg",
+        "source_file": "32e33792cc.jpg"
+      },
+      {
+        "index": 59,
+        "output_file": "3417ace946.jpg",
+        "source_file": "3417ace946.jpg"
+      },
+      {
+        "index": 60,
+        "output_file": "344d1829bb.jpg",
+        "source_file": "344d1829bb.jpg"
+      },
+      {
+        "index": 61,
+        "output_file": "3545597386.jpg",
+        "source_file": "3545597386.jpg"
+      },
+      {
+        "index": 62,
+        "output_file": "369f6d07e8.jpg",
+        "source_file": "369f6d07e8.jpg"
+      },
+      {
+        "index": 63,
+        "output_file": "3843e221cc.jpg",
+        "source_file": "3843e221cc.jpg"
+      },
+      {
+        "index": 64,
+        "output_file": "3b262c6726.jpg",
+        "source_file": "3b262c6726.jpg"
+      },
+      {
+        "index": 65,
+        "output_file": "3c341ff93e.jpg",
+        "source_file": "3c341ff93e.jpg"
+      },
+      {
+        "index": 66,
+        "output_file": "3d13fe022e.jpg",
+        "source_file": "3d13fe022e.jpg"
+      },
+      {
+        "index": 67,
+        "output_file": "3deea9f4a4.jpg",
+        "source_file": "3deea9f4a4.jpg"
+      },
+      {
+        "index": 68,
+        "output_file": "3eaef3ee43.jpg",
+        "source_file": "3eaef3ee43.jpg"
+      },
+      {
+        "index": 69,
+        "output_file": "40d7d18ad3.jpg",
+        "source_file": "40d7d18ad3.jpg"
+      },
+      {
+        "index": 70,
+        "output_file": "417e77e946.jpg",
+        "source_file": "417e77e946.jpg"
+      },
+      {
+        "index": 71,
+        "output_file": "4260d1c556.jpg",
+        "source_file": "4260d1c556.jpg"
+      },
+      {
+        "index": 72,
+        "output_file": "429e382095.jpg",
+        "source_file": "429e382095.jpg"
+      },
+      {
+        "index": 73,
+        "output_file": "463835bbc6.jpg",
+        "source_file": "463835bbc6.jpg"
+      },
+      {
+        "index": 74,
+        "output_file": "4660310c3e.jpg",
+        "source_file": "4660310c3e.jpg"
+      },
+      {
+        "index": 75,
+        "output_file": "47a0548067.jpg",
+        "source_file": "47a0548067.jpg"
+      },
+      {
+        "index": 76,
+        "output_file": "488600cb75.jpg",
+        "source_file": "488600cb75.jpg"
+      },
+      {
+        "index": 77,
+        "output_file": "49337b68f4.jpg",
+        "source_file": "49337b68f4.jpg"
+      },
+      {
+        "index": 78,
+        "output_file": "4995c04b1a.jpg",
+        "source_file": "4995c04b1a.jpg"
+      },
+      {
+        "index": 79,
+        "output_file": "4ab2583fe2.jpg",
+        "source_file": "4ab2583fe2.jpg"
+      },
+      {
+        "index": 80,
+        "output_file": "4ad8b366c1.jpg",
+        "source_file": "4ad8b366c1.jpg"
+      },
+      {
+        "index": 81,
+        "output_file": "4b0adf7c6f.jpg",
+        "source_file": "4b0adf7c6f.jpg"
+      },
+      {
+        "index": 82,
+        "output_file": "4bb4ca7b03.jpg",
+        "source_file": "4bb4ca7b03.jpg"
+      },
+      {
+        "index": 83,
+        "output_file": "4c0e35882c.jpg",
+        "source_file": "4c0e35882c.jpg"
+      },
+      {
+        "index": 84,
+        "output_file": "4c74254ad3.jpg",
+        "source_file": "4c74254ad3.jpg"
+      },
+      {
+        "index": 85,
+        "output_file": "4e05523825.jpg",
+        "source_file": "4e05523825.jpg"
+      },
+      {
+        "index": 86,
+        "output_file": "4f045779b0.jpg",
+        "source_file": "4f045779b0.jpg"
+      },
+      {
+        "index": 87,
+        "output_file": "4f3f4ff590.jpg",
+        "source_file": "4f3f4ff590.jpg"
+      },
+      {
+        "index": 88,
+        "output_file": "4f4de0bbba.jpg",
+        "source_file": "4f4de0bbba.jpg"
+      },
+      {
+        "index": 89,
+        "output_file": "4f7e01f097.jpg",
+        "source_file": "4f7e01f097.jpg"
+      },
+      {
+        "index": 90,
+        "output_file": "50855dd324.jpg",
+        "source_file": "50855dd324.jpg"
+      },
+      {
+        "index": 91,
+        "output_file": "512cd171a9.jpg",
+        "source_file": "512cd171a9.jpg"
+      },
+      {
+        "index": 92,
+        "output_file": "5185e8c56a.jpg",
+        "source_file": "5185e8c56a.jpg"
+      },
+      {
+        "index": 93,
+        "output_file": "51bdd25f76.jpg",
+        "source_file": "51bdd25f76.jpg"
+      },
+      {
+        "index": 94,
+        "output_file": "51db3fc011.jpg",
+        "source_file": "51db3fc011.jpg"
+      },
+      {
+        "index": 95,
+        "output_file": "526a110636.jpg",
+        "source_file": "526a110636.jpg"
+      },
+      {
+        "index": 96,
+        "output_file": "52aed0f943.jpg",
+        "source_file": "52aed0f943.jpg"
+      },
+      {
+        "index": 97,
+        "output_file": "52d12dc627.jpg",
+        "source_file": "52d12dc627.jpg"
+      },
+      {
+        "index": 98,
+        "output_file": "52fc351abf.jpg",
+        "source_file": "52fc351abf.jpg"
+      },
+      {
+        "index": 99,
+        "output_file": "536aa87152.jpg",
+        "source_file": "536aa87152.jpg"
+      },
+      {
+        "index": 100,
+        "output_file": "565f19268b.jpg",
+        "source_file": "565f19268b.jpg"
+      },
+      {
+        "index": 101,
+        "output_file": "586acab7c5.jpg",
+        "source_file": "586acab7c5.jpg"
+      },
+      {
+        "index": 102,
+        "output_file": "5926f85cbf.jpg",
+        "source_file": "5926f85cbf.jpg"
+      },
+      {
+        "index": 103,
+        "output_file": "593db29cce.jpg",
+        "source_file": "593db29cce.jpg"
+      },
+      {
+        "index": 104,
+        "output_file": "599098859e.jpg",
+        "source_file": "599098859e.jpg"
+      },
+      {
+        "index": 105,
+        "output_file": "59df696966.jpg",
+        "source_file": "59df696966.jpg"
+      },
+      {
+        "index": 106,
+        "output_file": "5aa514ffac.jpg",
+        "source_file": "5aa514ffac.jpg"
+      },
+      {
+        "index": 107,
+        "output_file": "5c79cfe0b3.jpg",
+        "source_file": "5c79cfe0b3.jpg"
+      },
+      {
+        "index": 108,
+        "output_file": "5cb895b722.jpg",
+        "source_file": "5cb895b722.jpg"
+      },
+      {
+        "index": 109,
+        "output_file": "5e357ad790.jpg",
+        "source_file": "5e357ad790.jpg"
+      },
+      {
+        "index": 110,
+        "output_file": "5ffbfe68d4.jpg",
+        "source_file": "5ffbfe68d4.jpg"
+      },
+      {
+        "index": 111,
+        "output_file": "6043aadea0.jpg",
+        "source_file": "6043aadea0.jpg"
+      },
+      {
+        "index": 112,
+        "output_file": "608ee0d370.jpg",
+        "source_file": "608ee0d370.jpg"
+      },
+      {
+        "index": 113,
+        "output_file": "61e735361a.jpg",
+        "source_file": "61e735361a.jpg"
+      },
+      {
+        "index": 114,
+        "output_file": "632ddbc784.jpg",
+        "source_file": "632ddbc784.jpg"
+      },
+      {
+        "index": 115,
+        "output_file": "661e374153.jpg",
+        "source_file": "661e374153.jpg"
+      },
+      {
+        "index": 116,
+        "output_file": "66226e18fc.jpg",
+        "source_file": "66226e18fc.jpg"
+      },
+      {
+        "index": 117,
+        "output_file": "66a144f547.jpg",
+        "source_file": "66a144f547.jpg"
+      },
+      {
+        "index": 118,
+        "output_file": "6742294320.jpg",
+        "source_file": "6742294320.jpg"
+      },
+      {
+        "index": 119,
+        "output_file": "676a5a4c2e.jpg",
+        "source_file": "676a5a4c2e.jpg"
+      },
+      {
+        "index": 120,
+        "output_file": "6782e7cb2a.jpg",
+        "source_file": "6782e7cb2a.jpg"
+      },
+      {
+        "index": 121,
+        "output_file": "68729aac07.jpg",
+        "source_file": "68729aac07.jpg"
+      },
+      {
+        "index": 122,
+        "output_file": "68b60c04b7.jpg",
+        "source_file": "68b60c04b7.jpg"
+      },
+      {
+        "index": 123,
+        "output_file": "68d60af226.jpg",
+        "source_file": "68d60af226.jpg"
+      },
+      {
+        "index": 124,
+        "output_file": "695897bd4a.jpg",
+        "source_file": "695897bd4a.jpg"
+      },
+      {
+        "index": 125,
+        "output_file": "69f4b75a37.jpg",
+        "source_file": "69f4b75a37.jpg"
+      },
+      {
+        "index": 126,
+        "output_file": "6a03aea8be.jpg",
+        "source_file": "6a03aea8be.jpg"
+      },
+      {
+        "index": 127,
+        "output_file": "6bbe0e63c6.jpg",
+        "source_file": "6bbe0e63c6.jpg"
+      },
+      {
+        "index": 128,
+        "output_file": "6bfbd1df5b.jpg",
+        "source_file": "6bfbd1df5b.jpg"
+      },
+      {
+        "index": 129,
+        "output_file": "6c6cc46498.jpg",
+        "source_file": "6c6cc46498.jpg"
+      },
+      {
+        "index": 130,
+        "output_file": "6d0e87f557.jpg",
+        "source_file": "6d0e87f557.jpg"
+      },
+      {
+        "index": 131,
+        "output_file": "6e0429f92e.jpg",
+        "source_file": "6e0429f92e.jpg"
+      },
+      {
+        "index": 132,
+        "output_file": "6ee7c39dbc.jpg",
+        "source_file": "6ee7c39dbc.jpg"
+      },
+      {
+        "index": 133,
+        "output_file": "6f0b9df5c5.jpg",
+        "source_file": "6f0b9df5c5.jpg"
+      },
+      {
+        "index": 134,
+        "output_file": "7017e6caa1.jpg",
+        "source_file": "7017e6caa1.jpg"
+      },
+      {
+        "index": 135,
+        "output_file": "7054793632.jpg",
+        "source_file": "7054793632.jpg"
+      },
+      {
+        "index": 136,
+        "output_file": "70bc945f95.jpg",
+        "source_file": "70bc945f95.jpg"
+      },
+      {
+        "index": 137,
+        "output_file": "718445ebe3.jpg",
+        "source_file": "718445ebe3.jpg"
+      },
+      {
+        "index": 138,
+        "output_file": "7239ba0b55.jpg",
+        "source_file": "7239ba0b55.jpg"
+      },
+      {
+        "index": 139,
+        "output_file": "730f325b64.jpg",
+        "source_file": "730f325b64.jpg"
+      },
+      {
+        "index": 140,
+        "output_file": "732d76a469.jpg",
+        "source_file": "732d76a469.jpg"
+      },
+      {
+        "index": 141,
+        "output_file": "7341d96c1d.jpg",
+        "source_file": "7341d96c1d.jpg"
+      },
+      {
+        "index": 142,
+        "output_file": "73f33a12c5.jpg",
+        "source_file": "73f33a12c5.jpg"
+      },
+      {
+        "index": 143,
+        "output_file": "74e452fb31.jpg",
+        "source_file": "74e452fb31.jpg"
+      },
+      {
+        "index": 144,
+        "output_file": "76cc7181f8.jpg",
+        "source_file": "76cc7181f8.jpg"
+      },
+      {
+        "index": 145,
+        "output_file": "77b37629f2.jpg",
+        "source_file": "77b37629f2.jpg"
+      },
+      {
+        "index": 146,
+        "output_file": "79224da51f.jpg",
+        "source_file": "79224da51f.jpg"
+      },
+      {
+        "index": 147,
+        "output_file": "79292e1434.jpg",
+        "source_file": "79292e1434.jpg"
+      },
+      {
+        "index": 148,
+        "output_file": "7952021d2f.jpg",
+        "source_file": "7952021d2f.jpg"
+      },
+      {
+        "index": 149,
+        "output_file": "7960adbd50.jpg",
+        "source_file": "7960adbd50.jpg"
+      },
+      {
+        "index": 150,
+        "output_file": "7cb36714d0.jpg",
+        "source_file": "7cb36714d0.jpg"
+      },
+      {
+        "index": 151,
+        "output_file": "7d64c3100c.jpg",
+        "source_file": "7d64c3100c.jpg"
+      },
+      {
+        "index": 152,
+        "output_file": "8044a92484.jpg",
+        "source_file": "8044a92484.jpg"
+      },
+      {
+        "index": 153,
+        "output_file": "8077b7e9e7.jpg",
+        "source_file": "8077b7e9e7.jpg"
+      },
+      {
+        "index": 154,
+        "output_file": "8114fa2607.jpg",
+        "source_file": "8114fa2607.jpg"
+      },
+      {
+        "index": 155,
+        "output_file": "815624563e.jpg",
+        "source_file": "815624563e.jpg"
+      },
+      {
+        "index": 156,
+        "output_file": "82991e742a.jpg",
+        "source_file": "82991e742a.jpg"
+      },
+      {
+        "index": 157,
+        "output_file": "82b9fd68b1.jpg",
+        "source_file": "82b9fd68b1.jpg"
+      },
+      {
+        "index": 158,
+        "output_file": "8314acfd35.jpg",
+        "source_file": "8314acfd35.jpg"
+      },
+      {
+        "index": 159,
+        "output_file": "853f8d711f.jpg",
+        "source_file": "853f8d711f.jpg"
+      },
+      {
+        "index": 160,
+        "output_file": "85580214be.jpg",
+        "source_file": "85580214be.jpg"
+      },
+      {
+        "index": 161,
+        "output_file": "88402296cc.jpg",
+        "source_file": "88402296cc.jpg"
+      },
+      {
+        "index": 162,
+        "output_file": "893db2701d.jpg",
+        "source_file": "893db2701d.jpg"
+      },
+      {
+        "index": 163,
+        "output_file": "89964efa86.jpg",
+        "source_file": "89964efa86.jpg"
+      },
+      {
+        "index": 164,
+        "output_file": "89d970411d.jpg",
+        "source_file": "89d970411d.jpg"
+      },
+      {
+        "index": 165,
+        "output_file": "89fcbf2f76.jpg",
+        "source_file": "89fcbf2f76.jpg"
+      },
+      {
+        "index": 166,
+        "output_file": "8b54448a07.jpg",
+        "source_file": "8b54448a07.jpg"
+      },
+      {
+        "index": 167,
+        "output_file": "8b7948248f.jpg",
+        "source_file": "8b7948248f.jpg"
+      },
+      {
+        "index": 168,
+        "output_file": "8b841420b4.jpg",
+        "source_file": "8b841420b4.jpg"
+      },
+      {
+        "index": 169,
+        "output_file": "8c48e112d0.jpg",
+        "source_file": "8c48e112d0.jpg"
+      },
+      {
+        "index": 170,
+        "output_file": "8c8011c291.jpg",
+        "source_file": "8c8011c291.jpg"
+      },
+      {
+        "index": 171,
+        "output_file": "8cfd45a2e2.jpg",
+        "source_file": "8cfd45a2e2.jpg"
+      },
+      {
+        "index": 172,
+        "output_file": "8e5ff15568.jpg",
+        "source_file": "8e5ff15568.jpg"
+      },
+      {
+        "index": 173,
+        "output_file": "8ee2933868.jpg",
+        "source_file": "8ee2933868.jpg"
+      },
+      {
+        "index": 174,
+        "output_file": "8f02369f42.jpg",
+        "source_file": "8f02369f42.jpg"
+      },
+      {
+        "index": 175,
+        "output_file": "910610e827.jpg",
+        "source_file": "910610e827.jpg"
+      },
+      {
+        "index": 176,
+        "output_file": "910729e0ce.jpg",
+        "source_file": "910729e0ce.jpg"
+      },
+      {
+        "index": 177,
+        "output_file": "92c0ba8c0d.jpg",
+        "source_file": "92c0ba8c0d.jpg"
+      },
+      {
+        "index": 178,
+        "output_file": "93132f89ee.jpg",
+        "source_file": "93132f89ee.jpg"
+      },
+      {
+        "index": 179,
+        "output_file": "932d0dd808.jpg",
+        "source_file": "932d0dd808.jpg"
+      },
+      {
+        "index": 180,
+        "output_file": "95a53d7b0b.jpg",
+        "source_file": "95a53d7b0b.jpg"
+      },
+      {
+        "index": 181,
+        "output_file": "95b5f01a85.jpg",
+        "source_file": "95b5f01a85.jpg"
+      },
+      {
+        "index": 182,
+        "output_file": "9843bc25c5.jpg",
+        "source_file": "9843bc25c5.jpg"
+      },
+      {
+        "index": 183,
+        "output_file": "9908d1daa9.jpg",
+        "source_file": "9908d1daa9.jpg"
+      },
+      {
+        "index": 184,
+        "output_file": "990ed28f62.jpg",
+        "source_file": "990ed28f62.jpg"
+      },
+      {
+        "index": 185,
+        "output_file": "9963d64ebf.jpg",
+        "source_file": "9963d64ebf.jpg"
+      },
+      {
+        "index": 186,
+        "output_file": "99a51d3e25.jpg",
+        "source_file": "99a51d3e25.jpg"
+      },
+      {
+        "index": 187,
+        "output_file": "99d94af5dd.jpg",
+        "source_file": "99d94af5dd.jpg"
+      },
+      {
+        "index": 188,
+        "output_file": "9ae6552353.jpg",
+        "source_file": "9ae6552353.jpg"
+      },
+      {
+        "index": 189,
+        "output_file": "9d58456cc3.jpg",
+        "source_file": "9d58456cc3.jpg"
+      },
+      {
+        "index": 190,
+        "output_file": "9d9a4fccfb.jpg",
+        "source_file": "9d9a4fccfb.jpg"
+      },
+      {
+        "index": 191,
+        "output_file": "9db9843ed1.jpg",
+        "source_file": "9db9843ed1.jpg"
+      },
+      {
+        "index": 192,
+        "output_file": "9f409e3376.jpg",
+        "source_file": "9f409e3376.jpg"
+      },
+      {
+        "index": 193,
+        "output_file": "9fc868e864.jpg",
+        "source_file": "9fc868e864.jpg"
+      },
+      {
+        "index": 194,
+        "output_file": "a030bc32e6.jpg",
+        "source_file": "a030bc32e6.jpg"
+      },
+      {
+        "index": 195,
+        "output_file": "a06b54dfe9.jpg",
+        "source_file": "a06b54dfe9.jpg"
+      },
+      {
+        "index": 196,
+        "output_file": "a202b1b200.jpg",
+        "source_file": "a202b1b200.jpg"
+      },
+      {
+        "index": 197,
+        "output_file": "a210ceedc7.jpg",
+        "source_file": "a210ceedc7.jpg"
+      },
+      {
+        "index": 198,
+        "output_file": "a4e4a61fb2.jpg",
+        "source_file": "a4e4a61fb2.jpg"
+      },
+      {
+        "index": 199,
+        "output_file": "a59f3f5b89.jpg",
+        "source_file": "a59f3f5b89.jpg"
+      },
+      {
+        "index": 200,
+        "output_file": "a619072f82.jpg",
+        "source_file": "a619072f82.jpg"
+      },
+      {
+        "index": 201,
+        "output_file": "a6291c2a1c.jpg",
+        "source_file": "a6291c2a1c.jpg"
+      },
+      {
+        "index": 202,
+        "output_file": "a642e9cb6f.jpg",
+        "source_file": "a642e9cb6f.jpg"
+      },
+      {
+        "index": 203,
+        "output_file": "a7977705be.jpg",
+        "source_file": "a7977705be.jpg"
+      },
+      {
+        "index": 204,
+        "output_file": "a7d53885e8.jpg",
+        "source_file": "a7d53885e8.jpg"
+      },
+      {
+        "index": 205,
+        "output_file": "a885da7b52.jpg",
+        "source_file": "a885da7b52.jpg"
+      },
+      {
+        "index": 206,
+        "output_file": "a8fbbe3eb1.jpg",
+        "source_file": "a8fbbe3eb1.jpg"
+      },
+      {
+        "index": 207,
+        "output_file": "a96b79a93f.jpg",
+        "source_file": "a96b79a93f.jpg"
+      },
+      {
+        "index": 208,
+        "output_file": "aa76c7625a.jpg",
+        "source_file": "aa76c7625a.jpg"
+      },
+      {
+        "index": 209,
+        "output_file": "ad0101d010.jpg",
+        "source_file": "ad0101d010.jpg"
+      },
+      {
+        "index": 210,
+        "output_file": "ad8ce41fc0.jpg",
+        "source_file": "ad8ce41fc0.jpg"
+      },
+      {
+        "index": 211,
+        "output_file": "b1310da865.jpg",
+        "source_file": "b1310da865.jpg"
+      },
+      {
+        "index": 212,
+        "output_file": "b13c0973ee.jpg",
+        "source_file": "b13c0973ee.jpg"
+      },
+      {
+        "index": 213,
+        "output_file": "b1ea5d5a7d.jpg",
+        "source_file": "b1ea5d5a7d.jpg"
+      },
+      {
+        "index": 214,
+        "output_file": "b256e61a5d.jpg",
+        "source_file": "b256e61a5d.jpg"
+      },
+      {
+        "index": 215,
+        "output_file": "b2ce76c750.jpg",
+        "source_file": "b2ce76c750.jpg"
+      },
+      {
+        "index": 216,
+        "output_file": "b3adc75e7d.jpg",
+        "source_file": "b3adc75e7d.jpg"
+      },
+      {
+        "index": 217,
+        "output_file": "b44f24c048.jpg",
+        "source_file": "b44f24c048.jpg"
+      },
+      {
+        "index": 218,
+        "output_file": "b5c2fe7c4c.jpg",
+        "source_file": "b5c2fe7c4c.jpg"
+      },
+      {
+        "index": 219,
+        "output_file": "b76d52e05a.jpg",
+        "source_file": "b76d52e05a.jpg"
+      },
+      {
+        "index": 220,
+        "output_file": "b99546090b.jpg",
+        "source_file": "b99546090b.jpg"
+      },
+      {
+        "index": 221,
+        "output_file": "ba52f976af.jpg",
+        "source_file": "ba52f976af.jpg"
+      },
+      {
+        "index": 222,
+        "output_file": "baf6efabfe.jpg",
+        "source_file": "baf6efabfe.jpg"
+      },
+      {
+        "index": 223,
+        "output_file": "bbc5ac4564.jpg",
+        "source_file": "bbc5ac4564.jpg"
+      },
+      {
+        "index": 224,
+        "output_file": "bc4b364a44.jpg",
+        "source_file": "bc4b364a44.jpg"
+      },
+      {
+        "index": 225,
+        "output_file": "bf6db09354.jpg",
+        "source_file": "bf6db09354.jpg"
+      },
+      {
+        "index": 226,
+        "output_file": "c14505c1da.jpg",
+        "source_file": "c14505c1da.jpg"
+      },
+      {
+        "index": 227,
+        "output_file": "c1dc1a85a4.jpg",
+        "source_file": "c1dc1a85a4.jpg"
+      },
+      {
+        "index": 228,
+        "output_file": "c2576267d4.jpg",
+        "source_file": "c2576267d4.jpg"
+      },
+      {
+        "index": 229,
+        "output_file": "c4622e3fb6.jpg",
+        "source_file": "c4622e3fb6.jpg"
+      },
+      {
+        "index": 230,
+        "output_file": "c67ba2060c.jpg",
+        "source_file": "c67ba2060c.jpg"
+      },
+      {
+        "index": 231,
+        "output_file": "c68c52e8fc.jpg",
+        "source_file": "c68c52e8fc.jpg"
+      },
+      {
+        "index": 232,
+        "output_file": "c6c360756c.jpg",
+        "source_file": "c6c360756c.jpg"
+      },
+      {
+        "index": 233,
+        "output_file": "c6c88ce9c4.jpg",
+        "source_file": "c6c88ce9c4.jpg"
+      },
+      {
+        "index": 234,
+        "output_file": "c78b4fa3a9.jpg",
+        "source_file": "c78b4fa3a9.jpg"
+      },
+      {
+        "index": 235,
+        "output_file": "c7d8142152.jpg",
+        "source_file": "c7d8142152.jpg"
+      },
+      {
+        "index": 236,
+        "output_file": "cb50326950.jpg",
+        "source_file": "cb50326950.jpg"
+      },
+      {
+        "index": 237,
+        "output_file": "cb9c553ded.jpg",
+        "source_file": "cb9c553ded.jpg"
+      },
+      {
+        "index": 238,
+        "output_file": "cc2bb659f4.jpg",
+        "source_file": "cc2bb659f4.jpg"
+      },
+      {
+        "index": 239,
+        "output_file": "cd6623d07d.jpg",
+        "source_file": "cd6623d07d.jpg"
+      },
+      {
+        "index": 240,
+        "output_file": "cdddf326e3.jpg",
+        "source_file": "cdddf326e3.jpg"
+      },
+      {
+        "index": 241,
+        "output_file": "ce3e0daddd.jpg",
+        "source_file": "ce3e0daddd.jpg"
+      },
+      {
+        "index": 242,
+        "output_file": "ceb6cf5f31.jpg",
+        "source_file": "ceb6cf5f31.jpg"
+      },
+      {
+        "index": 243,
+        "output_file": "cf6488d84c.jpg",
+        "source_file": "cf6488d84c.jpg"
+      },
+      {
+        "index": 244,
+        "output_file": "cfc6fce7b5.jpg",
+        "source_file": "cfc6fce7b5.jpg"
+      },
+      {
+        "index": 245,
+        "output_file": "d05cab011d.jpg",
+        "source_file": "d05cab011d.jpg"
+      },
+      {
+        "index": 246,
+        "output_file": "d087730b76.jpg",
+        "source_file": "d087730b76.jpg"
+      },
+      {
+        "index": 247,
+        "output_file": "d14c1abdd4.jpg",
+        "source_file": "d14c1abdd4.jpg"
+      },
+      {
+        "index": 248,
+        "output_file": "d1d9748a64.jpg",
+        "source_file": "d1d9748a64.jpg"
+      },
+      {
+        "index": 249,
+        "output_file": "d239dae42d.jpg",
+        "source_file": "d239dae42d.jpg"
+      },
+      {
+        "index": 250,
+        "output_file": "d4116437bb.jpg",
+        "source_file": "d4116437bb.jpg"
+      },
+      {
+        "index": 251,
+        "output_file": "d50049fbfc.jpg",
+        "source_file": "d50049fbfc.jpg"
+      },
+      {
+        "index": 252,
+        "output_file": "d5b0c260a0.jpg",
+        "source_file": "d5b0c260a0.jpg"
+      },
+      {
+        "index": 253,
+        "output_file": "d6d6e625bd.jpg",
+        "source_file": "d6d6e625bd.jpg"
+      },
+      {
+        "index": 254,
+        "output_file": "d729785cb8.jpg",
+        "source_file": "d729785cb8.jpg"
+      },
+      {
+        "index": 255,
+        "output_file": "d754850d01.jpg",
+        "source_file": "d754850d01.jpg"
+      },
+      {
+        "index": 256,
+        "output_file": "d7948c7635.jpg",
+        "source_file": "d7948c7635.jpg"
+      },
+      {
+        "index": 257,
+        "output_file": "d88482796d.jpg",
+        "source_file": "d88482796d.jpg"
+      },
+      {
+        "index": 258,
+        "output_file": "d9e8704878.jpg",
+        "source_file": "d9e8704878.jpg"
+      },
+      {
+        "index": 259,
+        "output_file": "da72006ef5.jpg",
+        "source_file": "da72006ef5.jpg"
+      },
+      {
+        "index": 260,
+        "output_file": "dc33f0edbe.jpg",
+        "source_file": "dc33f0edbe.jpg"
+      },
+      {
+        "index": 261,
+        "output_file": "dcab49d080.jpg",
+        "source_file": "dcab49d080.jpg"
+      },
+      {
+        "index": 262,
+        "output_file": "dcf5ea1040.jpg",
+        "source_file": "dcf5ea1040.jpg"
+      },
+      {
+        "index": 263,
+        "output_file": "dd46691bd7.jpg",
+        "source_file": "dd46691bd7.jpg"
+      },
+      {
+        "index": 264,
+        "output_file": "de6f71b00f.jpg",
+        "source_file": "de6f71b00f.jpg"
+      },
+      {
+        "index": 265,
+        "output_file": "df64ac2dcb.jpg",
+        "source_file": "df64ac2dcb.jpg"
+      },
+      {
+        "index": 266,
+        "output_file": "e2253b87a0.jpg",
+        "source_file": "e2253b87a0.jpg"
+      },
+      {
+        "index": 267,
+        "output_file": "e291f8144f.jpg",
+        "source_file": "e291f8144f.jpg"
+      },
+      {
+        "index": 268,
+        "output_file": "e3112413b1.jpg",
+        "source_file": "e3112413b1.jpg"
+      },
+      {
+        "index": 269,
+        "output_file": "e37407c747.jpg",
+        "source_file": "e37407c747.jpg"
+      },
+      {
+        "index": 270,
+        "output_file": "e510a74d3c.jpg",
+        "source_file": "e510a74d3c.jpg"
+      },
+      {
+        "index": 271,
+        "output_file": "e568f84fad.jpg",
+        "source_file": "e568f84fad.jpg"
+      },
+      {
+        "index": 272,
+        "output_file": "e753318d04.jpg",
+        "source_file": "e753318d04.jpg"
+      },
+      {
+        "index": 273,
+        "output_file": "e88d9de918.jpg",
+        "source_file": "e88d9de918.jpg"
+      },
+      {
+        "index": 274,
+        "output_file": "e9580cd500.jpg",
+        "source_file": "e9580cd500.jpg"
+      },
+      {
+        "index": 275,
+        "output_file": "e9f5563817.jpg",
+        "source_file": "e9f5563817.jpg"
+      },
+      {
+        "index": 276,
+        "output_file": "e9f686534b.jpg",
+        "source_file": "e9f686534b.jpg"
+      },
+      {
+        "index": 277,
+        "output_file": "eb3cc5c559.jpg",
+        "source_file": "eb3cc5c559.jpg"
+      },
+      {
+        "index": 278,
+        "output_file": "ec3398cef9.jpg",
+        "source_file": "ec3398cef9.jpg"
+      },
+      {
+        "index": 279,
+        "output_file": "ec78d80dbd.jpg",
+        "source_file": "ec78d80dbd.jpg"
+      },
+      {
+        "index": 280,
+        "output_file": "ed597655a0.jpg",
+        "source_file": "ed597655a0.jpg"
+      },
+      {
+        "index": 281,
+        "output_file": "ede9769cb3.jpg",
+        "source_file": "ede9769cb3.jpg"
+      },
+      {
+        "index": 282,
+        "output_file": "ee7adac58f.jpg",
+        "source_file": "ee7adac58f.jpg"
+      },
+      {
+        "index": 283,
+        "output_file": "f04c9d8e34.jpg",
+        "source_file": "f04c9d8e34.jpg"
+      },
+      {
+        "index": 284,
+        "output_file": "f0884db067.jpg",
+        "source_file": "f0884db067.jpg"
+      },
+      {
+        "index": 285,
+        "output_file": "f0d789c4bc.jpg",
+        "source_file": "f0d789c4bc.jpg"
+      },
+      {
+        "index": 286,
+        "output_file": "f4413e97bd.jpg",
+        "source_file": "f4413e97bd.jpg"
+      },
+      {
+        "index": 287,
+        "output_file": "f486c1655f.jpg",
+        "source_file": "f486c1655f.jpg"
+      },
+      {
+        "index": 288,
+        "output_file": "f7836c88eb.jpg",
+        "source_file": "f7836c88eb.jpg"
+      },
+      {
+        "index": 289,
+        "output_file": "f821791c85.jpg",
+        "source_file": "f821791c85.jpg"
+      },
+      {
+        "index": 290,
+        "output_file": "f84fb4516a.jpg",
+        "source_file": "f84fb4516a.jpg"
+      },
+      {
+        "index": 291,
+        "output_file": "f96a8de9f3.jpg",
+        "source_file": "f96a8de9f3.jpg"
+      },
+      {
+        "index": 292,
+        "output_file": "fb3b06dcb2.jpg",
+        "source_file": "fb3b06dcb2.jpg"
+      },
+      {
+        "index": 293,
+        "output_file": "fb806a2a1c.jpg",
+        "source_file": "fb806a2a1c.jpg"
+      },
+      {
+        "index": 294,
+        "output_file": "fb93438ff9.jpg",
+        "source_file": "fb93438ff9.jpg"
+      },
+      {
+        "index": 295,
+        "output_file": "fba982625d.jpg",
+        "source_file": "fba982625d.jpg"
+      },
+      {
+        "index": 296,
+        "output_file": "fc11d52502.jpg",
+        "source_file": "fc11d52502.jpg"
+      },
+      {
+        "index": 297,
+        "output_file": "fd63a333f1.jpg",
+        "source_file": "fd63a333f1.jpg"
+      },
+      {
+        "index": 298,
+        "output_file": "fdf1530d95.jpg",
+        "source_file": "fdf1530d95.jpg"
+      },
+      {
+        "index": 299,
+        "output_file": "ffd74c77ea.jpg",
+        "source_file": "ffd74c77ea.jpg"
+      }
+    ],
+    "seconds": 9.61081335702329
+  },
+  "b2a": {
+    "aggregate_sha256": "6f4cb811eb53ea99a05200c68412d0ca5d639e1d05592b0e71743537f20696ab",
+    "count": 300,
+    "directory": "task3_gan/Anshika_Goel/outputs/cyclegan_baseline_rtx4090_run001/official_epoch50_predictions/pred_B2A",
+    "mapping": "photo_to_monet",
+    "records": [
+      {
+        "index": 0,
+        "output_file": "00068bc07f.jpg",
+        "source_file": "00068bc07f.jpg"
+      },
+      {
+        "index": 1,
+        "output_file": "000910d219.jpg",
+        "source_file": "000910d219.jpg"
+      },
+      {
+        "index": 2,
+        "output_file": "000ded5c41.jpg",
+        "source_file": "000ded5c41.jpg"
+      },
+      {
+        "index": 3,
+        "output_file": "00104fd531.jpg",
+        "source_file": "00104fd531.jpg"
+      },
+      {
+        "index": 4,
+        "output_file": "001158d595.jpg",
+        "source_file": "001158d595.jpg"
+      },
+      {
+        "index": 5,
+        "output_file": "0033c5f971.jpg",
+        "source_file": "0033c5f971.jpg"
+      },
+      {
+        "index": 6,
+        "output_file": "0039ebb598.jpg",
+        "source_file": "0039ebb598.jpg"
+      },
+      {
+        "index": 7,
+        "output_file": "003aab6fdd.jpg",
+        "source_file": "003aab6fdd.jpg"
+      },
+      {
+        "index": 8,
+        "output_file": "003c6c30e0.jpg",
+        "source_file": "003c6c30e0.jpg"
+      },
+      {
+        "index": 9,
+        "output_file": "00479e2a21.jpg",
+        "source_file": "00479e2a21.jpg"
+      },
+      {
+        "index": 10,
+        "output_file": "005f987f56.jpg",
+        "source_file": "005f987f56.jpg"
+      },
+      {
+        "index": 11,
+        "output_file": "0080f94ebc.jpg",
+        "source_file": "0080f94ebc.jpg"
+      },
+      {
+        "index": 12,
+        "output_file": "00882b7e1d.jpg",
+        "source_file": "00882b7e1d.jpg"
+      },
+      {
+        "index": 13,
+        "output_file": "009d534136.jpg",
+        "source_file": "009d534136.jpg"
+      },
+      {
+        "index": 14,
+        "output_file": "009ddaed1f.jpg",
+        "source_file": "009ddaed1f.jpg"
+      },
+      {
+        "index": 15,
+        "output_file": "00aeb60e25.jpg",
+        "source_file": "00aeb60e25.jpg"
+      },
+      {
+        "index": 16,
+        "output_file": "00c6a0ad1e.jpg",
+        "source_file": "00c6a0ad1e.jpg"
+      },
+      {
+        "index": 17,
+        "output_file": "00dcf0f1e3.jpg",
+        "source_file": "00dcf0f1e3.jpg"
+      },
+      {
+        "index": 18,
+        "output_file": "00dff09ebe.jpg",
+        "source_file": "00dff09ebe.jpg"
+      },
+      {
+        "index": 19,
+        "output_file": "00e1798585.jpg",
+        "source_file": "00e1798585.jpg"
+      },
+      {
+        "index": 20,
+        "output_file": "00e64e1b2c.jpg",
+        "source_file": "00e64e1b2c.jpg"
+      },
+      {
+        "index": 21,
+        "output_file": "00f78547f0.jpg",
+        "source_file": "00f78547f0.jpg"
+      },
+      {
+        "index": 22,
+        "output_file": "00fcff630e.jpg",
+        "source_file": "00fcff630e.jpg"
+      },
+      {
+        "index": 23,
+        "output_file": "01135e4771.jpg",
+        "source_file": "01135e4771.jpg"
+      },
+      {
+        "index": 24,
+        "output_file": "011f46de73.jpg",
+        "source_file": "011f46de73.jpg"
+      },
+      {
+        "index": 25,
+        "output_file": "012df5ce29.jpg",
+        "source_file": "012df5ce29.jpg"
+      },
+      {
+        "index": 26,
+        "output_file": "01416e7ada.jpg",
+        "source_file": "01416e7ada.jpg"
+      },
+      {
+        "index": 27,
+        "output_file": "01480da48f.jpg",
+        "source_file": "01480da48f.jpg"
+      },
+      {
+        "index": 28,
+        "output_file": "0159685c51.jpg",
+        "source_file": "0159685c51.jpg"
+      },
+      {
+        "index": 29,
+        "output_file": "015f79b672.jpg",
+        "source_file": "015f79b672.jpg"
+      },
+      {
+        "index": 30,
+        "output_file": "01622039ef.jpg",
+        "source_file": "01622039ef.jpg"
+      },
+      {
+        "index": 31,
+        "output_file": "0162322d2d.jpg",
+        "source_file": "0162322d2d.jpg"
+      },
+      {
+        "index": 32,
+        "output_file": "016d408833.jpg",
+        "source_file": "016d408833.jpg"
+      },
+      {
+        "index": 33,
+        "output_file": "016f524878.jpg",
+        "source_file": "016f524878.jpg"
+      },
+      {
+        "index": 34,
+        "output_file": "017018f377.jpg",
+        "source_file": "017018f377.jpg"
+      },
+      {
+        "index": 35,
+        "output_file": "01771d99c3.jpg",
+        "source_file": "01771d99c3.jpg"
+      },
+      {
+        "index": 36,
+        "output_file": "017aacad6e.jpg",
+        "source_file": "017aacad6e.jpg"
+      },
+      {
+        "index": 37,
+        "output_file": "018be60883.jpg",
+        "source_file": "018be60883.jpg"
+      },
+      {
+        "index": 38,
+        "output_file": "018db0f253.jpg",
+        "source_file": "018db0f253.jpg"
+      },
+      {
+        "index": 39,
+        "output_file": "01952c7673.jpg",
+        "source_file": "01952c7673.jpg"
+      },
+      {
+        "index": 40,
+        "output_file": "01971e48e5.jpg",
+        "source_file": "01971e48e5.jpg"
+      },
+      {
+        "index": 41,
+        "output_file": "019cf7682d.jpg",
+        "source_file": "019cf7682d.jpg"
+      },
+      {
+        "index": 42,
+        "output_file": "01ae8be57e.jpg",
+        "source_file": "01ae8be57e.jpg"
+      },
+      {
+        "index": 43,
+        "output_file": "01af5f8623.jpg",
+        "source_file": "01af5f8623.jpg"
+      },
+      {
+        "index": 44,
+        "output_file": "01bce47d3f.jpg",
+        "source_file": "01bce47d3f.jpg"
+      },
+      {
+        "index": 45,
+        "output_file": "01c4f86e3e.jpg",
+        "source_file": "01c4f86e3e.jpg"
+      },
+      {
+        "index": 46,
+        "output_file": "01f7a6398e.jpg",
+        "source_file": "01f7a6398e.jpg"
+      },
+      {
+        "index": 47,
+        "output_file": "02001e59af.jpg",
+        "source_file": "02001e59af.jpg"
+      },
+      {
+        "index": 48,
+        "output_file": "0212257854.jpg",
+        "source_file": "0212257854.jpg"
+      },
+      {
+        "index": 49,
+        "output_file": "021df2c226.jpg",
+        "source_file": "021df2c226.jpg"
+      },
+      {
+        "index": 50,
+        "output_file": "022ca16b0f.jpg",
+        "source_file": "022ca16b0f.jpg"
+      },
+      {
+        "index": 51,
+        "output_file": "023637f8fb.jpg",
+        "source_file": "023637f8fb.jpg"
+      },
+      {
+        "index": 52,
+        "output_file": "023eed0385.jpg",
+        "source_file": "023eed0385.jpg"
+      },
+      {
+        "index": 53,
+        "output_file": "023f3cbb75.jpg",
+        "source_file": "023f3cbb75.jpg"
+      },
+      {
+        "index": 54,
+        "output_file": "0240a597f5.jpg",
+        "source_file": "0240a597f5.jpg"
+      },
+      {
+        "index": 55,
+        "output_file": "024d98032b.jpg",
+        "source_file": "024d98032b.jpg"
+      },
+      {
+        "index": 56,
+        "output_file": "0254fc91bd.jpg",
+        "source_file": "0254fc91bd.jpg"
+      },
+      {
+        "index": 57,
+        "output_file": "02620a36f7.jpg",
+        "source_file": "02620a36f7.jpg"
+      },
+      {
+        "index": 58,
+        "output_file": "026ac33f9c.jpg",
+        "source_file": "026ac33f9c.jpg"
+      },
+      {
+        "index": 59,
+        "output_file": "029524fd91.jpg",
+        "source_file": "029524fd91.jpg"
+      },
+      {
+        "index": 60,
+        "output_file": "029854a790.jpg",
+        "source_file": "029854a790.jpg"
+      },
+      {
+        "index": 61,
+        "output_file": "02a1366c74.jpg",
+        "source_file": "02a1366c74.jpg"
+      },
+      {
+        "index": 62,
+        "output_file": "02a4445906.jpg",
+        "source_file": "02a4445906.jpg"
+      },
+      {
+        "index": 63,
+        "output_file": "02b232fc78.jpg",
+        "source_file": "02b232fc78.jpg"
+      },
+      {
+        "index": 64,
+        "output_file": "02c43186c8.jpg",
+        "source_file": "02c43186c8.jpg"
+      },
+      {
+        "index": 65,
+        "output_file": "02c6c1f6a9.jpg",
+        "source_file": "02c6c1f6a9.jpg"
+      },
+      {
+        "index": 66,
+        "output_file": "02cd89f56d.jpg",
+        "source_file": "02cd89f56d.jpg"
+      },
+      {
+        "index": 67,
+        "output_file": "02d763f1c2.jpg",
+        "source_file": "02d763f1c2.jpg"
+      },
+      {
+        "index": 68,
+        "output_file": "02ded12bbd.jpg",
+        "source_file": "02ded12bbd.jpg"
+      },
+      {
+        "index": 69,
+        "output_file": "02ea18a456.jpg",
+        "source_file": "02ea18a456.jpg"
+      },
+      {
+        "index": 70,
+        "output_file": "02ec33e094.jpg",
+        "source_file": "02ec33e094.jpg"
+      },
+      {
+        "index": 71,
+        "output_file": "0312af1e14.jpg",
+        "source_file": "0312af1e14.jpg"
+      },
+      {
+        "index": 72,
+        "output_file": "032389e868.jpg",
+        "source_file": "032389e868.jpg"
+      },
+      {
+        "index": 73,
+        "output_file": "03242238ae.jpg",
+        "source_file": "03242238ae.jpg"
+      },
+      {
+        "index": 74,
+        "output_file": "0324f82fee.jpg",
+        "source_file": "0324f82fee.jpg"
+      },
+      {
+        "index": 75,
+        "output_file": "0341fa51d0.jpg",
+        "source_file": "0341fa51d0.jpg"
+      },
+      {
+        "index": 76,
+        "output_file": "0344a47135.jpg",
+        "source_file": "0344a47135.jpg"
+      },
+      {
+        "index": 77,
+        "output_file": "034627340c.jpg",
+        "source_file": "034627340c.jpg"
+      },
+      {
+        "index": 78,
+        "output_file": "0362dd81bb.jpg",
+        "source_file": "0362dd81bb.jpg"
+      },
+      {
+        "index": 79,
+        "output_file": "0378bcc7c9.jpg",
+        "source_file": "0378bcc7c9.jpg"
+      },
+      {
+        "index": 80,
+        "output_file": "03950208ff.jpg",
+        "source_file": "03950208ff.jpg"
+      },
+      {
+        "index": 81,
+        "output_file": "03a17d96e1.jpg",
+        "source_file": "03a17d96e1.jpg"
+      },
+      {
+        "index": 82,
+        "output_file": "03a21c1b9c.jpg",
+        "source_file": "03a21c1b9c.jpg"
+      },
+      {
+        "index": 83,
+        "output_file": "03a2b7ce83.jpg",
+        "source_file": "03a2b7ce83.jpg"
+      },
+      {
+        "index": 84,
+        "output_file": "03ae080a47.jpg",
+        "source_file": "03ae080a47.jpg"
+      },
+      {
+        "index": 85,
+        "output_file": "03ae26ed88.jpg",
+        "source_file": "03ae26ed88.jpg"
+      },
+      {
+        "index": 86,
+        "output_file": "03bac83f64.jpg",
+        "source_file": "03bac83f64.jpg"
+      },
+      {
+        "index": 87,
+        "output_file": "03be88270f.jpg",
+        "source_file": "03be88270f.jpg"
+      },
+      {
+        "index": 88,
+        "output_file": "03c5d1d098.jpg",
+        "source_file": "03c5d1d098.jpg"
+      },
+      {
+        "index": 89,
+        "output_file": "03c9f2e3c2.jpg",
+        "source_file": "03c9f2e3c2.jpg"
+      },
+      {
+        "index": 90,
+        "output_file": "03c9f3d584.jpg",
+        "source_file": "03c9f3d584.jpg"
+      },
+      {
+        "index": 91,
+        "output_file": "03cc206144.jpg",
+        "source_file": "03cc206144.jpg"
+      },
+      {
+        "index": 92,
+        "output_file": "03d47c18a5.jpg",
+        "source_file": "03d47c18a5.jpg"
+      },
+      {
+        "index": 93,
+        "output_file": "03d6a4d860.jpg",
+        "source_file": "03d6a4d860.jpg"
+      },
+      {
+        "index": 94,
+        "output_file": "03dde7a28f.jpg",
+        "source_file": "03dde7a28f.jpg"
+      },
+      {
+        "index": 95,
+        "output_file": "03e48faafa.jpg",
+        "source_file": "03e48faafa.jpg"
+      },
+      {
+        "index": 96,
+        "output_file": "03fd7067c1.jpg",
+        "source_file": "03fd7067c1.jpg"
+      },
+      {
+        "index": 97,
+        "output_file": "03fe5d2263.jpg",
+        "source_file": "03fe5d2263.jpg"
+      },
+      {
+        "index": 98,
+        "output_file": "0409e76de0.jpg",
+        "source_file": "0409e76de0.jpg"
+      },
+      {
+        "index": 99,
+        "output_file": "0425fc7ce5.jpg",
+        "source_file": "0425fc7ce5.jpg"
+      },
+      {
+        "index": 100,
+        "output_file": "042f0e804d.jpg",
+        "source_file": "042f0e804d.jpg"
+      },
+      {
+        "index": 101,
+        "output_file": "0435dc46a4.jpg",
+        "source_file": "0435dc46a4.jpg"
+      },
+      {
+        "index": 102,
+        "output_file": "0436aaaf16.jpg",
+        "source_file": "0436aaaf16.jpg"
+      },
+      {
+        "index": 103,
+        "output_file": "04387e4338.jpg",
+        "source_file": "04387e4338.jpg"
+      },
+      {
+        "index": 104,
+        "output_file": "043b541b77.jpg",
+        "source_file": "043b541b77.jpg"
+      },
+      {
+        "index": 105,
+        "output_file": "044c1653cf.jpg",
+        "source_file": "044c1653cf.jpg"
+      },
+      {
+        "index": 106,
+        "output_file": "0450d4f8ae.jpg",
+        "source_file": "0450d4f8ae.jpg"
+      },
+      {
+        "index": 107,
+        "output_file": "0451cdb867.jpg",
+        "source_file": "0451cdb867.jpg"
+      },
+      {
+        "index": 108,
+        "output_file": "045e937903.jpg",
+        "source_file": "045e937903.jpg"
+      },
+      {
+        "index": 109,
+        "output_file": "0466d4cdf9.jpg",
+        "source_file": "0466d4cdf9.jpg"
+      },
+      {
+        "index": 110,
+        "output_file": "0473a25050.jpg",
+        "source_file": "0473a25050.jpg"
+      },
+      {
+        "index": 111,
+        "output_file": "047acab66b.jpg",
+        "source_file": "047acab66b.jpg"
+      },
+      {
+        "index": 112,
+        "output_file": "047da870f6.jpg",
+        "source_file": "047da870f6.jpg"
+      },
+      {
+        "index": 113,
+        "output_file": "04838b8b1e.jpg",
+        "source_file": "04838b8b1e.jpg"
+      },
+      {
+        "index": 114,
+        "output_file": "049576d31c.jpg",
+        "source_file": "049576d31c.jpg"
+      },
+      {
+        "index": 115,
+        "output_file": "049b0ece59.jpg",
+        "source_file": "049b0ece59.jpg"
+      },
+      {
+        "index": 116,
+        "output_file": "04a5fc42e1.jpg",
+        "source_file": "04a5fc42e1.jpg"
+      },
+      {
+        "index": 117,
+        "output_file": "04b8bfdb1c.jpg",
+        "source_file": "04b8bfdb1c.jpg"
+      },
+      {
+        "index": 118,
+        "output_file": "04cb1f4705.jpg",
+        "source_file": "04cb1f4705.jpg"
+      },
+      {
+        "index": 119,
+        "output_file": "04cf8e6d5f.jpg",
+        "source_file": "04cf8e6d5f.jpg"
+      },
+      {
+        "index": 120,
+        "output_file": "04d7e14fbe.jpg",
+        "source_file": "04d7e14fbe.jpg"
+      },
+      {
+        "index": 121,
+        "output_file": "04d91d7bda.jpg",
+        "source_file": "04d91d7bda.jpg"
+      },
+      {
+        "index": 122,
+        "output_file": "04e32c4dc1.jpg",
+        "source_file": "04e32c4dc1.jpg"
+      },
+      {
+        "index": 123,
+        "output_file": "04ec8c9ec2.jpg",
+        "source_file": "04ec8c9ec2.jpg"
+      },
+      {
+        "index": 124,
+        "output_file": "04f59976b5.jpg",
+        "source_file": "04f59976b5.jpg"
+      },
+      {
+        "index": 125,
+        "output_file": "04f71da37b.jpg",
+        "source_file": "04f71da37b.jpg"
+      },
+      {
+        "index": 126,
+        "output_file": "04f72d81b0.jpg",
+        "source_file": "04f72d81b0.jpg"
+      },
+      {
+        "index": 127,
+        "output_file": "04f80539d7.jpg",
+        "source_file": "04f80539d7.jpg"
+      },
+      {
+        "index": 128,
+        "output_file": "04fa2a606d.jpg",
+        "source_file": "04fa2a606d.jpg"
+      },
+      {
+        "index": 129,
+        "output_file": "04fa456bc9.jpg",
+        "source_file": "04fa456bc9.jpg"
+      },
+      {
+        "index": 130,
+        "output_file": "05057d04f7.jpg",
+        "source_file": "05057d04f7.jpg"
+      },
+      {
+        "index": 131,
+        "output_file": "0506726dbd.jpg",
+        "source_file": "0506726dbd.jpg"
+      },
+      {
+        "index": 132,
+        "output_file": "050da171c0.jpg",
+        "source_file": "050da171c0.jpg"
+      },
+      {
+        "index": 133,
+        "output_file": "051159e33a.jpg",
+        "source_file": "051159e33a.jpg"
+      },
+      {
+        "index": 134,
+        "output_file": "051a7c9ae6.jpg",
+        "source_file": "051a7c9ae6.jpg"
+      },
+      {
+        "index": 135,
+        "output_file": "051bde8166.jpg",
+        "source_file": "051bde8166.jpg"
+      },
+      {
+        "index": 136,
+        "output_file": "051c1b5ee3.jpg",
+        "source_file": "051c1b5ee3.jpg"
+      },
+      {
+        "index": 137,
+        "output_file": "0529dd48c8.jpg",
+        "source_file": "0529dd48c8.jpg"
+      },
+      {
+        "index": 138,
+        "output_file": "053024baa2.jpg",
+        "source_file": "053024baa2.jpg"
+      },
+      {
+        "index": 139,
+        "output_file": "0541ce0c1a.jpg",
+        "source_file": "0541ce0c1a.jpg"
+      },
+      {
+        "index": 140,
+        "output_file": "0547a52b93.jpg",
+        "source_file": "0547a52b93.jpg"
+      },
+      {
+        "index": 141,
+        "output_file": "054f264b2e.jpg",
+        "source_file": "054f264b2e.jpg"
+      },
+      {
+        "index": 142,
+        "output_file": "054f375c69.jpg",
+        "source_file": "054f375c69.jpg"
+      },
+      {
+        "index": 143,
+        "output_file": "05557b0148.jpg",
+        "source_file": "05557b0148.jpg"
+      },
+      {
+        "index": 144,
+        "output_file": "055c3026f8.jpg",
+        "source_file": "055c3026f8.jpg"
+      },
+      {
+        "index": 145,
+        "output_file": "055dac1e18.jpg",
+        "source_file": "055dac1e18.jpg"
+      },
+      {
+        "index": 146,
+        "output_file": "055e5dca6e.jpg",
+        "source_file": "055e5dca6e.jpg"
+      },
+      {
+        "index": 147,
+        "output_file": "05646c5cdb.jpg",
+        "source_file": "05646c5cdb.jpg"
+      },
+      {
+        "index": 148,
+        "output_file": "0572f32305.jpg",
+        "source_file": "0572f32305.jpg"
+      },
+      {
+        "index": 149,
+        "output_file": "057d83cdee.jpg",
+        "source_file": "057d83cdee.jpg"
+      },
+      {
+        "index": 150,
+        "output_file": "058af422c6.jpg",
+        "source_file": "058af422c6.jpg"
+      },
+      {
+        "index": 151,
+        "output_file": "0597c38d69.jpg",
+        "source_file": "0597c38d69.jpg"
+      },
+      {
+        "index": 152,
+        "output_file": "05a3801bed.jpg",
+        "source_file": "05a3801bed.jpg"
+      },
+      {
+        "index": 153,
+        "output_file": "05a84fad61.jpg",
+        "source_file": "05a84fad61.jpg"
+      },
+      {
+        "index": 154,
+        "output_file": "05c885c810.jpg",
+        "source_file": "05c885c810.jpg"
+      },
+      {
+        "index": 155,
+        "output_file": "05ca68299e.jpg",
+        "source_file": "05ca68299e.jpg"
+      },
+      {
+        "index": 156,
+        "output_file": "05e37a8900.jpg",
+        "source_file": "05e37a8900.jpg"
+      },
+      {
+        "index": 157,
+        "output_file": "05e88ecd0a.jpg",
+        "source_file": "05e88ecd0a.jpg"
+      },
+      {
+        "index": 158,
+        "output_file": "05f0db4d14.jpg",
+        "source_file": "05f0db4d14.jpg"
+      },
+      {
+        "index": 159,
+        "output_file": "05f22b97da.jpg",
+        "source_file": "05f22b97da.jpg"
+      },
+      {
+        "index": 160,
+        "output_file": "05f4b38e6e.jpg",
+        "source_file": "05f4b38e6e.jpg"
+      },
+      {
+        "index": 161,
+        "output_file": "06058e6cb0.jpg",
+        "source_file": "06058e6cb0.jpg"
+      },
+      {
+        "index": 162,
+        "output_file": "0606110c45.jpg",
+        "source_file": "0606110c45.jpg"
+      },
+      {
+        "index": 163,
+        "output_file": "061bb611e0.jpg",
+        "source_file": "061bb611e0.jpg"
+      },
+      {
+        "index": 164,
+        "output_file": "061f0095f0.jpg",
+        "source_file": "061f0095f0.jpg"
+      },
+      {
+        "index": 165,
+        "output_file": "062313a97c.jpg",
+        "source_file": "062313a97c.jpg"
+      },
+      {
+        "index": 166,
+        "output_file": "06371834cb.jpg",
+        "source_file": "06371834cb.jpg"
+      },
+      {
+        "index": 167,
+        "output_file": "063ab57d41.jpg",
+        "source_file": "063ab57d41.jpg"
+      },
+      {
+        "index": 168,
+        "output_file": "064b9119de.jpg",
+        "source_file": "064b9119de.jpg"
+      },
+      {
+        "index": 169,
+        "output_file": "064babb7f0.jpg",
+        "source_file": "064babb7f0.jpg"
+      },
+      {
+        "index": 170,
+        "output_file": "064f91250d.jpg",
+        "source_file": "064f91250d.jpg"
+      },
+      {
+        "index": 171,
+        "output_file": "065b649ac7.jpg",
+        "source_file": "065b649ac7.jpg"
+      },
+      {
+        "index": 172,
+        "output_file": "0665264678.jpg",
+        "source_file": "0665264678.jpg"
+      },
+      {
+        "index": 173,
+        "output_file": "066b81e0f9.jpg",
+        "source_file": "066b81e0f9.jpg"
+      },
+      {
+        "index": 174,
+        "output_file": "068381ad63.jpg",
+        "source_file": "068381ad63.jpg"
+      },
+      {
+        "index": 175,
+        "output_file": "068cc6fe3f.jpg",
+        "source_file": "068cc6fe3f.jpg"
+      },
+      {
+        "index": 176,
+        "output_file": "0696f8142e.jpg",
+        "source_file": "0696f8142e.jpg"
+      },
+      {
+        "index": 177,
+        "output_file": "069e6e5b82.jpg",
+        "source_file": "069e6e5b82.jpg"
+      },
+      {
+        "index": 178,
+        "output_file": "06a5930183.jpg",
+        "source_file": "06a5930183.jpg"
+      },
+      {
+        "index": 179,
+        "output_file": "06a9cf2d11.jpg",
+        "source_file": "06a9cf2d11.jpg"
+      },
+      {
+        "index": 180,
+        "output_file": "06b2c2dfca.jpg",
+        "source_file": "06b2c2dfca.jpg"
+      },
+      {
+        "index": 181,
+        "output_file": "06b8114f82.jpg",
+        "source_file": "06b8114f82.jpg"
+      },
+      {
+        "index": 182,
+        "output_file": "06c2d19658.jpg",
+        "source_file": "06c2d19658.jpg"
+      },
+      {
+        "index": 183,
+        "output_file": "06c549794b.jpg",
+        "source_file": "06c549794b.jpg"
+      },
+      {
+        "index": 184,
+        "output_file": "06c89c4c23.jpg",
+        "source_file": "06c89c4c23.jpg"
+      },
+      {
+        "index": 185,
+        "output_file": "06c9326c86.jpg",
+        "source_file": "06c9326c86.jpg"
+      },
+      {
+        "index": 186,
+        "output_file": "06e117b31e.jpg",
+        "source_file": "06e117b31e.jpg"
+      },
+      {
+        "index": 187,
+        "output_file": "06e156d8ba.jpg",
+        "source_file": "06e156d8ba.jpg"
+      },
+      {
+        "index": 188,
+        "output_file": "06f749912b.jpg",
+        "source_file": "06f749912b.jpg"
+      },
+      {
+        "index": 189,
+        "output_file": "07054731ab.jpg",
+        "source_file": "07054731ab.jpg"
+      },
+      {
+        "index": 190,
+        "output_file": "0709ff32ee.jpg",
+        "source_file": "0709ff32ee.jpg"
+      },
+      {
+        "index": 191,
+        "output_file": "0711866dcd.jpg",
+        "source_file": "0711866dcd.jpg"
+      },
+      {
+        "index": 192,
+        "output_file": "071c375c2c.jpg",
+        "source_file": "071c375c2c.jpg"
+      },
+      {
+        "index": 193,
+        "output_file": "0723d52098.jpg",
+        "source_file": "0723d52098.jpg"
+      },
+      {
+        "index": 194,
+        "output_file": "0724805941.jpg",
+        "source_file": "0724805941.jpg"
+      },
+      {
+        "index": 195,
+        "output_file": "072f1336c9.jpg",
+        "source_file": "072f1336c9.jpg"
+      },
+      {
+        "index": 196,
+        "output_file": "07362b3f42.jpg",
+        "source_file": "07362b3f42.jpg"
+      },
+      {
+        "index": 197,
+        "output_file": "073e8b3056.jpg",
+        "source_file": "073e8b3056.jpg"
+      },
+      {
+        "index": 198,
+        "output_file": "074218de82.jpg",
+        "source_file": "074218de82.jpg"
+      },
+      {
+        "index": 199,
+        "output_file": "074ea8cb6e.jpg",
+        "source_file": "074ea8cb6e.jpg"
+      },
+      {
+        "index": 200,
+        "output_file": "07573a95f6.jpg",
+        "source_file": "07573a95f6.jpg"
+      },
+      {
+        "index": 201,
+        "output_file": "075e8d4617.jpg",
+        "source_file": "075e8d4617.jpg"
+      },
+      {
+        "index": 202,
+        "output_file": "0761281e3b.jpg",
+        "source_file": "0761281e3b.jpg"
+      },
+      {
+        "index": 203,
+        "output_file": "076c62582d.jpg",
+        "source_file": "076c62582d.jpg"
+      },
+      {
+        "index": 204,
+        "output_file": "0770ea1a07.jpg",
+        "source_file": "0770ea1a07.jpg"
+      },
+      {
+        "index": 205,
+        "output_file": "077bf7e451.jpg",
+        "source_file": "077bf7e451.jpg"
+      },
+      {
+        "index": 206,
+        "output_file": "078cd3ce07.jpg",
+        "source_file": "078cd3ce07.jpg"
+      },
+      {
+        "index": 207,
+        "output_file": "078fd1bc42.jpg",
+        "source_file": "078fd1bc42.jpg"
+      },
+      {
+        "index": 208,
+        "output_file": "07939b1fde.jpg",
+        "source_file": "07939b1fde.jpg"
+      },
+      {
+        "index": 209,
+        "output_file": "079da3af1e.jpg",
+        "source_file": "079da3af1e.jpg"
+      },
+      {
+        "index": 210,
+        "output_file": "07b7fdff1b.jpg",
+        "source_file": "07b7fdff1b.jpg"
+      },
+      {
+        "index": 211,
+        "output_file": "07bf7d7df1.jpg",
+        "source_file": "07bf7d7df1.jpg"
+      },
+      {
+        "index": 212,
+        "output_file": "07cb260548.jpg",
+        "source_file": "07cb260548.jpg"
+      },
+      {
+        "index": 213,
+        "output_file": "07e9bc5956.jpg",
+        "source_file": "07e9bc5956.jpg"
+      },
+      {
+        "index": 214,
+        "output_file": "07ea3a38d2.jpg",
+        "source_file": "07ea3a38d2.jpg"
+      },
+      {
+        "index": 215,
+        "output_file": "07f37dfe50.jpg",
+        "source_file": "07f37dfe50.jpg"
+      },
+      {
+        "index": 216,
+        "output_file": "07f730ef9a.jpg",
+        "source_file": "07f730ef9a.jpg"
+      },
+      {
+        "index": 217,
+        "output_file": "08009f0be5.jpg",
+        "source_file": "08009f0be5.jpg"
+      },
+      {
+        "index": 218,
+        "output_file": "0811c84b0c.jpg",
+        "source_file": "0811c84b0c.jpg"
+      },
+      {
+        "index": 219,
+        "output_file": "081955febb.jpg",
+        "source_file": "081955febb.jpg"
+      },
+      {
+        "index": 220,
+        "output_file": "08247a7020.jpg",
+        "source_file": "08247a7020.jpg"
+      },
+      {
+        "index": 221,
+        "output_file": "082786cc1f.jpg",
+        "source_file": "082786cc1f.jpg"
+      },
+      {
+        "index": 222,
+        "output_file": "08341635fa.jpg",
+        "source_file": "08341635fa.jpg"
+      },
+      {
+        "index": 223,
+        "output_file": "0844c2cddf.jpg",
+        "source_file": "0844c2cddf.jpg"
+      },
+      {
+        "index": 224,
+        "output_file": "0845e8dc24.jpg",
+        "source_file": "0845e8dc24.jpg"
+      },
+      {
+        "index": 225,
+        "output_file": "085c73097f.jpg",
+        "source_file": "085c73097f.jpg"
+      },
+      {
+        "index": 226,
+        "output_file": "0860f1e141.jpg",
+        "source_file": "0860f1e141.jpg"
+      },
+      {
+        "index": 227,
+        "output_file": "08645ef69b.jpg",
+        "source_file": "08645ef69b.jpg"
+      },
+      {
+        "index": 228,
+        "output_file": "087e779e73.jpg",
+        "source_file": "087e779e73.jpg"
+      },
+      {
+        "index": 229,
+        "output_file": "08874a6ee1.jpg",
+        "source_file": "08874a6ee1.jpg"
+      },
+      {
+        "index": 230,
+        "output_file": "088972cf3f.jpg",
+        "source_file": "088972cf3f.jpg"
+      },
+      {
+        "index": 231,
+        "output_file": "089406822c.jpg",
+        "source_file": "089406822c.jpg"
+      },
+      {
+        "index": 232,
+        "output_file": "08a203b59d.jpg",
+        "source_file": "08a203b59d.jpg"
+      },
+      {
+        "index": 233,
+        "output_file": "08acc490a3.jpg",
+        "source_file": "08acc490a3.jpg"
+      },
+      {
+        "index": 234,
+        "output_file": "08b790bca7.jpg",
+        "source_file": "08b790bca7.jpg"
+      },
+      {
+        "index": 235,
+        "output_file": "08c1754f70.jpg",
+        "source_file": "08c1754f70.jpg"
+      },
+      {
+        "index": 236,
+        "output_file": "08cbd0d6c4.jpg",
+        "source_file": "08cbd0d6c4.jpg"
+      },
+      {
+        "index": 237,
+        "output_file": "08cbd51033.jpg",
+        "source_file": "08cbd51033.jpg"
+      },
+      {
+        "index": 238,
+        "output_file": "08d7603c9c.jpg",
+        "source_file": "08d7603c9c.jpg"
+      },
+      {
+        "index": 239,
+        "output_file": "08da1e5774.jpg",
+        "source_file": "08da1e5774.jpg"
+      },
+      {
+        "index": 240,
+        "output_file": "08e3354189.jpg",
+        "source_file": "08e3354189.jpg"
+      },
+      {
+        "index": 241,
+        "output_file": "08fa88c02c.jpg",
+        "source_file": "08fa88c02c.jpg"
+      },
+      {
+        "index": 242,
+        "output_file": "08fa8a6f26.jpg",
+        "source_file": "08fa8a6f26.jpg"
+      },
+      {
+        "index": 243,
+        "output_file": "08fd7ac09b.jpg",
+        "source_file": "08fd7ac09b.jpg"
+      },
+      {
+        "index": 244,
+        "output_file": "090d5b3cca.jpg",
+        "source_file": "090d5b3cca.jpg"
+      },
+      {
+        "index": 245,
+        "output_file": "091b6b9b07.jpg",
+        "source_file": "091b6b9b07.jpg"
+      },
+      {
+        "index": 246,
+        "output_file": "0922bbb3c1.jpg",
+        "source_file": "0922bbb3c1.jpg"
+      },
+      {
+        "index": 247,
+        "output_file": "0932ad9605.jpg",
+        "source_file": "0932ad9605.jpg"
+      },
+      {
+        "index": 248,
+        "output_file": "0938dc0298.jpg",
+        "source_file": "0938dc0298.jpg"
+      },
+      {
+        "index": 249,
+        "output_file": "0939723138.jpg",
+        "source_file": "0939723138.jpg"
+      },
+      {
+        "index": 250,
+        "output_file": "093be92a48.jpg",
+        "source_file": "093be92a48.jpg"
+      },
+      {
+        "index": 251,
+        "output_file": "093e24f728.jpg",
+        "source_file": "093e24f728.jpg"
+      },
+      {
+        "index": 252,
+        "output_file": "0945008455.jpg",
+        "source_file": "0945008455.jpg"
+      },
+      {
+        "index": 253,
+        "output_file": "09591edd0a.jpg",
+        "source_file": "09591edd0a.jpg"
+      },
+      {
+        "index": 254,
+        "output_file": "095bc5a33d.jpg",
+        "source_file": "095bc5a33d.jpg"
+      },
+      {
+        "index": 255,
+        "output_file": "096165f6f0.jpg",
+        "source_file": "096165f6f0.jpg"
+      },
+      {
+        "index": 256,
+        "output_file": "0962094f25.jpg",
+        "source_file": "0962094f25.jpg"
+      },
+      {
+        "index": 257,
+        "output_file": "0963accefe.jpg",
+        "source_file": "0963accefe.jpg"
+      },
+      {
+        "index": 258,
+        "output_file": "096495c50c.jpg",
+        "source_file": "096495c50c.jpg"
+      },
+      {
+        "index": 259,
+        "output_file": "096bae8cd9.jpg",
+        "source_file": "096bae8cd9.jpg"
+      },
+      {
+        "index": 260,
+        "output_file": "096da37ff7.jpg",
+        "source_file": "096da37ff7.jpg"
+      },
+      {
+        "index": 261,
+        "output_file": "096f009762.jpg",
+        "source_file": "096f009762.jpg"
+      },
+      {
+        "index": 262,
+        "output_file": "09748274a3.jpg",
+        "source_file": "09748274a3.jpg"
+      },
+      {
+        "index": 263,
+        "output_file": "09756af6f7.jpg",
+        "source_file": "09756af6f7.jpg"
+      },
+      {
+        "index": 264,
+        "output_file": "097b3ce81a.jpg",
+        "source_file": "097b3ce81a.jpg"
+      },
+      {
+        "index": 265,
+        "output_file": "097d38ef3b.jpg",
+        "source_file": "097d38ef3b.jpg"
+      },
+      {
+        "index": 266,
+        "output_file": "09816286d3.jpg",
+        "source_file": "09816286d3.jpg"
+      },
+      {
+        "index": 267,
+        "output_file": "0984136f36.jpg",
+        "source_file": "0984136f36.jpg"
+      },
+      {
+        "index": 268,
+        "output_file": "098b35d919.jpg",
+        "source_file": "098b35d919.jpg"
+      },
+      {
+        "index": 269,
+        "output_file": "098c0ce670.jpg",
+        "source_file": "098c0ce670.jpg"
+      },
+      {
+        "index": 270,
+        "output_file": "098fde2b22.jpg",
+        "source_file": "098fde2b22.jpg"
+      },
+      {
+        "index": 271,
+        "output_file": "099159901a.jpg",
+        "source_file": "099159901a.jpg"
+      },
+      {
+        "index": 272,
+        "output_file": "099395535c.jpg",
+        "source_file": "099395535c.jpg"
+      },
+      {
+        "index": 273,
+        "output_file": "09986b5a14.jpg",
+        "source_file": "09986b5a14.jpg"
+      },
+      {
+        "index": 274,
+        "output_file": "09a43d2264.jpg",
+        "source_file": "09a43d2264.jpg"
+      },
+      {
+        "index": 275,
+        "output_file": "09bebf108f.jpg",
+        "source_file": "09bebf108f.jpg"
+      },
+      {
+        "index": 276,
+        "output_file": "09c874df81.jpg",
+        "source_file": "09c874df81.jpg"
+      },
+      {
+        "index": 277,
+        "output_file": "09d34f7412.jpg",
+        "source_file": "09d34f7412.jpg"
+      },
+      {
+        "index": 278,
+        "output_file": "09ddb5e4c9.jpg",
+        "source_file": "09ddb5e4c9.jpg"
+      },
+      {
+        "index": 279,
+        "output_file": "09e084658a.jpg",
+        "source_file": "09e084658a.jpg"
+      },
+      {
+        "index": 280,
+        "output_file": "09e1b696b4.jpg",
+        "source_file": "09e1b696b4.jpg"
+      },
+      {
+        "index": 281,
+        "output_file": "09e2982b82.jpg",
+        "source_file": "09e2982b82.jpg"
+      },
+      {
+        "index": 282,
+        "output_file": "09e8393bd1.jpg",
+        "source_file": "09e8393bd1.jpg"
+      },
+      {
+        "index": 283,
+        "output_file": "09ec565e3a.jpg",
+        "source_file": "09ec565e3a.jpg"
+      },
+      {
+        "index": 284,
+        "output_file": "09f57ab8c5.jpg",
+        "source_file": "09f57ab8c5.jpg"
+      },
+      {
+        "index": 285,
+        "output_file": "09fc404e31.jpg",
+        "source_file": "09fc404e31.jpg"
+      },
+      {
+        "index": 286,
+        "output_file": "09fcd10b7e.jpg",
+        "source_file": "09fcd10b7e.jpg"
+      },
+      {
+        "index": 287,
+        "output_file": "0a0c3a6d07.jpg",
+        "source_file": "0a0c3a6d07.jpg"
+      },
+      {
+        "index": 288,
+        "output_file": "0a0d3e6ea7.jpg",
+        "source_file": "0a0d3e6ea7.jpg"
+      },
+      {
+        "index": 289,
+        "output_file": "0a1d1b9f8e.jpg",
+        "source_file": "0a1d1b9f8e.jpg"
+      },
+      {
+        "index": 290,
+        "output_file": "0a271892d0.jpg",
+        "source_file": "0a271892d0.jpg"
+      },
+      {
+        "index": 291,
+        "output_file": "0a284dbed0.jpg",
+        "source_file": "0a284dbed0.jpg"
+      },
+      {
+        "index": 292,
+        "output_file": "0a2e5f728d.jpg",
+        "source_file": "0a2e5f728d.jpg"
+      },
+      {
+        "index": 293,
+        "output_file": "0a325fc655.jpg",
+        "source_file": "0a325fc655.jpg"
+      },
+      {
+        "index": 294,
+        "output_file": "0a44c8287d.jpg",
+        "source_file": "0a44c8287d.jpg"
+      },
+      {
+        "index": 295,
+        "output_file": "0a49020ae5.jpg",
+        "source_file": "0a49020ae5.jpg"
+      },
+      {
+        "index": 296,
+        "output_file": "0a497f768d.jpg",
+        "source_file": "0a497f768d.jpg"
+      },
+      {
+        "index": 297,
+        "output_file": "0a6091114d.jpg",
+        "source_file": "0a6091114d.jpg"
+      },
+      {
+        "index": 298,
+        "output_file": "0a6279ef66.jpg",
+        "source_file": "0a6279ef66.jpg"
+      },
+      {
+        "index": 299,
+        "output_file": "0a6e92d928.jpg",
+        "source_file": "0a6e92d928.jpg"
+      }
+    ],
+    "seconds": 9.670970503007993
+  },
+  "checkpoint": "epoch_0050.pt",
+  "checkpoint_sha256": "a66c5beafb3037167df5d34b72c39dea0b3b1d282f564dd7680cecc7585f592b",
+  "config_sha256": "4795c20ee2d0307d26659da578aa6e42834cd10def8ca1bd088285c0216bfae5",
+  "device": "cuda:0",
+  "epoch": 50,
+  "evaluation_size": 256,
+  "global_step": 351900,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "integrity": {
+    "direct_generator_output": true,
+    "external_generation": false,
+    "hand_picking": false,
+    "manual_editing": false,
+    "paired_test_peeking": false,
+    "pretrained_generation_model": false,
+    "target_similarity_reordering": false
+  },
+  "n_eval": 300,
+  "peak_cuda_memory_mib": 696.875,
+  "purpose": "frozen_epoch50_direct_cyclegan_predictions",
+  "run_id": "cyclegan_baseline_rtx4090_run001",
+  "schema_version": 1
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "audit_type": "simulated_two_rater_audit",
+  "external_human_raters_used": false,
+  "reason": "Evaluator-approved simulated substitute because external human raters were unavailable.",
+  "fixed_sample_count": 30,
+  "samples_per_direction": 15,
+  "rating_scale": "1-5 ordinal; higher is better",
+  "dimensions": [
+    "style_quality",
+    "content_preservation",
+    "artifact_free_quality"
+  ],
+  "master_seed": 266,
+  "rater1_seed": 26601,
+  "rater2_seed": 26602,
+  "important_reporting_note": "Do not describe these as ratings from two external human raters. Report them as evaluator-approved simulated/AI-assisted audit ratings."
+}

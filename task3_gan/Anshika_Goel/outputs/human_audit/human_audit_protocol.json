@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "purpose": "Task 3 blinded two-rater human audit",
+  "random_seed": 266,
+  "total_samples": 30,
+  "samples_per_direction": 15,
+  "directions": [
+    "A2B_monet_to_photo",
+    "B2A_photo_to_monet"
+  ],
+  "selection": "15 deterministic random samples from each 300-image frozen epoch-50 prediction set",
+  "presentation": "Input and Translation shown side by side with anonymous AUDIT_XXX identifier; direction and filenames hidden",
+  "rater_count": 2,
+  "rater_independence_required": true,
+  "rating_scale": {
+    "style_quality": "integer 1-5; higher is better",
+    "content_preservation": "integer 1-5; higher is better",
+    "artifact_free_quality": "integer 1-5; higher is better"
+  },
+  "planned_agreement_analysis": [
+    "percent exact agreement",
+    "Cohen's kappa per dimension"
+  ]
+}

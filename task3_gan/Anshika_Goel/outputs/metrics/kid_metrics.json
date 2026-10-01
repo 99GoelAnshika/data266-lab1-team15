@@ -1,0 +1,34 @@
+{
+  "metric": "Kernel Inception Distance",
+  "protocol": {
+    "real_images_per_direction": 300,
+    "generated_images_per_direction": 300,
+    "feature_extractor": "torchvision Inception-v3 IMAGENET1K_V1; final FC replaced by Identity",
+    "feature_dimension": 2048,
+    "preprocessing": "Resize(299), CenterCrop(299), ToTensor, ImageNet normalization",
+    "kernel": "(x dot y / feature_dim + 1)^3",
+    "estimator": "unbiased MMD^2",
+    "subset_size": 100,
+    "num_subsets": 50,
+    "seed": 266
+  },
+  "directions": {
+    "B2A_photo_to_monet": {
+      "real_domain": "Monet",
+      "generated_domain": "pred_B2A",
+      "kid_mean": 0.006702857766748771,
+      "kid_std": 0.0013306318807884084,
+      "kid_min": 0.003596729098206186,
+      "kid_max": 0.01006944392580067
+    },
+    "A2B_monet_to_photo": {
+      "real_domain": "Photo",
+      "generated_domain": "pred_A2B",
+      "kid_mean": 0.016917890851497298,
+      "kid_std": 0.0021643839500926866,
+      "kid_min": 0.012754633306484298,
+      "kid_max": 0.022051031855979453
+    }
+  },
+  "two_direction_mean_kid": 0.011810374309123035
+}

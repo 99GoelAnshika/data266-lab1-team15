@@ -1,0 +1,19 @@
+# DATA 266 Lab 1 - Task 3 CycleGAN
+# Verified Task 3 development/evaluation dependencies.
+# CUDA wheels use the official PyTorch CUDA 12.6 index.
+--extra-index-url https://download.pytorch.org/whl/cu126
+
+torch==2.13.0+cu126
+torchvision==0.28.0+cu126
+torchmetrics==1.9.0
+torch-fidelity==0.4.0
+lpips==0.1.4
+tensorboard==2.21.0
+kaggle==2.2.4
+numpy==2.4.6
+pillow==12.3.0
+matplotlib==3.11.2
+scipy==1.17.1
+scikit-learn==1.9.1
+tqdm==4.70.1
+pyyaml==6.0.3

@@ -1,0 +1,58 @@
+{
+  "run_id": "cyclegan_baseline_rtx4090_run001",
+  "actual_epochs_completed": 50,
+  "final_global_step": 351900,
+  "training": {
+    "batch_size": 1,
+    "base_learning_rate": 0.0002,
+    "total_training_seconds": 39620.7618573012,
+    "total_training_hours": 11.005767182583666,
+    "total_images_processed": 703800,
+    "weighted_images_per_second": 17.763414104322827,
+    "peak_cuda_memory_mib": 2542.11669921875
+  },
+  "parameters": {
+    "generator_a_to_b": 11378179,
+    "generator_b_to_a": 11378179,
+    "discriminator_a": 2764737,
+    "discriminator_b": 2764737,
+    "total_trainable": 28285832
+  },
+  "hardware": {
+    "device": "NVIDIA GeForce RTX 4090",
+    "cuda_version": "12.1",
+    "torch_version": "2.1.2",
+    "device_total_memory_mib": 24563.5
+  },
+  "stability": {
+    "nonfinite_gradient_count_generator": 0,
+    "nonfinite_gradient_count_discriminator_a": 0,
+    "nonfinite_gradient_count_discriminator_b": 0,
+    "total_nonfinite_gradient_count": 0
+  },
+  "final_epoch_metrics": {
+    "epoch": 50,
+    "global_step_start": 344862,
+    "global_step_end": 351900,
+    "batch_count": 7038,
+    "image_count": 14076,
+    "duration_seconds": 796.597852817009,
+    "images_per_second": 17.67014554486061,
+    "peak_cuda_memory_mib": 2542.11669921875,
+    "loss_generator_total": 3.149616751338176,
+    "loss_gan_a_to_b": 0.49189582492221434,
+    "loss_gan_b_to_a": 0.6491559410833497,
+    "loss_cycle_a": 0.6382995484337003,
+    "loss_cycle_b": 0.8425861757167126,
+    "loss_identity_a": 0.21987527549588637,
+    "loss_identity_b": 0.30780398232624695,
+    "loss_discriminator_a": 0.09771124615870432,
+    "loss_discriminator_b": 0.1508206572671058,
+    "grad_norm_generator": 23.407706416072642,
+    "grad_norm_discriminator_a": 5.694744134756719,
+    "grad_norm_discriminator_b": 6.954282031788095,
+    "nonfinite_gradient_count_generator": 0,
+    "nonfinite_gradient_count_discriminator_a": 0,
+    "nonfinite_gradient_count_discriminator_b": 0
+  }
+}

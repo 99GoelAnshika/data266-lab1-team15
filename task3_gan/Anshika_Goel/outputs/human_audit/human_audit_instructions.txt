@@ -1,0 +1,40 @@
+DATA 266 TASK 3 — BLINDED HUMAN AUDIT
+
+There are 30 fixed audit samples.
+
+For each AUDIT_XXX image:
+- The left image is the Input.
+- The right image is the Translation.
+- Do not consult the private manifest.
+- Do not discuss your scores with the other rater until BOTH rating sheets are complete.
+
+Score each dimension independently from 1 to 5.
+
+STYLE QUALITY
+1 = very poor
+2 = poor
+3 = acceptable
+4 = good
+5 = excellent
+
+CONTENT PRESERVATION
+1 = major content loss/change
+2 = substantial content change
+3 = moderate preservation
+4 = good preservation
+5 = excellent preservation
+
+ARTIFACT-FREE QUALITY
+1 = severe artifacts
+2 = obvious artifacts
+3 = moderate artifacts
+4 = minor artifacts
+5 = essentially artifact-free
+
+Important:
+- Every sample must receive all three numerical ratings.
+- Use integer ratings only: 1, 2, 3, 4, or 5.
+- Optional comments may be left blank.
+- Rater 1 fills only rater1_scores.csv.
+- Rater 2 fills only rater2_scores.csv.
+- Raters must work independently.

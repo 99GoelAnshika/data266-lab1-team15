@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "run_id": "cyclegan_baseline_rtx4090_run001",
+  "checkpoint_binary_storage": "Checkpoint .pt binaries are intentionally retained locally and ignored by Git because each file is approximately 399 MiB, above normal GitHub blob limits.",
+  "checkpoint_count": 11,
+  "evaluated_checkpoint": {
+    "filename": "epoch_0050.pt",
+    "epoch": 50,
+    "sha256": "a66c5beafb3037167df5d34b72c39dea0b3b1d282f564dd7680cecc7585f592b",
+    "bytes": 418275500
+  },
+  "config": {
+    "relative_path": "task3_gan/Anshika_Goel/configs/cyclegan_baseline.json",
+    "sha256": "4795c20ee2d0307d26659da578aa6e42834cd10def8ca1bd088285c0216bfae5"
+  },
+  "checkpoints": [
+    {
+      "run_id": "cyclegan_baseline_rtx4090_run001",
+      "filename": "epoch_0005.pt",
+      "checkpoint_type": "epoch_checkpoint",
+      "epoch": 5,
+      "bytes": 418275436,
+      "sha256": "029b8f2586083dcf400a9332dcded7e07824d601555d6391c17c9d617561cbc4",
+      "evaluated_final_checkpoint": false,
+      "git_storage": "local_only_binary_ignored",
+      "relative_path": "task3_gan/Anshika_Goel/checkpoints/cyclegan_baseline_rtx4090_run001/epoch_0005.pt"
+    },
+    {
+      "run_id": "cyclegan_baseline_rtx4090_run001",
+      "filename": "epoch_0010.pt",
+      "checkpoint_type": "epoch_checkpoint",
+      "epoch": 10,
+      "bytes": 418275436,
+      "sha256": "dd324eccf17641e9dd899541fc3dcf4ccbfa39ac5d862bdbec5aa6e87de43e03",
+      "evaluated_final_checkpoint": false,
+      "git_storage": "local_only_binary_ignored",
+      "relative_path": "task3_gan/Anshika_Goel/checkpoints/cyclegan_baseline_rtx4090_run001/epoch_0010.pt"
+    },
+    {
+      "run_id": "cyclegan_baseline_rtx4090_run001",
+      "filename": "epoch_0015.pt",
+      "checkpoint_type": "epoch_checkpoint",
+      "epoch": 15,
+      "bytes": 418275564,
+      "sha256": "966dada43adbd16a9322485a9482abafbdef4114bd5e1be29868ce90dcaf8385",
+      "evaluated_final_checkpoint": false,
+      "git_storage": "local_only_binary_ignored",
+      "relative_path": "task3_gan/Anshika_Goel/checkpoints/cyclegan_baseline_rtx4090_run001/epoch_0015.pt"
+    },
+    {
+      "run_id": "cyclegan_baseline_rtx4090_run001",
+      "filename": "epoch_0020.pt",
+      "checkpoint_type": "epoch_checkpoint",
+      "epoch": 20,
+      "bytes": 418275436,
+      "sha256": "4671e5055ccf644999e9cf3be7d4b74237278fa3780094be99bd71282c9f976a",
+      "evaluated_final_checkpoint": false,
+      "git_storage": "local_only_binary_ignored",
+      "relative_path": "task3_gan/Anshika_Goel/checkpoints/cyclegan_baseline_rtx4090_run001/epoch_0020.pt"
+    },
+    {
+      "run_id": "cyclegan_baseline_rtx4090_run001",
+      "filename": "epoch_0025.pt",
+      "checkpoint_type": "epoch_checkpoint",
+      "epoch": 25,
+      "bytes": 418275500,
+      "sha256": "d196f1777c2ef6ea8e3cfbe5c72c3281d54ad59e168d692f4ba0111f2873a211",
+      "evaluated_final_checkpoint": false,
+      "git_storage": "local_only_binary_ignored",
+      "relative_path": "task3_gan/Anshika_Goel/checkpoints/cyclegan_baseline_rtx4090_run001/epoch_0025.pt"
+    },
+    {
+      "run_id": "cyclegan_baseline_rtx4090_run001",
+      "filename": "epoch_0030.pt",
+      "checkpoint_type": "epoch_checkpoint",
+      "epoch": 30,
+      "bytes": 418275500,
+      "sha256": "b442a7e23c58eae0b6ac1abdc4db9c7af3972bb46324876dc5884323b80e82ed",
+      "evaluated_final_checkpoint": false,
+      "git_storage": "local_only_binary_ignored",
+      "relative_path": "task3_gan/Anshika_Goel/checkpoints/cyclegan_baseline_rtx4090_run001/epoch_0030.pt"
+    },
+    {
+      "run_id": "cyclegan_baseline_rtx4090_run001",
+      "filename": "epoch_0035.pt",
+      "checkpoint_type": "epoch_checkpoint",
+      "epoch": 35,
+      "bytes": 418275436,
+      "sha256": "31daffc150865bacbcd56fd85437a7cac9091cb57ae45976846e824f3e4ec643",
+      "evaluated_final_checkpoint": false,
+      "git_storage": "local_only_binary_ignored",
+      "relative_path": "task3_gan/Anshika_Goel/checkpoints/cyclegan_baseline_rtx4090_run001/epoch_0035.pt"
+    },
+    {
+      "run_id": "cyclegan_baseline_rtx4090_run001",
+      "filename": "epoch_0040.pt",
+      "checkpoint_type": "epoch_checkpoint",
+      "epoch": 40,
+      "bytes": 418275564,
+      "sha256": "910b0451debc0127f304b7b6fa3630bb31fc0f536cecb58cd1de92e974e798ea",
+      "evaluated_final_checkpoint": false,
+      "git_storage": "local_only_binary_ignored",
+      "relative_path": "task3_gan/Anshika_Goel/checkpoints/cyclegan_baseline_rtx4090_run001/epoch_0040.pt"
+    },
+    {
+      "run_id": "cyclegan_baseline_rtx4090_run001",
+      "filename": "epoch_0045.pt",
+      "checkpoint_type": "epoch_checkpoint",
+      "epoch": 45,
+      "bytes": 418275500,
+      "sha256": "d19c8aec7a7bc698065f49c02a4835d260a70167faf1490f42a35e6cd38be969",
+      "evaluated_final_checkpoint": false,
+      "git_storage": "local_only_binary_ignored",
+      "relative_path": "task3_gan/Anshika_Goel/checkpoints/cyclegan_baseline_rtx4090_run001/epoch_0045.pt"
+    },
+    {
+      "run_id": "cyclegan_baseline_rtx4090_run001",
+      "filename": "epoch_0050.pt",
+      "checkpoint_type": "epoch_checkpoint",
+      "epoch": 50,
+      "bytes": 418275500,
+      "sha256": "a66c5beafb3037167df5d34b72c39dea0b3b1d282f564dd7680cecc7585f592b",
+      "evaluated_final_checkpoint": true,
+      "git_storage": "local_only_binary_ignored",
+      "relative_path": "task3_gan/Anshika_Goel/checkpoints/cyclegan_baseline_rtx4090_run001/epoch_0050.pt"
+    },
+    {
+      "run_id": "cyclegan_baseline_rtx4090_run001",
+      "filename": "latest.pt",
+      "checkpoint_type": "latest_pointer_checkpoint",
+      "epoch": null,
+      "bytes": 418273156,
+      "sha256": "81e1b78405f197cf621203d5b7e107672d38be393bbfa8a5924ef9b441d793ab",
+      "evaluated_final_checkpoint": false,
+      "git_storage": "local_only_binary_ignored",
+      "relative_path": "task3_gan/Anshika_Goel/checkpoints/cyclegan_baseline_rtx4090_run001/latest.pt"
+    }
+  ]
+}

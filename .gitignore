@@ -52,3 +52,11 @@ task3_gan/*/outputs/generated_images/
 task3_gan/*/checkpoints/*.tmp
 task3_gan/*/checkpoints/*.temp
 task3_gan/*/checkpoints/*.part
+
+# Task 3 large trained checkpoint binaries
+# Checkpoints remain local; checkpoint identity/hash evidence is committed separately.
+task3_gan/*/checkpoints/**/*.pt
+
+# Temporary compatibility workspace created only for the instructor Part 3 evaluator
+# This duplicates real images/predictions and is not a source artifact.
+Part 3/

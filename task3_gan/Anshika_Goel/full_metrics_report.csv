@@ -1,0 +1,72 @@
+category,metric,direction,value,std,unit,source_artifact,note
+distribution_quality,FID,B2A_photo_to_monet,99.0411896892422,,,directional_fid_mifid.json,
+distribution_quality,FID,A2B_monet_to_photo,100.39735978283598,,,directional_fid_mifid.json,
+distribution_quality,FID,two_direction_average,99.71927473603908,,,directional_fid_mifid.json,Matches instructor-generated submission.csv within tolerance.
+distribution_quality,MiFID,B2A_photo_to_monet,0.4066749004900719,,,directional_fid_mifid.json,
+distribution_quality,MiFID,A2B_monet_to_photo,0.4186956145731977,,,directional_fid_mifid.json,
+distribution_quality,MiFID,two_direction_average,0.4126852575316348,,,directional_fid_mifid.json,
+distribution_quality,KID,B2A_photo_to_monet,0.0067028577667487,0.0013306318807884,,kid_metrics.json,50 deterministic subsets of 100; unbiased polynomial-kernel MMD^2.
+distribution_quality,KID,A2B_monet_to_photo,0.0169178908514972,0.0021643839500926,,kid_metrics.json,50 deterministic subsets of 100; unbiased polynomial-kernel MMD^2.
+distribution_quality,KID,two_direction_average,0.011810374309123,,,kid_metrics.json,
+distribution_quality,Generative precision,B2A_photo_to_monet,0.4266666666666667,,,generative_precision_recall.json,k=3 nearest-neighbor manifold in 2048-D Inception space.
+distribution_quality,Generative recall,B2A_photo_to_monet,0.6433333333333333,,,generative_precision_recall.json,k=3 nearest-neighbor manifold in 2048-D Inception space.
+distribution_quality,Generative precision,A2B_monet_to_photo,0.6466666666666666,,,generative_precision_recall.json,k=3 nearest-neighbor manifold in 2048-D Inception space.
+distribution_quality,Generative recall,A2B_monet_to_photo,0.33,,,generative_precision_recall.json,k=3 nearest-neighbor manifold in 2048-D Inception space.
+distribution_quality,Generative precision,two_direction_average,0.5366666666666666,,,generative_precision_recall.json,
+distribution_quality,Generative recall,two_direction_average,0.4866666666666667,,,generative_precision_recall.json,
+cycle_reconstruction,Cycle L1,A2B2A_monet_to_photo_to_monet,0.0346286868614455,0.0079763249579511,"[0,1] RGB scale",cycle_reconstruction_l1.json,
+cycle_reconstruction,Cycle L1 normalized,A2B2A_monet_to_photo_to_monet,0.069257373722891,0.0159526499159023,"[-1,1] tensor scale",cycle_reconstruction_l1.json,
+cycle_reconstruction,Cycle L1,B2A2B_photo_to_monet_to_photo,0.0450062526452044,0.0152177560337579,"[0,1] RGB scale",cycle_reconstruction_l1.json,
+cycle_reconstruction,Cycle L1 normalized,B2A2B_photo_to_monet_to_photo,0.0900125052904089,0.0304355120675159,"[-1,1] tensor scale",cycle_reconstruction_l1.json,
+cycle_reconstruction,Cycle L1,two_direction_average,0.0398174697533249,,"[0,1] RGB scale",cycle_reconstruction_l1.json,
+cycle_reconstruction,Cycle L1 normalized,two_direction_average,0.0796349395066499,,"[-1,1] tensor scale",cycle_reconstruction_l1.json,
+perceptual_reconstruction,LPIPS,A2B2A_monet_to_photo_to_monet,0.2097524629036585,0.0741251685927516,,cycle_reconstruction_lpips.json,"LPIPS 0.1.4, AlexNet backbone; source vs cycle reconstruction."
+perceptual_reconstruction,LPIPS,B2A2B_photo_to_monet_to_photo,0.1718350787212451,0.0557257485547015,,cycle_reconstruction_lpips.json,"LPIPS 0.1.4, AlexNet backbone; source vs cycle reconstruction."
+perceptual_reconstruction,LPIPS,two_direction_average,0.1907937708124518,,,cycle_reconstruction_lpips.json,
+content_preservation,Content cosine similarity,A2B_monet_to_photo,0.8356126397700125,0.0844865207126308,,content_preservation_cosine.json,Matched source vs direct translation in 2048-D Inception-v3 feature space.
+content_preservation,Content cosine similarity,B2A_photo_to_monet,0.7780926832545257,0.0961654263556003,,content_preservation_cosine.json,Matched source vs direct translation in 2048-D Inception-v3 feature space.
+content_preservation,Content cosine similarity,two_direction_average,0.8068526615122691,,,content_preservation_cosine.json,
+training_final_epoch,Generator total loss,overall,3.149616751338176,,,training_run_summary.json,Epoch-50 mean from original events.jsonl.
+training_final_epoch,GAN loss,A2B_monet_to_photo,0.4918958249222143,,,training_run_summary.json,Epoch-50 mean from original events.jsonl.
+training_final_epoch,GAN loss,B2A_photo_to_monet,0.6491559410833497,,,training_run_summary.json,Epoch-50 mean from original events.jsonl.
+training_final_epoch,Cycle-consistency loss,A_cycle,0.6382995484337003,,,training_run_summary.json,Epoch-50 mean from original events.jsonl.
+training_final_epoch,Cycle-consistency loss,B_cycle,0.8425861757167126,,,training_run_summary.json,Epoch-50 mean from original events.jsonl.
+training_final_epoch,Identity loss,A_domain,0.2198752754958863,,,training_run_summary.json,Epoch-50 mean from original events.jsonl.
+training_final_epoch,Identity loss,B_domain,0.3078039823262469,,,training_run_summary.json,Epoch-50 mean from original events.jsonl.
+training_final_epoch,Discriminator loss,discriminator_A,0.0977112461587043,,,training_run_summary.json,Epoch-50 mean from original events.jsonl.
+training_final_epoch,Discriminator loss,discriminator_B,0.1508206572671058,,,training_run_summary.json,Epoch-50 mean from original events.jsonl.
+training_stability,Gradient norm,generator,23.40770641607264,,,training_run_summary.json,Epoch-50 mean gradient norm.
+training_stability,Gradient norm,discriminator_A,5.694744134756719,,,training_run_summary.json,Epoch-50 mean gradient norm.
+training_stability,Gradient norm,discriminator_B,6.954282031788095,,,training_run_summary.json,Epoch-50 mean gradient norm.
+training_stability,Nonfinite gradient count,entire_training_run,0.0,,count,training_run_summary.json,Sum of logged nonfinite-gradient counters across generator and both discriminators.
+efficiency,Trainable parameter count,all_networks,28285832.0,,parameters,training_run_summary.json,
+efficiency,Training time,full_50_epoch_run,11.005767182583666,,hours,training_run_summary.json,
+efficiency,Training throughput,full_50_epoch_run,17.763414104322827,,images/sec,training_run_summary.json,
+efficiency,Peak CUDA memory,training,2542.11669921875,,MiB,training_run_summary.json,
+kaggle,Leaderboard score,current_public_leaderboard,-50.0659,,competition score,accepted Kaggle submission,
+kaggle,Leaderboard rank,current_public_leaderboard,12.0,,rank,accepted Kaggle submission,
+simulated_audit,Style quality score,overall_30_samples,3.5166666666666666,,1-5,simulated_audit_results.json,"Evaluator-approved simulated/AI-assisted two-rater audit substitute; external_human_raters_used=False; 30 fixed samples, 15 per translation direction."
+simulated_audit,Content preservation audit score,overall_30_samples,3.783333333333333,,1-5,simulated_audit_results.json,"Evaluator-approved simulated/AI-assisted two-rater audit substitute; external_human_raters_used=False; 30 fixed samples, 15 per translation direction."
+simulated_audit,Artifact-free quality score,overall_30_samples,3.4,,1-5,simulated_audit_results.json,"Evaluator-approved simulated/AI-assisted two-rater audit substitute; external_human_raters_used=False; 30 fixed samples, 15 per translation direction."
+simulated_audit,Combined audit score,overall_30_samples,3.5666666666666673,0.38556322935598725,1-5,simulated_audit_results.json,"Evaluator-approved simulated/AI-assisted two-rater audit substitute; external_human_raters_used=False; 30 fixed samples, 15 per translation direction."
+simulated_audit,Style quality score,A2B_monet_to_photo,3.533333333333333,,1-5,simulated_audit_results.json,"Evaluator-approved simulated/AI-assisted two-rater audit substitute; external_human_raters_used=False; 30 fixed samples, 15 per translation direction."
+simulated_audit,Content preservation audit score,A2B_monet_to_photo,4.1,,1-5,simulated_audit_results.json,"Evaluator-approved simulated/AI-assisted two-rater audit substitute; external_human_raters_used=False; 30 fixed samples, 15 per translation direction."
+simulated_audit,Artifact-free quality score,A2B_monet_to_photo,3.3,,1-5,simulated_audit_results.json,"Evaluator-approved simulated/AI-assisted two-rater audit substitute; external_human_raters_used=False; 30 fixed samples, 15 per translation direction."
+simulated_audit,Combined audit score,A2B_monet_to_photo,3.6444444444444444,0.44484109284507195,1-5,simulated_audit_results.json,"Evaluator-approved simulated/AI-assisted two-rater audit substitute; external_human_raters_used=False; 30 fixed samples, 15 per translation direction."
+simulated_audit,Style quality score,B2A_photo_to_monet,3.5,,1-5,simulated_audit_results.json,"Evaluator-approved simulated/AI-assisted two-rater audit substitute; external_human_raters_used=False; 30 fixed samples, 15 per translation direction."
+simulated_audit,Content preservation audit score,B2A_photo_to_monet,3.466666666666667,,1-5,simulated_audit_results.json,"Evaluator-approved simulated/AI-assisted two-rater audit substitute; external_human_raters_used=False; 30 fixed samples, 15 per translation direction."
+simulated_audit,Artifact-free quality score,B2A_photo_to_monet,3.5,,1-5,simulated_audit_results.json,"Evaluator-approved simulated/AI-assisted two-rater audit substitute; external_human_raters_used=False; 30 fixed samples, 15 per translation direction."
+simulated_audit,Combined audit score,B2A_photo_to_monet,3.4888888888888894,0.3115925979383129,1-5,simulated_audit_results.json,"Evaluator-approved simulated/AI-assisted two-rater audit substitute; external_human_raters_used=False; 30 fixed samples, 15 per translation direction."
+simulated_audit,Overall audit score,simulated_rater_1,3.588888888888889,,1-5,simulated_audit_results.json,"Evaluator-approved simulated/AI-assisted two-rater audit substitute; external_human_raters_used=False; 30 fixed samples, 15 per translation direction."
+simulated_audit,Overall audit score,simulated_rater_2,3.5444444444444447,,1-5,simulated_audit_results.json,"Evaluator-approved simulated/AI-assisted two-rater audit substitute; external_human_raters_used=False; 30 fixed samples, 15 per translation direction."
+simulated_audit_agreement,Exact inter-rater agreement,style_quality,50.0,,percent,simulated_audit_results.json,"Evaluator-approved simulated/AI-assisted two-rater audit substitute; external_human_raters_used=False; 30 fixed samples, 15 per translation direction."
+simulated_audit_agreement,Cohen's kappa,style_quality,0.2173913043478261,,kappa,simulated_audit_results.json,"Evaluator-approved simulated/AI-assisted two-rater audit substitute; external_human_raters_used=False; 30 fixed samples, 15 per translation direction. Unweighted categorical Cohen's kappa."
+simulated_audit_agreement,Mean absolute rating difference,style_quality,0.5666666666666667,,rating points,simulated_audit_results.json,"Evaluator-approved simulated/AI-assisted two-rater audit substitute; external_human_raters_used=False; 30 fixed samples, 15 per translation direction."
+simulated_audit_agreement,Exact inter-rater agreement,content_preservation,50.0,,percent,simulated_audit_results.json,"Evaluator-approved simulated/AI-assisted two-rater audit substitute; external_human_raters_used=False; 30 fixed samples, 15 per translation direction."
+simulated_audit_agreement,Cohen's kappa,content_preservation,0.24242424242424246,,kappa,simulated_audit_results.json,"Evaluator-approved simulated/AI-assisted two-rater audit substitute; external_human_raters_used=False; 30 fixed samples, 15 per translation direction. Unweighted categorical Cohen's kappa."
+simulated_audit_agreement,Mean absolute rating difference,content_preservation,0.5666666666666667,,rating points,simulated_audit_results.json,"Evaluator-approved simulated/AI-assisted two-rater audit substitute; external_human_raters_used=False; 30 fixed samples, 15 per translation direction."
+simulated_audit_agreement,Exact inter-rater agreement,artifact_free_quality,33.33333333333333,,percent,simulated_audit_results.json,"Evaluator-approved simulated/AI-assisted two-rater audit substitute; external_human_raters_used=False; 30 fixed samples, 15 per translation direction."
+simulated_audit_agreement,Cohen's kappa,artifact_free_quality,-0.10905730129390023,,kappa,simulated_audit_results.json,"Evaluator-approved simulated/AI-assisted two-rater audit substitute; external_human_raters_used=False; 30 fixed samples, 15 per translation direction. Unweighted categorical Cohen's kappa."
+simulated_audit_agreement,Mean absolute rating difference,artifact_free_quality,0.6666666666666666,,rating points,simulated_audit_results.json,"Evaluator-approved simulated/AI-assisted two-rater audit substitute; external_human_raters_used=False; 30 fixed samples, 15 per translation direction."
+simulated_audit_agreement,Exact inter-rater agreement,pooled_90_paired_judgments,44.44444444444444,,percent,simulated_audit_results.json,"Evaluator-approved simulated/AI-assisted two-rater audit substitute; external_human_raters_used=False; 30 fixed samples, 15 per translation direction."
+simulated_audit_agreement,Cohen's kappa,pooled_90_paired_judgments,0.1336157104351175,,kappa,simulated_audit_results.json,"Evaluator-approved simulated/AI-assisted two-rater audit substitute; external_human_raters_used=False; 30 fixed samples, 15 per translation direction. Pooled across 30 samples x 3 dimensions = 90 paired judgments."

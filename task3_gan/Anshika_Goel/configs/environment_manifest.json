@@ -1,100 +1,85 @@
 {
-  "artifact_purpose": "Task 3 CycleGAN reproducibility and hardware disclosure",
-  "captured_at_local": "2026-09-29T16:35:07-07:00",
-  "cuda": {
-    "bf16_supported": true,
-    "cuda_available": true,
-    "cudnn_version": 91002,
-    "torch_cuda_runtime": "12.6"
-  },
-  "data": {
-    "download_performed_during_environment_setup": false,
-    "monet_path": "task3_gan/data/monet_jpg/",
-    "photo_path": "task3_gan/data/photo_jpg/",
-    "training_pairing": "unpaired"
-  },
-  "evaluation_package_boundary": {
-    "fid_kid_api_available": true,
-    "lpips_model_instantiated_during_setup": false,
-    "lpips_package_available": true,
-    "pretrained_metric_weights_requested_during_setup": false,
-    "torch_fidelity_available": true
-  },
-  "execution_status": {
-    "environment_setup_complete": true,
-    "kaggle_authenticated": false,
-    "kaggle_competition_accessed": false,
-    "kaggle_submission_created": false,
-    "model_implemented": false,
-    "official_evaluation_started": false,
-    "training_started": false
-  },
-  "git": {
-    "branch": "main",
-    "commit": "d3142bdb51013854253b2ed085d72a56914462f9",
-    "repository": "99GoelAnshika/data266-lab1-team15"
-  },
-  "hardware": {
-    "cpu": "12th Gen Intel(R) Core(TM) i7-12650H",
-    "gpu": {
-      "compute_capability": "8.6",
-      "device_count": 1,
-      "driver_version": "566.07",
-      "name": "NVIDIA GeForce RTX 3060 Laptop GPU",
-      "vram_mib_nvidia_smi": 6144.0,
-      "vram_mib_pytorch": 6143.5
-    },
-    "ram_gib": 15.63
-  },
-  "kaggle": {
-    "authentication_attempted": false,
-    "cli_version": "2.2.4",
-    "competition_access_attempted": false
-  },
-  "machine_role": {
-    "current_machine": "local development and smoke-test environment",
-    "serious_training_target": "lab RTX 4090",
-    "serious_training_target_status": "planned; not yet recorded as executed"
-  },
+  "schema_version": 2,
+  "artifact_purpose": "Canonical Task 3 CycleGAN production-training and official-evaluation environment",
+  "environment_role": "production_training_and_official_evaluation",
+  "historical_local_development_manifest": "task3_gan/Anshika_Goel/configs/environment_manifest_local_development.json",
   "member": "Anshika_Goel",
-  "operating_system": {
-    "architecture": "AMD64",
-    "release": "10",
-    "system": "Windows",
-    "version": "10.0.26200"
-  },
-  "packages": {
-    "kaggle": "2.2.4",
-    "lightning-utilities": "0.15.3",
-    "lpips": "0.1.4",
-    "matplotlib": "3.11.2",
-    "numpy": "2.4.6",
-    "pillow": "12.3.0",
-    "pyyaml": "6.0.3",
-    "scikit-learn": "1.9.1",
-    "scipy": "1.17.1",
-    "tensorboard": "2.21.0",
-    "torch": "2.13.0+cu126",
-    "torch-fidelity": "0.4.0",
-    "torchmetrics": "1.9.0",
-    "torchvision": "0.28.0+cu126",
-    "tqdm": "4.70.1"
+  "team": 15,
+  "task": 3,
+  "run": {
+    "run_id": "cyclegan_baseline_rtx4090_run001",
+    "actual_epochs_completed": 50,
+    "final_global_step": 351900,
+    "evaluated_checkpoint": "epoch_0050.pt",
+    "evaluated_checkpoint_sha256": "a66c5beafb3037167df5d34b72c39dea0b3b1d282f564dd7680cecc7585f592b",
+    "checkpoint_binary_storage": "local_only_binary_ignored_by_git",
+    "checkpoint_manifest": "task3_gan/Anshika_Goel/checkpoints/checkpoint_manifest.json",
+    "config_path": "task3_gan/Anshika_Goel/configs/cyclegan_baseline.json",
+    "config_sha256": "4795c20ee2d0307d26659da578aa6e42834cd10def8ca1bd088285c0216bfae5"
   },
   "python": {
-    "absolute_interpreter_path_recorded": false,
     "implementation": "CPython",
-    "version": "3.11.9"
+    "version": "3.10.13",
+    "full_version": "3.10.13 (main, Sep 11 2023, 13:44:35) [GCC 11.2.0]",
+    "container_interpreter": "/opt/conda/bin/python"
+  },
+  "operating_environment": {
+    "system": "Linux",
+    "release": "5.15.146.1-microsoft-standard-WSL2",
+    "machine": "x86_64",
+    "platform": "Linux-5.15.146.1-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+    "execution_context": "Docker container running through WSL2 on Windows host"
+  },
+  "cuda": {
+    "cuda_available": true,
+    "torch_cuda_runtime": "12.1",
+    "cudnn_version": 8902
+  },
+  "hardware": {
+    "gpu": {
+      "name": "NVIDIA GeForce RTX 4090",
+      "torch_reported_name": "NVIDIA GeForce RTX 4090",
+      "device_count": 1,
+      "compute_capability": "8.9",
+      "driver_version": "610.60",
+      "vram_mib_nvidia_smi": 24564.0,
+      "vram_mib_pytorch": 24563.5
+    },
+    "measured_peak_training_cuda_memory_mib": 2542.11669921875
+  },
+  "packages": {
+    "numpy": "1.26.2",
+    "pandas": "2.1.4",
+    "scipy": "1.15.3",
+    "pillow": "10.0.1",
+    "matplotlib": "3.8.2",
+    "torch": "2.1.2",
+    "torchvision": "0.16.2",
+    "lpips": "0.1.4"
+  },
+  "evaluation_notes": {
+    "instructor_fid_mifid_evaluator": "Part3_Evaluation_Script.ipynb",
+    "scipy_version_used_for_final_official_fid_mifid": "1.15.3",
+    "lpips_version_used": "0.1.4",
+    "frozen_prediction_count_a2b": 300,
+    "frozen_prediction_count_b2a": 300
   },
   "reproducibility_files": {
     "curated_requirements": "task3_gan/Anshika_Goel/configs/requirements_task3.txt",
-    "full_pip_freeze": "task3_gan/Anshika_Goel/configs/pip_freeze_task3.txt"
+    "full_pip_freeze": "task3_gan/Anshika_Goel/configs/pip_freeze_task3.txt",
+    "checkpoint_manifest_json": "task3_gan/Anshika_Goel/checkpoints/checkpoint_manifest.json",
+    "checkpoint_manifest_csv": "task3_gan/Anshika_Goel/checkpoints/checkpoint_manifest.csv",
+    "raw_training_log": "task3_gan/Anshika_Goel/logs/cyclegan_baseline_rtx4090_run001/events.jsonl",
+    "training_summary": "task3_gan/Anshika_Goel/outputs/metrics/training_run_summary.json",
+    "full_metrics_report": "task3_gan/Anshika_Goel/full_metrics_report.csv"
   },
-  "task": 3,
-  "team": 15,
-  "tensorboard": {
-    "reduced_feature_notice_expected": true,
-    "summarywriter_smoke_test_passed": true,
-    "tensorflow_installed": false,
-    "version": "2.21.0"
+  "important_note": "requirements_task3.txt contains portable version-pinned production dependencies. pip_freeze_task3.txt preserves the raw active-environment freeze, including Conda-origin direct-reference entries where emitted.",
+  "reproducibility_status": {
+    "production_requirements_refreshed": true,
+    "production_pip_freeze_refreshed": true,
+    "production_requirements_source": "Installed package metadata from active RTX 4090 production/evaluation environment",
+    "production_pip_freeze_source": "python -m pip freeze from active RTX 4090 production/evaluation environment",
+    "pip_freeze_direct_reference_note": "Some Conda-origin packages are represented by pip freeze using PEP 508 direct references such as 'package @ file:///...'. Exact installed versions are pinned separately in requirements_task3.txt.",
+    "historical_local_development_files_preserved": true
   }
 }
