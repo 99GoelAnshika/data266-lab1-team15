@@ -1,0 +1,22 @@
+{"event": "RUN_START", "stage": "smoke", "created_utc": "2026-09-30T19:14:43.663257+00:00"}
+{"event": "PREPROCESSING_COMPLETE", "train_sequences": 16, "validation_sequences": 4, "vocabulary_size": 20, "train_stories": 1, "validation_stories": 1}
+{"event": "TRAINING_CONFIGURATION", "smoke_test": true, "device": "cuda", "gpu": {"name": "NVIDIA A100-SXM4-40GB", "total_memory_mib": 40441.375}, "precision": "fp32", "epochs": 2, "start_epoch": 1, "train_sequences": 16, "validation_sequences": 4, "parameters": 5236, "updates_per_epoch": 4, "total_planned_updates": 8}
+{"event": "STEP", "epoch": 1, "update": 1, "batch": 1, "loss": 3.00654935836792, "learning_rate": 0.0003, "gradient_norm_before_clipping": 1.215986728668213}
+{"event": "STEP", "epoch": 1, "update": 4, "batch": 4, "loss": 2.9935364723205566, "learning_rate": 0.0001950403260841024, "gradient_norm_before_clipping": 1.2733100652694702}
+{"event": "EPOCH_COMPLETE", "epoch": 1, "training_loss": 2.9919241070747375, "validation_loss": 2.978997230529785, "validation_accuracy": 0.125, "training_examples": 16, "training_tokens": 128, "training_seconds": 0.8938167479998356, "validation_seconds": 0.06156467599998905, "training_tokens_per_second": 143.20608814551275, "updates": 4}
+{"event": "SYNTHETIC_RESUME_CHECK_PAUSED", "epoch": 1}
+{"event": "TRAINING_CONFIGURATION", "smoke_test": true, "device": "cuda", "gpu": {"name": "NVIDIA A100-SXM4-40GB", "total_memory_mib": 40441.375}, "precision": "fp32", "epochs": 2, "start_epoch": 2, "train_sequences": 16, "validation_sequences": 4, "parameters": 5236, "updates_per_epoch": 4, "total_planned_updates": 8}
+{"event": "STEP", "epoch": 2, "update": 5, "batch": 1, "loss": 2.993277072906494, "learning_rate": 0.00013495967391589754, "gradient_norm_before_clipping": 1.2811018228530884}
+{"event": "STEP", "epoch": 2, "update": 8, "batch": 4, "loss": 2.9744720458984375, "learning_rate": 3e-05, "gradient_norm_before_clipping": 1.5867081880569458}
+{"event": "EPOCH_COMPLETE", "epoch": 2, "training_loss": 2.9793705344200134, "validation_loss": 2.9751486778259277, "validation_accuracy": 0.15625, "training_examples": 16, "training_tokens": 128, "training_seconds": 0.035787045999995826, "validation_seconds": 0.0025544740001350874, "training_tokens_per_second": 3576.7132051082094, "updates": 8}
+{"event": "TRAINING_COMPLETE", "epochs_completed": 2, "training_tokens": 256}
+{"event": "ALREADY_COMPLETE", "completed_epochs": 2}
+{"event": "GENERATED_SAMPLE", "sample_id": "sample_001", "temperature": null, "repeated_4gram_rate": 0.0}
+{"event": "GENERATED_SAMPLE", "sample_id": "sample_002", "temperature": 0.7, "repeated_4gram_rate": 0.0}
+{"event": "GENERATED_SAMPLE", "sample_id": "sample_003", "temperature": 1.0, "repeated_4gram_rate": 0.0}
+{"event": "GENERATED_SAMPLE", "sample_id": "sample_004", "temperature": 1.3, "repeated_4gram_rate": 0.0}
+{"event": "EVALUATION_COMPLETE", "validation_cross_entropy": 2.9751486778259277, "samples": 4, "diversity": {"sample_count": 3, "distinct_1": 0.6666666666666666, "distinct_2": 1.0, "distinct_3": 1.0, "repeated_4gram_rate": 0.0}}
+{"event": "RUN_END", "stage": "smoke"}
+SYNTHETIC SMOKE TEST ONLY - not assessed training or submission evidence.
+SMOKE CHECK PASSED: synthetic preprocessing, training, reload, evaluation, generation, report and hashes.
+No final-run evidence was created in the member folder.

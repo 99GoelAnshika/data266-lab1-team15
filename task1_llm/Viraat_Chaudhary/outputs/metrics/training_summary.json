@@ -1,0 +1,33 @@
+{
+  "member_name": "Viraat Chaudhary",
+  "experiment": "viraat_postnorm_char_gpt_v1",
+  "smoke_test": false,
+  "epochs_completed": 10,
+  "required_epochs": 10,
+  "completed": true,
+  "global_steps": 15630,
+  "parameter_count": 3273824,
+  "gpu": {
+    "name": "NVIDIA A100-SXM4-40GB",
+    "total_memory_mib": 40441.375
+  },
+  "precision": "bf16",
+  "final_training_loss": 0.9326997169876099,
+  "final_validation_loss": 0.8637519218444825,
+  "best_validation_loss": 0.8637519218444825,
+  "training_tokens": 256000000,
+  "training_tokens_per_second": 590870.7275939166,
+  "total_training_seconds": 451.62236405800104,
+  "time_definition": "Sum of completed epoch training, validation, best-checkpoint and plot/metric writes; excludes preprocessing, setup, last-checkpoint write and uncheckpointed interrupted work",
+  "peak_gpu_allocated_mb": 1758.94873046875,
+  "peak_gpu_reserved_mb": 2034.0,
+  "peak_cpu_rss_mb": 1674.8984375,
+  "gradient_norm_mean": 0.6247545246332789,
+  "gradient_norm_max": 3.3099968433380127,
+  "loss_spike_count": 0,
+  "nonfinite_loss_count": 0,
+  "nonfinite_gradient_count": 0,
+  "config_sha256": "c62a411bb03ee972ed25ecc68cd34687f097594a1948563779007f939776192f",
+  "best_checkpoint_sha256": "52e2bddd0dadea877d0230f95e5e267cdd87c2f9c4401ff5817a5bc92d0093f1",
+  "last_checkpoint_sha256": "77cc51c734024e2a460d765d9caf011c8b6ac9bcff2f01d11dde3e4a7c3ac4e9"
+}

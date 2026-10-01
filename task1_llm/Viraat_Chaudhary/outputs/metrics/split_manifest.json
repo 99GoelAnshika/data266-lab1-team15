@@ -1,0 +1,45 @@
+{
+  "member_name": "Viraat Chaudhary",
+  "data_configuration": {
+    "dataset_id": "roneneldan/TinyStories",
+    "dataset_revision": "f54c09fd23315a6f9c86f9dc80f725de7d8f9c64",
+    "source_split": "train",
+    "text_field": "text",
+    "train_sequences": 100000,
+    "validation_sequences": 10000,
+    "sequence_length": 256,
+    "split_seed": 2661502,
+    "separator": "\n\n"
+  },
+  "protocol": "100K/10K fixed-length sequences, following the existing Team 15 implementation; counts are not story counts",
+  "source_fingerprint": "b7d1229eda0c7272",
+  "train_shuffled_index_range": [
+    0,
+    28705
+  ],
+  "validation_shuffled_index_range": [
+    28705,
+    31559
+  ],
+  "story_record_overlap": false,
+  "train_stories_used": 28704,
+  "validation_stories_used": 2854,
+  "train_shape": [
+    100000,
+    257
+  ],
+  "validation_shape": [
+    10000,
+    257
+  ],
+  "vocabulary_size": 96,
+  "unknown_validation_characters": [],
+  "unknown_validation_character_count": 0,
+  "train_text_sha256": "206399e4fbf04d9989a907d15a8066c4939b23afb56fd3d9ea79b6957abe5ec5",
+  "validation_text_sha256": "0f92566a1e1eb2e6cb767ab3edd9337053547253c05d281684fc8bc64a7a9543",
+  "files": {
+    "data_processed/train.npy": "6ac83f875d5396146cb163f015a9b91442dd4b72bc73232891f66519c38da723",
+    "data_processed/validation.npy": "42c2101447c4ba6ec998351f03fb8ae14235278e7fb9cdd71320a8b560a42ba6",
+    "outputs/metrics/vocabulary.json": "f470ced134d2fcc6ac7582cfbde25ac75a851f5fd2e682676dbc720d6bb30964"
+  }
+}

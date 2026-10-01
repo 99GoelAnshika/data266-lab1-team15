@@ -1,0 +1,310 @@
+{
+  "reviewed_inputs": {
+    "run_zip_sha256": "6deb4bc9b6abd3f4f88be1c16b3ec19eb9ef9815dad78efa8b4bf8d67f7c0fe8",
+    "executed_notebook_sha256": "e81decb6cc3b03da7ea62b1d576f31fe3104843c994d088e6f32dc20dfb29a6c"
+  },
+  "checks_passed": 58,
+  "checks": [
+    {
+      "check": "ten real epochs completed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "15630 consecutive updates",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "each epoch visits all 100000 examples",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "256 million training targets",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "full final minibatch is counted",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "epoch 1 online loss matches minibatches",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "epoch 2 online loss matches minibatches",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "epoch 3 online loss matches minibatches",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "epoch 4 online loss matches minibatches",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "epoch 5 online loss matches minibatches",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "epoch 6 online loss matches minibatches",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "epoch 7 online loss matches minibatches",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "epoch 8 online loss matches minibatches",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "epoch 9 online loss matches minibatches",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "epoch 10 online loss matches minibatches",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "all step losses and gradients finite",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "gradient summaries match all steps",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "stability counters match recorded steps",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "every recorded LR matches warmup/cosine schedule",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "training throughput denominator matches history",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "reported total time includes completed epoch overhead",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "best and last checkpoint hashes",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint provenance maps to frozen config and preprocessing",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "all checkpoint weights finite",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "best and last model tensors agree at epoch ten",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "3273824 actual checkpoint parameters",
+      "passed": true,
+      "details": {
+        "tensor_count": 52,
+        "parameters": 3273824
+      }
+    },
+    {
+      "check": "untied token and output weights",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "optimizer state and final counter are complete",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "checkpoint history and summary agree",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "own split ranges and train-only vocabulary",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "character dictionaries are bijective",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "perplexity BPC and both gap definitions",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "own validation accuracy is a count over 2560000 targets",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "30 distinct real continuations with 500 tokens each",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "saved token ids decode exactly to all sample texts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "generation modes and temperatures match configured grid",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "all diversity metrics recomputed for all_sampled_outputs",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "all diversity metrics recomputed for 0.7",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "all diversity metrics recomputed for 1.0",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "all diversity metrics recomputed for 1.3",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "generation timing and throughput match timing records",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "all 23 required/supplementary CSV metrics agree with JSON",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "three different failure excerpts are exact real text",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "executed notebook has no error outputs",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "executed notebook contains successful completion evidence",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "notebook reprints original training events without changes",
+      "passed": true,
+      "details": {
+        "events": 184
+      }
+    },
+    {
+      "check": "raw training epoch events agree with all saved history rows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "common evaluator file is the actually executed verified fix",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "common protocol uses the official validation split FP32 batch32 10K windows",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Anshika_Goel common CSV and manifest are identical",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Anshika_Goel common checkpoint and vocabulary hashes match files",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Anshika_Goel accuracy equals an integer count",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Anshika_Goel frozen vocabulary equivalence is only line endings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Viraat_Chaudhary common CSV and manifest are identical",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Viraat_Chaudhary common checkpoint and vocabulary hashes match files",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Viraat_Chaudhary accuracy equals an integer count",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Viraat_Chaudhary frozen vocabulary equivalence is only line endings",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "all original Anshika files remain byte-identical",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "limits": [
+    "Full dataset preprocessing and model inference have not been rerun in this review environment; the uploaded Colab logs and manifests are the evidence for those computations.",
+    "Processed arrays are intentionally absent from the export, so their recorded hashes cannot be directly recomputed until deterministic restoration.",
+    "Story-record disjointness is supported by the implementation and saved index ranges; exact duplicate text across records/splits was not exhaustively audited.",
+    "This verifies technical evidence, not the student's personal authorship/understanding, Git commit history or final combined Tasks 1-3 report."
+  ]
+}

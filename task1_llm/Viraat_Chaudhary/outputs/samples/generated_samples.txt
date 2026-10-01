@@ -1,0 +1,282 @@
+sample_001 | greedy | temperature=None
+Prompt: Once upon a time
+, there was a little girl named Lily. She loved to play with her toys and said, "Thank you, Lily. You are very sad. You are a good friend. You are very sad. You are a good friend. You are very sad. You are a good friend. You are very sad. You are a good friend. You are very sad. You are very sad. You are very sad. You are very sad. You are very sad. You are very sad. You are very sad. You are very sad. You are very sad. You are very sad. You are very sad. You are very sad. You are very sad. You 
+
+sample_002 | sampled | temperature=0.7
+Prompt: Once upon a time
+, there was a little girl named Lily. She loved to play with her mom, who was very sad and they started to everyone her very happy. She was so happy and loved boat to play with her friends. One day, she saw a young bird and saw a big box and decided to always always saw the stars. She was so happy that her mom and dad smiled at the princess were so surprised by the squirrel in the whole.
+
+When she got to the tree, she saw a big, little girl was. She wanted to get closer to the lake, but she was 
+
+sample_003 | sampled | temperature=0.7
+Prompt: Once upon a time
+, there was a little boy named Timmy. Timmy loved to play with his friends. He saw the park and his mom said to him better. Timmy was so happy that he had made them happy.
+
+Timmy's mom came to the store and said, "That's a great day, Mommy! You have to put on the bell inside."
+
+Tim smiled and said, "That's so proud of herself. What do you do you have to let you, Tim. Let's say sorry to the sign and can be fun and try and play with it."
+
+From that day on, Timmy and his friend he was always having
+
+sample_004 | sampled | temperature=0.7
+Prompt: Once upon a time
+, there was a little girl named Lily. She loved to eat her vegetables and loved to play with the sun. One day, she saw a big pet of playing in the car in the park. Lily was so excited to see the stones she wanted to climb the rabbit. She saw something special trick when she tail.
+
+Lily and Ben were playing in the living room. They saw the branches and danced at the forest patterns. They still felt so happy and wanted to make sure them set.
+
+"Look, Tom. It's time to go home. I turns around the wo
+
+sample_005 | sampled | temperature=1.0
+Prompt: Once upon a time
+, there was a mom, Lucy loved to be went back with her adventure party. Every day, the butterfly would find the pocket and funny would never do something special.
+
+One day, the flower scamped high in the farm. It was a little boy named Timmy. He loved goodbye to find his big sticks because the enging new.
+
+Spot likes that day was the shiny can look for him. He wanted to smell mather. He could help her one of the big candy tried to drink the sun.
+
+He wanted to run away, but he was very embarrasse
+
+sample_006 | sampled | temperature=1.0
+Prompt: Once upon a time
+, there was a little girl called Jelie, "Zoomp! I love you. Thank you, Grandma!" Lily said.
+
+Mommy smiled and waved goodbye. She looked down and laughed and said, â€œYou're happy because you get closer and search."
+
+Lily and Ben were playing in their toys. They all rain too her mom. They wished they hear the drawings many toys. They are happy to have fun.
+
+One day, Tom asked Lily. Molly ran off to Tom the house balls. He put on his children splashing with his jar. But the house was time, it was 
+
+sample_007 | sampled | temperature=1.0
+Prompt: Once upon a time
+ there was a little girl named Lily. She liked to pretend some dug and dance her hands and happy.
+
+As she started to solve her family! It was a huge, so she decided to the have fun showing her their how to come all the unique.
+
+One day, some monkey to look around and saw a boy. She loved to go up. She would not notice the log and make him a new friend. Everywhere he helped and her mommy's hands. From that day on, Lucy was so happy and grow the dog coming rabbit.
+
+Suddenly, the big boy clapped he
+
+sample_008 | sampled | temperature=1.3
+Prompt: Once upon a time
+, there was a giantion. There was a little number who loved to play mother in the ay. He loved it too.
+
+One day, a boy wapped something unice, Timmy. They were very excited him had found the shovel.
+
+Jim did not to be mad. He decided to blue of his friend friends and decided to stop berrow his microsion. The trunes was strange shiny in answer!
+
+Alex was glad smiled, his faquick. Yuck jumped out to in and cheering one and hold they rocked it with Jess gave him singing with his grass.
+
+In their br
+
+sample_009 | sampled | temperature=1.3
+Prompt: Once upon a time
+, in a driver.
+
+"Hello, Timmy. A monksmal loud," ran asked.
+
+"Sammy!" Lily and Beth kicking when she sang its magical open.
+
+"We can't want to look or of the mess, I'm laking."
+
+Soon, Jack came clothes, "Oga, Tim! You have a big small crayon." 
+
+They hugged and sure to work together. Tim said goodbye and right to have someone reousd mpend. They became friends was over!
+
+Timmy left, until he knights: "Billy!". Anna looks are hungry. 
+
+The cookie brother great smiled. He found a neighbor in this w
+
+sample_010 | sampled | temperature=1.3
+Prompt: Once upon a time
+, there was a star of myspelf trees. 
+
+He loved going down and dance. One day, twistuck cheese with something from. Speed trutler crying around, and never up firstories. 
+
+Timmy's friends, until she talked by them to do. "Maybe this' dog trip," the leg ruined to go!
+
+Timmy thanked for the floor sleepy. He sighed, patiently 3 years old Tim was not nervous.
+
+Squite guesst to the forice away. Tina's ready Pephine and offered laughing until she had permissioned it.
+
+Once upon a time, there was a lit
+
+sample_011 | greedy | temperature=None
+Prompt: Lily found a little
+ boy named Timmy. Timmy loved to play with his friends. One day, he saw a big box of the story is that he was a big boy who loved to play with his friends. Timmy was so happy that he was so happy that he was so happy that he was so happy that he was so happy that he was so happy that he was so happy that he was so happy that he was so happy that he was so happy that he was so happy that he was so happy that he was so happy that he was so happy that he was so happy that he was so happy that he wa
+
+sample_012 | sampled | temperature=0.7
+Prompt: Lily found a little
+ girl with the bear work. She looked around and saw that it was a big box in the farmer. One day, she decided to sleep in the park. She wanted to share the pan, but she looked hard for a big man to cheer up and had fun. She wanted to show her mom everyone to her hand.
+
+But then, a big cat went to the park. The end.
+
+Once upon a time, there was a little girl named Lily. She loved to play outside with her mom. One day, she was playing with her mommy and felt very sad. She had a time that she was s
+
+sample_013 | sampled | temperature=0.7
+Prompt: Lily found a little
+ girl who liked to eat. It was swimming in the park. It was a special paper calm. It was a small little boy lived in a horn. 
+
+Lily and Ben were best friends. They all liked to play with their ball and holds it to stay car. They had a big time in the kitchen. They said they could help out. They have a big boat on the slide. They saw a big park to send a big paper. They want to hop and fly to the living room. They say they could have fun and have fun.
+
+John was very sad because she felt sad. She 
+
+sample_014 | sampled | temperature=0.7
+Prompt: Lily found a little
+ kitchen. She loved to play with her arms. One day, she saw a big smile on her broom and saw the new toy car. The magical was very hard and said, "We can visit them?" the balloon said, "Yes, you can have a special dog, but it was too late." 
+
+And her mom smiled and said, "Hello, that's a great name." 
+
+Lily said, "I am hungry. I will help you are very dangerous and delicious first." 
+
+The little girl felt sad and said, "I'm still I can get a bell so that she looked for something else and fun."
+
+
+
+sample_015 | sampled | temperature=1.0
+Prompt: Lily found a little
+ girl named Daisy. She used the water in her real over her blanket. She smiled and said, "That lions of fun!" Ben said.
+
+"OK, Stoph, Lily, I saw a very big bird. It's very angry and worries. Even if you feel so being careful when it was so happy and kept trying to play. Or mum was trying to be years and brought or a journey can amazing very much.
+
+So, Lily saw a furry one music. She was happy with new cover and her favorite poems coming when they didn't know what it was. She picked it up her hea
+
+sample_016 | sampled | temperature=1.0
+Prompt: Lily found a little
+ bird scared, so she asked if she could be kind anyway. Amy was playing with me, who didn't want to use the bucket.
+
+One day, Tim found a milk to playing with his friends. So, he kept her mommy and fixed them. She was sad and colorful. From that day on, the bird pet on the tree and it smiled. Tim was so happy and she got there it to come home.
+
+Once upon a time, there was a little girl named Dave. Timmy loved to play with his dad. One day, he found a big snow. He had a proom. He showed his face.
+
+sample_017 | sampled | temperature=1.0
+Prompt: Lily found a little
+ girl, she would see all of the park. One day, she realized has a beautiful friend sunny way on and still had been someone was special better.
+
+Lily and Tom were playing with them. They had to go to out and want to be happy. They decided to learn not to ride her. Lily was hurt fix it closer of the fun corner. She was so happy and selly kind when she saw something together. She run to the store to promise in the sand.
+
+"What's this?" asked her mom and asked, "Thank you, Sue. I found the dog?" The
+
+sample_018 | sampled | temperature=1.3
+Prompt: Lily found a little
+ bin dream. Like did not know how to top her. 
+
+Lily noticed down the tib legs. She splashed the stame. She's notice and kicked some chone flowersh. She did not know.
+
+"Good dogughter why only do. Thanks you, you found my children over the here. Can you will play something ices," her mom said.
+
+Emily was fixing in bxect her. He saw the stepid of Twins about the other water better.
+
+Moljey's frieberred came Tweethen was prised to visit. Lily and Anna of their mommy excited to grab her Mhowing her
+
+sample_019 | sampled | temperature=1.3
+Prompt: Lily found a little
+ radiosing that wrong could learn and on the room. 
+
+The fatrmen was very smiling cheered. From that day on, she stut on her healfuers and gave a medal the beach.
+
+Tim was so happy! 
+When he took, she saw whalking the clouds. He would always listen to his mistakes or dangerous and not take him each other. He knew that he looked at herp lift there. Tim decided to its piece of tamps, his orange. He tried that she heard somen was laughing as he knew, it was too empty!
+
+The end.
+
+Lily was a wonderfu
+
+sample_020 | sampled | temperature=1.3
+Prompt: Lily found a little
+ bird to get just like," Pete said.
+
+But be kind one searchionsce up no.
+
+Then, "Let's get me your hardes worked."
+
+Lily's mommy remembered. "Why dop?" It liked to a mouch guy pace!" She held her very teacher. She felt the pie, safe they and opened her head big brown.
+
+She hold her back. "Here, mommy! You! E, you get too clean the taller. Come open the yarder very helped me." She suggested but for dinner Lily. She squirrels scared in.
+
+Lily asked: "Kim forgive you, CRichby Grandma's rod inside."
+
+sample_021 | greedy | temperature=None
+Prompt: One day, a small dog
+ named Timmy. Timmy loved to play with his friends. One day, he saw a big box of car with his friends. He was so excited to see the beach and said, "Thank you, Timmy. You are very sad. You are very sad. You are a good friend. You are very sad. You are very sad. You are very sad. You are very sad. You are very sad. You are very sad. You are very sad. You are very sad. You are very sad. You are very sad. You are very sad. You are very sad. You are very sad. You are very sad. You are very sad. You 
+
+sample_022 | sampled | temperature=0.7
+Prompt: One day, a small dog
+ named Tom liked to play with his friends and saw the strangers. They saw a swing right catch and a flower and wanted to try it. Today he was so happy and thanked the candy it made him for fun them can under a big room.
+
+They were walking through the cars and had lots of fun. They were so proud of the meadow. They looked at their chair and cried and all the slide. They told their that their mom and dad.
+
+They were so excited to be careful with each other. They were so proud of himself and safe a
+
+sample_023 | sampled | temperature=0.7
+Prompt: One day, a small dog
+ wanted to play with him. He wanted to play with his toys and dreams. The bus was so happy that he started to rain make marching sprizes. He was so excited and wanted to cry. He was not scared, but he kept to his friend dancer. The park was so excited to chase out of his friends were helped him to be careful.
+
+Once upon a time, there was a little boy named Timmy. He loved to play outside in the sky. One day, Timmy found a small horn since of the street to play with them. He said, "Thank you, Tim
+
+sample_024 | sampled | temperature=0.7
+Prompt: One day, a small dog
+ named Mary was very excited to try something special place. He took his friends that the big boy was big and proud of his help.
+
+Max was so excited and she said, "It's a big, furry, you have to put your on things. Go away! You are a magical wind me." Max said.
+
+Mandy was so excited and said, "I don't want to see what I am for you?". Her mom said, "Yes, you can have the box. You can play with me!" The shiny cars and they went to the top of their room. They were happy and who always feel sad and 
+
+sample_025 | sampled | temperature=1.0
+Prompt: One day, a small dog
+ named He would climb fix it. 
+
+The little girl was scared but her adventure was very hungry and her pretended, but she was too hard.
+
+Next to the pond and said, â€œWhat remembers, let's go go to the sun.â€ But for a very bitter to be out from the tray powder behind them outside of your fawers. It was jelly, so she got home cookies and make a nice man that in his face. Lily thought something from a big beak and looked for the nose. She played and her favorite back goodbye to help her mom. Finall
+
+sample_026 | sampled | temperature=1.0
+Prompt: One day, a small dog
+ named Spot. He loved to play with it, but Lily was inside. Lily liked to play with bubbles and bought of her furry doll. Then her friend felt so relieved! 
+
+Lily ran up to the shock and saw her brother, but not having a toys for her. He knew that her cothes was Mistant like a special good friends. She played together if they were happy to see they can help your car and read all the end.
+
+Once upon a time, there was a little girl named Milly. She was very happy with his friends. She loved the si
+
+sample_027 | sampled | temperature=1.0
+Prompt: One day, a small dog
+ named Spot. It wanted to be fun. He was all zoomed all everywhere when the boy said it was time for on his songs, and long flowers.
+
+"Let's take a movie and waiting for this my name."
+
+Her mom explained to the tree and said, "I will help keep fresh anything. Who wish it was too late some little bit lesson that made everyone hus and her backyard.
+
+Mom told Lily that they both were very sad and was getting closer everyone. She decided to never found over the ground as Lily's family. 
+
+Abigail and
+
+sample_028 | sampled | temperature=1.3
+Prompt: One day, a small dog
+ would it was still snack to the sent. Inside the living hair robot animal fell friends.
+
+But did not eaty playing in the bush or carrying, something its bowls punes to get and grabbed him.
+
+Lily picked up together and left there! It was a badgs that One day, she saw a song didn't fly distire sorter. The boy felt much betterman to go to this hill. So they were so soft pepzed! At mana asked it homet, her mom replied, "What is it?"
+
+They asked their pain, "Can I try my name?" mom asks.
+
+"OK, Ben, 
+
+sample_029 | sampled | temperature=1.3
+Prompt: One day, a small dog
+ is named Timmy. Timmy left Billy's daughter table. He was spot, but his finger said, "Ha truck! It is dark, yummy! Your over ased for you!" Lily told the food, Billy asked hi mintestly.
+
+His dad ate each other's face and said, "Don't wait to such a question. Look at all fairy!"
+
+Bim was also excited! She wished picking she repeation about her hand. She said thanked Higher in for a big house cheese and hungry to sleep! Her and destroyed the perfectly all her house.
+
+Filly thought it was a funce 
+
+sample_030 | sampled | temperature=1.3
+Prompt: One day, a small dog
+, a small tower cloudhy. He was a little boy who was so excited!
+
+But then, Jack heard a good friend's wing carp-androwing late a big jellyfish. It looked good.
+
+Jack looked at the door and ran off. He followed the scarf and put even his mom felt a ladyburr hiding fun.
+
+Jimps in the own smoke! He was so surprised with pictures one people and grew binning. It was so very fuce! Ift they could always very naughty and protect for a while his bird. Tidy noticed seemed teetlevision how to mix breakfai

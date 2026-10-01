@@ -1,0 +1,238 @@
+{
+  "schema_version": 1,
+  "member_name": "Viraat Chaudhary",
+  "smoke_test": false,
+  "experiment": "viraat_postnorm_char_gpt_v1",
+  "environment": {
+    "python": "3.13.15",
+    "os": "Linux",
+    "cpu": "x86_64",
+    "logical_cpus": 12,
+    "system_ram_mib": 85477.0625,
+    "gpu": {
+      "name": "NVIDIA A100-SXM4-40GB",
+      "total_memory_mib": 40441.375
+    },
+    "driver": "NVIDIA A100-SXM4-40GB, 580.82.07, 40960 MiB",
+    "pytorch_cuda": "12.8",
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "datasets": "4.8.5",
+      "numpy": "2.1.3",
+      "matplotlib": "3.10.0",
+      "PyYAML": "6.0.3",
+      "psutil": "5.9.5",
+      "pytest": "8.4.2"
+    }
+  },
+  "checkpoint": {
+    "path": "checkpoints/best_model.pt",
+    "sha256": "52e2bddd0dadea877d0230f95e5e267cdd87c2f9c4401ff5817a5bc92d0093f1",
+    "epoch": 10
+  },
+  "configuration": {
+    "seed": 20260925,
+    "max_new_characters": 500,
+    "temperatures": [
+      0.7,
+      1.0,
+      1.3
+    ],
+    "samples_per_temperature": 3,
+    "include_greedy_sample": true,
+    "prompts": [
+      "Once upon a time",
+      "Lily found a little",
+      "One day, a small dog"
+    ],
+    "dataset_split_seed": 2661502,
+    "metric_protocol": "Character n-grams over continuations, no prompt/cross-sample n-grams; 27 sampled outputs; mean per-sample repeated 4-gram rate"
+  },
+  "model": {
+    "parameter_count": 3273824,
+    "vocabulary_size": 96
+  },
+  "training": {
+    "member_name": "Viraat Chaudhary",
+    "experiment": "viraat_postnorm_char_gpt_v1",
+    "smoke_test": false,
+    "epochs_completed": 10,
+    "required_epochs": 10,
+    "completed": true,
+    "global_steps": 15630,
+    "parameter_count": 3273824,
+    "gpu": {
+      "name": "NVIDIA A100-SXM4-40GB",
+      "total_memory_mib": 40441.375
+    },
+    "precision": "bf16",
+    "final_training_loss": 0.9326997169876099,
+    "final_validation_loss": 0.8637519218444825,
+    "best_validation_loss": 0.8637519218444825,
+    "training_tokens": 256000000,
+    "training_tokens_per_second": 590870.7275939166,
+    "total_training_seconds": 451.62236405800104,
+    "time_definition": "Sum of completed epoch training, validation, best-checkpoint and plot/metric writes; excludes preprocessing, setup, last-checkpoint write and uncheckpointed interrupted work",
+    "peak_gpu_allocated_mb": 1758.94873046875,
+    "peak_gpu_reserved_mb": 2034.0,
+    "peak_cpu_rss_mb": 1674.8984375,
+    "gradient_norm_mean": 0.6247545246332789,
+    "gradient_norm_max": 3.3099968433380127,
+    "loss_spike_count": 0,
+    "nonfinite_loss_count": 0,
+    "nonfinite_gradient_count": 0,
+    "config_sha256": "c62a411bb03ee972ed25ecc68cd34687f097594a1948563779007f939776192f",
+    "best_checkpoint_sha256": "52e2bddd0dadea877d0230f95e5e267cdd87c2f9c4401ff5817a5bc92d0093f1",
+    "last_checkpoint_sha256": "77cc51c734024e2a460d765d9caf011c8b6ac9bcff2f01d11dde3e4a7c3ac4e9",
+    "selected_checkpoint_training_cross_entropy": 0.8575841665267945,
+    "loss_definition": "FP32 inference on the full training set at the selected best checkpoint; dropout disabled",
+    "epoch_average_loss_definition": "training_summary.final_training_loss is final-epoch online loss with dropout active"
+  },
+  "validation": {
+    "cross_entropy_loss": 0.8637021662712098,
+    "perplexity": 2.3719257223049572,
+    "bits_per_character": 1.2460588320845294,
+    "generalization_gap": 0.006117999744415292,
+    "legacy_epoch_average_gap": -0.06899755071640012,
+    "top1_accuracy": 0.727812109375,
+    "tokens": 2560000
+  },
+  "generation": {
+    "sample_count": 30,
+    "sampled_sample_count": 27,
+    "total_generated_tokens": 15000,
+    "total_generation_seconds": 21.551319223000974,
+    "tokens_per_second": 696.0130767304037,
+    "timing_records": [
+      {
+        "prompt_number": 1,
+        "mode": "greedy",
+        "temperature": null,
+        "sample_count": 1,
+        "generated_tokens": 500,
+        "seconds": 1.7687092910000501
+      },
+      {
+        "prompt_number": 1,
+        "mode": "sampled",
+        "temperature": 0.7,
+        "sample_count": 3,
+        "generated_tokens": 1500,
+        "seconds": 1.9817258350003613
+      },
+      {
+        "prompt_number": 1,
+        "mode": "sampled",
+        "temperature": 1.0,
+        "sample_count": 3,
+        "generated_tokens": 1500,
+        "seconds": 1.815016820999972
+      },
+      {
+        "prompt_number": 1,
+        "mode": "sampled",
+        "temperature": 1.3,
+        "sample_count": 3,
+        "generated_tokens": 1500,
+        "seconds": 1.7936825580000004
+      },
+      {
+        "prompt_number": 2,
+        "mode": "greedy",
+        "temperature": null,
+        "sample_count": 1,
+        "generated_tokens": 500,
+        "seconds": 1.6283359610001753
+      },
+      {
+        "prompt_number": 2,
+        "mode": "sampled",
+        "temperature": 0.7,
+        "sample_count": 3,
+        "generated_tokens": 1500,
+        "seconds": 1.8455198010001368
+      },
+      {
+        "prompt_number": 2,
+        "mode": "sampled",
+        "temperature": 1.0,
+        "sample_count": 3,
+        "generated_tokens": 1500,
+        "seconds": 1.8196821510000518
+      },
+      {
+        "prompt_number": 2,
+        "mode": "sampled",
+        "temperature": 1.3,
+        "sample_count": 3,
+        "generated_tokens": 1500,
+        "seconds": 1.8172889120000946
+      },
+      {
+        "prompt_number": 3,
+        "mode": "greedy",
+        "temperature": null,
+        "sample_count": 1,
+        "generated_tokens": 500,
+        "seconds": 1.6326129720000608
+      },
+      {
+        "prompt_number": 3,
+        "mode": "sampled",
+        "temperature": 0.7,
+        "sample_count": 3,
+        "generated_tokens": 1500,
+        "seconds": 1.812318218999735
+      },
+      {
+        "prompt_number": 3,
+        "mode": "sampled",
+        "temperature": 1.0,
+        "sample_count": 3,
+        "generated_tokens": 1500,
+        "seconds": 1.8119343560001653
+      },
+      {
+        "prompt_number": 3,
+        "mode": "sampled",
+        "temperature": 1.3,
+        "sample_count": 3,
+        "generated_tokens": 1500,
+        "seconds": 1.82449234600017
+      }
+    ],
+    "peak_gpu_allocated_mb": 39.42236328125
+  },
+  "diversity": {
+    "all_sampled_outputs": {
+      "sample_count": 27,
+      "distinct_1": 0.0045925925925925926,
+      "distinct_2": 0.04215839085578565,
+      "distinct_3": 0.16659229510635132,
+      "repeated_4gram_rate": 0.17467769580445636
+    },
+    "by_temperature": {
+      "0.7": {
+        "sample_count": 9,
+        "distinct_1": 0.010444444444444444,
+        "distinct_2": 0.08082832331329326,
+        "distinct_3": 0.23962516733601072,
+        "repeated_4gram_rate": 0.2461435278336687
+      },
+      "1.0": {
+        "sample_count": 9,
+        "distinct_1": 0.012444444444444444,
+        "distinct_2": 0.09418837675350701,
+        "distinct_3": 0.2887103971441321,
+        "repeated_4gram_rate": 0.16118935837245696
+      },
+      "1.3": {
+        "sample_count": 9,
+        "distinct_1": 0.012666666666666666,
+        "distinct_2": 0.10888443553774214,
+        "distinct_3": 0.36724676483712626,
+        "repeated_4gram_rate": 0.11670020120724346
+      }
+    }
+  }
+}
