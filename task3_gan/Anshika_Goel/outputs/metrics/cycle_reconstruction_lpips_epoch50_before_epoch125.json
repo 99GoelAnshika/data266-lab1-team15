@@ -1,0 +1,35 @@
+{
+  "metric": "LPIPS perceptual distance",
+  "lpips_package_version": "0.1.4",
+  "backbone": "alex",
+  "checkpoint": {
+    "epoch": 50,
+    "global_step": 351900,
+    "sha256": "a66c5beafb3037167df5d34b72c39dea0b3b1d282f564dd7680cecc7585f592b"
+  },
+  "protocol": {
+    "n_eval_per_direction": 300,
+    "evaluation_size": 256,
+    "input_tensor_range": "[-1, 1]",
+    "A2B2A": "Monet -> Photo -> Monet",
+    "B2A2B": "Photo -> Monet -> Photo",
+    "comparison": "original source image vs cycle reconstruction"
+  },
+  "A2B2A_monet_to_photo_to_monet": {
+    "count": 300,
+    "mean": 0.20975246290365854,
+    "std": 0.07412516859275164,
+    "median": 0.20219749957323074,
+    "min": 0.06874042004346848,
+    "max": 0.5176379084587097
+  },
+  "B2A2B_photo_to_monet_to_photo": {
+    "count": 300,
+    "mean": 0.17183507872124512,
+    "std": 0.0557257485547015,
+    "median": 0.15827172994613647,
+    "min": 0.06859452277421951,
+    "max": 0.4062255322933197
+  },
+  "two_direction_mean": 0.19079377081245183
+}

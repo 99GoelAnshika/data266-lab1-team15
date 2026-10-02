@@ -1,0 +1,40 @@
+{
+  "checkpoint_epochs": [
+    50,
+    55,
+    60,
+    65,
+    70,
+    75
+  ],
+  "n_eval_per_direction": 300,
+  "source_selection": {
+    "A2B": "all 300 sorted Monet images",
+    "B2A": "first 300 sorted Photo images"
+  },
+  "prediction_encoding": {
+    "format": "JPEG",
+    "quality": 100,
+    "subsampling": 0,
+    "optimize": false
+  },
+  "inception": {
+    "model": "torchvision Inception-v3 IMAGENET1K_V1",
+    "feature_dimension": 2048,
+    "preprocessing": "Resize(299), CenterCrop(299), ToTensor, ImageNet normalization"
+  },
+  "fid": "Numerically stable low-rank mathematical FID using the same Inception features",
+  "mifid": "mean matched-index cosine distance",
+  "kid": {
+    "subset_size": 100,
+    "num_subsets": 50,
+    "seed": 266
+  },
+  "precision_recall": {
+    "k": 3,
+    "distance": "Euclidean",
+    "estimator": "k-nearest-neighbor manifold"
+  },
+  "content_cosine": "source image vs direct translation Inception cosine similarity",
+  "cycle_l1": "source vs cycle reconstruction; reported in [0,1] equivalent RGB scale"
+}

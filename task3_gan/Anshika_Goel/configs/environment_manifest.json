@@ -1,85 +1,96 @@
 {
-  "schema_version": 2,
   "artifact_purpose": "Canonical Task 3 CycleGAN production-training and official-evaluation environment",
-  "environment_role": "production_training_and_official_evaluation",
-  "historical_local_development_manifest": "task3_gan/Anshika_Goel/configs/environment_manifest_local_development.json",
-  "member": "Anshika_Goel",
-  "team": 15,
-  "task": 3,
-  "run": {
-    "run_id": "cyclegan_baseline_rtx4090_run001",
-    "actual_epochs_completed": 50,
-    "final_global_step": 351900,
-    "evaluated_checkpoint": "epoch_0050.pt",
-    "evaluated_checkpoint_sha256": "a66c5beafb3037167df5d34b72c39dea0b3b1d282f564dd7680cecc7585f592b",
-    "checkpoint_binary_storage": "local_only_binary_ignored_by_git",
-    "checkpoint_manifest": "task3_gan/Anshika_Goel/checkpoints/checkpoint_manifest.json",
-    "config_path": "task3_gan/Anshika_Goel/configs/cyclegan_baseline.json",
-    "config_sha256": "4795c20ee2d0307d26659da578aa6e42834cd10def8ca1bd088285c0216bfae5"
-  },
-  "python": {
-    "implementation": "CPython",
-    "version": "3.10.13",
-    "full_version": "3.10.13 (main, Sep 11 2023, 13:44:35) [GCC 11.2.0]",
-    "container_interpreter": "/opt/conda/bin/python"
-  },
-  "operating_environment": {
-    "system": "Linux",
-    "release": "5.15.146.1-microsoft-standard-WSL2",
-    "machine": "x86_64",
-    "platform": "Linux-5.15.146.1-microsoft-standard-WSL2-x86_64-with-glibc2.31",
-    "execution_context": "Docker container running through WSL2 on Windows host"
-  },
   "cuda": {
     "cuda_available": true,
-    "torch_cuda_runtime": "12.1",
-    "cudnn_version": 8902
+    "cudnn_version": 8902,
+    "torch_cuda_runtime": "12.1"
+  },
+  "environment_role": "production_training_and_official_evaluation",
+  "evaluation_notes": {
+    "frozen_prediction_count_a2b": 300,
+    "frozen_prediction_count_b2a": 300,
+    "instructor_fid_mifid_evaluator": "Part3_Evaluation_Script.ipynb",
+    "lpips_version_used": "0.1.4",
+    "scipy_version_used_for_final_official_fid_mifid": "1.15.3"
+  },
+  "final_submission": {
+    "checkpoint_epoch": 125,
+    "checkpoint_sha256": "3216b4997ed51962590251170ca5cbd6d00fb444479a8b5cd9480f0cfbeab7ec",
+    "global_step": 879750,
+    "kaggle_rank_snapshot": 14,
+    "kaggle_score": -48.9365,
+    "kaggle_team": "PairProgramming_Team_15",
+    "official_fid": 97.46614849815103,
+    "official_mifid": 0.40686556964620363,
+    "run_id": "cyclegan_baseline_rtx4090_run001"
   },
   "hardware": {
     "gpu": {
+      "compute_capability": "8.9",
+      "device_count": 1,
+      "driver_version": "610.60",
       "name": "NVIDIA GeForce RTX 4090",
       "torch_reported_name": "NVIDIA GeForce RTX 4090",
-      "device_count": 1,
-      "compute_capability": "8.9",
-      "driver_version": "610.60",
       "vram_mib_nvidia_smi": 24564.0,
       "vram_mib_pytorch": 24563.5
     },
     "measured_peak_training_cuda_memory_mib": 2542.11669921875
   },
+  "historical_local_development_manifest": "task3_gan/Anshika_Goel/configs/environment_manifest_local_development.json",
+  "important_note": "requirements_task3.txt contains portable version-pinned production dependencies. pip_freeze_task3.txt preserves the raw active-environment freeze, including Conda-origin direct-reference entries where emitted.",
+  "member": "Anshika_Goel",
+  "operating_environment": {
+    "execution_context": "Docker container running through WSL2 on Windows host",
+    "machine": "x86_64",
+    "platform": "Linux-5.15.146.1-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+    "release": "5.15.146.1-microsoft-standard-WSL2",
+    "system": "Linux"
+  },
   "packages": {
+    "lpips": "0.1.4",
+    "matplotlib": "3.8.2",
     "numpy": "1.26.2",
     "pandas": "2.1.4",
-    "scipy": "1.15.3",
     "pillow": "10.0.1",
-    "matplotlib": "3.8.2",
+    "scipy": "1.15.3",
     "torch": "2.1.2",
-    "torchvision": "0.16.2",
-    "lpips": "0.1.4"
+    "torchvision": "0.16.2"
   },
-  "evaluation_notes": {
-    "instructor_fid_mifid_evaluator": "Part3_Evaluation_Script.ipynb",
-    "scipy_version_used_for_final_official_fid_mifid": "1.15.3",
-    "lpips_version_used": "0.1.4",
-    "frozen_prediction_count_a2b": 300,
-    "frozen_prediction_count_b2a": 300
+  "python": {
+    "container_interpreter": "/opt/conda/bin/python",
+    "full_version": "3.10.13 (main, Sep 11 2023, 13:44:35) [GCC 11.2.0]",
+    "implementation": "CPython",
+    "version": "3.10.13"
   },
   "reproducibility_files": {
-    "curated_requirements": "task3_gan/Anshika_Goel/configs/requirements_task3.txt",
-    "full_pip_freeze": "task3_gan/Anshika_Goel/configs/pip_freeze_task3.txt",
-    "checkpoint_manifest_json": "task3_gan/Anshika_Goel/checkpoints/checkpoint_manifest.json",
     "checkpoint_manifest_csv": "task3_gan/Anshika_Goel/checkpoints/checkpoint_manifest.csv",
+    "checkpoint_manifest_json": "task3_gan/Anshika_Goel/checkpoints/checkpoint_manifest.json",
+    "curated_requirements": "task3_gan/Anshika_Goel/configs/requirements_task3.txt",
+    "full_metrics_report": "task3_gan/Anshika_Goel/full_metrics_report.csv",
+    "full_pip_freeze": "task3_gan/Anshika_Goel/configs/pip_freeze_task3.txt",
     "raw_training_log": "task3_gan/Anshika_Goel/logs/cyclegan_baseline_rtx4090_run001/events.jsonl",
-    "training_summary": "task3_gan/Anshika_Goel/outputs/metrics/training_run_summary.json",
-    "full_metrics_report": "task3_gan/Anshika_Goel/full_metrics_report.csv"
+    "training_summary": "task3_gan/Anshika_Goel/outputs/metrics/training_run_summary.json"
   },
-  "important_note": "requirements_task3.txt contains portable version-pinned production dependencies. pip_freeze_task3.txt preserves the raw active-environment freeze, including Conda-origin direct-reference entries where emitted.",
   "reproducibility_status": {
-    "production_requirements_refreshed": true,
-    "production_pip_freeze_refreshed": true,
-    "production_requirements_source": "Installed package metadata from active RTX 4090 production/evaluation environment",
-    "production_pip_freeze_source": "python -m pip freeze from active RTX 4090 production/evaluation environment",
+    "historical_local_development_files_preserved": true,
     "pip_freeze_direct_reference_note": "Some Conda-origin packages are represented by pip freeze using PEP 508 direct references such as 'package @ file:///...'. Exact installed versions are pinned separately in requirements_task3.txt.",
-    "historical_local_development_files_preserved": true
-  }
+    "production_pip_freeze_refreshed": true,
+    "production_pip_freeze_source": "python -m pip freeze from active RTX 4090 production/evaluation environment",
+    "production_requirements_refreshed": true,
+    "production_requirements_source": "Installed package metadata from active RTX 4090 production/evaluation environment"
+  },
+  "run": {
+    "actual_epochs_completed": 50,
+    "checkpoint_binary_storage": "local_only_binary_ignored_by_git",
+    "checkpoint_manifest": "task3_gan/Anshika_Goel/checkpoints/checkpoint_manifest.json",
+    "config_path": "task3_gan/Anshika_Goel/configs/cyclegan_baseline.json",
+    "config_sha256": "4795c20ee2d0307d26659da578aa6e42834cd10def8ca1bd088285c0216bfae5",
+    "evaluated_checkpoint": "epoch_0050.pt",
+    "evaluated_checkpoint_sha256": "a66c5beafb3037167df5d34b72c39dea0b3b1d282f564dd7680cecc7585f592b",
+    "final_global_step": 351900,
+    "run_id": "cyclegan_baseline_rtx4090_run001"
+  },
+  "schema_version": 2,
+  "task": 3,
+  "team": 15
 }

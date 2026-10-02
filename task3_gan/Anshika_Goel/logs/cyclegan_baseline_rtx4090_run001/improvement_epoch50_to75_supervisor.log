@@ -1,0 +1,13 @@
+====================================================================================================
+TASK 3 IMPROVEMENT SUPERVISOR
+TARGET = COMPLETED EPOCH 75
+====================================================================================================
+Launching: /opt/conda/bin/python -u /app/data266-lab1-team15/task3_gan/Anshika_Goel/code/train.py --run-id cyclegan_baseline_rtx4090_run001 --mode full --resume
+Training PID: 6414
+Verified epoch-75 archive and SHA sidecar are present.
+Stopping training after durable epoch-75 checkpoint.
+Training process stopped. Return code: -15
+====================================================================================================
+TARGET EPOCH 75 REACHED
+SUPERVISOR COMPLETE
+====================================================================================================

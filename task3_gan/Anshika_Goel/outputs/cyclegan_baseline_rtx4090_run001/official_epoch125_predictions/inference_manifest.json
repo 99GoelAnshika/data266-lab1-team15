@@ -1,0 +1,16 @@
+{
+  "final_model": true,
+  "checkpoint": {
+    "epoch": 125,
+    "global_step": 879750,
+    "sha256": "3216b4997ed51962590251170ca5cbd6d00fb444479a8b5cd9480f0cfbeab7ec"
+  },
+  "source": "outputs/improvement_checkpoint_comparison_epoch80_to125/epoch_0125",
+  "pred_A2B_count": 300,
+  "pred_B2A_count": 300,
+  "pred_A2B_aggregate_sha256": "6adf29c63c2a96df7675dd3b0eb1fba462e18cde5b5df7532596494fa1d457ec",
+  "pred_B2A_aggregate_sha256": "ab389066a9dd6b03e78c9a78529abf8ab48a33579e8b52359e35297c53a21d41",
+  "submitted_to_kaggle": true,
+  "kaggle_score": -48.9365,
+  "kaggle_rank_snapshot": 14
+}

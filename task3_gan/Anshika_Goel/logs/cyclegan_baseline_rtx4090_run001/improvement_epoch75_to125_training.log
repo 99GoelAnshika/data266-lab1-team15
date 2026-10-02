@@ -1,0 +1,13 @@
+======================================================================
+CYCLEGAN TRAINING RUN
+Run ID: cyclegan_baseline_rtx4090_run001
+Mode: full
+Device: cuda:0
+GPU: NVIDIA GeForce RTX 4090
+Config SHA256: 4795c20ee2d0307d26659da578aa6e42834cd10def8ca1bd088285c0216bfae5
+Domain A images: 300
+Domain B images: 7038
+Trainable parameters: 28285832
+Epoch range: 76 -> 200
+Starting global step: 527850
+======================================================================

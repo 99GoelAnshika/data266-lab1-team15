@@ -1,29 +1,16 @@
 {
-  "metric": "Content-preservation cosine similarity",
-  "protocol": {
-    "feature_extractor": "torchvision Inception-v3 IMAGENET1K_V1; final FC replaced by Identity",
-    "feature_dimension": 2048,
-    "preprocessing": "Resize(299), CenterCrop(299), ToTensor, ImageNet normalization",
-    "pairing": "source image matched to direct translated image by identical filename",
-    "A2B": "Monet source vs generated Photo",
-    "B2A": "Photo source vs generated Monet",
-    "n_eval_per_direction": 300
+  "final_model": true,
+  "checkpoint": {
+    "epoch": 125,
+    "global_step": 879750,
+    "sha256": "3216b4997ed51962590251170ca5cbd6d00fb444479a8b5cd9480f0cfbeab7ec"
   },
+  "feature_space": "ImageNet Inception-v3 pooled 2048-D features",
   "A2B_monet_to_photo": {
-    "count": 300,
-    "mean": 0.8356126397700125,
-    "std": 0.08448652071263081,
-    "median": 0.8421677508716284,
-    "min": 0.5449323506677816,
-    "max": 0.978945810186023
+    "mean": 0.7834511216418519
   },
   "B2A_photo_to_monet": {
-    "count": 300,
-    "mean": 0.7780926832545257,
-    "std": 0.09616542635560034,
-    "median": 0.798498821136751,
-    "min": 0.3222193880184738,
-    "max": 0.9320012975000819
+    "mean": 0.7547591461126507
   },
-  "two_direction_mean": 0.8068526615122691
+  "two_direction_mean": 0.7691051338772513
 }

@@ -1,35 +1,34 @@
 {
   "metric": "LPIPS perceptual distance",
+  "final_model": true,
   "lpips_package_version": "0.1.4",
   "backbone": "alex",
   "checkpoint": {
-    "epoch": 50,
-    "global_step": 351900,
-    "sha256": "a66c5beafb3037167df5d34b72c39dea0b3b1d282f564dd7680cecc7585f592b"
+    "epoch": 125,
+    "global_step": 879750,
+    "sha256": "3216b4997ed51962590251170ca5cbd6d00fb444479a8b5cd9480f0cfbeab7ec"
   },
   "protocol": {
     "n_eval_per_direction": 300,
     "evaluation_size": 256,
     "input_tensor_range": "[-1, 1]",
-    "A2B2A": "Monet -> Photo -> Monet",
-    "B2A2B": "Photo -> Monet -> Photo",
-    "comparison": "original source image vs cycle reconstruction"
+    "comparison": "source image vs cycle reconstruction"
   },
   "A2B2A_monet_to_photo_to_monet": {
     "count": 300,
-    "mean": 0.20975246290365854,
-    "std": 0.07412516859275164,
-    "median": 0.20219749957323074,
-    "min": 0.06874042004346848,
-    "max": 0.5176379084587097
+    "mean": 0.18287284043927987,
+    "std": 0.05722616483366899,
+    "median": 0.17669637501239777,
+    "min": 0.07320430874824524,
+    "max": 0.40557485818862915
   },
   "B2A2B_photo_to_monet_to_photo": {
     "count": 300,
-    "mean": 0.17183507872124512,
-    "std": 0.0557257485547015,
-    "median": 0.15827172994613647,
-    "min": 0.06859452277421951,
-    "max": 0.4062255322933197
+    "mean": 0.13436781498293082,
+    "std": 0.04293831775569436,
+    "median": 0.12698984146118164,
+    "min": 0.06314878165721893,
+    "max": 0.3350451588630676
   },
-  "two_direction_mean": 0.19079377081245183
+  "two_direction_mean": 0.15862032771110535
 }

@@ -1,39 +1,21 @@
 {
-  "metric": "Generative precision and recall",
-  "protocol": {
-    "feature_space": "2048-D torchvision Inception-v3 IMAGENET1K_V1 features from Step 85F",
-    "distance": "Euclidean",
-    "estimator": "k-nearest-neighbor manifold",
-    "k": 3,
-    "real_images_per_direction": 300,
-    "generated_images_per_direction": 300,
-    "precision_definition": "fraction of generated samples inside the real-data manifold",
-    "recall_definition": "fraction of real samples inside the generated-data manifold"
+  "final_model": true,
+  "checkpoint": {
+    "epoch": 125,
+    "global_step": 879750,
+    "sha256": "3216b4997ed51962590251170ca5cbd6d00fb444479a8b5cd9480f0cfbeab7ec"
   },
-  "directions": {
-    "B2A_photo_to_monet": {
-      "real_domain": "Monet",
-      "generated_domain": "pred_B2A",
-      "precision": 0.4266666666666667,
-      "recall": 0.6433333333333333,
-      "real_radius_mean": 13.565417092777057,
-      "real_radius_median": 13.227788214523832,
-      "generated_radius_mean": 14.447707601683705,
-      "generated_radius_median": 14.36251209076098
-    },
-    "A2B_monet_to_photo": {
-      "real_domain": "Photo",
-      "generated_domain": "pred_A2B",
-      "precision": 0.6466666666666666,
-      "recall": 0.33,
-      "real_radius_mean": 13.47603238073759,
-      "real_radius_median": 13.102127900840312,
-      "generated_radius_mean": 12.075202760989827,
-      "generated_radius_median": 11.701400467845794
-    }
+  "k_neighbors": 3,
+  "A2B_monet_to_photo": {
+    "precision": 0.78,
+    "recall": 0.3333333333333333
   },
-  "two_direction_mean": {
-    "precision": 0.5366666666666666,
-    "recall": 0.4866666666666667
+  "B2A_photo_to_monet": {
+    "precision": 0.4333333333333333,
+    "recall": 0.63
+  },
+  "two_direction_average": {
+    "precision": 0.6066666666666667,
+    "recall": 0.4816666666666667
   }
 }

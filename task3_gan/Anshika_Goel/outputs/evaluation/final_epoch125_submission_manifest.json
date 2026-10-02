@@ -1,0 +1,20 @@
+{
+  "final_submission": true,
+  "final_checkpoint_epoch": 125,
+  "global_step": 879750,
+  "checkpoint": "task3_gan/Anshika_Goel/checkpoints/cyclegan_baseline_rtx4090_run001/epoch_0125.pt",
+  "checkpoint_sha256": "3216b4997ed51962590251170ca5cbd6d00fb444479a8b5cd9480f0cfbeab7ec",
+  "submission_file": "submission.csv",
+  "submission_sha256": "ccedbe1b814c4fce43b43274ff9b476ecaeb395dd7da50401832bb0802be173c",
+  "official_fid": 97.46614849815103,
+  "official_mifid": 0.40686556964620363,
+  "kaggle_team": "PairProgramming_Team_15",
+  "kaggle_score": -48.9365,
+  "kaggle_rank_snapshot": 14,
+  "previous_kaggle_best": -49.2903,
+  "instructor_evaluator_sha256": "702a1265433bf2f15c7900c83442c626d10ac0918094d093dde8ef82069d4cef",
+  "executed_evaluator": "task3_gan/Anshika_Goel/outputs/evaluation/Part3_Evaluation_Script_executed.ipynb",
+  "versioned_executed_evaluator": "task3_gan/Anshika_Goel/outputs/evaluation/Part3_Evaluation_Script_epoch125_executed.ipynb",
+  "evaluator_log": "task3_gan/Anshika_Goel/outputs/evaluation/part3_epoch125_evaluator.log",
+  "comparison_summary": "task3_gan/Anshika_Goel/outputs/improvement_checkpoint_comparison_epoch80_to125/checkpoint_comparison_summary.csv"
+}

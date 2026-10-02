@@ -1,33 +1,26 @@
 {
-  "metric_family": "FID and MiFID",
-  "provenance": "Supplemental exact directional reproduction using the same Inception-v3 features and metric formulas as the unchanged instructor evaluator. submission.csv remains the authoritative official average.",
-  "directions": {
-    "B2A_photo_to_monet": {
-      "real_distribution": "Monet",
-      "generated_distribution": "pred_B2A",
-      "fid": 99.04118968924219,
-      "mifid": 0.4066749004900719
-    },
-    "A2B_monet_to_photo": {
-      "real_distribution": "Photo",
-      "generated_distribution": "pred_A2B",
-      "fid": 100.39735978283598,
-      "mifid": 0.41869561457319776
-    }
+  "final_model": true,
+  "checkpoint": {
+    "epoch": 125,
+    "global_step": 879750,
+    "sha256": "3216b4997ed51962590251170ca5cbd6d00fb444479a8b5cd9480f0cfbeab7ec"
+  },
+  "protocol": {
+    "n_eval_per_direction": 300,
+    "source": "outputs/improvement_checkpoint_comparison_epoch80_to125/checkpoint_comparison_summary.csv"
+  },
+  "A2B_monet_to_photo": {
+    "fid": 96.06844953243254,
+    "mifid": 0.4135484244942995
+  },
+  "B2A_photo_to_monet": {
+    "fid": 98.86401295739756,
+    "mifid": 0.4001827210051338
   },
   "two_direction_average": {
-    "fid": 99.71927473603908,
-    "mifid": 0.4126852575316348
-  },
-  "official_submission_csv": {
-    "fid": 99.71927464391824,
-    "mifid": 0.4126852557701875
-  },
-  "verification": {
-    "fid_absolute_difference": 9.21208425097575e-08,
-    "mifid_absolute_difference": 1.7614473213356518e-09,
-    "fid_tolerance": 0.001,
-    "mifid_tolerance": 1e-06,
-    "passed": true
+    "comparison_fid": 97.46623124491504,
+    "comparison_mifid": 0.4068655727497167,
+    "official_instructor_fid": 97.46614849815103,
+    "official_instructor_mifid": 0.40686556964620363
   }
 }

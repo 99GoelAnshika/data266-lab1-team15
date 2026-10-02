@@ -1,0 +1,15 @@
+========================================================================================================
+TASK 3 OVERNIGHT IMPROVEMENT SUPERVISOR
+RESUME = COMPLETED EPOCH 75
+TARGET = COMPLETED EPOCH 125
+========================================================================================================
+Launching: /opt/conda/bin/python -u /app/data266-lab1-team15/task3_gan/Anshika_Goel/code/train.py --run-id cyclegan_baseline_rtx4090_run001 --mode full --resume
+Training PID: 7779
+Verified epoch-125 archive and SHA sidecar.
+epoch_0125.pt SHA256: 3216b4997ed51962590251170ca5cbd6d00fb444479a8b5cd9480f0cfbeab7ec
+Stopping training only after durable verified epoch-125 checkpoint.
+Training process stopped. Return code: -15
+========================================================================================================
+OVERNIGHT TARGET COMPLETE
+DURABLE EPOCH-125 CHECKPOINT VERIFIED
+========================================================================================================

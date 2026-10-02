@@ -1,57 +1,15 @@
 {
-  "metric": "Cycle-reconstruction L1",
+  "final_model": true,
   "checkpoint": {
-    "epoch": 50,
-    "global_step": 351900,
-    "sha256": "a66c5beafb3037167df5d34b72c39dea0b3b1d282f564dd7680cecc7585f592b"
-  },
-  "protocol": {
-    "n_eval_per_direction": 300,
-    "evaluation_size": 256,
-    "A": "Monet",
-    "B": "Photo",
-    "A2B2A": "Monet -> Photo -> Monet",
-    "B2A2B": "Photo -> Monet -> Photo",
-    "normalized_tensor_range": "[-1, 1]",
-    "reported_rgb_range": "[0, 1]",
-    "rgb_0_1_relation": "l1_rgb_0_1 = l1_normalized_minus1_1 / 2"
+    "epoch": 125,
+    "global_step": 879750,
+    "sha256": "3216b4997ed51962590251170ca5cbd6d00fb444479a8b5cd9480f0cfbeab7ec"
   },
   "A2B2A_monet_to_photo_to_monet": {
-    "count": 300,
-    "normalized_minus1_1": {
-      "mean": 0.06925737372289101,
-      "std": 0.01595264991590233,
-      "median": 0.06763060763478279,
-      "min": 0.02972365915775299,
-      "max": 0.123690664768219
-    },
-    "rgb_0_1": {
-      "mean": 0.034628686861445504,
-      "std": 0.007976324957951164,
-      "median": 0.033815303817391396,
-      "min": 0.014861829578876495,
-      "max": 0.0618453323841095
-    }
+    "mean": 0.0322558518095562
   },
   "B2A2B_photo_to_monet_to_photo": {
-    "count": 300,
-    "normalized_minus1_1": {
-      "mean": 0.09001250529040893,
-      "std": 0.0304355120675159,
-      "median": 0.0826251283288002,
-      "min": 0.029865019023418427,
-      "max": 0.24646346271038055
-    },
-    "rgb_0_1": {
-      "mean": 0.04500625264520446,
-      "std": 0.01521775603375795,
-      "median": 0.0413125641644001,
-      "min": 0.014932509511709213,
-      "max": 0.12323173135519028
-    }
+    "mean": 0.034622455262579
   },
-  "two_direction_mean": {
-    "l1_normalized_minus1_1": 0.07963493950664996,
-    "l1_rgb_0_1": 0.03981746975332498
-  }
+  "two_direction_mean": 0.0334391535360676
 }

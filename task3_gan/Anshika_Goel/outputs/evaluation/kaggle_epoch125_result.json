@@ -1,0 +1,17 @@
+{
+  "team": "PairProgramming_Team_15",
+  "source_checkpoint_epoch": 125,
+  "source_global_step": 879750,
+  "score": -48.9365,
+  "rank_snapshot": 14,
+  "entries_at_snapshot": 3,
+  "previous_best_score": -49.2903,
+  "result": "new personal best",
+  "official_evaluator": {
+    "fid": 97.46614849815103,
+    "mifid": 0.40686556964620363
+  },
+  "submission_sha256": "ccedbe1b814c4fce43b43274ff9b476ecaeb395dd7da50401832bb0802be173c",
+  "checkpoint_sha256": "3216b4997ed51962590251170ca5cbd6d00fb444479a8b5cd9480f0cfbeab7ec",
+  "note": "Leaderboard rank is a time-specific snapshot. Kaggle displayed this submission as a new personal best."
+}
