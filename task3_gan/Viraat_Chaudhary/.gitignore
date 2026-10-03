@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+checkpoints/**/*.pt
+*.lock
+
+# Byte-identical evaluator copies are reconstructed from shared data and retained predictions.
+outputs/viraat_resizeconv6_run001/evaluator_workspace/Part 3/
+.DS_Store

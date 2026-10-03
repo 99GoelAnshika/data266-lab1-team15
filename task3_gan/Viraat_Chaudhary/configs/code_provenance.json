@@ -1,0 +1,43 @@
+{
+  "source_member": "Anshika_Goel",
+  "source_artifact": "task3_gan.zip",
+  "adapted_member": "Viraat_Chaudhary",
+  "source_module_sha256": {
+    "run_evidence.py": "78510783b2af2db983e486d68049279a4245a4857b435613e1340984bab04e7b",
+    "models.py": "f7bf2a25775854b9a13d5220f31405eb196ff74cfc3b6774a8ce13a3c2820b2e",
+    "train.py": "55d63725aa6beea46008551c566e2e78715e6d4351d9169497a9fa98cd9ae0da",
+    "training_utils.py": "c5fc5d5e8d8c434dbf9566b6ed4ec384f32c525fd2f6cd380781c7eef606b37c",
+    "checkpointing.py": "eed83f6ebef706a42e84b42f12710196d46b52bfc3087371188fff75cff7163a",
+    "data.py": "68f823e96d5524a86c75aac6a58ad211464bb542ed888dd66cc52e3582914675",
+    "training_loop.py": "bb3e863647cb350518f39a9c6e75c1ad3938e9a44fac968115299289b29363d4",
+    "trainer.py": "68417097828f9b7566e36996875a2bba2f04b219b74ec637660229d710408b78"
+  },
+  "reused_without_modification": [
+    "checkpointing.py",
+    "run_evidence.py",
+    "training_loop.py",
+    "training_utils.py"
+  ],
+  "modified": [
+    "models.py",
+    "trainer.py",
+    "data.py",
+    "train.py"
+  ],
+  "new_training_results_included": false,
+  "delivered_module_sha256": {
+    "checkpointing.py": "eed83f6ebef706a42e84b42f12710196d46b52bfc3087371188fff75cff7163a",
+    "data.py": "c04241b55f5708dd1ea3e50c22cc782002c80fcf00b9bde6cc629d955a69fe8a",
+    "evaluate_local.py": "ff179538b5060a2e8b8cc0603e88643bc3c0420cb834e22bd737a7b7f9ea4418",
+    "infer.py": "ba60af94f0a22e396cbef5cf04da9be3bb0114b27ce5e6135d5ed5826b3e2cc6",
+    "lab_tools.py": "55d97d4caf7810e0db76beac9b1a6def6b5e0695aaa0d40991106270e937e5fe",
+    "metric_utils.py": "87e15fdb3e93f7b2ba8203ffb6e6c3612106e69f6a1b325b67bfba8d64700fec",
+    "models.py": "6fd37c6f7498629b92cf256047866257038f70bb9c54497b4a6cd1bdbf89eafc",
+    "run_evidence.py": "78510783b2af2db983e486d68049279a4245a4857b435613e1340984bab04e7b",
+    "smoke_check.py": "3ff6c4d8ec80350dc5f9ad01caf45b1028459810484097c5178a64578863311b",
+    "train.py": "f7feaf3f53ea3f53f09233bfa1dd25b4f4fcb3997fce863a09b135600b725f1a",
+    "trainer.py": "f16cd8f3cdfe63b479f24a0d136fa8313d56b4c4bdc0b7114f75c3582d20ca6a",
+    "training_loop.py": "bb3e863647cb350518f39a9c6e75c1ad3938e9a44fac968115299289b29363d4",
+    "training_utils.py": "c5fc5d5e8d8c434dbf9566b6ed4ec384f32c525fd2f6cd380781c7eef606b37c"
+  }
+}
