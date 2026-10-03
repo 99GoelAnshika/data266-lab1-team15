@@ -1,0 +1,17 @@
+{
+  "encoding_key": "013314b18af28f81f24df4011a39f7f02e98555f9c6760c21e0e47cbf5031c6a",
+  "rows": 38000,
+  "frozen_models_sha256": "c32d4ae0abe4a5f47c0b45557f9a79891af3e03be02a9f106d0a2d5d3efdea04",
+  "data_contract": "e3010a4d701170a1bb7e0378fd1049ac391c5031b4045276b0e768ac1a162856",
+  "fit_performed": false,
+  "files_sha256": {
+    "test_input_ids.npy": "7a4ab239f1ebdcd8556c66cbb159900a23f46bc9dcc16341603b2f05c3e2ecdf",
+    "test_labels.npy": "09ee42a4d38464e3c3e0755a3c51baeb06405b536f7ca0802413c6e468ab9290",
+    "test_source_indices.npy": "fe9bd10bc54ed8f3f73a39e5ccfe733e75a846e10e5a30bb5eb64af3a9fd29c2",
+    "test_lengths.npy": "ba3d9715ced28275fc07c4f7fd7f1c252dce7cee11b850b7e67f14a3a0a60784",
+    "test_processed_lengths.npy": "db37c8230d105d25aaf6aa303ae3fc1e3716e22fd8dc934fcb7980dd5e336785",
+    "test_oov_counts.npy": "354498a729720ab862d728b70f9d6dd791596228e98f08441f3e1fb7e9833ec8",
+    "test_oov_rates.npy": "7134b5ef8b8c91d096e0cb763a9d250f032b3204436cde6893d9cdb49406e8fe",
+    "test_contains_negation.npy": "d64b522ca076bb0dee61eeeb4d948ed83d492c36fc1d7df3e8e581402cb4ffbc"
+  }
+}

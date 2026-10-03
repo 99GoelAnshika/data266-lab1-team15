@@ -1,0 +1,3 @@
+model_a,model_b,a_correct_b_wrong,a_wrong_b_correct,discordant_pairs,chi_square_statistic,raw_p_value,continuity_correction,holm_adjusted_p_value,reject_after_holm_at_0_05
+baseline,experiment_1,601,822,1423,34.01264933239634,5.4754948538600325e-09,True,1.0950989707720065e-08,True
+baseline,experiment_2,530,734,1264,32.602056962025316,1.1309499327437484e-08,True,1.1309499327437484e-08,True

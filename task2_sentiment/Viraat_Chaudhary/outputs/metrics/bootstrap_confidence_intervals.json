@@ -1,0 +1,61 @@
+{
+  "method": "unstratified nonparametric percentile with replacement",
+  "replicates": 2000,
+  "seed": 2662502,
+  "confidence_level": 0.95,
+  "shared_row_resamples": true,
+  "rng": "numpy.default_rng PCG64; explicit int64 row draws",
+  "intervals": {
+    "baseline": {
+      "accuracy": {
+        "lower": 0.9402105263157895,
+        "upper": 0.9449473684210526,
+        "point_estimate": 0.9426578947368421
+      },
+      "f1_macro": {
+        "lower": 0.9402089215959919,
+        "upper": 0.9449473201088938,
+        "point_estimate": 0.9426570131082743
+      },
+      "mcc": {
+        "lower": 0.8804268171718748,
+        "upper": 0.8899311192482835,
+        "point_estimate": 0.8853430135768008
+      }
+    },
+    "experiment_1": {
+      "accuracy": {
+        "lower": 0.9462625,
+        "upper": 0.9506059210526315,
+        "point_estimate": 0.9484736842105264
+      },
+      "f1_macro": {
+        "lower": 0.9462524592702302,
+        "upper": 0.9506017642209348,
+        "point_estimate": 0.9484716287851925
+      },
+      "mcc": {
+        "lower": 0.8926014746713117,
+        "upper": 0.9012966267584839,
+        "point_estimate": 0.8970189340052213
+      }
+    },
+    "experiment_2": {
+      "accuracy": {
+        "lower": 0.9458414473684211,
+        "upper": 0.9501842105263157,
+        "point_estimate": 0.9480263157894737
+      },
+      "f1_macro": {
+        "lower": 0.9458256734184108,
+        "upper": 0.9501766707019975,
+        "point_estimate": 0.9480208125829976
+      },
+      "mcc": {
+        "lower": 0.8918765338862423,
+        "upper": 0.9005557784557849,
+        "point_estimate": 0.8962424279062094
+      }
+    }
+  }
+}

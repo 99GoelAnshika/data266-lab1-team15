@@ -1,0 +1,9 @@
+{
+  "status": "completed",
+  "rows": 38000,
+  "completed_utc": "2026-10-02T01:34:44.961007+00:00",
+  "slice_memberships_sha256": "377308cf80d5a2531befc8a894bb82323338e5065d44b1e8e2992023016ab24d",
+  "manual_review_model": "experiment_1",
+  "selected_using": "validation before test access",
+  "test_based_retraining": false
+}

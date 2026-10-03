@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "stage": "Task 2 preprocessing only",
+  "run_id": "20261001T203954337938Z_preprocessing_v2",
+  "raw_source_run_id": "20261001T203954337938Z",
+  "preprocessing_revision": 2,
+  "training_examples": 504000,
+  "validation_examples": 56000,
+  "vocabulary_size": 50000,
+  "sequence_length": 256,
+  "train_validation_index_overlap": 0,
+  "processed_backup_verified": true,
+  "official_test_preprocessed": false,
+  "official_test_evaluated": false,
+  "models_selected_or_trained": false,
+  "preprocessing_wall_seconds_this_execution": 208.67392199300002,
+  "member": "Viraat_Chaudhary",
+  "teammate_files_modified": false
+}

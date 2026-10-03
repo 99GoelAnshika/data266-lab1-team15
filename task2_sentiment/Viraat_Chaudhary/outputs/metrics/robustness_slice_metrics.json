@@ -1,0 +1,122 @@
+[
+  {
+    "model": "baseline",
+    "slice": "short_reviews",
+    "count": 9752,
+    "fraction": 0.25663157894736843,
+    "macro_f1": 0.942020704195291,
+    "error_rate": 0.05588597210828548
+  },
+  {
+    "model": "baseline",
+    "slice": "medium_reviews",
+    "count": 18865,
+    "fraction": 0.49644736842105264,
+    "macro_f1": 0.9431206489922865,
+    "error_rate": 0.05687781606148953
+  },
+  {
+    "model": "baseline",
+    "slice": "long_reviews",
+    "count": 9383,
+    "fraction": 0.24692105263157896,
+    "macro_f1": 0.9379213745018264,
+    "error_rate": 0.059788980070339975
+  },
+  {
+    "model": "baseline",
+    "slice": "contains_negation",
+    "count": 28243,
+    "fraction": 0.7432368421052632,
+    "macro_f1": 0.9379035671398632,
+    "error_rate": 0.060227312962503984
+  },
+  {
+    "model": "baseline",
+    "slice": "high_oov_rate",
+    "count": 2427,
+    "fraction": 0.06386842105263157,
+    "macro_f1": 0.9225237435809182,
+    "error_rate": 0.07375360527400082
+  },
+  {
+    "model": "experiment_1",
+    "slice": "short_reviews",
+    "count": 9752,
+    "fraction": 0.25663157894736843,
+    "macro_f1": 0.9424860250723515,
+    "error_rate": 0.05568088597210828
+  },
+  {
+    "model": "experiment_1",
+    "slice": "medium_reviews",
+    "count": 18865,
+    "fraction": 0.49644736842105264,
+    "macro_f1": 0.951813952141681,
+    "error_rate": 0.04818446859263186
+  },
+  {
+    "model": "experiment_1",
+    "slice": "long_reviews",
+    "count": 9383,
+    "fraction": 0.24692105263157896,
+    "macro_f1": 0.9438346833456837,
+    "error_rate": 0.053927315357561546
+  },
+  {
+    "model": "experiment_1",
+    "slice": "contains_negation",
+    "count": 28243,
+    "fraction": 0.7432368421052632,
+    "macro_f1": 0.9462382673617911,
+    "error_rate": 0.05194207414226534
+  },
+  {
+    "model": "experiment_1",
+    "slice": "high_oov_rate",
+    "count": 2427,
+    "fraction": 0.06386842105263157,
+    "macro_f1": 0.9273060307585969,
+    "error_rate": 0.06963329213020189
+  },
+  {
+    "model": "experiment_2",
+    "slice": "short_reviews",
+    "count": 9752,
+    "fraction": 0.25663157894736843,
+    "macro_f1": 0.943529993504543,
+    "error_rate": 0.05475799835931091
+  },
+  {
+    "model": "experiment_2",
+    "slice": "medium_reviews",
+    "count": 18865,
+    "fraction": 0.49644736842105264,
+    "macro_f1": 0.9483661426000896,
+    "error_rate": 0.05163000265041082
+  },
+  {
+    "model": "experiment_2",
+    "slice": "long_reviews",
+    "count": 9383,
+    "fraction": 0.24692105263157896,
+    "macro_f1": 0.9480398675161947,
+    "error_rate": 0.04977086219759139
+  },
+  {
+    "model": "experiment_2",
+    "slice": "contains_negation",
+    "count": 28243,
+    "fraction": 0.7432368421052632,
+    "macro_f1": 0.9449364950229595,
+    "error_rate": 0.05311050525794002
+  },
+  {
+    "model": "experiment_2",
+    "slice": "high_oov_rate",
+    "count": 2427,
+    "fraction": 0.06386842105263157,
+    "macro_f1": 0.9264716538576085,
+    "error_rate": 0.07045735475896168
+  }
+]

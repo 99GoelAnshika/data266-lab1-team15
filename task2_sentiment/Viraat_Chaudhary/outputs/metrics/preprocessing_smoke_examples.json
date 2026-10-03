@@ -1,0 +1,69 @@
+{
+  "examples_are_synthetic": true,
+  "checks_passed": true,
+  "examples": [
+    {
+      "synthetic_text": "<br/>I DIDN'T like the food!!!",
+      "tokens": [
+        "not",
+        "like",
+        "food"
+      ]
+    },
+    {
+      "synthetic_text": "I can't recommend it.",
+      "tokens": [
+        "not",
+        "recommend"
+      ]
+    },
+    {
+      "synthetic_text": "The food is good.",
+      "tokens": [
+        "food",
+        "good"
+      ]
+    },
+    {
+      "synthetic_text": "The food is not good.",
+      "tokens": [
+        "food",
+        "not",
+        "good"
+      ]
+    },
+    {
+      "synthetic_text": "No service. Never again.",
+      "tokens": [
+        "no",
+        "servic",
+        "never"
+      ]
+    },
+    {
+      "synthetic_text": "The cafés are clean!",
+      "tokens": [
+        "café",
+        "clean"
+      ]
+    },
+    {
+      "synthetic_text": "Great food.\\n\\nThe service is not good.",
+      "tokens": [
+        "great",
+        "food",
+        "servic",
+        "not",
+        "good"
+      ]
+    },
+    {
+      "synthetic_text": "No service.\\nNever again.",
+      "tokens": [
+        "no",
+        "servic",
+        "never"
+      ]
+    }
+  ]
+}

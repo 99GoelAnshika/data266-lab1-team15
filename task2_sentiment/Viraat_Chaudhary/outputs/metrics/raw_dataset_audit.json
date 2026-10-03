@@ -1,0 +1,53 @@
+{
+  "dataset_id": "fancyzhx/yelp_polarity",
+  "dataset_config": "plain_text",
+  "dataset_revision": "bbf1c97a1f0cf005e5aded43839fd814654a1557",
+  "audited_population": "official_train_only",
+  "official_train_count": 560000,
+  "official_test_count": 38000,
+  "hf_label_mapping": {
+    "0": "negative",
+    "1": "positive"
+  },
+  "valid_training_count": 560000,
+  "class_counts_valid_training": {
+    "0": 280000,
+    "1": 280000
+  },
+  "class_fractions_valid_training": {
+    "0": 0.5,
+    "1": 0.5
+  },
+  "invalid_training_row_count": 0,
+  "raw_word_lengths": {
+    "count": 560000,
+    "min": 1,
+    "max": 1052,
+    "mean": 133.0288732142857,
+    "percentiles": {
+      "25": 51.0,
+      "50": 97.0,
+      "75": 174.0,
+      "90": 282.0,
+      "95": 372.0,
+      "99": 608.0
+    }
+  },
+  "raw_character_lengths": {
+    "count": 560000,
+    "min": 1,
+    "max": 5273,
+    "mean": 726.4979232142857,
+    "percentiles": {
+      "25": 279.0,
+      "50": 528.0,
+      "75": 947.0,
+      "90": 1537.0,
+      "95": 2032.0,
+      "99": 3333.0
+    }
+  },
+  "seconds_for_download_save_and_audit": 29.73057819299993,
+  "training_split_membership": "not_created_in_stage1",
+  "test_used_for_model_selection_or_evaluation": false
+}

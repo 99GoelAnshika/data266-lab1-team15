@@ -1,0 +1,26 @@
+{
+  "population": "training membership only",
+  "examples": 504000,
+  "minimum": 0,
+  "maximum": 953,
+  "mean": 68.49914682539682,
+  "percentiles": {
+    "25": 27.0,
+    "50": 50.0,
+    "75": 89.0,
+    "90": 144.0,
+    "95": 190.0,
+    "99": 312.0
+  },
+  "sequence_length": 256,
+  "truncated_reviews": 9948,
+  "truncation_fraction": 0.01973809523809524,
+  "empty_processed_reviews": 31,
+  "training_slice_counts": {
+    "short_reviews": 128920,
+    "medium_reviews": 250581,
+    "long_reviews": 124499,
+    "contains_negation": 377234,
+    "high_oov_rate": 25556
+  }
+}

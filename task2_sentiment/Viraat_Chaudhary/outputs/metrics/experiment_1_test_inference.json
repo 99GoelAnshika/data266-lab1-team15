@@ -1,0 +1,8 @@
+{
+  "identity": "b8d19b6927eaebac50124eaf979edc924fc495f58f74c93be7c2e2167a6a1588",
+  "checkpoint_sha256": "ae271d65898e51dcc8aa4c3fec3c761800eda3931ef09443563a160ab5ec87bd",
+  "predictions_sha256": "29e6e0011f5cda616f428cce57c814244702cea927ad1900154ed6ed84bee41c",
+  "rows": 38000,
+  "inference_seconds": 0.21342900600001258,
+  "test_examples_per_second": 178045.1528692298
+}

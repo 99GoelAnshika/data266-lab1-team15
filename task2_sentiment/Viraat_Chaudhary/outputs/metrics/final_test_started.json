@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-10-02T01:34:14.511587+00:00",
+  "contract": {
+    "frozen_models_sha256": "c32d4ae0abe4a5f47c0b45557f9a79891af3e03be02a9f106d0a2d5d3efdea04",
+    "evaluation_protocol_sha256": "d3f0fb5fd4d286d52be0d9861fbc210218c931cc694cc6f09ca5bb17814111ff",
+    "slice_config_sha256": "b4db7470af15e02940f7e03b090e72caeb5d1e688ff94b840a2f344412a702c8",
+    "data_contract": "e3010a4d701170a1bb7e0378fd1049ac391c5031b4045276b0e768ac1a162856"
+  },
+  "test_policy": "frozen checkpoints; cached final predictions reused on reruns"
+}

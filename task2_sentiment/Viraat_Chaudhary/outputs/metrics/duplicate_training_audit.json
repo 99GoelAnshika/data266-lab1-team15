@@ -1,0 +1,8 @@
+{
+  "definition": "SHA-256 of exact stripped raw training text; rows retained",
+  "extra_duplicate_rows_train": 0,
+  "extra_duplicate_rows_validation": 0,
+  "unique_texts_shared_between_train_and_validation": 0,
+  "official_test_text_inspected": false,
+  "limitation": "Shared duplicate texts can make validation optimistic. Retained to preserve the common official-row split; report the audit."
+}

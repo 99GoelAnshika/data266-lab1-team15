@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "scope": "saved-checkpoint CPU inference and probability validity",
+  "examples_are_synthetic": true,
+  "not_a_test_accuracy_measurement": true,
+  "predictions": {
+    "baseline": [
+      {
+        "text": "The food was delicious and the service was friendly.",
+        "probability_positive": 0.9998475313186646,
+        "label": "positive"
+      },
+      {
+        "text": "The food was not good and the service was terrible.",
+        "probability_positive": 0.00014185310283210129,
+        "label": "negative"
+      },
+      {
+        "text": "Great food.\\nClean café.",
+        "probability_positive": 0.9922701120376587,
+        "label": "positive"
+      },
+      {
+        "text": "",
+        "probability_positive": 0.16010425984859467,
+        "label": "negative"
+      }
+    ],
+    "experiment_1": [
+      {
+        "text": "The food was delicious and the service was friendly.",
+        "probability_positive": 0.9980206489562988,
+        "label": "positive"
+      },
+      {
+        "text": "The food was not good and the service was terrible.",
+        "probability_positive": 4.708142114395741e-06,
+        "label": "negative"
+      },
+      {
+        "text": "Great food.\\nClean café.",
+        "probability_positive": 0.9902058243751526,
+        "label": "positive"
+      },
+      {
+        "text": "",
+        "probability_positive": 0.038641396909952164,
+        "label": "negative"
+      }
+    ],
+    "experiment_2": [
+      {
+        "text": "The food was delicious and the service was friendly.",
+        "probability_positive": 0.9990819692611694,
+        "label": "positive"
+      },
+      {
+        "text": "The food was not good and the service was terrible.",
+        "probability_positive": 8.063669520197436e-05,
+        "label": "negative"
+      },
+      {
+        "text": "Great food.\\nClean café.",
+        "probability_positive": 0.9993496537208557,
+        "label": "positive"
+      },
+      {
+        "text": "",
+        "probability_positive": 0.10546495020389557,
+        "label": "negative"
+      }
+    ]
+  }
+}

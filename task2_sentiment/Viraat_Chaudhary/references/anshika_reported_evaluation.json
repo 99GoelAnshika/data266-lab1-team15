@@ -1,0 +1,376 @@
+{
+  "source_filename": "05_evaluate_compare_models.ipynb",
+  "source_sha256": "7a9e1cc8223600fab7ae51c415496af024996b382956f0b8dc69742a167421a6",
+  "evidence_status": "transcribed from uploaded executed notebook outputs; checkpoints not independently verified",
+  "metrics": {
+    "baseline_mean_pool": {
+      "accuracy": 0.9294736842105263,
+      "precision_macro": 0.9294736889692375,
+      "precision_micro": 0.9294736842105263,
+      "precision_weighted": 0.9294736889692378,
+      "recall_macro": 0.9294736842105262,
+      "recall_micro": 0.9294736842105263,
+      "recall_weighted": 0.9294736842105263,
+      "f1_macro": 0.9294736840151625,
+      "f1_micro": 0.9294736842105263,
+      "f1_weighted": 0.9294736840151626,
+      "mcc": 0.8589473731797639,
+      "roc_auc": 0.9776479916897507,
+      "pr_auc": 0.9775760876007973,
+      "brier_score": 0.05377662483133172,
+      "ece_15_bins": 0.008339227256021996,
+      "confusion_matrix": [
+        [
+          17661,
+          1339
+        ],
+        [
+          1341,
+          17659
+        ]
+      ],
+      "loss": 0.1925286834930119,
+      "evaluation_seconds": 1.009150299942121,
+      "examples_per_second": 37655.44141658528,
+      "parameter_count": 6400129
+    },
+    "textcnn": {
+      "accuracy": 0.9417368421052632,
+      "precision_macro": 0.9417544633359336,
+      "precision_micro": 0.9417368421052632,
+      "precision_weighted": 0.9417544633359336,
+      "recall_macro": 0.9417368421052632,
+      "recall_micro": 0.9417368421052632,
+      "recall_weighted": 0.9417368421052632,
+      "f1_macro": 0.9417362610818281,
+      "f1_micro": 0.9417368421052632,
+      "f1_weighted": 0.9417362610818281,
+      "mcc": 0.883491305265469,
+      "roc_auc": 0.9856706343490305,
+      "pr_auc": 0.9860791532130821,
+      "brier_score": 0.04481429661252991,
+      "ece_15_bins": 0.017341390528176962,
+      "confusion_matrix": [
+        [
+          17833,
+          1167
+        ],
+        [
+          1047,
+          17953
+        ]
+      ],
+      "loss": 0.1618210131808331,
+      "evaluation_seconds": 2.430869299918413,
+      "examples_per_second": 15632.267848080268,
+      "parameter_count": 6597377
+    },
+    "bigru_attention": {
+      "accuracy": 0.9448684210526316,
+      "precision_macro": 0.9450002311072356,
+      "precision_micro": 0.9448684210526316,
+      "precision_weighted": 0.9450002311072356,
+      "recall_macro": 0.9448684210526316,
+      "recall_micro": 0.9448684210526316,
+      "recall_weighted": 0.9448684210526316,
+      "f1_macro": 0.9448643382263312,
+      "f1_micro": 0.9448684210526316,
+      "f1_weighted": 0.9448643382263313,
+      "mcc": 0.8898686423978138,
+      "roc_auc": 0.9884153060941829,
+      "pr_auc": 0.988652130829139,
+      "brier_score": 0.04050608959962163,
+      "ece_15_bins": 0.007061472972756902,
+      "confusion_matrix": [
+        [
+          17789,
+          1211
+        ],
+        [
+          884,
+          18116
+        ]
+      ],
+      "loss": 0.1387595862903093,
+      "evaluation_seconds": 5.930485300021246,
+      "examples_per_second": 6407.57005162189,
+      "parameter_count": 6631425
+    }
+  },
+  "resources": {
+    "baseline_mean_pool": {
+      "parameter_count": 6400129,
+      "training_seconds": 72.6784261999419,
+      "mean_train_examples_per_second": 36636.53049082684,
+      "peak_gpu_allocated_mb": 269.08642578125,
+      "peak_gpu_reserved_mb": 308.0
+    },
+    "textcnn": {
+      "parameter_count": 6597377,
+      "training_seconds": 358.8450522000203,
+      "mean_train_examples_per_second": 7310.545900300038,
+      "peak_gpu_allocated_mb": 308.88232421875,
+      "peak_gpu_reserved_mb": 402.0
+    },
+    "bigru_attention": {
+      "parameter_count": 6631425,
+      "training_seconds": 1545.914335199981,
+      "mean_train_examples_per_second": 1401.1242295852849,
+      "peak_gpu_allocated_mb": 223.447265625,
+      "peak_gpu_reserved_mb": 486.0
+    }
+  },
+  "bootstrap_intervals": {
+    "baseline_mean_pool": {
+      "accuracy": {
+        "lower": 0.9269730263157895,
+        "upper": 0.9319736842105263,
+        "point_estimate": 0.9294736842105263
+      },
+      "macro_f1": {
+        "lower": 0.9269699196501038,
+        "upper": 0.9319701264648411,
+        "point_estimate": 0.9294736840151625
+      },
+      "mcc": {
+        "lower": 0.8539446225551273,
+        "upper": 0.8639412680345181,
+        "point_estimate": 0.8589473731797639
+      }
+    },
+    "textcnn": {
+      "accuracy": {
+        "lower": 0.9393151315789474,
+        "upper": 0.9440526315789474,
+        "point_estimate": 0.9417368421052632
+      },
+      "macro_f1": {
+        "lower": 0.9393102254955834,
+        "upper": 0.9440521896996616,
+        "point_estimate": 0.9417362610818281
+      },
+      "mcc": {
+        "lower": 0.8786393025643553,
+        "upper": 0.8881258994357549,
+        "point_estimate": 0.883491305265469
+      }
+    },
+    "bigru_attention": {
+      "accuracy": {
+        "lower": 0.9425,
+        "upper": 0.947078947368421,
+        "point_estimate": 0.9448684210526316
+      },
+      "macro_f1": {
+        "lower": 0.9424986682861791,
+        "upper": 0.9470731167508879,
+        "point_estimate": 0.9448643382263312
+      },
+      "mcc": {
+        "lower": 0.8851473731035683,
+        "upper": 0.8942835168323436,
+        "point_estimate": 0.8898686423978138
+      }
+    }
+  },
+  "mcnemar_tests": {
+    "baseline_mean_pool_vs_textcnn": {
+      "a_correct_b_wrong": 805,
+      "a_wrong_b_correct": 1271,
+      "discordant_pairs": 2076,
+      "chi_square_statistic": 104.15462427745665,
+      "raw_p_value": 1.871274172580442e-24,
+      "continuity_correction": true,
+      "model_a": "baseline_mean_pool",
+      "model_b": "textcnn",
+      "holm_adjusted_p_value": 1.871274172580442e-24,
+      "reject_after_holm_at_0_05": true
+    },
+    "baseline_mean_pool_vs_bigru_attention": {
+      "a_correct_b_wrong": 648,
+      "a_wrong_b_correct": 1233,
+      "discordant_pairs": 1881,
+      "chi_square_statistic": 181.3163211057948,
+      "raw_p_value": 2.5004586339640436e-41,
+      "continuity_correction": true,
+      "model_a": "baseline_mean_pool",
+      "model_b": "bigru_attention",
+      "holm_adjusted_p_value": 5.000917267928087e-41,
+      "reject_after_holm_at_0_05": true
+    }
+  },
+  "slice_metrics": [
+    {
+      "model": "baseline_mean_pool",
+      "slice": "short_reviews",
+      "count": 9996,
+      "fraction": 0.263053,
+      "accuracy": 0.92497,
+      "error_rate": 0.07503,
+      "macro_f1": 0.922356
+    },
+    {
+      "model": "baseline_mean_pool",
+      "slice": "medium_reviews",
+      "count": 18591,
+      "fraction": 0.489237,
+      "accuracy": 0.93158,
+      "error_rate": 0.06842,
+      "macro_f1": 0.931577
+    },
+    {
+      "model": "baseline_mean_pool",
+      "slice": "long_reviews",
+      "count": 9413,
+      "fraction": 0.247711,
+      "accuracy": 0.930097,
+      "error_rate": 0.069903,
+      "macro_f1": 0.927679
+    },
+    {
+      "model": "baseline_mean_pool",
+      "slice": "contains_negation",
+      "count": 27951,
+      "fraction": 0.735553,
+      "accuracy": 0.924511,
+      "error_rate": 0.075489,
+      "macro_f1": 0.921872
+    },
+    {
+      "model": "baseline_mean_pool",
+      "slice": "high_oov_rate",
+      "count": 2336,
+      "fraction": 0.061474,
+      "accuracy": 0.917808,
+      "error_rate": 0.082192,
+      "macro_f1": 0.913829
+    },
+    {
+      "model": "textcnn",
+      "slice": "short_reviews",
+      "count": 9996,
+      "fraction": 0.263053,
+      "accuracy": 0.936475,
+      "error_rate": 0.063525,
+      "macro_f1": 0.934229
+    },
+    {
+      "model": "textcnn",
+      "slice": "medium_reviews",
+      "count": 18591,
+      "fraction": 0.489237,
+      "accuracy": 0.945296,
+      "error_rate": 0.054704,
+      "macro_f1": 0.945296
+    },
+    {
+      "model": "textcnn",
+      "slice": "long_reviews",
+      "count": 9413,
+      "fraction": 0.247711,
+      "accuracy": 0.940295,
+      "error_rate": 0.059705,
+      "macro_f1": 0.938362
+    },
+    {
+      "model": "textcnn",
+      "slice": "contains_negation",
+      "count": 27951,
+      "fraction": 0.735553,
+      "accuracy": 0.940324,
+      "error_rate": 0.059676,
+      "macro_f1": 0.93836
+    },
+    {
+      "model": "textcnn",
+      "slice": "high_oov_rate",
+      "count": 2336,
+      "fraction": 0.061474,
+      "accuracy": 0.928082,
+      "error_rate": 0.071918,
+      "macro_f1": 0.924423
+    },
+    {
+      "model": "bigru_attention",
+      "slice": "short_reviews",
+      "count": 9996,
+      "fraction": 0.263053,
+      "accuracy": 0.940676,
+      "error_rate": 0.059324,
+      "macro_f1": 0.938494
+    },
+    {
+      "model": "bigru_attention",
+      "slice": "medium_reviews",
+      "count": 18591,
+      "fraction": 0.489237,
+      "accuracy": 0.947394,
+      "error_rate": 0.052606,
+      "macro_f1": 0.947394
+    },
+    {
+      "model": "bigru_attention",
+      "slice": "long_reviews",
+      "count": 9413,
+      "fraction": 0.247711,
+      "accuracy": 0.944332,
+      "error_rate": 0.055668,
+      "macro_f1": 0.942682
+    },
+    {
+      "model": "bigru_attention",
+      "slice": "contains_negation",
+      "count": 27951,
+      "fraction": 0.735553,
+      "accuracy": 0.943687,
+      "error_rate": 0.056313,
+      "macro_f1": 0.941969
+    },
+    {
+      "model": "bigru_attention",
+      "slice": "high_oov_rate",
+      "count": 2336,
+      "fraction": 0.061474,
+      "accuracy": 0.928938,
+      "error_rate": 0.071062,
+      "macro_f1": 0.925263
+    }
+  ],
+  "slice_precision": "rounded dataframe display; tokenizer-specific membership differs from Viraat",
+  "exact_hardware": "not supplied; request teammate hardware manifest for final team report",
+  "model_configs": {
+    "baseline_mean_pool": {
+      "architecture": "mean-pooling embedding plus linear",
+      "embedding_dim": 128,
+      "dropout": 0.2,
+      "batch_size": 512,
+      "learning_rate": 0.001,
+      "max_epochs": 5
+    },
+    "textcnn": {
+      "architecture": "parallel multikernel TextCNN",
+      "embedding_dim": 128,
+      "kernels": [
+        3,
+        4,
+        5
+      ],
+      "filters_per_kernel": 128,
+      "dropout": 0.5,
+      "batch_size": 256,
+      "learning_rate": 0.001,
+      "max_epochs": 5
+    },
+    "bigru_attention": {
+      "architecture": "BiGRU with attention",
+      "embedding_dim": 128,
+      "hidden_dim": 128,
+      "attention_dim": 128,
+      "layers": 1,
+      "dropout": 0.3,
+      "batch_size": 128,
+      "learning_rate": 0.0005,
+      "max_epochs": 5
+    }
+  }
+}

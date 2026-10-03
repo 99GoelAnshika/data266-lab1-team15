@@ -1,0 +1,30 @@
+{
+  "family": "baseline versus two experiments",
+  "adjustment": "Holm",
+  "tests": [
+    {
+      "model_a": "baseline",
+      "model_b": "experiment_1",
+      "a_correct_b_wrong": 601,
+      "a_wrong_b_correct": 822,
+      "discordant_pairs": 1423,
+      "chi_square_statistic": 34.01264933239634,
+      "raw_p_value": 5.4754948538600325e-09,
+      "continuity_correction": true,
+      "holm_adjusted_p_value": 1.0950989707720065e-08,
+      "reject_after_holm_at_0_05": true
+    },
+    {
+      "model_a": "baseline",
+      "model_b": "experiment_2",
+      "a_correct_b_wrong": 530,
+      "a_wrong_b_correct": 734,
+      "discordant_pairs": 1264,
+      "chi_square_statistic": 32.602056962025316,
+      "raw_p_value": 1.1309499327437484e-08,
+      "continuity_correction": true,
+      "holm_adjusted_p_value": 1.1309499327437484e-08,
+      "reject_after_holm_at_0_05": true
+    }
+  ]
+}

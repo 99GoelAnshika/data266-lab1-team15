@@ -1,0 +1,16 @@
+{
+  "model": "experiment_1",
+  "model_selected_using": "maximum validation macro-F1 before test",
+  "groups": {
+    "confident_false_positive": 5,
+    "confident_false_negative": 5,
+    "near_threshold_error": 5,
+    "slice_specific_failure": 5
+  },
+  "unique_source_ids": 20,
+  "confidence_definition": "five most confident errors within FP/FN groups",
+  "near_threshold_definition": "five closest to 0.5 among remaining errors",
+  "slice_policy": "available frozen slices, unique remaining errors",
+  "text_source": "official test rows matching saved source IDs",
+  "human_annotations_generated": false
+}

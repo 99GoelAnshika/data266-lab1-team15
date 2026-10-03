@@ -1,0 +1,9 @@
+{
+  "zip_filename": "viraat_yelp_processed_20261001T203954337938Z_preprocessing_v2.zip",
+  "sha256": "a951d9c5067d92282c0b10558e53d3859b0b19b1d47b7e1b7eee4971072acf38",
+  "bytes": 85733747,
+  "drive_backup_verified": true,
+  "data_artifact_manifest_sha256": "e3010a4d701170a1bb7e0378fd1049ac391c5031b4045276b0e768ac1a162856",
+  "restore_to": "task2_sentiment/data/; ZIP contains processed/Viraat_Chaudhary/",
+  "sharing_status": "private training backup; public reference remains the original raw dataset ZIP"
+}
