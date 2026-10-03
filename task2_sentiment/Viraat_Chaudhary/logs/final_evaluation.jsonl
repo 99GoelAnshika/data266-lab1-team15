@@ -1,0 +1,1 @@
+{"time_utc": "2026-10-02T01:34:44.959962+00:00", "event": "statistics_completed_from_saved_predictions", "rows": 38000, "bootstrap_replicates": 2000, "frozen_models_sha256": "c32d4ae0abe4a5f47c0b45557f9a79891af3e03be02a9f106d0a2d5d3efdea04", "test_based_selection": false}
