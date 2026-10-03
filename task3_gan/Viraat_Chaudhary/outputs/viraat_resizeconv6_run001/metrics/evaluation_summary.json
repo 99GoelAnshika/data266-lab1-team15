@@ -1,0 +1,35 @@
+{
+  "run_id": "viraat_resizeconv6_run001",
+  "epoch": 60,
+  "checkpoint_sha256": "138f9ae9edef412125ddfad643d2fc672c3de2d609819caf0b623979d3765252",
+  "protocol": "team reference: first 300 sorted images, Inception-v3 ImageNet features, fixed ordering",
+  "directions": {
+    "A2B": {
+      "fid": 103.03648895627941,
+      "class_mifid": 0.41614150006151296,
+      "kid_mean": 0.024614788881728068,
+      "kid_std": 0.0034065122173219174,
+      "generative_precision": 0.6233333333333333,
+      "generative_recall": 0.4266666666666667,
+      "content_preservation_cosine_similarity": 0.7891364810217774,
+      "cycle_l1_rgb01": 0.04343768773600459,
+      "cycle_lpips_alex": 0.42009864091873167
+    },
+    "B2A": {
+      "fid": 95.6152380507273,
+      "class_mifid": 0.40558487018645933,
+      "kid_mean": 0.007861312552054951,
+      "kid_std": 0.001244069562457547,
+      "generative_precision": 0.5466666666666666,
+      "generative_recall": 0.5966666666666667,
+      "content_preservation_cosine_similarity": 0.7933666802953068,
+      "cycle_l1_rgb01": 0.0469023149398466,
+      "cycle_lpips_alex": 0.30990797822674115
+    }
+  },
+  "local_average_fid": 99.32586350350336,
+  "local_average_class_mifid": 0.4108631851239861,
+  "official_evaluator_verified": true,
+  "real_human_audit_completed": false,
+  "official_evaluator_evidence": "outputs/viraat_resizeconv6_run001/metrics/official_evaluation_verification.json"
+}
