@@ -1,0 +1,31 @@
+{
+  "source_archive": "Anshika_Task3_Current_Evidence.zip",
+  "source_archive_sha256": "5170d20f936fb88d5d3df6295d669d6bec194a181939827c7af706d03f6f8175",
+  "source_files": {
+    "anshika_epoch125_full_metrics_snapshot.csv": {
+      "archive_path": "task3_gan/Anshika_Goel/full_metrics_report.csv",
+      "sha256": "c92608c9edf96013706d6ea517d8f38b7798a58496f97c03388d006e942c60b3",
+      "size": 15385
+    },
+    "anshika_epoch125_results_snapshot.md": {
+      "archive_path": "task3_gan/Anshika_Goel/results.md",
+      "sha256": "355e5745d5ffa5ffd65dc3eea46ea4e05392a29f1f0f0e94ee7a15e59300c8db",
+      "size": 4581
+    },
+    "anshika_configuration_snapshot.json": {
+      "archive_path": "task3_gan/Anshika_Goel/configs/cyclegan_baseline.json",
+      "sha256": "4795c20ee2d0307d26659da578aa6e42834cd10def8ca1bd088285c0216bfae5",
+      "size": 3277
+    }
+  },
+  "reported_run_id": "cyclegan_baseline_rtx4090_run001",
+  "reported_selected_epoch": 125,
+  "reported_checkpoint_sha256": "3216b4997ed51962590251170ca5cbd6d00fb444479a8b5cd9480f0cfbeab7ec",
+  "verification_scope": "Three supplied reports/configuration files were read in full and preserved byte-identically. The epoch-125 checkpoint, prediction images, raw logs, executed evaluator and Kaggle result JSON were not present in this evidence ZIP; their claims were not independently verified here.",
+  "missing_from_supplied_reports": [
+    "epoch-125 peak allocated GPU memory",
+    "epoch-125 KID subset standard deviations"
+  ],
+  "human_audit": "Reported simulated/AI-assisted epoch-50 ratings are historical, not two real independent raters on the final epoch-125 model. No exception permission document was supplied.",
+  "supersedes_for_current_comparison": "Earlier epoch-50 automatic snapshots remain in the full completion backup; they are not the selected final model comparison."
+}
