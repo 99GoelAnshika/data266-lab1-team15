@@ -1,0 +1,23 @@
+{
+  "captured_utc": "2026-10-02T01:18:27.696425+00:00",
+  "python": "3.13.15",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "cpu_model": "Intel(R) Xeon(R) CPU @ 2.20GHz",
+  "gpu_model": "NVIDIA A100-SXM4-40GB",
+  "gpu_total_memory_mib": 40441.375,
+  "cuda": "13.0",
+  "cudnn": 92700,
+  "cudnn_deterministic": true,
+  "cudnn_benchmark": false,
+  "cublas_workspace_config": ":4096:8",
+  "packages": {
+    "torch": "2.11.0+cu130",
+    "numpy": "2.1.3",
+    "scipy": "1.16.3",
+    "scikit-learn": "1.6.1",
+    "nltk": "3.9.1",
+    "datasets": "4.8.5",
+    "matplotlib": "3.10.0",
+    "tqdm": "4.67.3"
+  }
+}

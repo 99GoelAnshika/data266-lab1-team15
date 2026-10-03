@@ -1,0 +1,32 @@
+{
+  "frozen_models_sha256": "c32d4ae0abe4a5f47c0b45557f9a79891af3e03be02a9f106d0a2d5d3efdea04",
+  "models": {
+    "baseline": {
+      "checkpoint": "checkpoints/baseline_best.pt",
+      "checkpoint_sha256": "fa3ae7b0eda530081858a2d471335fef949295bfea924e75c718b4738860ab48",
+      "config": "configs/baseline.json",
+      "config_sha256": "11ba31a77bea8119b90c54de3e6105b1b886b07ec1252256719b988e63a70b69",
+      "validation_manifest": "outputs/metrics/baseline_training_manifest.json",
+      "test_metrics": "outputs/metrics/final_test_metrics.json#baseline",
+      "predictions": "outputs/predictions/baseline_official_test.npz"
+    },
+    "experiment_1": {
+      "checkpoint": "checkpoints/experiment_1_best.pt",
+      "checkpoint_sha256": "ae271d65898e51dcc8aa4c3fec3c761800eda3931ef09443563a160ab5ec87bd",
+      "config": "configs/experiment_1.json",
+      "config_sha256": "bb0d7f34f7b1de96771e571b1a77c4af0eb30ea3fc3892c4ebf4d755cf9ea71c",
+      "validation_manifest": "outputs/metrics/experiment_1_training_manifest.json",
+      "test_metrics": "outputs/metrics/final_test_metrics.json#experiment_1",
+      "predictions": "outputs/predictions/experiment_1_official_test.npz"
+    },
+    "experiment_2": {
+      "checkpoint": "checkpoints/experiment_2_best.pt",
+      "checkpoint_sha256": "4bdac5813be95e42904cf2f733e2c0675528dd7ef9ef96596d8e0f5fd3d83eb6",
+      "config": "configs/experiment_2.json",
+      "config_sha256": "30507082a8277fd5648ab005fcfdd9e0823d3a09d482007b49b71326795fa4a2",
+      "validation_manifest": "outputs/metrics/experiment_2_training_manifest.json",
+      "test_metrics": "outputs/metrics/final_test_metrics.json#experiment_2",
+      "predictions": "outputs/predictions/experiment_2_official_test.npz"
+    }
+  }
+}
