@@ -1,0 +1,12 @@
+data_processed/
+hf_cache/
+__pycache__/
+.ipynb_checkpoints/
+*.zip
+
+# Additional runtime-only files
+checkpoints/resume/
+exports/
+__pycache__/
+*.pyc
+*.part

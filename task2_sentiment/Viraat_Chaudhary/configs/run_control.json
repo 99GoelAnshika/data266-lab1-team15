@@ -1,0 +1,8 @@
+{
+  "package_id": "viraat_yelp_rnn_lstm_tcn_v1",
+  "drive_base_relative": "DATA266_Lab1_Task2/Viraat_Chaudhary",
+  "default_run_name": "task2_models_rnn_lstm_tcn_v1",
+  "cache_directory": "/content/viraat_task2_data",
+  "data_source_run_id": "20261001T203954337938Z_preprocessing_v2",
+  "raw_source_run_id": "20261001T203954337938Z"
+}

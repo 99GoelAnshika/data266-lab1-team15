@@ -1,0 +1,39 @@
+{
+  "preprocessing_id": "viraat_yelp_preprocessing_v1",
+  "dataset_id": "fancyzhx/yelp_polarity",
+  "dataset_config": "plain_text",
+  "dataset_revision": "bbf1c97a1f0cf005e5aded43839fd814654a1557",
+  "nltk_version": "3.9.1",
+  "normalization": [
+    "HTML entity decoding",
+    "Unicode NFKC",
+    "lowercase",
+    "HTML tag removal",
+    "negative contraction expansion"
+  ],
+  "token_pattern": "[^\\W\\d_]+",
+  "punctuation_special_characters_and_digits": "excluded from tokens",
+  "stopwords": "NLTK English, excluding preserved negation words",
+  "preserved_negation_words": [
+    "barely",
+    "hardly",
+    "neither",
+    "never",
+    "no",
+    "nor",
+    "not",
+    "scarcely",
+    "without"
+  ],
+  "effective_stopwords_sha256": "94b33fb848a2501236534ccb8fcfe805a317138d3a658cd9b93dad869accd042",
+  "stemmer": "PorterStemmer.NLTK_EXTENSIONS",
+  "empty_processed_review_policy": "retain row; assign reserved <empty> token during encoding",
+  "split_membership": "not_created_yet",
+  "vocabulary": "not_fitted_yet; will use training membership only",
+  "protocol_status": "setup_checked; awaiting split and evaluation alignment",
+  "sources": [
+    "https://www.nltk.org/api/nltk.stem.porter.html",
+    "https://www.nltk.org/howto/corpus.html"
+  ],
+  "assistant_assistance": "preprocessing implementation and synthetic smoke checks"
+}

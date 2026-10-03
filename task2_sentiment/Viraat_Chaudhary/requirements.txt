@@ -1,0 +1,11 @@
+# Keep Colab's working torch/CUDA installation. Notebook setup installs only missing packages.
+# For a separate evaluator environment, these reproduce the main software choices.
+torch==2.11.0
+numpy==2.1.3
+scipy>=1.14,<2
+scikit-learn==1.6.1
+nltk==3.9.1
+datasets==4.8.5
+matplotlib==3.10.0
+pandas>=2.2,<4
+tqdm==4.67.3
