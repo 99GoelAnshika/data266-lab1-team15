@@ -1,0 +1,146 @@
+{
+  "preserved_original_files": [
+    {
+      "original_path": ".gitignore",
+      "preserved_path": "provenance/preprocessing_original_gitignore.txt",
+      "sha256": "1f00ff7a1a219fa1ffcaea08ea5b7aa5103b674272457a740d474f6647223152"
+    },
+    {
+      "original_path": "README.md",
+      "preserved_path": "provenance/preprocessing_original_readme.md",
+      "sha256": "d152471780a69769b66df82e008797f0feabd09f25833c96946ef9e4863c6c3d"
+    },
+    {
+      "original_path": "configs/data_protocol.json",
+      "preserved_path": "configs/data_protocol.json",
+      "sha256": "83a1da1f6cfbe19c5b6fd6c6d7383d6f62447cdbe8ff259e9462f2732045d36c"
+    },
+    {
+      "original_path": "configs/english_stopwords.json",
+      "preserved_path": "configs/english_stopwords.json",
+      "sha256": "94b33fb848a2501236534ccb8fcfe805a317138d3a658cd9b93dad869accd042"
+    },
+    {
+      "original_path": "configs/evaluation_protocol.json",
+      "preserved_path": "configs/evaluation_protocol.json",
+      "sha256": "d3f0fb5fd4d286d52be0d9861fbc210218c931cc694cc6f09ca5bb17814111ff"
+    },
+    {
+      "original_path": "configs/preprocessing.json",
+      "preserved_path": "configs/preprocessing.json",
+      "sha256": "fc5b3c439012b34d607c2ccb8de2f08114c0e64bdeab314ac1ae8958a765cb83"
+    },
+    {
+      "original_path": "configs/preprocessing_setup_v1.json",
+      "preserved_path": "configs/preprocessing_setup_v1.json",
+      "sha256": "b8b42c050d41ea164e96b173d249c6a590783d33922b2de9075926f87c31796f"
+    },
+    {
+      "original_path": "configs/robustness_slices.json",
+      "preserved_path": "configs/robustness_slices.json",
+      "sha256": "b4db7470af15e02940f7e03b090e72caeb5d1e688ff94b840a2f344412a702c8"
+    },
+    {
+      "original_path": "environment_manifest.json",
+      "preserved_path": "environment_manifest.json",
+      "sha256": "3eb47dea645d16a7b6f70623082c5d3796c8c73f8a4e2121663ac9da99090ce3"
+    },
+    {
+      "original_path": "environment_preprocessing.json",
+      "preserved_path": "environment_preprocessing.json",
+      "sha256": "cf131ee57aea4f5896a1abc3a0935a134658d69d66b06c552b31984a0ad46e57"
+    },
+    {
+      "original_path": "logs/data_setup_20261001T203954337938Z.jsonl",
+      "preserved_path": "logs/data_setup_20261001T203954337938Z.jsonl",
+      "sha256": "92d59b4ce5cd6548f90007c01326dc78131a8cd77dfb6d6232cd256d49e9e102"
+    },
+    {
+      "original_path": "logs/preprocessing_20261001T223930178132Z.jsonl",
+      "preserved_path": "logs/preprocessing_20261001T223930178132Z.jsonl",
+      "sha256": "387ab8a77c5f375d5953ad515f457c367721a9490868ccd52f82620e2e8175ef"
+    },
+    {
+      "original_path": "outputs/metrics/data_artifact_manifest.json",
+      "preserved_path": "outputs/metrics/data_artifact_manifest.json",
+      "sha256": "e3010a4d701170a1bb7e0378fd1049ac391c5031b4045276b0e768ac1a162856"
+    },
+    {
+      "original_path": "outputs/metrics/dataset_backup_manifest.json",
+      "preserved_path": "outputs/metrics/dataset_backup_manifest.json",
+      "sha256": "80a442dce3bc6ac85daa34176db575da42090ee4c581f9b73ae6deae8971bce2"
+    },
+    {
+      "original_path": "outputs/metrics/duplicate_training_audit.json",
+      "preserved_path": "outputs/metrics/duplicate_training_audit.json",
+      "sha256": "02d8dcecd8c1fb2e5839fd5dff7d152229e398e8024545580e782558b8c51ff1"
+    },
+    {
+      "original_path": "outputs/metrics/invalid_training_rows.json",
+      "preserved_path": "outputs/metrics/invalid_training_rows.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "original_path": "outputs/metrics/preprocessing_completion.json",
+      "preserved_path": "outputs/metrics/preprocessing_completion.json",
+      "sha256": "c1379f7e512c601dcaf572a7b776154ed45339b9a4c9aaf06ae646e293097911"
+    },
+    {
+      "original_path": "outputs/metrics/preprocessing_smoke_examples.json",
+      "preserved_path": "outputs/metrics/preprocessing_smoke_examples.json",
+      "sha256": "c6f299bce9fce6a0bb1231ab44271c5840d4a445368ff94aea4ec95f0bbd01f0"
+    },
+    {
+      "original_path": "outputs/metrics/processed_dataset_backup.json",
+      "preserved_path": "outputs/metrics/processed_dataset_backup.json",
+      "sha256": "0e93440c16a963ae14abd5674c591e8add3154ee1eb83229cbaf8139edecc700"
+    },
+    {
+      "original_path": "outputs/metrics/processed_training_analysis.json",
+      "preserved_path": "outputs/metrics/processed_training_analysis.json",
+      "sha256": "1b50f98725fefed035b80e230f4253057f21843ad36491d5b2143272d9e89647"
+    },
+    {
+      "original_path": "outputs/metrics/raw_dataset_audit.json",
+      "preserved_path": "outputs/metrics/raw_dataset_audit.json",
+      "sha256": "b0d505d88bddddbb9cb4d832dc9e46a295dee9b2ebc13b88783e7d4a82bc7485"
+    },
+    {
+      "original_path": "outputs/metrics/split_manifest.json",
+      "preserved_path": "outputs/metrics/split_manifest.json",
+      "sha256": "2e69ec7b0a18f89263121dabcbc24263fa3f9920ae8de704e1b0d78cd22e9521"
+    },
+    {
+      "original_path": "outputs/metrics/vocabulary.json",
+      "preserved_path": "outputs/metrics/vocabulary.json",
+      "sha256": "995f37e68375e57d6406cee91e622b5d12aaae00bcedeae2141e490184f61470"
+    },
+    {
+      "original_path": "outputs/plots/processed_training_distribution.png",
+      "preserved_path": "outputs/plots/processed_training_distribution.png",
+      "sha256": "c8696c907190f4b77781d0972a77952f4223af6f9031b65511e6695d70ab654d"
+    },
+    {
+      "original_path": "outputs/plots/raw_training_distribution.png",
+      "preserved_path": "outputs/plots/raw_training_distribution.png",
+      "sha256": "352cc2e77d059e8e8f829ea72086054c9b82f3adef61fa8514842fa97919df0d"
+    },
+    {
+      "original_path": "requirements.lock.txt",
+      "preserved_path": "requirements.lock.txt",
+      "sha256": "f040f52311d2522ca35bda01dc798acbef171e32a4193c3e62bfd556c4c2a58c"
+    },
+    {
+      "original_path": "src/yelp_data.py",
+      "preserved_path": "src/yelp_data.py",
+      "sha256": "56f800c2fd26db45877c6d8e169c31a7d68cbf7beca85547019a923f2205e06b"
+    },
+    {
+      "original_path": "Viraat_01_data_analysis_preprocessing(2).ipynb",
+      "preserved_path": "notebooks/Viraat_01_data_analysis_preprocessing.ipynb",
+      "sha256": "12eb74e80131a43f9bd961124d2253ccf832a61a9c4bbed9633c563681cfd7c4"
+    }
+  ],
+  "original_files_reconstructed": false,
+  "minor_doc_updates": "member README filename/reference corrected; original README and ignore retained byte-for-byte"
+}

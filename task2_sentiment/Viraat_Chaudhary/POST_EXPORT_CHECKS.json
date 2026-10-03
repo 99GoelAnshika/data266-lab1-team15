@@ -1,0 +1,42 @@
+{
+  "checked_utc": "2026-10-02T02:22:43.050200+00:00",
+  "source_zip_sha256": "81ff44329dfeb91bdbe88b29452bf9dd3dba6692e00323d01aa8940063f6f081",
+  "executed_07_sha256": "044ae9341eaab7a8f726c411c3f98b741777e9e8bf278365eca7061b99d39f59",
+  "scope": "Offline verification of saved run artifacts; training and official-test inference were not repeated. Checkpoint hashes verified; successful checkpoint smoke execution is recorded in supplied notebook 07.",
+  "checks": {
+    "zip_crc_and_135_export_hashes": "PASS",
+    "all_28_preprocessing_preservation_hashes": "PASS",
+    "all_test_metrics_from_38000_saved_predictions_per_model": "PASS",
+    "all_9_bootstrap_intervals_2000_shared_resamples": "PASS",
+    "paired_mcnemar_and_holm": "PASS",
+    "all_15_slice_metric_rows": "PASS",
+    "checkpoint_config_validation_prediction_hashes": "PASS",
+    "validation_checkpoint_selection_and_throughput": "PASS",
+    "20_unique_annotations_5_per_group_evidence_unchanged": "PASS",
+    "executed_notebooks_01_to_07_without_saved_errors": "PASS"
+  },
+  "test_results": {
+    "baseline": {
+      "accuracy": 0.9426578947368421,
+      "f1_macro": 0.9426570131082743,
+      "mcc": 0.8853430135768008
+    },
+    "experiment_1": {
+      "accuracy": 0.9484736842105264,
+      "f1_macro": 0.9484716287851925,
+      "mcc": 0.8970189340052213
+    },
+    "experiment_2": {
+      "accuracy": 0.9480263157894737,
+      "f1_macro": 0.9480208125829976,
+      "mcc": 0.8962424279062094
+    }
+  },
+  "original_artifacts_preserved": "Every original member file is byte-for-byte preserved except the unexecuted notebook 07 replaced by the supplied executed notebook and the refreshed submission audit; the original audit is also retained.",
+  "remaining_work": [
+    "Personal review and revision of the AI-assisted annotation and analysis drafts, as required by the notebook instructions.",
+    "Confirm teammate exact hardware and split/checkpoint provenance.",
+    "Integrate joint comparison, shared README, and combined lab PDF report."
+  ],
+  "full_lab_submission_ready": false
+}

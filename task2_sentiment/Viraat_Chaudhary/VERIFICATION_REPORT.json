@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-10-02T00:20:13.787696+00:00",
+  "checks": [
+    {
+      "check": "All Python modules and seven notebooks parse",
+      "passed": true
+    },
+    {
+      "check": "Approved notebook, helper, configs, vocabulary, plots and original logs preserved",
+      "passed": true
+    },
+    {
+      "check": "Confusion-count identities, Brier, ECE boundaries and degenerate cases",
+      "passed": true
+    },
+    {
+      "check": "Shared deterministic bootstrap draws and paired zero-discordance case",
+      "passed": true
+    },
+    {
+      "check": "All three models: forward/backward, PAD invariance, EMPTY and PAD gradient",
+      "passed": true
+    },
+    {
+      "check": "Tiny training, epoch-boundary resume, raw-log preservation and completed-run reuse",
+      "passed": true
+    },
+    {
+      "check": "Freeze, full evaluation, saved prediction reuse and checkpoint-to-result records",
+      "passed": true
+    },
+    {
+      "check": "Saved-checkpoint CPU evaluator and six-model reported/computed table",
+      "passed": true
+    },
+    {
+      "check": "Twenty unique groups, annotation integrity, pending notebook audit and dataset-free export",
+      "passed": true
+    },
+    {
+      "check": "Changed configurations cannot silently retrain or replace frozen results",
+      "passed": true
+    },
+    {
+      "check": "Colab bootstrap with mocked auth/upload: first installation and fresh-session reconnect",
+      "passed": true
+    }
+  ],
+  "scope": "tiny synthetic CPU workflow; original preprocessing bytes reviewed",
+  "official_yelp_training_rerun": false,
+  "official_test_inspected": false,
+  "gpu_amp_or_actual_a100_training_verified": false,
+  "torch_version": "2.11.0+cpu",
+  "numpy_version": "2.3.5",
+  "synthetic_outputs_in_delivery_package": false,
+  "limitations": [
+    "Real Colab A100 runtime and achieved metrics remain to be measured.",
+    "Human analysis and annotations are mandatory; not generated.",
+    "Teammate checkpoint/hardware provenance and combined report remain team work."
+  ],
+  "bootstrap_verification_scope": "mocked Colab mount/upload; actual code execution and file preservation, not real Google authentication"
+}

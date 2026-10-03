@@ -1,0 +1,18 @@
+{
+  "task2_individual_ready_for_review": true,
+  "individual_submission_files_complete": false,
+  "full_lab_submission_ready": false,
+  "missing_required_files": [],
+  "student_analysis_pending": false,
+  "executed_notebook_copies_still_needed": [
+    "Viraat_07_evaluator_demo.ipynb"
+  ],
+  "notebooks_with_saved_errors": [],
+  "checkpoints_over_github_limit": [],
+  "remaining_team_work": [
+    "confirm teammate exact hardware/provenance",
+    "jointly write task comparison and integrate combined lab PDF report"
+  ],
+  "datasets_in_submission_bundle": false,
+  "created_utc": "2026-10-02T02:15:44.373240+00:00"
+}
