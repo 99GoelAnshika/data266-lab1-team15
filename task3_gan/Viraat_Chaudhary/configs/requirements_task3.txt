@@ -1,0 +1,7 @@
+# Keep the lab's compatible CUDA torch/torchvision build; do not replace it with CPU wheels.
+# Training imports torch, torchvision, Pillow and Python standard library modules.
+numpy>=1.24,<2
+Pillow>=10
+matplotlib>=3.6,<4
+lpips==0.1.4
+# Actual torch/torchvision/CUDA/GPU versions are captured in each run manifest.
