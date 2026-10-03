@@ -512,3 +512,60 @@ python task1_llm/evaluate_common.py
 The [run/commit guide](task1_llm/Viraat_Chaudhary/RUN_GUIDE.md) gives eight
 logical commits from the repository root. Task 1 completion does not complete
 the remaining individual tasks, the combined Tasks 1-3 PDF, or the viva.
+
+<!-- VIRAAT_TASK2_REPO_INTEGRATION_START -->
+## Viraat - Task 2 sentiment classification
+
+This added section records Viraat's Task 2 run evidence and supplements the earlier repository snapshot. The six-model comparison is now available in Viraat's comparison CSV. The existing member sections above are retained.
+
+Member folder: [`task2_sentiment/Viraat_Chaudhary/`](task2_sentiment/Viraat_Chaudhary/).
+
+### Models and recorded results
+
+All embeddings and classifier weights were learned from scratch. The models use Yelp Polarity, the 504,000/56,000 development split, a training-only 50,000-entry vocabulary and a 256-token cap. All three selected checkpoints were frozen before evaluating the same 38,000 official test reviews.
+
+| Model | Architecture | Accuracy | Macro-F1 | MCC | Parameters | Training seconds |
+|---|---|---:|---:|---:|---:|---:|
+| baseline | Plain RNN | 0.942658 | 0.942657 | 0.885343 | 6,450,049 | 46.984 |
+| experiment_1 | Unidirectional LSTM | 0.948474 | 0.948472 | 0.897019 | 6,549,121 | 57.146 |
+| experiment_2 | Residual dilated causal TCN | 0.948026 | 0.948021 | 0.896242 | 7,027,969 | 280.528 |
+
+Exact hardware for all three runs: NVIDIA A100-SXM4-40GB; Intel(R) Xeon(R) CPU @ 2.20GHz. Per-run versions, selected epochs, checkpoint hashes and measurement scopes are preserved in the training manifests.
+
+### Setup and one-command checkpoint smoke test
+
+From the repository root, install the member requirements in a compatible Python/PyTorch environment:
+
+```bash
+python3 -m pip install -r task2_sentiment/Viraat_Chaudhary/requirements.txt
+```
+
+Then reproduce the saved RNN checkpoint smoke test with one command:
+
+```bash
+python3 task2_sentiment/Viraat_Chaudhary/src/evaluator.py --smoke --config task2_sentiment/Viraat_Chaudhary/configs/baseline.json
+```
+
+The command loads the selected checkpoint on CPU, verifies its config and preprocessing records, and returns probabilities for synthetic text. No dataset download is required. It is a checkpoint demonstration, not another test-accuracy measurement. Executed notebook 07 also records CPU smoke results for all three selected checkpoints.
+
+### Evidence locations
+
+- [All required per-model metrics](task2_sentiment/Viraat_Chaudhary/metrics_report.csv): precision/recall/F1 macro, micro and weighted; confusion counts; ROC/PR areas; MCC; Brier; 15-bin ECE; confidence intervals; paired tests; slices; and resource measurements.
+- [Architecture and analysis](task2_sentiment/Viraat_Chaudhary/results.md) and [twenty-error review with actual text](task2_sentiment/Viraat_Chaudhary/failure_analysis.md).
+- [Six-model comparison CSV](task2_sentiment/Viraat_Chaudhary/outputs/metrics/team_comparison_metrics.csv) and [Task 2 material for the final report](task2_sentiment/Viraat_Chaudhary/REPORT_TASK2_SECTION.md).
+- [Checkpoint-to-result mapping](task2_sentiment/Viraat_Chaudhary/outputs/metrics/checkpoint_result_mapping.json), [bootstrap intervals](task2_sentiment/Viraat_Chaudhary/outputs/metrics/bootstrap_confidence_intervals.json), [paired McNemar tests](task2_sentiment/Viraat_Chaudhary/outputs/metrics/mcnemar_tests.csv) and [robustness slices](task2_sentiment/Viraat_Chaudhary/outputs/metrics/robustness_slice_metrics.csv).
+- [Executed notebooks and source](task2_sentiment/Viraat_Chaudhary/src/), [plots](task2_sentiment/Viraat_Chaudhary/outputs/plots/), [saved predictions](task2_sentiment/Viraat_Chaudhary/outputs/predictions/) and [selected checkpoints](task2_sentiment/Viraat_Chaudhary/checkpoints/).
+- [Original logs](task2_sentiment/Viraat_Chaudhary/logs/) and [per-run environments](task2_sentiment/Viraat_Chaudhary/environments/).
+- Shared byte-identical evidence copies: [`reproducibility/raw_logs/task2_sentiment/Viraat_Chaudhary/`](reproducibility/raw_logs/task2_sentiment/Viraat_Chaudhary/) and [`reproducibility/manifests/task2_sentiment/Viraat_Chaudhary/`](reproducibility/manifests/task2_sentiment/Viraat_Chaudhary/). Copied manifest paths still resolve relative to the original member folder.
+- [Raw Yelp ZIP folder](https://drive.google.com/drive/folders/1wzaSwbXnBjHUu1dOBT6sX-9PF2jeoovB); the pinned ZIP filename and restoration workflow are in the [member README](task2_sentiment/Viraat_Chaudhary/README.md). Datasets are excluded from Git.
+
+### Interpretation and remaining team report
+
+LSTM and TCN improved accuracy over the RNN by 0.582 and 0.537 percentage points respectively. Both baseline comparisons reject equal paired error rates after Holm correction. The small LSTM-versus-TCN accuracy difference has no reported paired significance test. Tokenizer-dependent slices and different hardware prevent a controlled cross-member architecture/speed interpretation.
+
+Anshika's comparison numbers are preserved as reported in her supplied executed evaluation evidence. Her source, checkpoints, logs and individual write-ups are unchanged. Exact teammate hardware and matching split provenance are still to be confirmed for the combined team report.
+
+Viraat confirmed review of the recorded explanations and analysis; [AI assistance remains disclosed](task2_sentiment/Viraat_Chaudhary/AI_use.md). Configs, checkpoints, raw logs and saved predictions are preserved. Historical audit JSON files describe earlier snapshots.
+
+The final `report/DATA266_Lab1_Report_Team_15.pdf` will be assembled after all three tasks are complete. Adding Task 2 artifacts does not mark that combined report complete.
+<!-- VIRAAT_TASK2_REPO_INTEGRATION_END -->
