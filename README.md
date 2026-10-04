@@ -97,7 +97,6 @@ data266-lab1-team15/
 |       |-- failure_analysis.md
 |       `-- team_comparison.md
 |
-|-- reproducibility/
 |-- Part3_Evaluation_Script.ipynb
 `-- submission.csv
 ```
@@ -1051,7 +1050,7 @@ Across all tasks:
 - large raw datasets and caches are not committed;
 - all cross-member conclusions are limited to what the recorded experiments support.
 
-The `reproducibility/` directory contains additional shared logs and manifests used to trace selected runs.
+Reproducibility evidence is organized by task under `task1_llm/reproducibility/`, `task2_sentiment/reproducibility/`, and `task3_gan/reproducibility/`. Each task directory contains member-scoped instructions and selected environment, configuration, provenance, log, and checkpoint-identity evidence; canonical implementations, notebooks, outputs, and checkpoint locations remain in the corresponding member directories.
 
 ---
 

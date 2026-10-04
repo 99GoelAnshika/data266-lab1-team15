@@ -1,0 +1,96 @@
+task: 3
+name: cyclegan_image_style_transfer
+member: Anshika_Goel
+team: 15
+
+status:
+  scaffold_created: true
+  model_implemented: false
+  training_started: false
+  official_evaluation_started: false
+  kaggle_submission_created: false
+
+domains:
+  domain_a:
+    name: monet
+    local_path: task3_gan/data/monet_jpg
+  domain_b:
+    name: photo
+    local_path: task3_gan/data/photo_jpg
+  pairing:
+    training_is_unpaired: true
+    paired_test_peeking_allowed: false
+
+required_model_components:
+  generators: 2
+  discriminators: 2
+  adversarial_loss: true
+  cycle_consistency_loss: true
+  translate_both_directions: true
+
+required_analysis:
+  assess_visual_quality: true
+  verify_cycle_consistency: true
+  analyse_convergence: true
+  analyse_training_stability: true
+  discuss_shortcomings: true
+
+required_metrics:
+  report_both_directions: true
+  fid: true
+  kid: true
+  generative_precision_recall_or_density_coverage: true
+  cycle_reconstruction_l1: true
+  lpips: true
+  content_preservation_cosine_similarity: true
+  generator_loss_curves: true
+  discriminator_loss_curves: true
+  cycle_consistency_loss_values: true
+  identity_loss_values: true
+  gradient_norms: true
+  nan_count: true
+  parameter_count: true
+  training_time: true
+  images_per_second: true
+  peak_memory: true
+
+human_audit:
+  fixed_samples: 30
+  raters: 2
+  criteria:
+    - style
+    - content
+    - artifacts
+  agreement:
+    - cohens_kappa
+    - percentage_agreement
+
+kaggle:
+  required: true
+  record_public_score: true
+  record_private_score: true
+  record_rank: true
+  submission_format: resolve_from_class_competition_before_generation
+
+integrity:
+  own_trained_cyclegan_required: true
+  manually_edited_submission_images_allowed: false
+  hand_picked_submission_images_allowed: false
+  copied_submission_images_allowed: false
+  externally_sourced_submission_images_allowed: false
+  hardcoded_outputs_allowed: false
+  lookup_table_outputs_allowed: false
+  test_pair_peeking_allowed: false
+  pretrained_or_foundation_models_may_generate_submission: false
+  pretrained_or_foundation_models_may_modify_submission: false
+
+evidence:
+  preserve_raw_training_logs_unedited: true
+  preserve_configs: true
+  preserve_environment_manifest: true
+  preserve_checkpoint_provenance: true
+  preserve_metric_artifacts: true
+  preserve_fixed_visual_samples: true
+  results_md_required: true
+  failure_analysis_md_required: true
+  hardware_disclosure_required: true

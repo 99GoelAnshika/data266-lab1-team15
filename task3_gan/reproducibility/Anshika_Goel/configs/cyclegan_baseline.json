@@ -1,0 +1,125 @@
+{
+  "checkpointing": {
+    "atomic_writes": true,
+    "resume_supported": true,
+    "save_every_epochs": 5,
+    "save_latest_every_epochs": 1
+  },
+  "dataloader": {
+    "drop_last": false,
+    "num_workers": 4,
+    "persistent_workers": true,
+    "pin_memory": true,
+    "shuffle": true
+  },
+  "domains": {
+    "domain_a": "monet",
+    "domain_a_directory": "task3_gan/data/monet_jpg",
+    "domain_b": "photo",
+    "domain_b_directory": "task3_gan/data/photo_jpg",
+    "unpaired_training": true
+  },
+  "experiment": {
+    "description": "Canonical unpaired CycleGAN baseline configuration for Monet/photo translation using models implemented from scratch and intended to be trained from scratch.",
+    "name": "cyclegan_monet_photo_baseline",
+    "seed": 20260929,
+    "task": "DATA266_Lab1_Task3"
+  },
+  "integrity": {
+    "foundation_models_for_submission_generation": false,
+    "manual_submission_image_editing": false,
+    "pretrained_generation_models": false,
+    "submission_source": "direct_output_of_user_trained_cyclegan",
+    "test_pairing_access": false,
+    "train_from_scratch": true
+  },
+  "loss": {
+    "adversarial": "least_squares_gan_mse",
+    "cycle": "l1",
+    "effective_identity_weight_a": 5.0,
+    "effective_identity_weight_b": 5.0,
+    "identity": "l1",
+    "lambda_cycle_a": 10.0,
+    "lambda_cycle_b": 10.0,
+    "lambda_identity_ratio": 0.5
+  },
+  "model": {
+    "discriminator": {
+      "architecture": "patchgan_70x70",
+      "base_channels": 64,
+      "input_channels": 3,
+      "layers": 3,
+      "normalization": "instance_norm"
+    },
+    "generator": {
+      "architecture": "resnet_9block",
+      "base_channels": 64,
+      "input_channels": 3,
+      "normalization": "instance_norm",
+      "output_activation": "tanh",
+      "output_channels": 3,
+      "residual_blocks": 9
+    },
+    "weight_initialization": {
+      "distribution": "normal",
+      "mean": 0.0,
+      "std": 0.02
+    }
+  },
+  "monitoring": {
+    "log_every_steps": 100,
+    "sample_every_epochs": 5,
+    "track_cycle_loss": true,
+    "track_discriminator_loss": true,
+    "track_generator_loss": true,
+    "track_gradient_norms": true,
+    "track_identity_loss": true,
+    "track_images_per_second": true,
+    "track_nonfinite_count": true,
+    "track_peak_gpu_memory": true
+  },
+  "preprocessing": {
+    "evaluation_size": 256,
+    "horizontal_flip_probability": 0.5,
+    "normalization_mean": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "normalization_std": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "normalized_range": [
+      -1.0,
+      1.0
+    ],
+    "train_crop": 256,
+    "train_resize": 286
+  },
+  "schema_version": 1,
+  "status": {
+    "configuration_defined": true,
+    "kaggle_submission_created": false,
+    "official_evaluation_started": false,
+    "real_dataset_loaded": false,
+    "training_started": false
+  },
+  "training": {
+    "batch_size": 1,
+    "beta1": 0.5,
+    "beta2": 0.999,
+    "constant_lr_epochs": 100,
+    "epochs": 200,
+    "gradient_clip_norm": null,
+    "image_pool_size": 50,
+    "learning_rate": 0.0002,
+    "linear_decay_epochs": 100,
+    "local_laptop_role": "development_and_smoke_testing_only",
+    "mixed_precision": false,
+    "optimizer": "adam",
+    "serious_training_device": "lab_rtx4090",
+    "weight_decay": 0.0
+  }
+}

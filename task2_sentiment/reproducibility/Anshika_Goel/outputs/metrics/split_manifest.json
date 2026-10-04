@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-09-25T00:06:34.246174+00:00",
+  "dataset": "fancyzhx/yelp_polarity",
+  "dataset_revision": "bbf1c97a1f0cf005e5aded43839fd814654a1557",
+  "official_training_examples": 560000,
+  "official_test_examples": 38000,
+  "split_seed": 2662501,
+  "validation_fraction": 0.1,
+  "training_examples": 504000,
+  "validation_examples": 56000,
+  "training_index_sha256": "b1cfddbf74e913d6929ade3248daf696e1d77680eed1b5b778b24ae5bcc500f7",
+  "validation_index_sha256": "d3a2e8af2dc8491b9588146f1979138e35c0c58519d15cb7e81f4bc38514261d",
+  "training_class_counts": {
+    "negative": 252000,
+    "positive": 252000
+  },
+  "validation_class_counts": {
+    "negative": 28000,
+    "positive": 28000
+  },
+  "train_validation_overlap": 0,
+  "official_test_policy": "Official test rows were not used for vocabulary construction, sequence-length analysis, hyperparameter selection, threshold selection, or model selection."
+}

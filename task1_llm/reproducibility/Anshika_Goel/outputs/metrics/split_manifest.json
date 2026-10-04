@@ -1,0 +1,48 @@
+{
+  "created_utc": "2026-09-24T20:19:02.452658+00:00",
+  "member_name": "Anshika Goel",
+  "experiment_name": "anshika_char_gpt_v1",
+  "dataset_id": "roneneldan/TinyStories",
+  "dataset_revision": "f54c09fd23315a6f9c86f9dc80f725de7d8f9c64",
+  "source_split": "train",
+  "source_dataset_fingerprint": "9677945e7c100bfa",
+  "shuffled_dataset_fingerprint": "e5aa34972dcfca5c",
+  "split_seed": 2661501,
+  "text_field": "text",
+  "separator_repr": "'\\n\\n'",
+  "sequence_length": 256,
+  "row_length_including_target_shift": 257,
+  "train_sequences": 100000,
+  "validation_sequences": 10000,
+  "train_characters": 25700000,
+  "validation_characters": 2570000,
+  "train_stories_used": 28604,
+  "validation_stories_used": 2859,
+  "train_shuffled_index_range": [
+    0,
+    28609
+  ],
+  "validation_shuffled_index_range": [
+    28609,
+    31468
+  ],
+  "story_overlap_between_splits": false,
+  "vocabulary_size": 101,
+  "unknown_token": "<UNK>",
+  "validation_unknown_characters": [],
+  "validation_unknown_character_count": 0,
+  "train_tensor_shape": [
+    100000,
+    257
+  ],
+  "validation_tensor_shape": [
+    10000,
+    257
+  ],
+  "tensor_dtype": "torch.int32",
+  "train_text_sha256": "5ecf7d2625e49defd718d7323374f5b26183569d9bebb5d6ad8002a26619ac04",
+  "validation_text_sha256": "6d62cdf212a2b74fb5570cd217d992d50a8adc1852b5bc99faf8858c6a73349f",
+  "train_tensor_sha256": "13a7a30403251d127baedc26f19afc7bc0d11b913534de675ea49e894ad11c7b",
+  "validation_tensor_sha256": "848b923271643bf82a2a907ccad7b4981359831ceaa56ed505125c781c3055ab",
+  "vocabulary_sha256": "8ac5c75e1ebdc21f991c368d2ac71c279ce5c747956fc9cd29a09aa9e74c22b1"
+}

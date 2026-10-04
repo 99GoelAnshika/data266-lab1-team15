@@ -1,0 +1,23 @@
+{
+  "derived_from": "training membership only; effective post-truncation token lengths",
+  "quantile_method": "higher",
+  "short_upper_inclusive": 27,
+  "medium_upper_inclusive": 89,
+  "high_oov_threshold": 0.02040816326530612,
+  "high_oov_comparator": ">= threshold and > 0",
+  "negation_words": [
+    "barely",
+    "hardly",
+    "neither",
+    "never",
+    "no",
+    "nor",
+    "not",
+    "scarcely",
+    "without"
+  ],
+  "negation_definition": "At least one preserved negation in retained processed tokens",
+  "oov_definition": "UNK count / encoded non-PAD length; EMPTY is not UNK",
+  "empty_review_effective_length": 1,
+  "team_comparison_limit": "Per-slice membership depends on each member tokenizer. Use overall test metrics for direct team comparison."
+}

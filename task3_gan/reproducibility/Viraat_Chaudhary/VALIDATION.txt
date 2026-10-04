@@ -1,0 +1,16 @@
+VALIDATION — 2026-10-02 UTC
+Environment: Python 3.12, PyTorch 2.6.0+cpu, torchvision 0.21.0+cpu.
+
+PASS: all Python modules and both notebooks' code cells compile.
+PASS: full-width 256x256 generator output, finite values, tanh range and expected parameter count (21,204,872 total).
+PASS: reduced-width real CycleGAN optimizer step updates both generators and both discriminators; losses and gradients finite.
+PASS: BF16 CPU autocast forward/backward and replay-pool path.
+PASS: checkpoint checksum, network/Adam/replay states and RNG round trip.
+PASS: complete CPU training CLI smoke run, completed-epoch save, resume and final counters (temporary synthetic data).
+PASS: 60-epoch learning-rate schedule covers its decay phase and keeps the final epoch's LR positive.
+PASS: numeric sample-space FID agrees with covariance sqrtm, including a singular covariance case.
+PASS: precision/recall identity case, class cosine identity case and seeded KID reproducibility.
+PASS: real-rater form parsing/report update code using temporary fixtures removed after the test.
+
+NOT EXECUTED HERE: actual lab CUDA benchmark, full 60-epoch training, pretrained-feature/LPIPS evaluation on new trained outputs, unchanged instructor evaluator, real human audit or Kaggle submission.
+No synthetic or teammate results are included as Viraat's official evidence.

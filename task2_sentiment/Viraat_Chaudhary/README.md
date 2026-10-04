@@ -32,7 +32,7 @@ The trained lineup is plain RNN, unidirectional LSTM, and residual dilated causa
 
 Notebook 06 collected twenty unique selected error cases and uploaded analysis. `results.md`, `failure_analysis.md`, `REPORT_TASK2_SECTION.md` and `SHARED_README_APPEND.md` contain actual numerical evidence and AI-assisted explanations. Viraat confirmed review of the explanations and analysis before repository integration. Original preprocessing README bytes remain in `provenance/preprocessing_original_readme.md`.
 
-The repository integration adds this member's section to the shared root README and byte-identical log/manifest copies under the shared `reproducibility/` structure. Teammate hardware and split/checkpoint provenance still need to be confirmed when assembling the combined report. The final `report/DATA266_Lab1_Report_Team_15.pdf` is deferred until all three tasks are complete. The original checked ZIP and its `EXPORT_MANIFEST.json` describe the pre-update snapshot; retain them as that historical record.
+The repository integration adds this member's section to the shared root README and preserves the relevant log, environment, configuration, and manifest evidence under the task-scoped `task2_sentiment/reproducibility/Viraat_Chaudhary/` directory. Teammate hardware and split/checkpoint provenance still need to be confirmed when assembling the combined report. The final `report/DATA266_Lab1_Report_Team_15.pdf` is deferred until all three tasks are complete. The original checked ZIP and its `EXPORT_MANIFEST.json` describe the pre-update snapshot; retain them as that historical record.
 
 ### Evaluator smoke test after training
 

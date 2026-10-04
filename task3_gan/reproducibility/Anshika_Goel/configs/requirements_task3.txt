@@ -1,0 +1,19 @@
+# DATA 266 Lab 1 - Task 3 CycleGAN
+# Canonical production/evaluation dependencies.
+# Captured from the active RTX 4090 environment after final evaluation.
+# Python version: 3.10.13
+# PyTorch CUDA runtime: 12.1
+#
+# Packages not installed in the production container are intentionally
+# omitted rather than assigned an unverified version.
+
+torch==2.1.2
+torchvision==0.16.2
+numpy==1.26.2
+pandas==2.1.4
+scipy==1.15.3
+Pillow==10.0.1
+matplotlib==3.8.2
+lpips==0.1.4
+tqdm==4.65.0
+PyYAML==6.0.1

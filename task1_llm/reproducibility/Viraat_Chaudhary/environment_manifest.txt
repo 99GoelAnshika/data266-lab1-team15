@@ -1,0 +1,80 @@
+DATA 266 Lab 1 - Viraat Chaudhary - Team 15
+Observed evaluation environment (retained from Colab):
+{
+  "python": "3.13.15",
+  "os": "Linux",
+  "cpu": "x86_64",
+  "logical_cpus": 12,
+  "system_ram_mib": 85477.0625,
+  "gpu": {
+    "name": "NVIDIA A100-SXM4-40GB",
+    "total_memory_mib": 40441.375
+  },
+  "driver": "NVIDIA A100-SXM4-40GB, 580.82.07, 40960 MiB",
+  "pytorch_cuda": "12.8",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "datasets": "4.8.5",
+    "numpy": "2.1.3",
+    "matplotlib": "3.10.0",
+    "PyYAML": "6.0.3",
+    "psutil": "5.9.5",
+    "pytest": "8.4.2"
+  }
+}
+Artifact/result mapping and SHA256:
+.gitattributes: 3672c5a03b98920d11e03e0f8e89eff2b3ed3e4ff408122a1357e3b65a0b1f4c
+.gitignore: a3d679673eea5afd6bc06c5bc38fbd3a5e6fc2538b0384c07ad88f6f94a0cb8d
+README.md: cffdcb04f578aedd3bd4c89f7a2ac6b7c45d3ec7c4b29007b40e385fee2b3c25
+REPO_REVIEW.md: 1b8b69d4107dbd3e0c732a06ebde5fcbbc581c7aa6a963e7243b4bd1cd283a68
+RUN_GUIDE.md: 71ca92db92f3722566a1cb7e820635806a3e733bcc3b451f7c317d9ddc59a8c4
+VERIFICATION.md: f6399c17eada7f3721decee4ed3fc1498a00b370234315b328a7efead7ccae77
+analysis/failure_cases.json: 26df51f173d20674510f0ff8653b3d1602f94dab7a42e1138f42b34e20ac154a
+analysis/interpretation.json: 897d0563d4e48a763e2a6ad1aad8bec78652a6a4b26323c2f71a5834a7a20f85
+checkpoints/.gitkeep: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+checkpoints/best_model.pt: 52e2bddd0dadea877d0230f95e5e267cdd87c2f9c4401ff5817a5bc92d0093f1
+checkpoints/last_checkpoint.pt: 77cc51c734024e2a460d765d9caf011c8b6ac9bcff2f01d11dde3e4a7c3ac4e9
+code/common.py: cb4c1e51907173d972d8abc0fd0f860ec0f840c9ab23fda6da252c16e98b9543
+code/data.py: b2f60608fa89bac230eb62cdfe04fb4a458e055c28a6b94a311960d417f0578e
+code/evaluate_generate.py: d3a8a3cde3adc06243660b228372df0d42eef258101262902db33a31379835d0
+code/finalize_artifacts.py: 961fcae0fa181b1539474edf66ca0737127bfdc5daae8a03208ec569ee55b62f
+code/model.py: 9d23502ec89e426741020a922d882e5ffebfd0be1c227a4b09db5c4f01cc58a1
+code/report.py: b551f5ee3f94fa20e3d2d12066305189564febc3b46761b1028bf9f6798888d0
+code/smoke_test.py: f058690e36712fc5fd8ea7b2ac7101cd9b9c09968ac7e1d5ed400a18b4e46284
+code/task1_colab.ipynb: e81decb6cc3b03da7ea62b1d576f31fe3104843c994d088e6f32dc20dfb29a6c
+code/tests/test_correctness.py: 729e9bf2c72a3ba1ff03545e1065c4a328e157c9bbff953b721c2c6dae0b6123
+code/tests/test_preprocessing_restore.py: 8d9c46d4700eff8776770053a466149140c63c15eb1f7d2596d411df890f0d55
+code/train.py: 12ffd42efde84d95851f14ca51b3d883f9921ed7e75af5e45952b96529eeaf99
+code/update_root_readme.py: f25b351746bae411624bc128b742d54c1c28a22ced6934599f1e71be1828b6e5
+code/verify_submission.py: d86872aa162461adfddb47bd15e4f1d3a4d4a633a341966b9dae2221391cc7ff
+configs/gpt_char.yaml: c62a411bb03ee972ed25ecc68cd34687f097594a1948563779007f939776192f
+failure_analysis.md: 2e030b58518078acf5d6de5155dab8d23083f897c7ee88514f691a8150ace97c
+logs/.gitkeep: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+logs/common_evaluation_20260930T230014655953Z.log: 8c5f79d8edd09e6a141d66bee929c5f2c42f50a52dc63606d6ca1069f54992d4
+logs/common_evaluation_failure_screenshot_20260930.png: 3b888634251ea4e91ce8f3034ae69c32e3dcb24e67459cdf950ab849341de004
+logs/evaluation_generation_20260930T194736665819Z.log: 9d1a14e17ab86b33dca5a7e005a1322cf9c0ab5766cd5e432ba10bc96e501814
+logs/preprocessing_20260930T191640682731Z.log: 9ad7041a0d7bffc5c018dd664c54212476edc1a1aee096e725b38c355f9117de
+logs/smoke_console_capture_20260930T191443.log: 3cc39f5cc16e70a01f4f07c19df4882405ada5500e56060099fd8aab9c92a1db
+logs/training_20260930T192119034828Z.log: 395ac4e72450a964ee766ca50ee4f94f2babba91ef8029f85141fdfa45de429a
+logs/training_resume_20260930T193518405983Z.log: 8bce0c25a87832cb1476d0adce8f9714979a584efcc6a9ba15fa7c3eaa2bab43
+metrics_report.csv: e3164197376f0cb263a72ec338d792d56ce3622735523c5fc0befb9a0b45aaad
+outputs/metrics/.gitkeep: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+outputs/metrics/environment_epoch_01.json: 3fa9f96769046c4c32a04a118813f6ac6b09405d9b0d869ec5bbf7a29ea12ef0
+outputs/metrics/evaluation_metrics.json: 0600c927adeab30a92dc9060e0dfe6b56b6bee09d9269348b31fcdf2d046a107
+outputs/metrics/preprocessing_restore_checks.json: 99fa92b6f06a989ff8d72f696976dbf02a92251ab7acad29ca674831e20abbdc
+outputs/metrics/run_configuration.json: f6375d524ea812893c387686339b62e38379fd120ccd24213689db20bedfa886
+outputs/metrics/split_manifest.json: ce2f3daecae1427e460a8f72436f9fe4cc30c227184eb45c39e662d976d5e389
+outputs/metrics/step_metrics.csv: 894a03aee7c90291342eb05db2b39eba7bf8d89048c6eac3940f1b0beef00642
+outputs/metrics/submission_review_checks.json: b41b6c53bbb8427f8839d5a22632d76803e9bafa6db72f6a90145ca73cf389c0
+outputs/metrics/training_history.csv: a172407bf92c0a6d647717ed82d5aeb931b1ae11c70879cbd3ee31428a0ae10e
+outputs/metrics/training_history.json: 47120ac7531a70e99b16ae7eaab307fdc066bf5bfbd724a2a80f77dff1a90710
+outputs/metrics/training_summary.json: fbea5a3c80251e0c43026861c11811229adb0180d4023bab24436d825aea9eb4
+outputs/metrics/vocabulary.json: f470ced134d2fcc6ac7582cfbde25ac75a851f5fd2e682676dbc720d6bb30964
+outputs/plots/.gitkeep: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+outputs/plots/loss_curves.png: bd1a1f8e2901802efe018a8eed421c90b60e90599111ee8dfbe3b194ba9725d7
+outputs/samples/.gitkeep: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+outputs/samples/generated_samples.json: 970064e2670311a6b45a824649868ff99ba9130694f54c7f86e7c30eca63922b
+outputs/samples/generated_samples.txt: 2a8225db3488b81a0d5219cb257dbb3b3788349f39807b3fced0746eed0b391b
+requirements.lock.txt: 3395f772655cd952e763b2f7986604423c95b56f758945a6ad0ea792cc9ff370
+requirements.txt: c4e38e3c64102bc206a0b44e97d1ddacb4db8be57afa9ed1bac87b74866ed3ea
+results.md: 05a5195bfaf11cd72b12f79182405e868c132dcecefaf82c53ba88d5f24b49a8

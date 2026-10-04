@@ -1,0 +1,48 @@
+DATA 266 Lab 1 - Task 2 Environment Manifest
+Member: Anshika Goel
+Team: 15
+Experiment: anshika_yelp_sentiment_v1
+
+Manifest created UTC: 2026-09-24T23:02:56.198318+00:00
+
+Operating system: Windows-10-10.0.26200-SP0
+CPU: Intel64 Family 6 Model 154 Stepping 3, GenuineIntel
+Logical processors: 16
+System RAM (GB): 15.63
+GPU: NVIDIA GeForce RTX 3060 Laptop GPU
+GPU memory (MB): 6143.50
+
+Python: 3.11.9
+PyTorch: 2.13.0+cu126
+PyTorch CUDA runtime: 12.6
+CUDA available to PyTorch: True
+
+Dataset: fancyzhx/yelp_polarity
+Dataset configuration: plain_text
+Dataset revision: bbf1c97a1f0cf005e5aded43839fd814654a1557
+Official training examples: 560000
+Official test examples: 38000
+
+Configuration: configs/sentiment.yaml
+Configuration SHA256: 07F59EEB49AF2FBDCCE4F301E76625AC2C4AE8150EB1B89EF55862B6B5C9758B
+Locked packages: requirements.txt
+Requirements SHA256: 9DCC7A4F16B42CF873D64370BF987668ACB9EC9FB3B3D8B4A872EA8E26BCCF56
+
+Implementation format: executed Jupyter notebooks
+Pretrained embeddings used: No
+Pretrained language models used: No
+Training status at initial environment capture: Not started
+Current experiment status: Completed
+
+Hardware identity clarification:
+Exact CPU model (Windows Win32_Processor): 12th Gen Intel(R) Core(TM) i7-12650H
+CPU physical cores: 10
+CPU logical processors: 16
+Exact discrete GPU: NVIDIA GeForce RTX 3060 Laptop GPU
+NVIDIA driver: 566.07
+NVIDIA GPU memory reported by nvidia-smi (MiB): 6144
+NVIDIA-SMI reported CUDA compatibility: 12.7
+Installed NVCC CUDA toolkit: 12.6
+PyTorch CUDA runtime used by torch 2.13.0+cu126: 12.6
+CUDA version note: NVIDIA-SMI CUDA 12.7 is the maximum CUDA compatibility reported by the installed NVIDIA driver; NVCC and the PyTorch runtime are CUDA 12.6. These values describe different software layers and are not contradictory.
+Provenance note: This clarification records exact hardware and toolchain identity for assignment reporting after experiment completion. It does not modify or rerun preprocessing, training, inference, model selection, evaluation, statistical testing, or manual error analysis.

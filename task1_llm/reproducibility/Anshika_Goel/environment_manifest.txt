@@ -1,0 +1,62 @@
+DATA 266 Lab 1 - Task 1 Environment and Artifact Manifest
+Member: Anshika Goel
+Team: 15
+Experiment: anshika_char_gpt_v1
+
+Manifest finalized: 2026-09-24T15:27:50-07:00
+Implementation and evaluation commit: 7920968992c4058af585c1e0a35ec718dc831842
+
+Operating system: Microsoft Windows 11 Home
+OS version: 10.0.26200
+CPU: 12th Gen Intel(R) Core(TM) i7-12650H
+Logical processors: 16
+System RAM (GB): 15.63
+GPU, driver, VRAM: NVIDIA GeForce RTX 3060 Laptop GPU, 566.07, 6144 MiB
+
+Python: 3.11.9
+PyTorch: 2.13.0+cu126
+PyTorch CUDA runtime: 12.6
+CUDA available to PyTorch: True
+
+Dataset: roneneldan/TinyStories
+Dataset revision: f54c09fd23315a6f9c86f9dc80f725de7d8f9c64
+Training sequences: 100000
+Validation sequences: 10000
+Sequence length: 256
+Vocabulary size: 101
+
+Configuration: configs/gpt_char.yaml
+Configuration SHA256: 31162CE40FADFEA446F83570EEBFB6A674A5C9ED27F6D41B136B37E6C89D287B
+Locked packages: requirements.txt
+Requirements SHA256: A641520C5685342C0A699F2BB873D09B129BE0550EA9F6CAFC5769213F444F1D
+
+Split manifest: outputs/metrics/split_manifest.json
+Split manifest SHA256: EF8CF4F626C81B262ED55DFC05CA944922A1FC4B028DFBD05452478954A67C10
+
+Best checkpoint: checkpoints/best_model.pt
+Best checkpoint SHA256: 64AD99EFC0BF2E49959D3EF54BF5373A4C3A974F0FA333AE4A37E62FAC9D2BA3
+Last checkpoint: checkpoints/last_checkpoint.pt
+Last checkpoint SHA256: 4C1A3DD0CB9A4547B557E2A975BC86E2DD4844C6B6AF0B79B3A24AAAA24AA4BA
+
+Training log: logs/training_run_001.log
+Training log SHA256: 359EFAC598281FA19B9F4CD958221E242DC1E916673CE0DA8C406680C633F6A0
+Evaluation log: logs/evaluation_generation_run_001.log
+Evaluation log SHA256: 6E13B05749002BC819FECAC2D84DFFEDA9FD3310D9A3BF8AF86A7AA128AA9C93
+
+Training summary: outputs/metrics/training_summary.json
+Training summary SHA256: E3E4CAFAB96196A889ACE92566FB2373734B6395278827EF5CE1A238034093D9
+Evaluation metrics: outputs/metrics/evaluation_metrics.json
+Evaluation metrics SHA256: A66883BEA785FA5AB8B4E43B1308C7A6AE41CC6A8D3E8E8410A350CC616856C0
+Generated samples: outputs/samples/generated_samples.json
+Generated samples SHA256: 018A8180BC2E713772529CBE19DED07EDFAA548C29AFB961D09C3F1F19E096EC
+Loss plot: outputs/plots/loss_curves.png
+Loss plot SHA256: 4A6CFD5F79B531043FE1F42EAD79E742D6C46750A4EC3DBAB20FF9FAE8AC3CD6
+
+Executed notebook: code/task1_char_gpt_demo.ipynb
+Executed notebook SHA256: 96388E65AE0E06FDC6C9452D48B3312E05FA8E19F969209EC61F75249A9BD795
+Executed notebook saved outputs: Yes
+
+Results document: results.md
+Failure analysis: failure_analysis.md
+Automated test result: 22 passed
+Checkpoint reload and finite-parameter verification: Passed
