@@ -1,199 +1,225 @@
 # DATA 266 Lab 1 - Team 15
 
-LLM pretraining from scratch, Yelp Polarity sentiment classification, and CycleGAN image style transfer.
+This repository contains the Team 15 implementation and evaluation for DATA 266 Lab 1:
 
-This top-level README documents the current repository state, setup, reproducibility commands, result locations, evidence trails, scientific boundaries, and remaining submission work required by the DATA 266 Lab 1 brief.
+1. **Task 1:** GPT-style character language modeling from scratch on TinyStories.
+2. **Task 2:** Yelp Polarity sentiment classification using neural models trained from scratch.
+3. **Task 3:** unpaired Monet/photo image translation using CycleGAN.
 
 ## Team
 
-- Anshika Goel
-- Viraat Chaudhary
+- **Anshika Goel**
+- **Viraat Chaudhary**
 
-Each team member is required to independently design, train, evaluate, and defend their own models for all three tasks. Task 1 includes both `Anshika_Goel` and `Viraat_Chaudhary` with independent configurations and evidence. Other remaining individual/task deliverables must still be added before the combined lab submission.
+Each member trained and evaluated their own model configuration. This README is organized by task so that architecture, comparison, conclusions, evidence, reproducibility instructions, and smoke tests remain together.
 
-## Current submission status
+---
 
-| Deliverable | Current status |
-|---|---|
-| Task 1 - GPT-style LLM from scratch | Both recorded runs and common comparison present; Task 1 report section prepared; member understanding and final team PDF remain |
-| Task 2 - Yelp Polarity sentiment classification | Anshika three-model evaluation, evidence, `results.md`, and `failure_analysis.md` complete |
-| Task 3 - CycleGAN | Scaffold and environment present; implementation and training pending |
-| Kaggle Task 3 submission / rank | **Pending** |
-| Combined team PDF report | **Pending** - `report/` does not yet exist on `main` |
-| Teammate Task 2 numerical comparison | **Unavailable from current repository evidence; not inferred or fabricated** |
-
-## Repository-level submission rules
-
-- Use one shared GitHub repository with a named member folder inside each task.
-- Keep raw training logs unedited after each run; they are part of the grading evidence trail.
-- Keep configurations, environment/package information, checkpoint provenance, results, and failure/error analysis with each member's work.
-- Do not commit personal filesystem paths, credentials, API keys, raw local caches, virtual environments, or other machine-specific secrets.
-- Every reported number should be traceable to a committed metric artifact, log, plot/sample, and checkpoint where applicable.
-- The final team report must contain per-task member comparison tables, joint analysis, failure/error evidence, ownership information, and references.
-
-## Repository structure
+# Repository structure
 
 ```text
-README.md
-docs/
-  DATA266_Lab1_Fall_2026.pdf
-task1_llm/
-  data/                                  # local/ignored dataset and cache material
-  Anshika_Goel/
-    code/
-      data.py
-      model.py
-      train.py
-      evaluate_generate.py
-      task1_char_gpt_demo.ipynb
-      tests/
-    configs/gpt_char.yaml
-    checkpoints/
-    logs/
-    outputs/
-    environment_manifest.txt
-    failure_analysis.md
-    requirements.txt
-    results.md
-  Viraat_Chaudhary/
-    code/task1_colab.ipynb                # exact executed Colab notebook
-    configs/
-    checkpoints/
-    logs/
-    outputs/
-    metrics_report.csv
-    failure_analysis.md
-    results.md
-  compare_task1.py
-  evaluate_common.py
-  comparison/                            # both frozen models and selection
-task2_sentiment/
-  data/                                  # local/ignored dataset/cache material
-  Anshika_Goel/
-    notebooks/
-      01_data_analysis_preprocessing.ipynb
-      02_train_baseline_mean_pool.ipynb
-      03_train_textcnn.ipynb
-      04_train_bigru_attention.ipynb
-      05_evaluate_compare_models.ipynb
-      06_manual_error_analysis.ipynb
-    configs/
-    checkpoints/
-    logs/
-    outputs/
-    environment_manifest.txt
-    failure_analysis.md
-    requirements.txt
-    results.md
-task3_gan/                                # scaffold present; implementation/training pending
-report/                                   # PENDING
+data266-lab1-team15/
+|
+|-- README.md
+|-- docs/
+|   `-- DATA266_Lab1_Fall_2026.pdf
+|
+|-- task1_llm/
+|   |-- Anshika_Goel/
+|   |   |-- code/
+|   |   |-- configs/
+|   |   |-- checkpoints/
+|   |   |-- logs/
+|   |   |-- outputs/
+|   |   |-- environment_manifest.txt
+|   |   |-- requirements.txt
+|   |   |-- results.md
+|   |   `-- failure_analysis.md
+|   |
+|   |-- Viraat_Chaudhary/
+|   |   |-- code/
+|   |   |-- configs/
+|   |   |-- checkpoints/
+|   |   |-- logs/
+|   |   |-- outputs/
+|   |   |-- requirements.txt
+|   |   |-- results.md
+|   |   `-- failure_analysis.md
+|   |
+|   |-- comparison/
+|   |-- compare_task1.py
+|   `-- evaluate_common.py
+|
+|-- task2_sentiment/
+|   |-- Anshika_Goel/
+|   |   |-- configs/
+|   |   |-- checkpoints/
+|   |   |-- logs/
+|   |   |-- notebooks/
+|   |   |-- outputs/
+|   |   |-- requirements.txt
+|   |   |-- results.md
+|   |   `-- failure_analysis.md
+|   |
+|   `-- Viraat_Chaudhary/
+|       |-- configs/
+|       |-- checkpoints/
+|       |-- logs/
+|       |-- notebooks/
+|       |-- outputs/
+|       |-- src/
+|       |-- requirements.txt
+|       |-- results.md
+|       `-- failure_analysis.md
+|
+|-- task3_gan/
+|   |-- data/
+|   |   |-- monet_jpg/        # local / not committed
+|   |   `-- photo_jpg/        # local / not committed
+|   |
+|   |-- Anshika_Goel/
+|   |   |-- code/
+|   |   |-- configs/
+|   |   |-- checkpoints/
+|   |   |-- logs/
+|   |   |-- notebooks/
+|   |   |-- outputs/
+|   |   |-- results.md
+|   |   `-- failure_analysis.md
+|   |
+|   `-- Viraat_Chaudhary/
+|       |-- configs/
+|       |-- checkpoints/
+|       |-- logs/
+|       |-- outputs/
+|       |-- src/
+|       |-- results.md
+|       |-- failure_analysis.md
+|       `-- team_comparison.md
+|
+|-- reproducibility/
+|-- Part3_Evaluation_Script.ipynb
+`-- submission.csv
 ```
 
-## Clone the repository
+Large datasets, caches, virtual environments, and selected large checkpoint files are intentionally excluded where documented. Checksum and provenance artifacts are retained with the corresponding experiments.
 
-From PowerShell, clone the shared Team 15 repository and enter the repository root:
+---
+
+# Clone the repository
+
+From PowerShell:
 
 ```powershell
 git clone https://github.com/99GoelAnshika/data266-lab1-team15.git
 Set-Location data266-lab1-team15
 ```
-## Environment setup
 
-The verified Anshika runs used Python 3.11 on Windows with CUDA-enabled PyTorch.
+Because dependency sets differ between tasks and members, use the requirement file documented in the corresponding reproduction section rather than assuming one global environment reproduces every historical run.
 
-From the repository root in PowerShell:
+---
 
-```powershell
-py -3.11 -m venv .venv
-& ".\.venv\Scripts\Activate.ps1"
-python -m pip install --upgrade pip
-python -m pip install -r task1_llm\Anshika_Goel\requirements.txt
-python -m pip install -r task2_sentiment\Anshika_Goel\requirements.txt
-```
+# Task 1 - GPT-style language modeling from scratch
 
-Exact package/hardware provenance is recorded separately in [Task 1 environment_manifest.txt](task1_llm/Anshika_Goel/environment_manifest.txt) and [Task 2 environment_manifest.txt](task2_sentiment/Anshika_Goel/environment_manifest.txt).
+## Goal and data protocol
 
-## Grader one-command smoke test
+Task 1 trains decoder-only character language models from scratch on TinyStories.
 
-After installing the Task 1 requirements, the following single command runs the committed synthetic-data implementation test suite without downloading TinyStories or loading a full training checkpoint:
+For Anshika's frozen run:
 
-```powershell
-python -c "import sys,pytest; sys.path.insert(0,r'task1_llm\Anshika_Goel\code'); raise SystemExit(pytest.main([r'task1_llm\Anshika_Goel\code\tests','-q']))"
-```
+- Dataset: `roneneldan/TinyStories`
+- Dataset revision: `f54c09fd23315a6f9c86f9dc80f725de7d8f9c64`
+- Training sequences: 100,000
+- Validation sequences: 10,000
+- Character vocabulary: 101
+- Context length: 256 characters
+- Train/validation story groups are disjoint
+- No pretrained language model or pretrained Transformer is used
 
-Expected verified result: `22 passed`.
+Both members implement GPT-style autoregressive causal language models, but their Transformer configurations are materially different.
 
-The tests exercise vocabulary handling, input/target shifting, train/validation story isolation, custom causal attention, future-token isolation, manual layer normalization, weight tying, gradient flow, deterministic data loading, learning-rate scheduling, optimizer parameter grouping, diversity metrics, and deterministic generation.
+---
 
-## Task 1 - GPT-style character language model from scratch
+## Task 1 - Anshika model
 
-Anshika's Task 1 implementation trains a character-level GPT-style model from scratch on TinyStories. No prebuilt Transformer block, Transformer encoder/decoder, `nn.MultiheadAttention`, or scaled-dot-product attention helper is used.
+### Architecture
 
-### Task 1 data protocol
+Anshika uses a **5-block pre-layer-normalized character GPT** implemented from scratch.
 
-- Dataset: `roneneldan/TinyStories`.
-- Frozen dataset revision: `f54c09fd23315a6f9c86f9dc80f725de7d8f9c64`.
-- Training sequences: `100,000`.
-- Validation sequences: `10,000`.
-- Sequence/context length: `256` characters.
-- Split seed: `2661501`.
-- Character vocabulary is constructed from training text only.
-- Training and validation story groups are disjoint.
-
-### Task 1 architecture and hyperparameters
-
-| Setting | Value |
-|---|---:|
-| Tokenization | character |
-| Vocabulary size | 101 |
+| Component | Configuration |
+|---|---|
+| Tokenization | Character level |
+| Vocabulary | 101 |
 | Context length | 256 |
 | Model dimension | 240 |
+| Decoder blocks | 5 |
 | Attention heads | 6 |
-| Transformer blocks | 5 |
+| Head dimension | 40 |
 | Feed-forward dimension | 960 |
-| Dropout | 0.1 |
-| Position embeddings | learned |
-| Normalization | pre_layer_norm |
-| Weight tying | True |
-| Epochs | 10 |
-| Batch size | 32 |
-| Learning rate | 0.0003 |
-| Minimum learning rate | 3e-05 |
-| Warm-up ratio | 0.05 |
-| Scheduler | cosine |
-| Weight decay | 0.1 |
+| FFN activation | GELU |
+| Normalization | Pre-LayerNorm |
+| Positional representation | Learned positional embeddings |
+| Dropout | 0.10 |
+| Output projection | Tied to token embedding |
 | Trainable parameters | 3,557,861 |
 
-### Task 1 required evaluation metrics
+The implementation uses custom causal multi-head self-attention rather than `nn.MultiheadAttention`, a prebuilt Transformer block, or a pretrained language model.
 
-| Metric | Verified value |
+### Architecture diagram
+
+```mermaid
+flowchart TD
+    A["Character IDs"] --> B["Token Embedding, d=240"]
+    P["Learned Position Embedding"] --> C
+    B --> C["Token + Position Representation"]
+
+    C --> D["Decoder Block x5"]
+
+    subgraph BLK["Pre-LN Decoder Block"]
+        D1["LayerNorm"] --> D2["Custom 6-head Causal Self-Attention"]
+        D2 --> D3["Residual Add"]
+        D3 --> D4["LayerNorm"]
+        D4 --> D5["MLP: 240 -> 960 -> 240, GELU"]
+        D5 --> D6["Residual Add"]
+    end
+
+    D --> BLK
+    BLK --> E["Final representation"]
+    E --> F["Tied LM Head"]
+    F --> G["Next-character logits"]
+```
+
+### Recorded performance
+
+| Metric | Value |
 |---|---:|
-| Training cross-entropy | 0.729267 |
 | Validation cross-entropy | 0.693730 |
 | Validation perplexity | 2.001166 |
 | Bits per character | 1.000841 |
-| Generalization gap | -0.035537 |
-| Validation top-1 next-character accuracy | 78.03% |
+| Validation top-1 accuracy | 78.03% |
 | Distinct-1 | 0.004370 |
 | Distinct-2 | 0.039709 |
 | Distinct-3 | 0.158188 |
 | Repeated 4-gram rate | 0.222371 |
 | Mean gradient norm | 0.767176 |
-| Maximum gradient norm | 11.639734 |
-| Detected loss spikes | 0 |
 | Nonfinite losses | 0 |
-| AMP-skipped nonfinite-gradient updates | 10 |
-| Parameter count | 3,557,861 |
-| Training characters/second | 80067.67 |
-| Validation characters/second | 257370.58 |
-| Generation characters/second | 518.08 |
-| Peak GPU allocated memory (MB) | 1586.03 |
-| Peak GPU reserved memory (MB) | 1754.00 |
-| Total training time (minutes) | 55.09 |
+| Trainable parameters | 3,557,861 |
+| Training time | 55.09 min |
 
-Generation evaluation contains 30 outputs: three greedy outputs plus sampled outputs at temperatures 0.7, 1.0, and 1.3. Diversity statistics above use the 27 sampled outputs.
+Evidence:
 
-### Task 1 reproduction
+- [`task1_llm/Anshika_Goel/results.md`](task1_llm/Anshika_Goel/results.md)
+- [`task1_llm/Anshika_Goel/failure_analysis.md`](task1_llm/Anshika_Goel/failure_analysis.md)
+- [`task1_llm/Anshika_Goel/outputs/metrics/evaluation_metrics.json`](task1_llm/Anshika_Goel/outputs/metrics/evaluation_metrics.json)
+- [`task1_llm/Anshika_Goel/outputs/metrics/training_summary.json`](task1_llm/Anshika_Goel/outputs/metrics/training_summary.json)
+
+### Reproduce Anshika Task 1
+
+Install:
+
+```powershell
+python -m pip install -r task1_llm\Anshika_Goel\requirements.txt
+```
 
 Preprocess TinyStories:
 
@@ -201,371 +227,851 @@ Preprocess TinyStories:
 python task1_llm\Anshika_Goel\code\data.py --config task1_llm\Anshika_Goel\configs\gpt_char.yaml
 ```
 
-Dedicated training smoke test after preprocessing:
+#### Small implementation smoke test
+
+The committed synthetic test suite does not require the TinyStories download or a trained checkpoint:
+
+```powershell
+python -c "import sys,pytest; sys.path.insert(0,r'task1_llm\Anshika_Goel\code'); raise SystemExit(pytest.main([r'task1_llm\Anshika_Goel\code\tests','-q']))"
+```
+
+Verified result: `22 passed`.
+
+After preprocessing, a short training-path smoke test is also available:
 
 ```powershell
 python task1_llm\Anshika_Goel\code\train.py --config task1_llm\Anshika_Goel\configs\gpt_char.yaml --smoke-test
 ```
 
-Full training on a fresh output state:
+Full training:
 
 ```powershell
 python task1_llm\Anshika_Goel\code\train.py --config task1_llm\Anshika_Goel\configs\gpt_char.yaml
 ```
 
-Resume from the committed resumable checkpoint:
-
-```powershell
-python task1_llm\Anshika_Goel\code\train.py --config task1_llm\Anshika_Goel\configs\gpt_char.yaml --resume task1_llm\Anshika_Goel\checkpoints\last_checkpoint.pt
-```
-
-Evaluate the best checkpoint and generate samples:
+Evaluation and generation:
 
 ```powershell
 python task1_llm\Anshika_Goel\code\evaluate_generate.py --config task1_llm\Anshika_Goel\configs\gpt_char.yaml --checkpoint task1_llm\Anshika_Goel\checkpoints\best_model.pt
 ```
 
-### Task 1 evidence locations
+---
 
-- [Task 1 results](task1_llm/Anshika_Goel/results.md)
-- [Task 1 failure analysis](task1_llm/Anshika_Goel/failure_analysis.md)
-- [Task 1 training summary](task1_llm/Anshika_Goel/outputs/metrics/training_summary.json)
-- [Task 1 evaluation metrics](task1_llm/Anshika_Goel/outputs/metrics/evaluation_metrics.json)
-- [Task 1 split manifest](task1_llm/Anshika_Goel/outputs/metrics/split_manifest.json)
-- [Task 1 generated samples](task1_llm/Anshika_Goel/outputs/samples/generated_samples.txt)
-- [Task 1 loss curve](task1_llm/Anshika_Goel/outputs/plots/loss_curves.png)
-- [Task 1 training log](task1_llm/Anshika_Goel/logs/training_run_001.log)
-- [Task 1 evaluation/generation log](task1_llm/Anshika_Goel/logs/evaluation_generation_run_001.log)
-- [Task 1 best checkpoint](task1_llm/Anshika_Goel/checkpoints/best_model.pt)
-- [Task 1 executed demo notebook](task1_llm/Anshika_Goel/code/task1_char_gpt_demo.ipynb)
+## Task 1 - Viraat model
 
-## Task 2 - Yelp Polarity sentiment classification
+### Architecture
 
-Task 2 uses Yelp Polarity binary sentiment classification with textual embeddings learned from scratch. No pretrained embeddings and no pretrained language models are used.
+Viraat uses a separate **4-block post-layer-normalized decoder**.
 
-### Task 2 data and preprocessing protocol
+| Component | Configuration |
+|---|---|
+| Tokenization | Character level |
+| Model dimension | 256 |
+| Decoder blocks | 4 |
+| Attention heads | 8 |
+| Feed-forward dimension | 1024 |
+| FFN activation | ReLU |
+| Normalization | Post-LayerNorm |
+| Dropout | 0.15 |
+| Output projection | Untied |
+| Trainable parameters | 3,273,824 |
 
-- Dataset: `fancyzhx/yelp_polarity` / `plain_text`.
-- Frozen dataset revision: `bbf1c97a1f0cf005e5aded43839fd814654a1557`.
-- Official training population: `560,000` reviews.
-- Frozen training subset: `504,000` reviews.
-- Frozen validation subset: `56,000` reviews (10% of the official training split).
-- Official test set: `38,000` reviews, consumed once for final evaluation.
-- Train/validation split seed: `2662501`.
-- Vocabulary size: `50,000`.
-- Sequence length: `256` tokens.
-- Preprocessing includes lowercasing, HTML/whitespace normalization, negation-contraction expansion, punctuation/special-character removal, stopword removal while preserving negations, Porter stemming, and tokenization.
-- Data analysis includes review-length distribution, class distribution/balance, and malformed/missing-entry checks.
+### Architecture diagram
 
-### Task 2 model lineup
+```mermaid
+flowchart TD
+    A["Character IDs"] --> B["Token Embedding, d=256"]
+    P["Learned Position Embedding"] --> C
+    B --> C["Token + Position Representation"]
 
-| Model | Architecture | Embedding | Architecture details | Dropout | Batch | Max epochs | LR |
-|---|---|---:|---|---:|---:|---:|---:|
-| Baseline Mean Pool | `learned_embedding_masked_mean_linear` | 128 | masked mean pooling + linear classifier | 0.2 | 512 | 5 | 0.001 |
-| TextCNN | `learned_embedding_multikernel_textcnn` | 128 | kernels 3/4/5; 128 filters/kernel | 0.5 | 256 | 5 | 0.001 |
-| BiGRU-Attention | `learned_embedding_bidirectional_gru_attention` | 128 | BiGRU hidden=128; layers=1; attention=128 | 0.3 | 128 | 5 | 0.0005 |
+    C --> D["Decoder Block x4"]
 
-### Task 2 final official-test metrics
+    subgraph BLK["Post-LN Decoder Block"]
+        D1["8-head Causal Self-Attention"] --> D2["Residual Add"]
+        D2 --> D3["LayerNorm"]
+        D3 --> D4["MLP: 256 -> 1024 -> 256, ReLU"]
+        D4 --> D5["Residual Add"]
+        D5 --> D6["LayerNorm"]
+    end
 
-| Model | Accuracy | P-macro | P-micro | P-weighted | R-macro | R-micro | R-weighted | F1-macro | F1-micro | F1-weighted | MCC | ROC-AUC | PR-AUC | Brier | ECE |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Baseline Mean Pool | 0.929474 | 0.929474 | 0.929474 | 0.929474 | 0.929474 | 0.929474 | 0.929474 | 0.929474 | 0.929474 | 0.929474 | 0.858947 | 0.977648 | 0.977576 | 0.053777 | 0.008339 |
-| TextCNN | 0.941737 | 0.941754 | 0.941737 | 0.941754 | 0.941737 | 0.941737 | 0.941737 | 0.941736 | 0.941737 | 0.941736 | 0.883491 | 0.985671 | 0.986079 | 0.044814 | 0.017341 |
-| BiGRU-Attention | 0.944868 | 0.945000 | 0.944868 | 0.945000 | 0.944868 | 0.944868 | 0.944868 | 0.944864 | 0.944868 | 0.944864 | 0.889869 | 0.988415 | 0.988652 | 0.040506 | 0.007061 |
+    D --> BLK
+    BLK --> E["Untied Output Projection"]
+    E --> F["Next-character logits"]
+```
 
-### Task 2 confusion matrices
+### Reproduce Viraat Task 1
 
-Format: `[[TN, FP], [FN, TP]]`.
+Install:
 
-- **Baseline Mean Pool:** `[[17661, 1339], [1341, 17659]]`
-- **TextCNN:** `[[17833, 1167], [1047, 17953]]`
-- **BiGRU-Attention:** `[[17789, 1211], [884, 18116]]`
+```powershell
+python -m pip install -r task1_llm\Viraat_Chaudhary\requirements.txt
+```
 
-### Task 2 95% bootstrap confidence intervals
+Small synthetic smoke test:
 
-Protocol: nonparametric percentile bootstrap with replacement, `2000` replicates, replicate size `38,000`, confidence level `95%`, seed `2662502`.
+```powershell
+python task1_llm\Viraat_Chaudhary\code\smoke_test.py
+```
 
-| Model | Accuracy 95% CI | Macro-F1 95% CI | MCC 95% CI |
-|---|---|---|---|
-| Baseline Mean Pool | [0.926973, 0.931974] | [0.926970, 0.931970] | [0.853945, 0.863941] |
-| TextCNN | [0.939315, 0.944053] | [0.939310, 0.944052] | [0.878639, 0.888126] |
-| BiGRU-Attention | [0.942500, 0.947079] | [0.942499, 0.947073] | [0.885147, 0.894284] |
+The smoke test does not require TinyStories.
 
-### Task 2 paired McNemar tests
+Restore/verify processed data when required:
 
-The frozen planned family contains only baseline-vs-TextCNN and baseline-vs-BiGRU-Attention, with Holm correction over two comparisons.
+```powershell
+python task1_llm\Viraat_Chaudhary\code\data.py
+```
 
-| Comparison | Baseline correct / experimental wrong | Baseline wrong / experimental correct | Discordant pairs | Raw p | Holm-adjusted p | Reject at 0.05 |
-|---|---:|---:|---:|---:|---:|---|
-| baseline_mean_pool_vs_textcnn | 805 | 1271 | 2076 | 1.871274e-24 | 1.871274e-24 | True |
-| baseline_mean_pool_vs_bigru_attention | 648 | 1233 | 1881 | 2.500459e-41 | 5.000917e-41 | True |
+Additional instructions are in:
 
-**Statistical boundary:** no TextCNN-vs-BiGRU-Attention McNemar test was performed, so no pairwise significance claim is made between those two models.
+- [`task1_llm/Viraat_Chaudhary/README.md`](task1_llm/Viraat_Chaudhary/README.md)
+- [`task1_llm/Viraat_Chaudhary/RUN_GUIDE.md`](task1_llm/Viraat_Chaudhary/RUN_GUIDE.md)
 
-### Task 2 robustness slices
+---
 
-| Model | Slice | Count | Macro-F1 | Error rate |
-|---|---|---:|---:|---:|
-| Baseline Mean Pool | short_reviews | 9996 | 0.922356 | 0.075030 |
-| Baseline Mean Pool | medium_reviews | 18591 | 0.931577 | 0.068420 |
-| Baseline Mean Pool | long_reviews | 9413 | 0.927679 | 0.069903 |
-| Baseline Mean Pool | contains_negation | 27951 | 0.921872 | 0.075489 |
-| Baseline Mean Pool | high_oov_rate | 2336 | 0.913829 | 0.082192 |
-| TextCNN | short_reviews | 9996 | 0.934229 | 0.063525 |
-| TextCNN | medium_reviews | 18591 | 0.945296 | 0.054704 |
-| TextCNN | long_reviews | 9413 | 0.938362 | 0.059705 |
-| TextCNN | contains_negation | 27951 | 0.938360 | 0.059676 |
-| TextCNN | high_oov_rate | 2336 | 0.924423 | 0.071918 |
-| BiGRU-Attention | short_reviews | 9996 | 0.938494 | 0.059324 |
-| BiGRU-Attention | medium_reviews | 18591 | 0.947394 | 0.052606 |
-| BiGRU-Attention | long_reviews | 9413 | 0.942682 | 0.055668 |
-| BiGRU-Attention | contains_negation | 27951 | 0.941969 | 0.056313 |
-| BiGRU-Attention | high_oov_rate | 2336 | 0.925263 | 0.071062 |
+## Task 1 - Direct model comparison
 
-### Task 2 resource measurements
+The repository includes a common held-out evaluation so that the two frozen models are compared on the same validation text.
 
-| Model | Parameters | Training seconds | Train examples/s | Peak GPU allocated MB | Peak GPU reserved MB | Final-test examples/s |
+| Model | Blocks | d_model | Heads | Parameters | Common CE | Common top-1 accuracy |
 |---|---:|---:|---:|---:|---:|---:|
-| Baseline Mean Pool | 6,400,129 | 72.6784 | 36636.5305 | 269.0864 | 308.0000 | 37655.4414 |
-| TextCNN | 6,597,377 | 358.8451 | 7310.5459 | 308.8823 | 402.0000 | 15632.2678 |
-| BiGRU-Attention | 6,631,425 | 1545.9143 | 1401.1242 | 223.4473 | 486.0000 | 6407.5701 |
+| Anshika GPT | 5 | 240 | 6 | 3,557,861 | **0.69440728** | **78.1023%** |
+| Viraat GPT | 4 | 256 | 8 | 3,273,824 | 0.86098925 | 72.9764% |
 
-### Task 2 interpretation and scientific boundaries
+### Which Task 1 model is better?
 
-**BiGRU-Attention had the highest observed final-test macro-F1 among the three evaluated models.**
+Under the repository's **common held-out quality evaluation**, **Anshika's model is the stronger Task 1 checkpoint**.
 
-This is an observed descriptive comparison. It is not a claim that BiGRU-Attention significantly outperformed TextCNN because no TextCNN-vs-BiGRU-Attention McNemar comparison was part of the frozen statistical family.
+It achieves:
 
-The official Yelp Polarity test set has already been consumed. Final-test metrics, robustness findings, and the 20-example manual review are evaluation evidence only and must not be used for retraining, threshold selection, hyperparameter tuning, slice redefinition, or checkpoint reselection.
+- lower cross-entropy;
+- higher next-character accuracy;
+- a roughly similar parameter budget;
+- stable optimization with no recorded nonfinite losses.
 
-Report teammate comparison as unavailable from the current repository evidence. Do not infer, fabricate, rank, or estimate teammate model results.
+This does **not** mean that every architectural difference has been causally isolated. The two models differ simultaneously in depth, width, head count, normalization placement, activation function, dropout, and weight tying. The defensible conclusion is therefore that **Anshika's trained configuration performed better on the common evaluation**, not that one individual design choice alone caused the improvement.
 
-### Task 2 evidence locations
+Rebuild the team comparison:
 
-- [Task 2 results](task2_sentiment/Anshika_Goel/results.md)
-- [Task 2 failure analysis](task2_sentiment/Anshika_Goel/failure_analysis.md)
-- [Final-test metrics](task2_sentiment/Anshika_Goel/outputs/metrics/final_test_metrics.json)
-- [Bootstrap confidence intervals](task2_sentiment/Anshika_Goel/outputs/metrics/bootstrap_confidence_intervals.json)
-- [McNemar tests](task2_sentiment/Anshika_Goel/outputs/metrics/mcnemar_tests.json)
-- [Robustness slices](task2_sentiment/Anshika_Goel/outputs/metrics/robustness_slice_metrics.json)
-- [Frozen final-test predictions](task2_sentiment/Anshika_Goel/outputs/predictions/final_test_predictions.csv)
-- [Manual-review selection manifest](task2_sentiment/Anshika_Goel/outputs/manual_error_analysis/manual_review_selection_manifest.json)
-- [Manual-review frozen text snapshot](task2_sentiment/Anshika_Goel/outputs/manual_error_analysis/manual_review_text_snapshot.json)
-- [Teammate-evidence availability](task2_sentiment/Anshika_Goel/outputs/comparison/teammate_evidence_availability.json)
-- [Final evaluation notebook](task2_sentiment/Anshika_Goel/notebooks/05_evaluate_compare_models.ipynb)
-- [Manual error-analysis notebook](task2_sentiment/Anshika_Goel/notebooks/06_manual_error_analysis.ipynb)
-
-### Task 2 raw logs
-
-Raw logs are retained rather than rewritten. In particular, `final_evaluation_run_001.log` preserves the original metric-alias failure, and `final_evaluation_run_002.log` preserves the corrected successful evaluation.
-
-- [baseline_mean_pool_training_run_001.log](task2_sentiment/Anshika_Goel/logs/baseline_mean_pool_training_run_001.log)
-- [textcnn_training_run_001.log](task2_sentiment/Anshika_Goel/logs/textcnn_training_run_001.log)
-- [bigru_attention_training_run_001.log](task2_sentiment/Anshika_Goel/logs/bigru_attention_training_run_001.log)
-- [final_evaluation_run_001.log](task2_sentiment/Anshika_Goel/logs/final_evaluation_run_001.log)
-- [final_evaluation_run_002.log](task2_sentiment/Anshika_Goel/logs/final_evaluation_run_002.log)
-- [manual_error_analysis_run_001.log](task2_sentiment/Anshika_Goel/logs/manual_error_analysis_run_001.log)
-
-## Task 3 - CycleGAN image style transfer
-
-**Status: scaffold and reproducibility environment complete; implementation and training pending.** The Task 3 workspace is present under [`task3_gan/Anshika_Goel/`](task3_gan/Anshika_Goel/), including the assignment/integrity contract and verified environment records. No Task 3 model training or official evaluation has been performed yet.
-
-The Lab 1 brief requires each member to train their own CycleGAN using two unpaired image domains, two generators, two discriminators, adversarial loss, cycle-consistency loss, image translation in both directions, and training-stability analysis.
-
-Required Task 3 evaluation/reporting includes:
-
-- FID in both directions.
-- KID in both directions.
-- Generative precision/recall or density/coverage.
-- Cycle-reconstruction L1 distance.
-- LPIPS perceptual similarity.
-- Content-preservation cosine similarity.
-- Generator and discriminator loss curves.
-- Cycle-consistency and identity loss values.
-- Gradient norms and NaN/stability counts.
-- Blinded human audit of 30 fixed samples with two raters.
-- Inter-rater agreement such as Cohen's kappa or percentage agreement.
-- Parameter count, training time, images/second, and peak memory.
-- Kaggle public/private leaderboard score and recorded rank.
-
-**Leaderboard integrity:** the Kaggle submission must be direct inference output from the member's own trained CycleGAN. No manually edited, hand-picked, copied, externally sourced, lookup-table, pretrained/foundation-model, or test-pair-peeking outputs may be used.
-
-## Final combined team report
-
-**Status: pending.** The required `report/` directory and combined PDF are not yet present on the current `main` branch.
-
-Before final submission, the team report must be committed at `report/DATA266_Lab1_Report_Team_15.pdf` and should include:
-
-- A one-paragraph team ownership statement.
-- A per-task comparison table covering every member.
-- Architecture summaries and hyperparameters for every member/model.
-- All required metrics for Tasks 1-3.
-- Joint strengths, weaknesses, limitations, and future-work analysis for each task.
-- Evidence links for reported numbers, including logs, plots/samples, and checkpoint IDs.
-- Individual failure/error analyses with actual text/image snippets.
-- References to Attention Is All You Need, TinyStories, and CycleGAN.
-- The repository link.
-- Task 3 Kaggle submission score/rank once available.
-
-## Demo / Viva preparation
-
-Each member must be ready to open their own checkpoints and `results.md` files and explain:
-
-- Architecture and hyperparameter choices, including why each choice was made.
-- How every reported metric was computed and interpreted.
-- Task 1 failure cases and Task 2 manual error-review findings.
-- How their own models differ from teammates' models.
-- What the comparisons do and do not support.
-- Limitations and what would be changed in a future experiment.
-
-## Evidence preservation and reproducibility policy
-
-Raw training logs are grading evidence and should remain unedited. New corrections or reruns should create new logs rather than replacing historical logs.
-
-Configuration-driven runs are preferred over hard-coded machine paths. The tracked repository has been scanned for obvious personal filesystem paths and common secret/token patterns; none were found at the README preflight commit.
-
-Raw datasets, processed local tensors, caches, and virtual environments remain local/ignored unless the assignment explicitly requires otherwise.
-
-## Primary member documents
-
-- [Task 1 results](task1_llm/Anshika_Goel/results.md)
-- [Task 1 failure analysis](task1_llm/Anshika_Goel/failure_analysis.md)
-- [Task 1 environment manifest](task1_llm/Anshika_Goel/environment_manifest.txt)
-- [Task 2 results](task2_sentiment/Anshika_Goel/results.md)
-- [Task 2 failure analysis](task2_sentiment/Anshika_Goel/failure_analysis.md)
-- [Task 2 environment manifest](task2_sentiment/Anshika_Goel/environment_manifest.txt)
-
-## Final pre-submission checklist
-
-- [x] Anshika Task 1 code/config/logs/checkpoints/results/failure analysis present.
-- [x] Anshika Task 1 uses custom attention rather than prebuilt Transformer/attention modules.
-- [x] Anshika Task 2 trained all three required models.
-- [x] Anshika Task 2 uses no pretrained embeddings or pretrained language models.
-- [x] Anshika Task 2 required final metrics and statistical/robustness analyses are present.
-- [x] Anshika Task 1 and Task 2 raw logs and environment manifests are committed.
-- [x] One-command repository smoke-test command is documented above.
-- [x] No tracked personal paths or obvious secrets found in the current preflight scan.
-- [ ] Every team member has a completed folder under Task 1, Task 2, and Task 3.
-- [ ] Team model architectures/hyperparameters are confirmed meaningfully different.
-- [ ] Task 3 member implementations and required metrics are complete.
-- [ ] Task 3 Kaggle submission is complete and rank is recorded.
-- [ ] Team comparison tables are complete for all three tasks.
-- [ ] Combined PDF report is committed under `report/`.
-- [ ] Every member is prepared for the individual Demo/Viva.
-
-## Viraat - Task 1 Colab workflow
-
-Both members' Task 1 training/evaluation artifacts are present. Viraat completed
-ten full epochs on an NVIDIA A100-SXM4-40GB using a separate post-norm/ReLU
-decoder with an untied output head. His
-[member README](task1_llm/Viraat_Chaudhary/README.md),
-[results](task1_llm/Viraat_Chaudhary/results.md),
-[all metrics](task1_llm/Viraat_Chaudhary/metrics_report.csv),
-[failure analysis](task1_llm/Viraat_Chaudhary/failure_analysis.md) and
-[executed notebook](task1_llm/Viraat_Chaudhary/code/task1_colab.ipynb)
-provide the individual evidence.
-
-Install the member requirements in an appropriate PyTorch environment:
-
-```bash
-python -m pip install -r task1_llm/Viraat_Chaudhary/requirements.txt
+```powershell
+python task1_llm\compare_task1.py
+python task1_llm\evaluate_common.py
 ```
 
-The grader's one-command synthetic smoke check is:
+Comparison evidence:
 
-```bash
-python task1_llm/Viraat_Chaudhary/code/smoke_test.py
+- [`task1_llm/comparison/task1_comparison.md`](task1_llm/comparison/task1_comparison.md)
+- [`task1_llm/comparison/best_model_selection.md`](task1_llm/comparison/best_model_selection.md)
+- [`task1_llm/comparison/common_validation_comparison.csv`](task1_llm/comparison/common_validation_comparison.csv)
+
+---
+
+# Task 2 - Yelp Polarity sentiment classification
+
+## Shared task
+
+Both members classify the binary Yelp Polarity dataset using embeddings learned from scratch.
+
+No pretrained embedding model or pretrained language model is used.
+
+The common task population contains:
+
+- 560,000 official training reviews;
+- 504,000 frozen training reviews after the development split;
+- 56,000 validation reviews;
+- 38,000 official test reviews;
+- maximum sequence length of 256 tokens;
+- training-only vocabulary size of 50,000.
+
+The official test set was used only after model selection was frozen.
+
+---
+
+# Task 2 - Anshika models
+
+Anshika compares three substantially different representations of text structure:
+
+1. masked mean pooling;
+2. local convolutional phrase extraction;
+3. bidirectional recurrent context with learned attention.
+
+## Architecture comparison
+
+| Model | Core architecture | Parameters | Main inductive bias |
+|---|---|---:|---|
+| Mean Pool | Embedding -> masked mean -> linear | 6,400,129 | Order-independent lexical evidence |
+| TextCNN | Embedding -> Conv1D 3/4/5 -> global max -> linear | 6,597,377 | Local n-gram/phrase patterns |
+| BiGRU-Attention | Embedding -> bidirectional GRU -> additive attention -> linear | 6,631,425 | Ordered bidirectional context + weighted aggregation |
+
+### Architecture diagrams
+
+```mermaid
+flowchart LR
+    subgraph M["Mean Pool"]
+        M1["Token IDs"] --> M2["Embedding 128"]
+        M2 --> M3["Masked Mean Pool"]
+        M3 --> M4["Dropout"]
+        M4 --> M5["Linear -> sentiment logit"]
+    end
+
+    subgraph C["TextCNN"]
+        C1["Token IDs"] --> C2["Embedding 128"]
+        C2 --> C3["Conv1D k=3, 128 filters"]
+        C2 --> C4["Conv1D k=4, 128 filters"]
+        C2 --> C5["Conv1D k=5, 128 filters"]
+        C3 --> C6["Global Max Pool"]
+        C4 --> C7["Global Max Pool"]
+        C5 --> C8["Global Max Pool"]
+        C6 --> C9["Concatenate 384"]
+        C7 --> C9
+        C8 --> C9
+        C9 --> C10["Dropout"]
+        C10 --> C11["Linear -> sentiment logit"]
+    end
+
+    subgraph G["BiGRU-Attention"]
+        G1["Token IDs"] --> G2["Embedding 128"]
+        G2 --> G3["1-layer Bidirectional GRU, hidden=128"]
+        G3 --> G4["Additive Attention, dim=128"]
+        G4 --> G5["Context vector"]
+        G5 --> G6["Dropout"]
+        G6 --> G7["Linear -> sentiment logit"]
+    end
 ```
 
-The smoke test needs no TinyStories download. To restore the omitted processed
-arrays from the frozen dataset and verify their recorded hashes:
+## Final official-test metrics
 
-```bash
-python task1_llm/Viraat_Chaudhary/code/data.py
+| Model | Accuracy | Macro-F1 | MCC | ROC-AUC | PR-AUC | Brier | ECE |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Mean Pool | 0.929474 | 0.929474 | 0.858947 | 0.977648 | 0.977576 | 0.053777 | 0.008339 |
+| TextCNN | 0.941737 | 0.941736 | 0.883491 | 0.985671 | 0.986079 | 0.044814 | 0.017341 |
+| **BiGRU-Attention** | **0.944868** | **0.944864** | **0.889869** | **0.988415** | **0.988652** | **0.040506** | **0.007061** |
+
+### Which of Anshika's Task 2 models is better?
+
+**BiGRU-Attention is the strongest observed Anshika model.**
+
+It has the highest observed:
+
+- accuracy;
+- macro-F1;
+- MCC;
+- ROC-AUC;
+- PR-AUC;
+
+and the lowest Brier score and ECE among the three.
+
+Both TextCNN and BiGRU-Attention significantly improve paired error behavior relative to the mean-pooling baseline under the predeclared McNemar comparisons. There was **no TextCNN-vs-BiGRU paired McNemar test**, so the README does not claim statistical significance between those two experimental models.
+
+## Reproduce Anshika Task 2
+
+Install:
+
+```powershell
+python -m pip install -r task2_sentiment\Anshika_Goel\requirements.txt
 ```
 
-After restoration, `python task1_llm/Viraat_Chaudhary/code/train.py --resume`
-verifies the completed checkpoint and reports `ALREADY_COMPLETE`. For a new
-training experiment, use a separate clean run directory as explained in the
-member README; retain the original logs and weights.
+The workflow is preserved as executed notebooks:
 
-The [recorded-results table](task1_llm/comparison/task1_comparison.md) and
-[common held-out selection](task1_llm/comparison/best_model_selection.md)
-retain both members. The [Task 1 report section](task1_llm/comparison/task1_team_report.md)
-contains the complete comparison, evidence links, both members' real failure
-examples and proposed next experiments. It does not attest to another member's approval.
-On the common official validation text, Anshika has CE
-0.69440728 and accuracy
-78.1023%; Viraat has CE
-0.86098925 and accuracy
-72.9764%. Use the documented common quality
-criteria when choosing the model; different-GPU training speeds cannot isolate
-architecture effects.
-
-Regenerate the shared evaluations from the complete team repository:
-
-```bash
-python task1_llm/compare_task1.py
-python task1_llm/evaluate_common.py
+```text
+01_data_analysis_preprocessing.ipynb
+02_train_baseline_mean_pool.ipynb
+03_train_textcnn.ipynb
+04_train_bigru_attention.ipynb
+05_evaluate_compare_models.ipynb
+06_manual_error_analysis.ipynb
 ```
 
-The [run/commit guide](task1_llm/Viraat_Chaudhary/RUN_GUIDE.md) gives eight
-logical commits from the repository root. Task 1 completion does not complete
-the remaining individual tasks, the combined Tasks 1-3 PDF, or the viva.
+Run them in order for a full reproduction.
 
-<!-- VIRAAT_TASK2_REPO_INTEGRATION_START -->
-## Viraat - Task 2 sentiment classification
+### Small checkpoint-load smoke test
 
-This added section records Viraat's Task 2 run evidence and supplements the earlier repository snapshot. The six-model comparison is now available in Viraat's comparison CSV. The existing member sections above are retained.
+This smoke test checks that the three committed checkpoints can be opened by the installed PyTorch environment. It does not rerun training or consume the official test set.
 
-Member folder: [`task2_sentiment/Viraat_Chaudhary/`](task2_sentiment/Viraat_Chaudhary/).
-
-### Models and recorded results
-
-All embeddings and classifier weights were learned from scratch. The models use Yelp Polarity, the 504,000/56,000 development split, a training-only 50,000-entry vocabulary and a 256-token cap. All three selected checkpoints were frozen before evaluating the same 38,000 official test reviews.
-
-| Model | Architecture | Accuracy | Macro-F1 | MCC | Parameters | Training seconds |
-|---|---|---:|---:|---:|---:|---:|
-| baseline | Plain RNN | 0.942658 | 0.942657 | 0.885343 | 6,450,049 | 46.984 |
-| experiment_1 | Unidirectional LSTM | 0.948474 | 0.948472 | 0.897019 | 6,549,121 | 57.146 |
-| experiment_2 | Residual dilated causal TCN | 0.948026 | 0.948021 | 0.896242 | 7,027,969 | 280.528 |
-
-Exact hardware for all three runs: NVIDIA A100-SXM4-40GB; Intel(R) Xeon(R) CPU @ 2.20GHz. Per-run versions, selected epochs, checkpoint hashes and measurement scopes are preserved in the training manifests.
-
-### Setup and one-command checkpoint smoke test
-
-From the repository root, install the member requirements in a compatible Python/PyTorch environment:
-
-```bash
-python3 -m pip install -r task2_sentiment/Viraat_Chaudhary/requirements.txt
+```powershell
+python -c "import torch; from pathlib import Path; files=[Path(r'task2_sentiment\Anshika_Goel\checkpoints\baseline_mean_pool_best.pt'),Path(r'task2_sentiment\Anshika_Goel\checkpoints\textcnn_best.pt'),Path(r'task2_sentiment\Anshika_Goel\checkpoints\bigru_attention_best.pt')]; [print(p.name,'OK',type(torch.load(p,map_location='cpu',weights_only=False)).__name__) for p in files]"
 ```
 
-Then reproduce the saved RNN checkpoint smoke test with one command:
+Evidence:
 
-```bash
-python3 task2_sentiment/Viraat_Chaudhary/src/evaluator.py --smoke --config task2_sentiment/Viraat_Chaudhary/configs/baseline.json
+- [`task2_sentiment/Anshika_Goel/results.md`](task2_sentiment/Anshika_Goel/results.md)
+- [`task2_sentiment/Anshika_Goel/failure_analysis.md`](task2_sentiment/Anshika_Goel/failure_analysis.md)
+- [`task2_sentiment/Anshika_Goel/outputs/metrics/final_test_metrics.json`](task2_sentiment/Anshika_Goel/outputs/metrics/final_test_metrics.json)
+- [`task2_sentiment/Anshika_Goel/outputs/metrics/bootstrap_confidence_intervals.json`](task2_sentiment/Anshika_Goel/outputs/metrics/bootstrap_confidence_intervals.json)
+
+---
+
+# Task 2 - Viraat models
+
+Viraat evaluates:
+
+1. a plain RNN;
+2. a unidirectional LSTM;
+3. a residual dilated causal TCN.
+
+All embeddings and classifier weights were trained from scratch.
+
+## Architecture comparison
+
+| Model | Core architecture | Parameters | Main inductive bias |
+|---|---|---:|---|
+| RNN | Embedding -> unidirectional RNN -> mean/max pooling -> head | 6,450,049 | Sequential context |
+| LSTM | Embedding -> unidirectional LSTM -> mean/max pooling -> head | 6,549,121 | Gated sequential memory |
+| TCN | Embedding -> six residual dilated causal blocks -> mean/max pooling -> head | 7,027,969 | Multi-scale convolutional context |
+
+Shared RNN/LSTM settings include:
+
+- embedding dimension: 128;
+- hidden dimension: 128;
+- one recurrent layer;
+- masked mean + masked maximum pooling;
+- head dimension: 64;
+- dropout: 0.25;
+- embedding dropout: 0.10.
+
+The TCN uses:
+
+- channels: 128;
+- kernel size: 3;
+- six residual blocks;
+- dilation sequence: `1, 2, 4, 8, 16, 32`;
+- effective receptive field: approximately 253 tokens.
+
+### Architecture diagrams
+
+```mermaid
+flowchart LR
+    subgraph R["Plain RNN"]
+        R1["Token IDs"] --> R2["Embedding 128"]
+        R2 --> R3["1-layer Uni-RNN, hidden=128"]
+        R3 --> R4["Masked Mean + Max Pool"]
+        R4 --> R5["Head 64"]
+        R5 --> R6["Sentiment logit"]
+    end
+
+    subgraph L["LSTM"]
+        L1["Token IDs"] --> L2["Embedding 128"]
+        L2 --> L3["1-layer Uni-LSTM, hidden=128"]
+        L3 --> L4["Masked Mean + Max Pool"]
+        L4 --> L5["Head 64"]
+        L5 --> L6["Sentiment logit"]
+    end
+
+    subgraph T["Residual Dilated Causal TCN"]
+        T1["Token IDs"] --> T2["Embedding 128"]
+        T2 --> T3["Residual Block d=1"]
+        T3 --> T4["Residual Block d=2"]
+        T4 --> T5["Residual Block d=4"]
+        T5 --> T6["Residual Block d=8"]
+        T6 --> T7["Residual Block d=16"]
+        T7 --> T8["Residual Block d=32"]
+        T8 --> T9["Masked Mean + Max Pool"]
+        T9 --> T10["Head 64"]
+        T10 --> T11["Sentiment logit"]
+    end
 ```
 
-The command loads the selected checkpoint on CPU, verifies its config and preprocessing records, and returns probabilities for synthetic text. No dataset download is required. It is a checkpoint demonstration, not another test-accuracy measurement. Executed notebook 07 also records CPU smoke results for all three selected checkpoints.
+## Final official-test metrics
 
-### Evidence locations
+| Model | Accuracy | Macro-F1 | MCC | ROC-AUC | PR-AUC | Brier | ECE |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| RNN | 0.942658 | 0.942657 | 0.885343 | 0.986512 | 0.986900 | 0.042879 | **0.002350** |
+| **LSTM** | **0.948474** | **0.948472** | **0.897019** | 0.989121 | 0.989355 | **0.038735** | 0.008854 |
+| TCN | 0.948026 | 0.948021 | 0.896242 | **0.989122** | **0.989492** | 0.039448 | 0.011682 |
 
-- [All required per-model metrics](task2_sentiment/Viraat_Chaudhary/metrics_report.csv): precision/recall/F1 macro, micro and weighted; confusion counts; ROC/PR areas; MCC; Brier; 15-bin ECE; confidence intervals; paired tests; slices; and resource measurements.
-- [Architecture and analysis](task2_sentiment/Viraat_Chaudhary/results.md) and [twenty-error review with actual text](task2_sentiment/Viraat_Chaudhary/failure_analysis.md).
-- [Six-model comparison CSV](task2_sentiment/Viraat_Chaudhary/outputs/metrics/team_comparison_metrics.csv) and [Task 2 material for the final report](task2_sentiment/Viraat_Chaudhary/REPORT_TASK2_SECTION.md).
-- [Checkpoint-to-result mapping](task2_sentiment/Viraat_Chaudhary/outputs/metrics/checkpoint_result_mapping.json), [bootstrap intervals](task2_sentiment/Viraat_Chaudhary/outputs/metrics/bootstrap_confidence_intervals.json), [paired McNemar tests](task2_sentiment/Viraat_Chaudhary/outputs/metrics/mcnemar_tests.csv) and [robustness slices](task2_sentiment/Viraat_Chaudhary/outputs/metrics/robustness_slice_metrics.csv).
-- [Executed notebooks and source](task2_sentiment/Viraat_Chaudhary/src/), [plots](task2_sentiment/Viraat_Chaudhary/outputs/plots/), [saved predictions](task2_sentiment/Viraat_Chaudhary/outputs/predictions/) and [selected checkpoints](task2_sentiment/Viraat_Chaudhary/checkpoints/).
-- [Original logs](task2_sentiment/Viraat_Chaudhary/logs/) and [per-run environments](task2_sentiment/Viraat_Chaudhary/environments/).
-- Shared byte-identical evidence copies: [`reproducibility/raw_logs/task2_sentiment/Viraat_Chaudhary/`](reproducibility/raw_logs/task2_sentiment/Viraat_Chaudhary/) and [`reproducibility/manifests/task2_sentiment/Viraat_Chaudhary/`](reproducibility/manifests/task2_sentiment/Viraat_Chaudhary/). Copied manifest paths still resolve relative to the original member folder.
-- [Raw Yelp ZIP folder](https://drive.google.com/drive/folders/1wzaSwbXnBjHUu1dOBT6sX-9PF2jeoovB); the pinned ZIP filename and restoration workflow are in the [member README](task2_sentiment/Viraat_Chaudhary/README.md). Datasets are excluded from Git.
+### Which of Viraat's Task 2 models is better?
 
-### Interpretation and remaining team report
+For the primary observed classification-quality/efficiency tradeoff, **the LSTM is the strongest Viraat model**.
 
-LSTM and TCN improved accuracy over the RNN by 0.582 and 0.537 percentage points respectively. Both baseline comparisons reject equal paired error rates after Holm correction. The small LSTM-versus-TCN accuracy difference has no reported paired significance test. Tokenizer-dependent slices and different hardware prevent a controlled cross-member architecture/speed interpretation.
+It has:
 
-Anshika's comparison numbers are preserved as reported in her supplied executed evaluation evidence. Her source, checkpoints, logs and individual write-ups are unchanged. Exact teammate hardware and matching split provenance are still to be confirmed for the combined team report.
+- the highest accuracy;
+- the highest macro-F1;
+- the highest MCC;
+- the lowest Brier score among the three;
+- training time of about 57 seconds versus about 281 seconds for the TCN.
 
-Viraat confirmed review of the recorded explanations and analysis; [AI assistance remains disclosed](task2_sentiment/Viraat_Chaudhary/AI_use.md). Configs, checkpoints, raw logs and saved predictions are preserved. Historical audit JSON files describe earlier snapshots.
+The TCN has marginally higher ROC-AUC and PR-AUC and performs particularly well on long-review slices, so it remains competitive. However, its much greater computational cost does not produce a corresponding improvement in overall accuracy or macro-F1.
 
-The final `report/DATA266_Lab1_Report_Team_15.pdf` will be assembled after all three tasks are complete. Adding Task 2 artifacts does not mark that combined report complete.
-<!-- VIRAAT_TASK2_REPO_INTEGRATION_END -->
+No LSTM-vs-TCN paired significance test was reported, so the very small difference between them should not be interpreted as a statistically established architecture advantage.
+
+## Reproduce Viraat Task 2
+
+Install:
+
+```powershell
+python -m pip install -r task2_sentiment\Viraat_Chaudhary\requirements.txt
+```
+
+CPU checkpoint smoke test:
+
+```powershell
+python task2_sentiment\Viraat_Chaudhary\src\evaluator.py --smoke --config task2_sentiment\Viraat_Chaudhary\configs\baseline.json
+```
+
+The smoke test loads the selected RNN checkpoint with frozen preprocessing and performs inference on synthetic sentences. It does not download Yelp or recompute official-test accuracy.
+
+> **Windows line-ending note:** Viraat's evaluator performs byte-exact SHA-256 verification of the frozen preprocessing and configuration files. The recorded hashes correspond to the LF bytes stored in Git. A Windows checkout using `core.autocrlf=true` can convert tracked text files to CRLF, causing the strict integrity check to fail even though `git diff` reports no content change.
+>
+> Do **not** edit the integrity manifests or replace the recorded hashes. Use an LF-preserving checkout for this smoke test. One Windows-safe option is:
+>
+>     git -c core.autocrlf=false clone https://github.com/99GoelAnshika/data266-lab1-team15.git data266-lab1-team15-lf
+>     Set-Location data266-lab1-team15-lf
+>     python task2_sentiment\Viraat_Chaudhary\src\evaluator.py --smoke --config task2_sentiment\Viraat_Chaudhary\configs\baseline.json
+>
+> The evaluator was independently verified on Windows from an LF-exact temporary copy of the tracked files; it completed successfully without changing the recorded integrity metadata.
+
+For the complete notebook execution order, see:
+
+- [`task2_sentiment/Viraat_Chaudhary/RUN_ORDER.md`](task2_sentiment/Viraat_Chaudhary/RUN_ORDER.md)
+- [`task2_sentiment/Viraat_Chaudhary/README.md`](task2_sentiment/Viraat_Chaudhary/README.md)
+
+---
+
+# Task 2 - Team comparison
+
+The following table compares all six recorded models descriptively.
+
+| Member | Model | Accuracy | Macro-F1 | MCC |
+|---|---|---:|---:|---:|
+| Anshika | Mean Pool | 0.929474 | 0.929474 | 0.858947 |
+| Anshika | TextCNN | 0.941737 | 0.941736 | 0.883491 |
+| Anshika | BiGRU-Attention | 0.944868 | 0.944864 | 0.889869 |
+| Viraat | RNN | 0.942658 | 0.942657 | 0.885343 |
+| **Viraat** | **LSTM** | **0.948474** | **0.948472** | **0.897019** |
+| Viraat | TCN | 0.948026 | 0.948021 | 0.896242 |
+
+### Which Task 2 model is best overall?
+
+Among the six **observed runs**, Viraat's LSTM has the highest accuracy, macro-F1, and MCC.
+
+That should be interpreted as a **descriptive result**, not proof that an LSTM is intrinsically superior to BiGRU-Attention or the TCN. Cross-member preprocessing details, tokenizer-derived slices, hardware, and training conditions are not a controlled single-factor architecture experiment.
+
+The defensible conclusions are:
+
+- Anshika's **BiGRU-Attention** is best among Anshika's three models.
+- Viraat's **LSTM** is best on the principal observed classification metrics among Viraat's three.
+- Viraat's **LSTM** has the highest observed accuracy/macro-F1 in the six-model table.
+- Architecture causality cannot be isolated from the cross-member comparison.
+
+---
+
+# Task 3 - CycleGAN Monet/photo style transfer
+
+## Shared problem
+
+Task 3 learns unpaired translations between:
+
+- **Domain A:** Monet paintings;
+- **Domain B:** photographs.
+
+Expected local data locations:
+
+```text
+task3_gan/data/monet_jpg/
+task3_gan/data/photo_jpg/
+```
+
+The image files are intentionally not committed to Git.
+
+Both members train CycleGANs from scratch using:
+
+- two generators;
+- two PatchGAN discriminators;
+- least-squares GAN loss;
+- cycle-consistency loss;
+- identity loss;
+- unpaired sampling;
+- direct image generation in both directions.
+
+No pretrained or foundation image generator produces the submitted translations.
+
+---
+
+# Task 3 - Anshika model
+
+## Architecture
+
+Anshika's final selected model is the epoch-125 checkpoint from:
+
+```text
+cyclegan_baseline_rtx4090_run001
+```
+
+The model contains:
+
+- two ResNet generators;
+- **9 residual blocks per generator**;
+- 64 base channels;
+- instance normalization;
+- two PatchGAN discriminators;
+- least-squares adversarial loss;
+- cycle-consistency L1 loss;
+- identity L1 loss;
+- Adam optimization.
+
+Total trainable parameters across the four networks:
+
+**28,285,832**
+
+### Why this architecture?
+
+The architecture is well matched to **unpaired 256x256 style translation**:
+
+- **ResNet generators** preserve a strong spatial/content path while residual blocks learn the appearance transformation between photographs and Monet-style imagery.
+- **Nine residual blocks** provide substantial transformation capacity for 256x256 images. In this experiment, the selected nine-block configuration ultimately produced the stronger official average FID/MiFID and cycle-reconstruction metrics relative to the smaller teammate configuration, although the comparison is not a single-variable ablation.
+- **Instance normalization** normalizes per-image feature statistics and is appropriate for an image-style-transfer setting where appearance statistics change between domains.
+- **PatchGAN discriminators** judge local image patches rather than only a single whole-image score, encouraging realistic local texture and style.
+- **Cycle-consistency loss** is essential because the Monet and photograph datasets are unpaired: translating to the opposite domain and back constrains the generators to preserve source content.
+- **Identity loss** discourages unnecessary changes when an image is already presented to the generator corresponding to its own domain.
+- **Least-squares GAN loss** supplies the adversarial objective used by the recorded implementation.
+
+These design choices explain why the architecture is suitable for this task, but the recorded experiments do not isolate the causal contribution of any single component.
+
+### Architecture diagram
+
+```mermaid
+flowchart LR
+    A["Monet A"] --> GAB["Generator G_A2B
+Conv + Downsample
+9 ResNet Blocks
+Transposed Conv Upsample + Tanh"]
+    GAB --> FB["Generated Photo"]
+    FB --> DB["PatchGAN D_B"]
+    FB --> GBA["Generator G_B2A
+Conv + Downsample
+9 ResNet Blocks
+Transposed Conv Upsample + Tanh"]
+    GBA --> CA["Cycle A"]
+
+    B["Photo B"] --> GBA2["Generator G_B2A
+same architecture"]
+    GBA2 --> FA["Generated Monet"]
+    FA --> DA["PatchGAN D_A"]
+    FA --> GAB2["Generator G_A2B
+same architecture"]
+    GAB2 --> CB["Cycle B"]
+```
+
+## Final performance
+
+The selected epoch-125 model completed:
+
+- 125 epochs;
+- global step 879,750;
+- approximately 27.87 recorded training hours;
+- zero logged nonfinite gradient events.
+
+### Automatic evaluation
+
+| Metric | Monet -> Photo | Photo -> Monet | Mean / official |
+|---|---:|---:|---:|
+| FID | 96.068450 | 98.864013 | **97.466148 official** |
+| MiFID | 0.413548 | 0.400183 | **0.406866 official** |
+| KID | 0.017190 | 0.007900 | 0.012545 |
+| Generative precision | 0.780000 | 0.433333 | 0.606667 |
+| Generative recall | 0.333333 | 0.630000 | 0.481667 |
+| Cycle L1 | 0.032256 | 0.034622 | **0.033439** |
+| Cycle LPIPS | 0.182873 | 0.134368 | **0.158620** |
+| Content cosine | 0.783451 | 0.754759 | **0.769105** |
+
+The official instructor evaluator produces:
+
+```text
+FID   = 97.46614849815103
+MiFID = 0.40686556964620363
+```
+
+Time-dependent Kaggle placement is intentionally omitted from this README.
+
+Evidence:
+
+- [`task3_gan/Anshika_Goel/results.md`](task3_gan/Anshika_Goel/results.md)
+- [`task3_gan/Anshika_Goel/failure_analysis.md`](task3_gan/Anshika_Goel/failure_analysis.md)
+- [`task3_gan/Anshika_Goel/full_metrics_report.csv`](task3_gan/Anshika_Goel/full_metrics_report.csv)
+- [`task3_gan/Anshika_Goel/outputs/evaluation/`](task3_gan/Anshika_Goel/outputs/evaluation/)
+- [`submission.csv`](submission.csv)
+
+## Reproduce / smoke-test Anshika Task 3
+
+Install production dependencies:
+
+```powershell
+python -m pip install -r task3_gan\Anshika_Goel\configs\requirements_task3.txt
+```
+
+The final large epoch-125 checkpoint is preserved outside normal Git blob storage; its SHA-256 and checkpoint manifests remain committed. The canonical configuration is:
+
+```text
+task3_gan/Anshika_Goel/configs/cyclegan_baseline.json
+```
+
+### Small architecture smoke test
+
+This test constructs the real 9-block architecture and performs a random forward pass. It does not require the dataset, does not train, and does not write experiment artifacts.
+
+```powershell
+python -c "import sys,torch; sys.path.insert(0,r'task3_gan\Anshika_Goel\code'); from models import build_cyclegan_models,count_trainable_parameters; m=build_cyclegan_models(); x=torch.randn(1,3,256,256); y=m['generator_a_to_b'](x); d=m['discriminator_b'](y); print('generator_output=',tuple(y.shape)); print('patch_output=',tuple(d.shape)); print('trainable_parameters=',sum(count_trainable_parameters(v) for v in m.values()))"
+```
+
+A full new training run uses the canonical training launcher in `task3_gan/Anshika_Goel/code/train.py` after the two raw image domains are restored locally.
+
+---
+
+# Task 3 - Viraat model
+
+## Relationship to Anshika's implementation
+
+Viraat's Task 3 work **adapts the team's existing CycleGAN training infrastructure rather than starting from a completely unrelated codebase**.
+
+The recorded provenance identifies Anshika's implementation as the source. Several training-support modules were reused unchanged, while Viraat modified the model, trainer, data, and training entry-point code.
+
+Most importantly, Viraat's **trained architecture is not identical to Anshika's**.
+
+He changes the generator from the 9-block team baseline to a **6-residual-block resize-convolution generator** and trains a separate configuration from scratch.
+
+Therefore the appropriate description is:
+
+> Viraat reused and adapted the shared CycleGAN infrastructure, but trained a materially modified CycleGAN configuration with a smaller generator and a different upsampling strategy.
+
+## Architecture
+
+Viraat's final run:
+
+```text
+viraat_resizeconv6_run001
+```
+
+uses:
+
+- two RGB ResNet generators;
+- **6 residual blocks per generator**;
+- 64 base channels;
+- instance normalization;
+- nearest-neighbor resize followed by reflection-padded convolution for upsampling;
+- tanh output;
+- two 3-layer 70x70 PatchGAN discriminators;
+- least-squares GAN loss;
+- cycle L1 weight 10;
+- identity effective weight 2.5;
+- replay pool size 50;
+- batch size 2;
+- BF16 autocast with FP32 model/Adam states.
+
+Total trainable parameters:
+
+**21,204,872**
+
+### Architecture diagram
+
+```mermaid
+flowchart LR
+    A["Monet A"] --> GAB["Generator G_A2B
+Conv + Downsample
+6 ResNet Blocks
+Nearest Resize + Conv
+Tanh"]
+    GAB --> FB["Generated Photo"]
+    FB --> DB["70x70 PatchGAN D_B"]
+    FB --> GBA["Generator G_B2A
+6-block Resize-Conv"]
+    GBA --> CA["Cycle A"]
+
+    B["Photo B"] --> GBA2["Generator G_B2A
+6-block Resize-Conv"]
+    GBA2 --> FA["Generated Monet"]
+    FA --> DA["70x70 PatchGAN D_A"]
+    FA --> GAB2["Generator G_A2B
+6-block Resize-Conv"]
+    GAB2 --> CB["Cycle B"]
+```
+
+## Viraat final performance
+
+The run completed:
+
+- 60 epochs;
+- 211,140 optimizer-loop steps;
+- 5.2667 recorded training hours;
+- 44.544 domain images/second;
+- 2,587.737 MiB peak allocated CUDA memory;
+- zero logged nonfinite gradient events.
+
+| Metric | Monet -> Photo | Photo -> Monet |
+|---|---:|---:|
+| FID | 103.036489 | **95.615238** |
+| MiFID | 0.416142 | 0.405585 |
+| KID | 0.024615 | **0.007861** |
+| Generative precision | 0.623333 | 0.546667 |
+| Generative recall | 0.426667 | 0.596667 |
+| Cycle L1 | 0.043438 | 0.046902 |
+| Cycle LPIPS | 0.420099 | 0.309908 |
+| Content cosine | 0.789136 | 0.793367 |
+
+Official evaluator averages:
+
+```text
+FID   = 99.32852540409687
+MiFID = 0.410869756014433
+```
+
+Time-dependent Kaggle placement is intentionally omitted.
+
+Evidence:
+
+- [`task3_gan/Viraat_Chaudhary/results.md`](task3_gan/Viraat_Chaudhary/results.md)
+- [`task3_gan/Viraat_Chaudhary/failure_analysis.md`](task3_gan/Viraat_Chaudhary/failure_analysis.md)
+- [`task3_gan/Viraat_Chaudhary/team_comparison.md`](task3_gan/Viraat_Chaudhary/team_comparison.md)
+- [`task3_gan/Viraat_Chaudhary/full_metrics_report.csv`](task3_gan/Viraat_Chaudhary/full_metrics_report.csv)
+
+## Reproduce / smoke-test Viraat Task 3
+
+After cloning, retrieve Git LFS objects when required:
+
+```powershell
+git lfs pull
+```
+
+Install:
+
+```powershell
+python -m pip install -r task3_gan\Viraat_Chaudhary\configs\requirements_task3.txt
+```
+
+Verify retained files and hashes:
+
+```powershell
+python task3_gan\Viraat_Chaudhary\src\verify_saved_files.py
+```
+
+Run the CPU synthetic smoke test:
+
+```powershell
+python task3_gan\Viraat_Chaudhary\src\smoke_check.py
+```
+
+The smoke test uses temporary synthetic data and reduced channels to exercise:
+
+- model construction;
+- optimizer steps;
+- checkpoint writing/loading;
+- resume behavior;
+- finite losses and gradients.
+
+To reconstruct the instructor evaluator workspace without duplicating tracked image data:
+
+```powershell
+python task3_gan\Viraat_Chaudhary\src\prepare_evaluator_workspace.py
+```
+
+---
+
+# Task 3 - Architecture and metric comparison
+
+## Architecture comparison
+
+| Property | Anshika | Viraat |
+|---|---|---|
+| Framework | CycleGAN | CycleGAN adapted from shared infrastructure |
+| Generator family | ResNet | ResNet |
+| Residual blocks | **9** | **6** |
+| Base channels | 64 | 64 |
+| Upsampling | **Transposed convolution** | **Nearest resize + convolution** |
+| Normalization | InstanceNorm | InstanceNorm |
+| Discriminator | PatchGAN | 70x70 PatchGAN |
+| Cycle weight | 10 | 10 |
+| Identity effective weight | 5 | 2.5 |
+| Training epochs | 125 | 60 |
+| Parameters | 28,285,832 | **21,204,872** |
+| Recorded training time | 27.868 h | **5.267 h** |
+| Recorded throughput | 17.538 domain images/s | **44.544 domain images/s** |
+
+These are different trained configurations, not a controlled single-variable ablation. Block count, upsampling, identity weighting, batch/precision settings, and training schedule differ together.
+
+### Human-evaluation provenance
+
+The quantitative Task 3 comparison above is based on the recorded automatic metrics and instructor-evaluator results. No independent external-human score is used as a final-model metric in this root comparison.
+
+For **Anshika**, the repository retains an earlier 30-sample evaluator-approved simulated/AI-assisted audit for provenance. Those simulated ratings were created before the final epoch-125 checkpoint selection and are therefore historical audit evidence, not newly collected human ratings of the final model. External human raters were not used for those scores.
+
+For **Viraat**, the repository contains a prepared human-audit package with blinded audit images, instructions, a private manifest, and rater score-sheet artifacts. This root README does not report a completed independent-human mean or agreement statistic from that package.
+
+Accordingly, the model comparison should be interpreted from the reproducible automatic metrics and documented qualitative/failure analysis rather than as a comparison supported by external-human preference scores.
+
+## Performance comparison
+
+| Metric | Anshika epoch 125 | Viraat epoch 60 | Better observed value |
+|---|---:|---:|---|
+| Official average FID | **97.466148** | 99.328525 | Anshika |
+| Official average MiFID | **0.406866** | 0.410870 | Anshika |
+| Monet -> Photo FID | **96.068450** | 103.036489 | Anshika |
+| Photo -> Monet FID | 98.864013 | **95.615238** | Viraat |
+| Monet -> Photo KID | **0.017190** | 0.024615 | Anshika |
+| Photo -> Monet KID | 0.007900 | **0.007861** | Nearly tied / Viraat |
+| Mean cycle L1 | **0.033439** | 0.045170 | Anshika |
+| Mean cycle LPIPS | **0.158620** | 0.365004 | Anshika |
+| Mean content cosine | 0.769105 | **0.791252** | Viraat |
+| Parameters | 28.286 M | **21.205 M** | Viraat efficiency |
+| Training throughput | 17.538 | **44.544** | Viraat efficiency |
+
+## Which Task 3 model is better?
+
+If the primary goal is the course's **official image-quality evaluator plus cycle reconstruction quality**, **Anshika's epoch-125 model is the stronger final configuration**.
+
+It has:
+
+- lower official average FID;
+- lower official average MiFID;
+- much lower cycle-reconstruction L1;
+- much lower LPIPS cycle distance;
+- better Monet-to-photo FID and KID.
+
+Viraat's architecture nevertheless has important advantages:
+
+- approximately 25% fewer trainable parameters;
+- substantially higher recorded throughput;
+- much shorter total training time;
+- better photo-to-Monet FID;
+- slightly better photo-to-Monet KID;
+- higher input/translation content cosine similarity.
+
+Therefore Viraat's six-block resize-convolution model is best interpreted as an **efficiency-focused architectural adaptation with mixed quality tradeoffs**, while Anshika's nine-block epoch-125 model remains the stronger observed choice when prioritizing the official evaluator and cycle reconstruction.
+
+Because the runs differ in several design and training variables simultaneously, these results do not establish that residual-block count or resize-convolution alone caused the differences.
+
+---
+
+# Reproducibility principles
+
+Across all tasks:
+
+- raw logs are preserved rather than rewritten;
+- configs and checkpoint identities are retained with results;
+- official test outputs are evaluation evidence and are not used for post-hoc retuning;
+- member-specific environments and hardware are documented where available;
+- large raw datasets and caches are not committed;
+- all cross-member conclusions are limited to what the recorded experiments support.
+
+The `reproducibility/` directory contains additional shared logs and manifests used to trace selected runs.
+
+---
+
+# Key result summary
+
+| Task | Strongest observed configuration under the documented primary comparison |
+|---|---|
+| Task 1 | **Anshika 5-block pre-LN GPT** - lower common CE and higher common next-character accuracy |
+| Task 2 - Anshika | **BiGRU-Attention** |
+| Task 2 - Viraat | **LSTM** |
+| Task 2 - six-model table | **Viraat LSTM** has highest observed accuracy/macro-F1, with cross-member comparison caveats |
+| Task 3 | **Anshika epoch-125 9-block CycleGAN** for official FID/MiFID and reconstruction; Viraat is substantially more efficient |
+
+---
+
+# References
+
+- Vaswani, A. et al. (2017). *Attention Is All You Need.*
+- Eldan, R. and Li, Y. (2023). *TinyStories: How Small Can Language Models Be and Still Speak Coherent English?*
+- Yelp Polarity dataset: `fancyzhx/yelp_polarity`.
+- Zhu, J.-Y., Park, T., Isola, P., and Efros, A. A. (2017). *Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks.*
+
+For detailed numerical evidence, use each member's `results.md`, `failure_analysis.md`, metric files, logs, manifests, and comparison artifacts rather than treating this root README as a replacement for the underlying evidence.
