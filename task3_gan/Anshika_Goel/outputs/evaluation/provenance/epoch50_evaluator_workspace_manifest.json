@@ -1,0 +1,37 @@
+{
+  "base": "Part 3/Data",
+  "directories": {
+    "monet_jpg": {
+      "aggregate_sha256": "6660fd0b91618e8ce182178c09bfdc17371003789a39ce23f33f59b859a4f41d",
+      "count": 300,
+      "meaning": "real_domain_A_monet"
+    },
+    "photo_jpg": {
+      "aggregate_sha256": "ec35b0a16596bafc58c98b1e9c58b72511522b6715ac89f976d8623cb42e7855",
+      "count": 300,
+      "meaning": "real_domain_B_photo"
+    },
+    "pred_A2B": {
+      "aggregate_sha256": "63fda174b2a3be104ecdf0633540d7da71ba65c3a9f129a65c654d1df60fd603",
+      "count": 300,
+      "meaning": "generated_monet_to_photo"
+    },
+    "pred_B2A": {
+      "aggregate_sha256": "6f4cb811eb53ea99a05200c68412d0ca5d639e1d05592b0e71743537f20696ab",
+      "count": 300,
+      "meaning": "generated_photo_to_monet"
+    }
+  },
+  "integrity": {
+    "evaluator_code_modified": false,
+    "manual_selection": false,
+    "prediction_images_modified": false,
+    "prediction_images_regenerated": false,
+    "source_order": "instructor_sorted_first_300"
+  },
+  "n_eval": 300,
+  "purpose": "unchanged_instructor_evaluator_compatibility_workspace",
+  "schema_version": 1,
+  "source_epoch": 50,
+  "source_global_step": 351900
+}

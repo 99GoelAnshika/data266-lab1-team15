@@ -1,0 +1,21 @@
+{
+  "epoch": 55,
+  "global_step": 387090,
+  "checkpoint_sha256": "6ff3ceac03c0903bbaae477f5961f121adae2d913b8ae1e548edaf44204868a9",
+  "lpips_package_version": "0.1.4",
+  "backbone": "alex",
+  "A2B2A_monet_to_photo_to_monet": {
+    "count": 300,
+    "mean": 0.19878450475633144,
+    "std": 0.05985138457717958,
+    "median": 0.19197341054677963
+  },
+  "B2A2B_photo_to_monet_to_photo": {
+    "count": 300,
+    "mean": 0.15834210040668648,
+    "std": 0.048123101622958055,
+    "median": 0.14995045959949493
+  },
+  "two_direction_mean": 0.17856330258150896,
+  "evaluation_seconds": 13.93811254799948
+}

@@ -1,0 +1,18 @@
+{
+  "purpose": "epoch125_kaggle_candidate_official_instructor_evaluation",
+  "source_checkpoint_epoch": 125,
+  "source_global_step": 879750,
+  "prediction_source": "task3_gan/Anshika_Goel/outputs/improvement_checkpoint_comparison_epoch80_to125/epoch_0125",
+  "directories": {
+    "monet_jpg": 300,
+    "photo_jpg": 300,
+    "pred_A2B": 300,
+    "pred_B2A": 300
+  },
+  "real_monet_selection": "all 300 sorted files",
+  "real_photo_selection": "first 300 sorted files",
+  "original_evaluator_sha256": "702a1265433bf2f15c7900c83442c626d10ac0918094d093dde8ef82069d4cef",
+  "preserved_epoch75_submission": "/app/data266-lab1-team15/task3_gan/Anshika_Goel/outputs/evaluation/submission_epoch75_before_epoch125.csv",
+  "preserved_epoch75_executed_evaluator": "/app/data266-lab1-team15/task3_gan/Anshika_Goel/outputs/evaluation/Part3_Evaluation_Script_epoch75_before_epoch125.ipynb",
+  "preserved_epoch75_workspace": "/app/data266-lab1-team15/Part 3/Data_epoch75_backup_before_epoch125"
+}

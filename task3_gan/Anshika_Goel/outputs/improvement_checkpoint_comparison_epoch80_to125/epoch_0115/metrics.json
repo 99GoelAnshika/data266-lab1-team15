@@ -1,0 +1,45 @@
+{
+  "epoch": 115,
+  "global_step": 809370,
+  "checkpoint_sha256": "4d82a165f37fda3ae871421a722ede5ad39dac3c671a2da4f4b0ce26a98c999f",
+  "prediction_sha256": {
+    "A2B": "377b3cf3e4c602ae3fda3412146fec70c7a893283a6cec01067d0aa6c0a8c9c8",
+    "B2A": "be9270184cd9218699466061ffeee49c1cf1c6572c80c9e7c904962e283efb0d"
+  },
+  "fid": {
+    "A2B": 100.69066913970846,
+    "B2A": 98.31895705021205,
+    "average": 99.50481309496026
+  },
+  "mifid": {
+    "A2B": 0.4166628924835389,
+    "B2A": 0.4002509027280406,
+    "average": 0.40845689760578974
+  },
+  "kid": {
+    "A2B_mean": 0.01861119506699121,
+    "A2B_std": 0.002130727295376351,
+    "B2A_mean": 0.007735391936194711,
+    "B2A_std": 0.0012829990248120846,
+    "average": 0.01317329350159296
+  },
+  "generative_precision_recall": {
+    "A2B_precision": 0.69,
+    "A2B_recall": 0.35,
+    "B2A_precision": 0.44333333333333336,
+    "B2A_recall": 0.6,
+    "average_precision": 0.5666666666666667,
+    "average_recall": 0.475
+  },
+  "content_cosine": {
+    "A2B": 0.8030414675651282,
+    "B2A": 0.7604813305874951,
+    "average": 0.7817613990763117
+  },
+  "cycle_l1_rgb_0_1": {
+    "A2B2A": 0.031759519694993896,
+    "B2A2B": 0.03662033776131769,
+    "average": 0.034189928728155794
+  },
+  "evaluation_seconds": 41.18176579900319
+}

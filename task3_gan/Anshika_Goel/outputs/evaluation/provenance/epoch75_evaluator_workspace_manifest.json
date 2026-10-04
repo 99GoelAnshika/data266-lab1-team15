@@ -1,0 +1,16 @@
+{
+  "purpose": "epoch75_official_instructor_evaluation",
+  "source_checkpoint_epoch": 75,
+  "source_global_step": 527850,
+  "directories": {
+    "monet_jpg": 300,
+    "photo_jpg": 300,
+    "pred_A2B": 300,
+    "pred_B2A": 300
+  },
+  "real_photo_selection": "first 300 sorted files",
+  "real_monet_selection": "all 300 sorted files",
+  "prediction_source": "outputs/improvement_checkpoint_comparison/epoch_0075",
+  "old_submission_backup": "/app/data266-lab1-team15/task3_gan/Anshika_Goel/outputs/evaluation/submission_epoch50_before_epoch75.csv",
+  "old_evaluator_workspace_backup": "/app/data266-lab1-team15/Part 3/Data_epoch50_backup_before_epoch75"
+}
