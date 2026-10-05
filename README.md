@@ -17,14 +17,21 @@ Each member trained and evaluated their own model configuration. This README is 
 
 # Repository structure
 
+The tree below summarizes the current high-level repository layout. It focuses on task/member organization, canonical implementation locations, task-level documentation, and reproducibility evidence rather than enumerating every generated metric, plot, manifest, or preserved log file.
+
 ```text
 data266-lab1-team15/
 |
 |-- README.md
+|-- .gitignore
+|-- .gitattributes
 |-- docs/
 |   `-- DATA266_Lab1_Fall_2026.pdf
 |
 |-- task1_llm/
+|   |-- README.md
+|   |-- .gitattributes
+|   |-- data/
 |   |-- Anshika_Goel/
 |   |   |-- code/
 |   |   |-- configs/
@@ -42,15 +49,21 @@ data266-lab1-team15/
 |   |   |-- checkpoints/
 |   |   |-- logs/
 |   |   |-- outputs/
+|   |   |-- analysis/
 |   |   |-- requirements.txt
 |   |   |-- results.md
 |   |   `-- failure_analysis.md
 |   |
 |   |-- comparison/
+|   |-- reproducibility/
+|   |   |-- Anshika_Goel/
+|   |   `-- Viraat_Chaudhary/
 |   |-- compare_task1.py
 |   `-- evaluate_common.py
 |
 |-- task2_sentiment/
+|   |-- README.md
+|   |-- data/
 |   |-- Anshika_Goel/
 |   |   |-- configs/
 |   |   |-- checkpoints/
@@ -61,21 +74,30 @@ data266-lab1-team15/
 |   |   |-- results.md
 |   |   `-- failure_analysis.md
 |   |
-|   `-- Viraat_Chaudhary/
-|       |-- configs/
-|       |-- checkpoints/
-|       |-- logs/
-|       |-- notebooks/
-|       |-- outputs/
-|       |-- src/
-|       |-- requirements.txt
-|       |-- results.md
-|       `-- failure_analysis.md
+|   |-- Viraat_Chaudhary/
+|   |   |-- configs/
+|   |   |-- checkpoints/
+|   |   |-- environments/
+|   |   |-- inputs/
+|   |   |-- logs/
+|   |   |-- notebooks/
+|   |   |-- outputs/
+|   |   |-- provenance/
+|   |   |-- references/
+|   |   |-- src/
+|   |   |-- requirements.txt
+|   |   |-- results.md
+|   |   `-- failure_analysis.md
+|   |
+|   `-- reproducibility/
+|       |-- Anshika_Goel/
+|       `-- Viraat_Chaudhary/
 |
 |-- task3_gan/
+|   |-- README.md
 |   |-- data/
-|   |   |-- monet_jpg/        # local / not committed
-|   |   `-- photo_jpg/        # local / not committed
+|   |   |-- monet_jpg/        # local raw data / not committed
+|   |   `-- photo_jpg/        # local raw data / not committed
 |   |
 |   |-- Anshika_Goel/
 |   |   |-- code/
@@ -87,21 +109,25 @@ data266-lab1-team15/
 |   |   |-- results.md
 |   |   `-- failure_analysis.md
 |   |
-|   `-- Viraat_Chaudhary/
-|       |-- configs/
-|       |-- checkpoints/
-|       |-- logs/
-|       |-- outputs/
-|       |-- src/
-|       |-- results.md
-|       |-- failure_analysis.md
-|       `-- team_comparison.md
+|   |-- Viraat_Chaudhary/
+|   |   |-- configs/
+|   |   |-- checkpoints/
+|   |   |-- logs/
+|   |   |-- outputs/
+|   |   |-- src/
+|   |   |-- results.md
+|   |   |-- failure_analysis.md
+|   |   `-- team_comparison.md
+|   |
+|   `-- reproducibility/
+|       |-- Anshika_Goel/
+|       `-- Viraat_Chaudhary/
 |
 |-- Part3_Evaluation_Script.ipynb
 `-- submission.csv
 ```
 
-Large datasets, caches, virtual environments, and selected large checkpoint files are intentionally excluded where documented. Checksum and provenance artifacts are retained with the corresponding experiments.
+Large datasets, caches, virtual environments, generated runtime workspaces, and selected large checkpoint files are intentionally excluded where documented. Reproducibility evidence is organized inside each task under `task1_llm/reproducibility/`, `task2_sentiment/reproducibility/`, and `task3_gan/reproducibility/`; canonical implementations and experiment outputs remain in the corresponding member directories.
 
 ---
 
