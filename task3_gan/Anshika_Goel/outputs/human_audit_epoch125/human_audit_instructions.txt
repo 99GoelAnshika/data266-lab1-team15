@@ -1,0 +1,45 @@
+DATA 266 TASK 3 - BLINDED REAL HUMAN AUDIT
+
+This package evaluates the final selected epoch-125 CycleGAN checkpoint.
+
+There are exactly 30 fixed audit samples.
+
+For every AUDIT_XXX panel:
+
+- Left image = Input
+- Right image = Translation
+- Do not consult audit_private_manifest.csv.
+- Do not attempt to identify the model author or checkpoint.
+- Do not discuss ratings with the other rater until BOTH forms are complete.
+
+Score each criterion independently using INTEGER values 1 through 5.
+
+STYLE QUALITY
+1 = very poor target-domain style
+2 = poor
+3 = acceptable
+4 = good
+5 = excellent target-domain style
+
+CONTENT PRESERVATION
+1 = major content loss/change
+2 = substantial content change
+3 = moderate preservation
+4 = good preservation
+5 = excellent preservation
+
+ARTIFACT-FREE QUALITY
+1 = severe visible artifacts
+2 = obvious artifacts
+3 = moderate artifacts
+4 = minor artifacts
+5 = essentially artifact-free
+
+Every sample must receive all three ratings.
+
+Rater 1 fills only rater1_scores.csv.
+Rater 2 fills only rater2_scores.csv.
+
+The two human raters must work independently.
+
+Do not use, inspect, or copy ratings from the historical simulated audit.

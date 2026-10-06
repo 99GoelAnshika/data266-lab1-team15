@@ -125,16 +125,49 @@ Kaggle score improved from `-49.2903` to
 The improvement was not uniform across every auxiliary metric. This is
 documented in `failure_analysis.md`.
 
-## 9. Audit Provenance
+## 9. Real Human Audit and Audit Provenance
 
-The repository retains the earlier evaluator-approved simulated/AI-assisted
-30-sample audit artifacts for provenance.
+A blinded real-human audit was completed for the final selected epoch-125
+checkpoint using 30 fixed panels: 15 Monet -> Photo and 15 Photo -> Monet.
+Two independent human raters scored every panel on three integer 1-5 scales:
+style quality, content preservation and artifact-free quality. Higher scores are
+better. The raters received anonymous Set_A / Set_B packages and model identity
+was revealed only after both completed score files had been returned and
+validated.
 
-Those simulated ratings were created before the final epoch-125 checkpoint
-selection and are therefore explicitly treated as **historical audit evidence**,
-not as newly collected human ratings of the epoch-125 model.
+### Overall real-human audit results
 
-No claim is made that those scores were produced by external human raters.
+| Criterion | Two-rater mean | Exact agreement | Cohen's kappa |
+|---|---:|---:|---:|
+| Style quality | 3.2000 | 16.67% | -0.0190 |
+| Content preservation | 3.4833 | 26.67% | 0.0517 |
+| Artifact-free quality | 3.4500 | 40.00% | 0.2405 |
+
+Across all three dimensions, pooled exact agreement was **27.78%** and pooled
+unweighted Cohen's kappa was **0.0782**. The low agreement, particularly for
+style quality, is reported directly rather than reconciled or altered; these
+scores should therefore be interpreted as subjective human judgments alongside
+the automatic image-quality metrics.
+
+### Direction-specific two-rater means
+
+| Direction | Style | Content | Artifact-free |
+|---|---:|---:|---:|
+| Monet -> Photo | 2.6000 | 3.3667 | 3.0333 |
+| Photo -> Monet | 3.8000 | 3.6000 | 3.8667 |
+
+The final real-human evidence is stored in
+`outputs/human_audit_epoch125/real_human_audit/`, including both original
+returned rater score files, per-sample merged ratings and the computed results
+JSON. Team-level summaries and audit-analysis provenance are stored in
+`../human_audit_analysis/`.
+
+The repository also retains the earlier evaluator-approved simulated/AI-assisted
+30-sample audit artifacts for provenance. Those simulated ratings were created
+before the final epoch-125 checkpoint selection and remain explicitly labelled
+as **historical audit evidence**. They were **not used** to compute the final
+real-human results above, and no claim is made that the historical simulated
+scores were produced by external human raters.
 
 ## 10. Final Evidence Map
 
@@ -147,5 +180,8 @@ No claim is made that those scores were produced by external human raters.
 - `outputs/plots/`
 - `outputs/cyclegan_baseline_rtx4090_run001/official_epoch125_predictions/`
 - `outputs/improvement_checkpoint_comparison_epoch80_to125/`
+- `outputs/human_audit_epoch125/`
+- `outputs/human_audit_epoch125/real_human_audit/`
+- `../human_audit_analysis/`
 - `checkpoints/checkpoint_manifest.csv`
 - `checkpoints/checkpoint_manifest.json`

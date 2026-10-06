@@ -115,24 +115,58 @@ stability, not proof of ideal adversarial convergence.
 
 ## Human audit, leaderboard and team report
 
-Viraat's two real-rater forms are blank. Anshika's current results explicitly retain
-simulated/AI-assisted scores from epoch 50 as historical evidence and state that
-external human raters were not used. Those scores are not final-model ratings from
-two independent humans. The supplied archive contains no professor permission
-document for an exception to the rubric's real-human audit requirement.
+The required blinded real-human audit has now been completed for both selected
+models using 30 fixed panels per model, with 15 Monet -> Photo and 15 Photo ->
+Monet examples. The same two independent human raters evaluated anonymous
+Set_A / Set_B packages. Model identity was revealed only after both completed
+responses had been returned and validated.
 
-Anshika reports a Kaggle score of **-48.9365** and rank snapshot **14** for
-`PairProgramming_Team_15`. This is the supplied report's snapshot, not a live rank
-check. Her Kaggle result JSON was not included here. Viraat's new CSV has no
-supplied Kaggle result yet, so no leaderboard improvement is claimed.
+### Final human-audit comparison
 
-The evidence supports a smaller, higher-throughput Viraat configuration with
-mixed quality metrics and greater cycle reconstruction error. A follow-up study
-should separate block count, identity weight and batch/precision effects under a
-common training/evaluation budget and several seeds. Training-domain evaluation
-of 300 images per direction does not establish held-out generalization.
+| Human metric | Anshika epoch 125 | Viraat epoch 60 |
+|---|---:|---:|
+| Style mean | 3.2000 | 3.2500 |
+| Content-preservation mean | 3.4833 | 3.7500 |
+| Artifact-free mean | 3.4500 | 3.6833 |
+| Style exact agreement | 16.67% | 40.00% |
+| Style Cohen's kappa | -0.0190 | 0.2275 |
+| Content exact agreement | 26.67% | 43.33% |
+| Content Cohen's kappa | 0.0517 | 0.2630 |
+| Artifact exact agreement | 40.00% | 36.67% |
+| Artifact Cohen's kappa | 0.2405 | 0.1775 |
+| Pooled exact agreement | 27.78% | 40.00% |
+| Pooled Cohen's kappa | 0.0782 | 0.2357 |
 
-For the combined Lab 1 PDF, add the final human/Kaggle evidence, missing current
-baseline efficiency evidence, checkpoint/result links, ownership statement and
-joint interpretation across Tasks 1–3. This member comparison does not replace
-`report/DATA266_Lab1_Report_Team_15.pdf`.
+Direction-specific two-rater means were:
+
+| Model / direction | Style | Content | Artifact-free |
+|---|---:|---:|---:|
+| Anshika Monet -> Photo | 2.6000 | 3.3667 | 3.0333 |
+| Anshika Photo -> Monet | 3.8000 | 3.6000 | 3.8667 |
+| Viraat Monet -> Photo | 2.8667 | 3.5000 | 3.5000 |
+| Viraat Photo -> Monet | 3.6333 | 4.0000 | 3.8667 |
+
+The human means mildly favor Viraat, but the inter-rater results also demonstrate
+substantial subjectivity. Anshika's pooled Cohen's kappa is 0.0782 and Viraat's
+is 0.2357. The human audit should therefore be interpreted alongside the
+automatic metrics rather than as a single definitive model ranking.
+
+The historical simulated or AI-assisted Anshika audit remains preserved only as
+historical provenance and was not used in the final real-human calculations.
+
+Anshika's recorded Kaggle evidence reports score **-48.9365** and rank snapshot
+**14** for `PairProgramming_Team_15`. Historical Kaggle and run artifacts remain
+preserved as captured and are not rewritten to represent later activity.
+
+The combined evidence indicates a trade-off rather than one universal winner.
+Anshika has the better official average FID and MiFID and lower cycle
+reconstruction errors. Viraat is smaller and substantially higher-throughput,
+has higher content cosine, and receives somewhat higher mean human ratings.
+
+A follow-up study should isolate residual-block count, identity weight, batch
+size, precision and training duration under the same evaluation budget and
+multiple seeds. Evaluation on 300 images per direction does not establish
+held-out generalization.
+
+The completed real-human audit must also be reflected in the combined Lab 1
+report before final submission.

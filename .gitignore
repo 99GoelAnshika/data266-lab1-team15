@@ -60,3 +60,9 @@ task3_gan/*/checkpoints/**/*.pt
 # Temporary compatibility workspace created only for the instructor Part 3 evaluator
 # This duplicates real images/predictions and is not a source artifact.
 Part 3/
+
+# Task 3 temporary/private human-audit working files
+# Final model-specific scores and aggregate analysis remain tracked separately.
+task3_gan/human_audit_rater_packages/
+task3_gan/human_audit_completed_returns/
+task3_gan/_PRIVATE_human_audit_mapping/

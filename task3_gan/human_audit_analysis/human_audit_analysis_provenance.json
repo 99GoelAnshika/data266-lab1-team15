@@ -1,0 +1,46 @@
+{
+  "audit_type": "blinded independent two-human-rater audit",
+  "total_models": 2,
+  "samples_per_model": 30,
+  "directions_per_model": {
+    "A2B_monet_to_photo": 15,
+    "B2A_photo_to_monet": 15
+  },
+  "rating_dimensions": [
+    "style_quality",
+    "content_preservation",
+    "artifact_free"
+  ],
+  "rating_scale": "integer 1-5; higher is better",
+  "rater_count": 2,
+  "set_assignment": {
+    "Rater_1": {
+      "Set_A": "Anshika_Goel_epoch125",
+      "Set_B": "Viraat_Chaudhary_final_run"
+    },
+    "Rater_2": {
+      "Set_A": "Viraat_Chaudhary_final_run",
+      "Set_B": "Anshika_Goel_epoch125"
+    }
+  },
+  "unblinding_time": "after both completed returns were received and validated",
+  "historical_simulated_scores_used": false,
+  "agreement_metrics": [
+    "exact percentage agreement",
+    "unweighted Cohen's kappa"
+  ],
+  "models": {
+    "Anshika_Goel_epoch125": {
+      "rater1_scores_sha256": "6bbf2ab0be65561295e0cbfbcc5c7e658db8899351819c2cbc3bb293cda22182",
+      "rater2_scores_sha256": "e3a51758a826c0ffcfeac48bec7c85ff3f9796975d66dc9850fc46709054847f",
+      "sample_count": 30,
+      "raters": 2
+    },
+    "Viraat_Chaudhary_final_run": {
+      "rater1_scores_sha256": "3f7b68acbb069518c16f20f8c5bcd791a3d266f004071146647e223ebf264fbd",
+      "rater2_scores_sha256": "0823da39a18cb6421c0c65d4a7d0b2946836b33db1a39adc0eeaeec7792b1c1f",
+      "sample_count": 30,
+      "raters": 2
+    }
+  }
+}

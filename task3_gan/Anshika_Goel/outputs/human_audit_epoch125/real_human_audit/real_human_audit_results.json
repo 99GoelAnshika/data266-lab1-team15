@@ -1,0 +1,132 @@
+{
+  "model": "Anshika_Goel_epoch125",
+  "sample_count": 30,
+  "rater_count": 2,
+  "rating_scale": "integer 1-5; higher is better",
+  "direction_counts": {
+    "A2B_monet_to_photo": 15,
+    "B2A_photo_to_monet": 15
+  },
+  "overall": {
+    "style_quality": {
+      "n_samples": 30,
+      "rater1_mean": 3.433333333333333,
+      "rater2_mean": 2.966666666666667,
+      "two_rater_mean": 3.2,
+      "two_rater_population_sd": 1.2220201853215573,
+      "exact_agreement": 0.16666666666666666,
+      "exact_agreement_percent": 16.666666666666664,
+      "cohen_kappa": -0.019021739130434805
+    },
+    "content_preservation": {
+      "n_samples": 30,
+      "rater1_mean": 3.6333333333333333,
+      "rater2_mean": 3.3333333333333335,
+      "two_rater_mean": 3.4833333333333334,
+      "two_rater_population_sd": 1.1901213756961468,
+      "exact_agreement": 0.26666666666666666,
+      "exact_agreement_percent": 26.666666666666668,
+      "cohen_kappa": 0.05172413793103446
+    },
+    "artifact_free": {
+      "n_samples": 30,
+      "rater1_mean": 3.433333333333333,
+      "rater2_mean": 3.466666666666667,
+      "two_rater_mean": 3.45,
+      "two_rater_population_sd": 1.189187397623548,
+      "exact_agreement": 0.4,
+      "exact_agreement_percent": 40.0,
+      "cohen_kappa": 0.24050632911392406
+    },
+    "pooled_all_dimensions": {
+      "n_paired_ratings": 90,
+      "exact_agreement": 0.2777777777777778,
+      "exact_agreement_percent": 27.77777777777778,
+      "cohen_kappa": 0.07815947053261901
+    }
+  },
+  "by_direction": {
+    "A2B_monet_to_photo": {
+      "style_quality": {
+        "n_samples": 15,
+        "rater1_mean": 3.2,
+        "rater2_mean": 2,
+        "two_rater_mean": 2.6,
+        "two_rater_population_sd": 1.0832051206181281,
+        "exact_agreement": 0.06666666666666667,
+        "exact_agreement_percent": 6.666666666666667,
+        "cohen_kappa": -0.09375000000000001
+      },
+      "content_preservation": {
+        "n_samples": 15,
+        "rater1_mean": 3.3333333333333335,
+        "rater2_mean": 3.4,
+        "two_rater_mean": 3.3666666666666667,
+        "two_rater_population_sd": 1.27758452644912,
+        "exact_agreement": 0.2,
+        "exact_agreement_percent": 20.0,
+        "cohen_kappa": 0.03225806451612904
+      },
+      "artifact_free": {
+        "n_samples": 15,
+        "rater1_mean": 3.1333333333333333,
+        "rater2_mean": 2.933333333333333,
+        "two_rater_mean": 3.033333333333333,
+        "two_rater_population_sd": 1.2242911781471306,
+        "exact_agreement": 0.2,
+        "exact_agreement_percent": 20.0,
+        "cohen_kappa": 0.03743315508021391
+      },
+      "pooled_all_dimensions": {
+        "n_paired_ratings": 45,
+        "exact_agreement": 0.15555555555555556,
+        "exact_agreement_percent": 15.555555555555555,
+        "cohen_kappa": -0.016646848989298444
+      }
+    },
+    "B2A_photo_to_monet": {
+      "style_quality": {
+        "n_samples": 15,
+        "rater1_mean": 3.6666666666666665,
+        "rater2_mean": 3.933333333333333,
+        "two_rater_mean": 3.8,
+        "two_rater_population_sd": 1.0456258094238748,
+        "exact_agreement": 0.26666666666666666,
+        "exact_agreement_percent": 26.666666666666668,
+        "cohen_kappa": -0.024844720496894415
+      },
+      "content_preservation": {
+        "n_samples": 15,
+        "rater1_mean": 3.933333333333333,
+        "rater2_mean": 3.2666666666666666,
+        "two_rater_mean": 3.6,
+        "two_rater_population_sd": 1.0832051206181281,
+        "exact_agreement": 0.3333333333333333,
+        "exact_agreement_percent": 33.33333333333333,
+        "cohen_kappa": 0.14285714285714282
+      },
+      "artifact_free": {
+        "n_samples": 15,
+        "rater1_mean": 3.7333333333333334,
+        "rater2_mean": 4,
+        "two_rater_mean": 3.8666666666666667,
+        "two_rater_population_sd": 0.9910712498212337,
+        "exact_agreement": 0.6,
+        "exact_agreement_percent": 60.0,
+        "cohen_kappa": 0.4545454545454545
+      },
+      "pooled_all_dimensions": {
+        "n_paired_ratings": 45,
+        "exact_agreement": 0.4,
+        "exact_agreement_percent": 40.0,
+        "cohen_kappa": 0.17121418826739435
+      }
+    }
+  },
+  "agreement": {},
+  "provenance": {
+    "rater1_source_sha256": "6bbf2ab0be65561295e0cbfbcc5c7e658db8899351819c2cbc3bb293cda22182",
+    "rater2_source_sha256": "e3a51758a826c0ffcfeac48bec7c85ff3f9796975d66dc9850fc46709054847f",
+    "historical_simulated_scores_used": false
+  }
+}

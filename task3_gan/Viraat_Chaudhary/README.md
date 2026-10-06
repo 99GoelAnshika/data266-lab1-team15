@@ -86,34 +86,47 @@ or sign change. The saved notebooks retain their actual executed outputs.
 
 ## Real human audit
 
-Use the separate anonymous `Audit_Rater_1.zip` and `Audit_Rater_2.zip` packets
-from the completion pack for two independent real raters. Share only each
-anonymous packet, not the author-specific README or private direction manifest.
-Each packet contains all 30 unchanged panels and one blank `ratings.csv`.
+The required real-human audit has now been completed using the fixed set of
+30 anonymous panels: 15 Monet -> Photo and 15 Photo -> Monet. Two independent
+human raters scored every panel on three integer 1-5 scales: style quality,
+content preservation and artifact-free quality. Model identity was hidden behind
+anonymous Set_A / Set_B assignments until both completed responses had been
+returned and validated.
 
-After receiving both completed forms, copy them to
-`outputs/viraat_resizeconv6_run001/human_audit/rater1_scores.csv` and
-`rater2_scores.csv`, then run from the repository root:
+### Final overall human-audit results
 
-```bash
-python3 task3_gan/Viraat_Chaudhary/src/summarize_human_audit_cpu.py
-```
+| Criterion | Two-rater mean | Exact agreement | Cohen's kappa |
+|---|---:|---:|---:|
+| Style quality | 3.2500 | 40.00% | 0.2275 |
+| Content preservation | 3.7500 | 43.33% | 0.2630 |
+| Artifact-free quality | 3.6833 | 36.67% | 0.1775 |
 
-The CPU-only script validates all 30 IDs and 1–5 integer scores, pairs responses
-by ID and calculates criterion/direction means, exact agreement and unweighted
-Cohen's kappa. It updates the metric reports/status. Constant-rating kappa is
-undefined rather than fabricated. The currently blank forms are not completed
-evidence. The script's validation does not establish real-rater provenance.
+Pooled across all three dimensions, exact agreement was **40.00%** and
+unweighted Cohen's kappa was **0.2357**.
+
+Direction-specific two-rater means were:
+
+| Direction | Style | Content | Artifact-free |
+|---|---:|---:|---:|
+| Monet -> Photo | 2.8667 | 3.5000 | 3.5000 |
+| Photo -> Monet | 3.6333 | 4.0000 | 3.8667 |
+
+Permanent real-human evidence is stored under
+`outputs/viraat_resizeconv6_run001/human_audit/real_human_audit/`.
+
+Team-level summary, agreement and provenance files are stored under
+`../human_audit_analysis/`.
+
+The original blank rating forms and historical audit infrastructure remain
+preserved for provenance. They are not substituted for the completed real-human
+evidence.
 
 ## Remaining submission work
 
-Viraat's real human scores/agreement and actual Kaggle result/rank remain pending.
-Anshika's supplied final report retains simulated epoch-50 ratings as historical
-provenance; these do not establish a real human audit of her final epoch-125 model.
-Her current KID variability and peak allocated memory are not in the supplied
-three-file evidence archive. The team's root README, full environment capture,
-combined PDF, checkpoint accessibility and final Git/LFS state need repository
-review before declaring the submission complete.
+The real-human audit requirement is complete. Historical Kaggle and run
+artifacts remain unchanged; historical logs are not rewritten to represent
+events that occurred after those artifacts were captured. The combined report
+and final Git state still require final review before submission.
 
 ## Reference
 

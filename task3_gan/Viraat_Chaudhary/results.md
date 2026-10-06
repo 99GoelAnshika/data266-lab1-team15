@@ -151,11 +151,38 @@ Specific observed failures and proposed experiments are in
 
 ## Human audit and Kaggle evidence
 
-Thirty fixed anonymous panels, 15 per direction, and two blank rating forms are
-preserved. Two independent real-rater forms have not yet been supplied, so no
-human mean or agreement is claimed. After both forms are complete, the CPU-only
-audit script reports per-criterion means, exact agreement and unweighted Cohen's
-kappa, plus clearly labelled pooled results, and updates the metrics files.
+A blinded real-human audit was completed using the 30 fixed anonymous panels,
+with 15 Monet -> Photo and 15 Photo -> Monet examples. Two independent human
+raters scored style quality, content preservation and artifact-free quality on
+integer 1-5 scales, with higher scores indicating better quality. The raters
+received anonymous Set_A / Set_B packages and model identity was revealed only
+after both completed score files had been returned and validated.
+
+### Overall real-human audit results
+
+| Criterion | Two-rater mean | Exact agreement | Cohen's kappa |
+|---|---:|---:|---:|
+| Style quality | 3.2500 | 40.00% | 0.2275 |
+| Content preservation | 3.7500 | 43.33% | 0.2630 |
+| Artifact-free quality | 3.6833 | 36.67% | 0.1775 |
+
+Across all three dimensions, pooled exact agreement was **40.00%** and pooled
+unweighted Cohen's kappa was **0.2357**. Agreement is reported as observed;
+individual human ratings were not reconciled or modified after collection.
+
+### Direction-specific two-rater means
+
+| Direction | Style | Content | Artifact-free |
+|---|---:|---:|---:|
+| Monet -> Photo | 2.8667 | 3.5000 | 3.5000 |
+| Photo -> Monet | 3.6333 | 4.0000 | 3.8667 |
+
+The final real-human evidence is stored under
+`outputs/viraat_resizeconv6_run001/human_audit/real_human_audit/`, including
+both returned rater score files, per-sample merged ratings and the computed
+results JSON. Team-level summaries and audit-analysis provenance are stored in
+`../human_audit_analysis/`. The final real-human calculations do not use any
+historical simulated ratings.
 
 The new CSV's actual Kaggle public/private scores and rank have not yet been
 provided. The existing baseline's recorded rank is a historical snapshot and is

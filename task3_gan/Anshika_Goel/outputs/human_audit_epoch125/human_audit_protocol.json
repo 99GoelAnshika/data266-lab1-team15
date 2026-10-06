@@ -1,0 +1,30 @@
+{
+  "schema_version": 2,
+  "purpose": "Task 3 blinded two-human-rater audit of Anshika Goel final epoch-125 CycleGAN",
+  "final_checkpoint_epoch": 125,
+  "total_samples": 30,
+  "samples_per_direction": 15,
+  "directions": [
+    "A2B_monet_to_photo",
+    "B2A_photo_to_monet"
+  ],
+  "source_sample_selection": "Same fixed 30 source samples and AUDIT_001-AUDIT_030 ordering as the historical audit",
+  "source_panel_provenance": "Input side preserved from historical blinded panels; historical translation side is not reused",
+  "translation_provenance": "outputs/cyclegan_baseline_rtx4090_run001/official_epoch125_predictions",
+  "presentation": "Input and final epoch-125 translation shown side by side with anonymous AUDIT_XXX identifier",
+  "rater_count": 2,
+  "real_human_raters_required": true,
+  "rater_independence_required": true,
+  "rating_scale": {
+    "style_quality": "integer 1-5; higher is better",
+    "content_preservation": "integer 1-5; higher is better",
+    "artifact_free_quality": "integer 1-5; higher is better"
+  },
+  "planned_agreement_analysis": [
+    "percent exact agreement",
+    "Cohen's kappa per dimension",
+    "pooled percent agreement",
+    "pooled Cohen's kappa"
+  ],
+  "historical_simulated_scores_reused": false
+}

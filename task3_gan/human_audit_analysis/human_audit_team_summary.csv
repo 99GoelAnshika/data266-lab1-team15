@@ -1,0 +1,7 @@
+model,scope,n_samples,style_two_rater_mean,content_two_rater_mean,artifact_free_two_rater_mean,style_exact_agreement_percent,style_cohen_kappa,content_exact_agreement_percent,content_cohen_kappa,artifact_exact_agreement_percent,artifact_cohen_kappa,pooled_exact_agreement_percent,pooled_cohen_kappa
+Anshika_Goel_epoch125,overall,30,3.2,3.483333,3.45,16.666667,-0.019022,26.666667,0.051724,40.0,0.240506,27.777778,0.078159
+Anshika_Goel_epoch125,A2B_monet_to_photo,15,2.6,3.366667,3.033333,6.666667,-0.09375,20.0,0.032258,20.0,0.037433,15.555556,-0.016647
+Anshika_Goel_epoch125,B2A_photo_to_monet,15,3.8,3.6,3.866667,26.666667,-0.024845,33.333333,0.142857,60.0,0.454545,40.0,0.171214
+Viraat_Chaudhary_final_run,overall,30,3.25,3.75,3.683333,40.0,0.227468,43.333333,0.263006,36.666667,0.177489,40.0,0.235729
+Viraat_Chaudhary_final_run,A2B_monet_to_photo,15,2.866667,3.5,3.5,40.0,0.15625,33.333333,0.142857,26.666667,0.073034,33.333333,0.145028
+Viraat_Chaudhary_final_run,B2A_photo_to_monet,15,3.633333,4,3.866667,40.0,0.258242,53.333333,0.339623,46.666667,0.25,46.666667,0.288069
