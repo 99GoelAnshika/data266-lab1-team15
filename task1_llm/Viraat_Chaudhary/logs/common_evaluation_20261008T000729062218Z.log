@@ -1,0 +1,60 @@
+{"event": "RUN_START", "stage": "common_evaluation", "created_utc": "2026-10-08T00:07:29.062495+00:00"}
+{"event": "FROZEN_VOCABULARY_VERIFIED", "member": "Anshika_Goel", "checkpoint_vocabulary_sha256": "8ac5c75e1ebdc21f991c368d2ac71c279ce5c747956fc9cd29a09aa9e74c22b1", "vocabulary_file_sha256": "8ac5c75e1ebdc21f991c368d2ac71c279ce5c747956fc9cd29a09aa9e74c22b1", "hash_match_representation": "exact_bytes"}
+{"event": "FROZEN_VOCABULARY_VERIFIED", "member": "Viraat_Chaudhary", "checkpoint_vocabulary_sha256": "f470ced134d2fcc6ac7582cfbde25ac75a851f5fd2e682676dbc720d6bb30964", "vocabulary_file_sha256": "f470ced134d2fcc6ac7582cfbde25ac75a851f5fd2e682676dbc720d6bb30964", "hash_match_representation": "exact_bytes"}
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Traceback (most recent call last):
+  File "C:\Users\aradh\Desktop\DATA 266 Generative AI and LLM\Lab1\task1_llm\Viraat_Chaudhary\code\common.py", line 112, in raw_log
+    yield path
+  File "C:\Users\aradh\Desktop\DATA 266 Generative AI and LLM\Lab1\task1_llm\evaluate_common.py", line 188, in <module>
+    run(task_root, args.partner_root.resolve() if args.partner_root else None)
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aradh\Desktop\DATA 266 Generative AI and LLM\Lab1\task1_llm\evaluate_common.py", line 93, in run
+    source = load_dataset(
+        c["dataset_id"],
+    ...<2 lines>...
+        cache_dir=os.environ.get("TASK1_HF_CACHE", str(cache / "hf_cache")),
+    )
+  File "C:\Users\aradh\AppData\Local\Programs\Python\Python313\Lib\site-packages\datasets\load.py", line 1696, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<10 lines>...
+        **config_kwargs,
+    )
+  File "C:\Users\aradh\AppData\Local\Programs\Python\Python313\Lib\site-packages\datasets\load.py", line 1361, in load_dataset_builder
+    builder_instance: DatasetBuilder = builder_cls(
+                                       ~~~~~~~~~~~^
+        cache_dir=cache_dir,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        **config_kwargs,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\aradh\AppData\Local\Programs\Python\Python313\Lib\site-packages\datasets\builder.py", line 408, in __init__
+    with FileLock(lock_path):
+         ~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\aradh\AppData\Local\Programs\Python\Python313\Lib\site-packages\filelock\_api.py", line 951, in __enter__
+    self.acquire()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\aradh\AppData\Local\Programs\Python\Python313\Lib\site-packages\filelock\_api.py", line 1059, in acquire
+    self._poll_until_acquired(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        blocking=blocking,
+        ^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        start_time=start_time,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\aradh\AppData\Local\Programs\Python\Python313\Lib\site-packages\filelock\_api.py", line 1220, in _poll_until_acquired
+    self._acquire_with_fork_tracking()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\aradh\AppData\Local\Programs\Python\Python313\Lib\site-packages\filelock\_api.py", line 1278, in _acquire_with_fork_tracking
+    self._acquire()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\aradh\AppData\Local\Programs\Python\Python313\Lib\site-packages\filelock\_windows.py", line 185, in _acquire
+    fd = _open_non_reparse_fd(self.lock_file, self._open_mode())
+  File "C:\Users\aradh\AppData\Local\Programs\Python\Python313\Lib\site-packages\filelock\_windows.py", line 248, in _open_non_reparse_fd
+    raise OSError(None, ctypes.FormatError(winerror).strip(), path, winerror)
+FileNotFoundError: [WinError 206] The filename or extension is too long.: 'C:\\Users\\aradh\\Desktop\\DATA 266 Generative AI and LLM\\Lab1\\task1_llm\\data\\processed\\common_evaluation\\hf_cache\\_Users_aradh_Desktop_DATA 266 Generative AI and LLM_Lab1_task1_llm_data_processed_common_evaluation_hf_cache_roneneldan___tiny_stories_default_0.0.0_f54c09fd23315a6f9c86f9dc80f725de7d8f9c64.lock'
+{"event": "RUN_FAILED", "stage": "common_evaluation"}
